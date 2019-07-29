@@ -4,17 +4,40 @@
 <LOGICITEM NAME="Analysis">
 	<STATE NAME="Castep Analysis State" VERSION="17.1">
 	<PROPERTIES>
+	<PROPERTY NAME="PlotBSWithDOS">
+	<VALUE>true</VALUE>
+	</PROPERTY>
 	<PROPERTY NAME="BandStructureGenerator">
-	<VALUE>SMXQMUtilities.BandStructureGenerator</VALUE>
+	<VALUE>SMXQMUtilities.BandStructureGenerator
+		<STATE NAME="QM Utilities band structure State" VERSION="17.1">
+		<PROPERTIES>
+		</PROPERTIES>
+		</STATE>
+	</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="DOSGenerator">
-	<VALUE>SMXQMUtilities.DOSGenerator</VALUE>
+	<VALUE>SMXQMUtilities.DOSGenerator
+		<STATE NAME="QM Utilities DOS Generator State" VERSION="17.1">
+		<PROPERTIES>
+		</PROPERTIES>
+		</STATE>
+	</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="PhononDispersionGenerator">
-	<VALUE>SMXQMUtilities.PhononDispersionGenerator</VALUE>
+	<VALUE>SMXQMUtilities.PhononDispersionGenerator
+		<STATE NAME="QM Utilities phonon dispersion State" VERSION="17.1">
+		<PROPERTIES>
+		</PROPERTIES>
+		</STATE>
+	</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="PhononDOSGenerator">
-	<VALUE>SMXQMUtilities.PhononDOSGenerator</VALUE>
+	<VALUE>SMXQMUtilities.PhononDOSGenerator
+		<STATE NAME="QM Utilities Phonon DOS Generator State" VERSION="17.1">
+		<PROPERTIES>
+		</PROPERTIES>
+		</STATE>
+	</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="ThermodynamicsGenerator">
 	<VALUE>SMXQMUtilities.ThermodynamicsGenerator</VALUE>
@@ -1127,9 +1150,6 @@
 		<PROPERTIES>
 		<PROPERTY NAME="MpiRequested">
 		<VALUE>true</VALUE>
-		</PROPERTY>
-		<PROPERTY NAME="MpiNumProcessors">
-		<VALUE>1</VALUE>
 		</PROPERTY>
 		</PROPERTIES>
 		</STATE>
