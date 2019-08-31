@@ -126,40 +126,17 @@
 	<ITEM>-</ITEM>
 	</VALUE>
 	</PROPERTY>
-	<PROPERTY NAME="SpectralEnergyUnits">
-	<VALUE>2</VALUE>
-	</PROPERTY>
 	<PROPERTY NAME="BandStructureGenerator">
-	<VALUE>SMXQMUtilities.BandStructureGenerator
-		<STATE NAME="QM Utilities band structure State" VERSION="17.1">
-		<PROPERTIES>
-		</PROPERTIES>
-		</STATE>
-	</VALUE>
+	<VALUE>SMXQMUtilities.BandStructureGenerator</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="DOSGenerator">
-	<VALUE>SMXQMUtilities.DOSGenerator
-		<STATE NAME="QM Utilities DOS Generator State" VERSION="17.1">
-		<PROPERTIES>
-		</PROPERTIES>
-		</STATE>
-	</VALUE>
+	<VALUE>SMXQMUtilities.DOSGenerator</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="PhononDispersionGenerator">
-	<VALUE>SMXQMUtilities.PhononDispersionGenerator
-		<STATE NAME="QM Utilities phonon dispersion State" VERSION="17.1">
-		<PROPERTIES>
-		</PROPERTIES>
-		</STATE>
-	</VALUE>
+	<VALUE>SMXQMUtilities.PhononDispersionGenerator</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="PhononDOSGenerator">
-	<VALUE>SMXQMUtilities.PhononDOSGenerator
-		<STATE NAME="QM Utilities Phonon DOS Generator State" VERSION="17.1">
-		<PROPERTIES>
-		</PROPERTIES>
-		</STATE>
-	</VALUE>
+	<VALUE>SMXQMUtilities.PhononDOSGenerator</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="ThermodynamicsGenerator">
 	<VALUE>SMXQMUtilities.ThermodynamicsGenerator</VALUE>
@@ -304,18 +281,15 @@
 <LOGICITEM NAME="CASTEP">
 	<STATE NAME="CASTEP Setup State" VERSION="17.1">
 	<PROPERTIES>
+	<PROPERTY NAME="Task">
+	<VALUE>2</VALUE>
+	</PROPERTY>
 	</PROPERTIES>
 	</STATE>
 </LOGICITEM>
 <LOGICITEM NAME="DOSGenerator">
 	<STATE NAME="QM Utilities DOS Generator State" VERSION="17.1">
 	<PROPERTIES>
-	<PROPERTY NAME="SpinDisplay">
-	<VALUE>4</VALUE>
-	</PROPERTY>
-	<PROPERTY NAME="SmearingWidth">
-	<VALUE>2.e-002</VALUE>
-	</PROPERTY>
 	</PROPERTIES>
 	</STATE>
 </LOGICITEM>
@@ -373,14 +347,17 @@
 	<PROPERTY NAME="UseFormalSpin">
 	<VALUE>false</VALUE>
 	</PROPERTY>
+	<PROPERTY NAME="OptStrategy">
+	<VALUE>3</VALUE>
+	</PROPERTY>
 	<PROPERTY NAME="CustomDFTDSetup">
 	<VALUE>true</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="CustomDFTDSRTS">
-	<VALUE>B3LYP=0.84 BLYP=0.62 PBE=0.94 PBE0=0.96 </VALUE>
+	<VALUE>B3LYP=0.84 BLYP=0.62 PBE=0.94 PBE0=0.96</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="CustomDFTDDTS">
-	<VALUE>B3LYP=20 BLYP=20 PBE=20 PBE0=20 </VALUE>
+	<VALUE>B3LYP=20 BLYP=20 PBE=20 PBE0=20</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="CustomDFTDS6Grimme">
 	<VALUE>B3LYP=1.05 BLYP=1.2 PBE=0.75 TPSS=1</VALUE>
@@ -1376,6 +1353,9 @@
 <LOGICITEM NAME="GeomOpt">
 	<STATE NAME="Castep Geometry Optimization State" VERSION="17.1">
 	<PROPERTIES>
+	<PROPERTY NAME="OptimizeCell">
+	<VALUE>true</VALUE>
+	</PROPERTY>
 	<PROPERTY NAME="EnergyConvergence">
 	<VALUE>1.e-005</VALUE>
 	</PROPERTY>
@@ -1398,6 +1378,9 @@
 	<VALUE>SMXQMUtilities.QMJobTemplate
 		<STATE NAME="QMJobTemplate" VERSION="17.1">
 		<PROPERTIES>
+		<PROPERTY NAME="LiveUpdateInterval">
+		<VALUE>999.</VALUE>
+		</PROPERTY>
 		<PROPERTY NAME="MpiRequested">
 		<VALUE>true</VALUE>
 		</PROPERTY>
@@ -1417,14 +1400,11 @@
 <LOGICITEM NAME="KPointSetGenerator">
 	<STATE NAME="QM Utilities k-point set State" VERSION="17.1">
 	<PROPERTIES>
-	<PROPERTY NAME="KPointDerivation">
-	<VALUE>3</VALUE>
-	</PROPERTY>
 	<PROPERTY NAME="KPointQuality">
 	<VALUE>3</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="KPointOverallQuality">
-	<VALUE>0</VALUE>
+	<VALUE>3</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="DefaultDerivation">
 	<VALUE>
@@ -1465,12 +1445,6 @@
 	<PROPERTIES>
 	<PROPERTY NAME="KPointQuality">
 	<VALUE>3</VALUE>
-	</PROPERTY>
-	<PROPERTY NAME="BandStructure">
-	<VALUE>true</VALUE>
-	</PROPERTY>
-	<PROPERTY NAME="DensityOfStates">
-	<VALUE>true</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="PopulationAnalysis">
 	<VALUE>false</VALUE>
@@ -1545,9 +1519,6 @@
 		</STATE>
 	</VALUE>
 	</PROPERTY>
-	<PROPERTY NAME="Orbitals">
-	<VALUE>true</VALUE>
-	</PROPERTY>
 	<PROPERTY NAME="EELSKPGenerator">
 	<VALUE>SMXQMUtilities.KPointSetGenerator
 		<STATE NAME="QM Utilities k-point set State" VERSION="17.1">
@@ -1574,9 +1545,6 @@
 <LOGICITEM NAME="Pseudopotentials">
 	<STATE NAME="Castep Pseudopotential State" VERSION="17.1">
 	<PROPERTIES>
-	<PROPERTY NAME="UseCustomPspots">
-	<VALUE>true</VALUE>
-	</PROPERTY>
 	<PROPERTY NAME="CustomPseudopotential">
 	<VALUE>
 	<ITEM>-</ITEM>
@@ -1589,7 +1557,7 @@
 	<ITEM>-</ITEM>
 	<ITEM>-</ITEM>
 	<ITEM>-</ITEM>
-	<ITEM>Na_00.usp</ITEM>
+	<ITEM>-</ITEM>
 	<ITEM>-</ITEM>
 	<ITEM>-</ITEM>
 	<ITEM>-</ITEM>

@@ -1,0 +1,870 @@
+ Job started on host DESKTOP-5CQNRD0
+ at Sat Aug 31 16:12:51 2019
+
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Materials Studio CASTEP version 2017            |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, E. L. Brown, M. S. McFly         |
+ |                                                 |
+ | Copyright (c) 2000 - 2016                       |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ This version was compiled for x86_64-windows-msvc2008 on May 05 2016
+ Intel(R) Math Kernel Library Version 11.1.2 
+ Fundamental constants values: CODATA 2010
+ 
+License checkout of MS_castep successful
+ 
+ 
+ Atomic calculation performed for Ni: 1s2 2s2 2p6 3s2 3p6 3d8 4s2
+ 
+ Converged in 91 iterations to an ae energy of -41375.898 eV
+ 
+ Identity difference: 8.24E-04
+ 
+   ============================================================                
+   | Pseudopotential Report - Date of generation 31-08-2019   |                
+   ------------------------------------------------------------                
+   | Element: Ni Ionic charge: 10.00 Level of theory: PBE     |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            3d              8.000           -0.326        |                
+   |            4s              2.000           -0.207        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -0.207   1.999     qc      0         |                
+   |          2      0    0.250   1.999     qc      0         |                
+   |          3      1    0.000   1.999     qc      0         |                
+   |          4      1    0.250   1.999     qc      0         |                
+   |          5      2   -0.326   1.999     qc      0         |                
+   |          6      2    0.250   1.999     qc      0         |                
+   |         loc     3    0.000   2.191     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 1.001                       |                
+   | Partial core correction Rc = 1.001                       |                
+   ------------------------------------------------------------                
+   | "3|2.2|2|1|10|12.1|14.7|40UU:41UU:32UU(qc=6)[]"          |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+ 
+ Doing a self consistent calculation for the test configuration
+ 
+ Atomic calculation performed for Ni: 1s2 2s2 2p6 3s2 3p6 3d8 4s2
+ 
+ Converged in 91 iterations to an ae energy of -41375.898 eV
+ 
+ ---------------------------------------
+ AE eigenvalue nl 10 =     -301.79263876
+ AE eigenvalue nl 20 =      -36.08162216
+ AE eigenvalue nl 21 =      -31.04152791
+ AE eigenvalue nl 30 =       -4.08135009
+ AE eigenvalue nl 31 =       -2.62346104
+ AE eigenvalue nl 32 =       -0.32611860
+ AE eigenvalue nl 40 =       -0.20737752
+ ---------------------------------------
+ PS eigenvalue nl 32 =       -0.32597884
+ PS eigenvalue nl 40 =       -0.20738932
+ ---------------------------------------
+ Maximum eigenvalue error:   1.40E-04
+ 
+ Derived cutoff energies: C=   8 M=  12 F=  12 E=  16
+ 
+ 
+ ***************************************
+ 
+ Pseudo atomic calculation performed for Ni 3d8 4s2
+ 
+ Converged in 40 iterations to a total energy of -1355.1527 eV
+ 
+ Calculation not parallelised.
+
+ ************************************ Title ************************************
+ CASTEP calculation from Materials Studio
+
+ ***************************** General Parameters ******************************
+  
+ output verbosity                               : normal  (1)
+ write checkpoint data to                       : Ni.check
+ type of calculation                            : geometry optimization
+ stress calculation                             : on
+ density difference calculation                 : off
+ electron localisation func (ELF) calculation   : off
+ Hirshfeld analysis                             : off
+ unlimited duration calculation
+ timing information                             : on
+ memory usage estimate                          : on
+ write final potential to formatted file        : off
+ write final density to formatted file          : off
+ write BibTeX reference list                    : on
+ write OTFG pseudopotential files               : on
+ checkpoint writing                             : both castep_bin and check files
+  
+ output         length unit                     : A
+ output           mass unit                     : amu
+ output           time unit                     : ps
+ output         charge unit                     : e
+ output           spin unit                     : hbar/2
+ output         energy unit                     : eV
+ output          force unit                     : eV/A
+ output       velocity unit                     : A/ps
+ output       pressure unit                     : GPa
+ output     inv_length unit                     : 1/A
+ output      frequency unit                     : cm-1
+ output force constant unit                     : eV/A**2
+ output         volume unit                     : A**3
+ output   IR intensity unit                     : (D/A)**2/amu
+ output         dipole unit                     : D
+ output         efield unit                     : eV/A/e
+ output        entropy unit                     : J/mol/K
+  
+ wavefunctions paging                           : none
+ random number generator seed                   : randomised (161302598)
+ data distribution                              : optimal for this architecture
+ optimization strategy                          : maximize speed(+++)
+
+ *********************** Exchange-Correlation Parameters ***********************
+  
+ using functional                               : Perdew Burke Ernzerhof
+ relativistic treatment                         : Koelling-Harmon
+ DFT+D: Semi-empirical dispersion correction    : off
+
+ ************************* Pseudopotential Parameters **************************
+  
+ pseudopotential representation                 : reciprocal space
+ <beta|phi> representation                      : reciprocal space
+ spin-orbit coupling                            : off
+
+ **************************** Basis Set Parameters *****************************
+  
+ plane wave basis set cut-off                   :   400.0000   eV
+ size of standard grid                          :     1.7500
+ size of   fine   grid                          :     2.1000
+ size of   fine   gmax                          :    21.5173   1/A
+ largest prime factor in FFT                    :          5
+ finite basis set correction                    : automatic
+ number of sample energies                      :          3
+           sample  spacing                      :     5.0000   eV
+
+ **************************** Electronic Parameters ****************************
+  
+ number of  electrons                           :  10.00    
+ net charge of system                           :  0.000    
+ net spin   of system                           :  2.000    
+ number of  up  spins                           :  6.000    
+ number of down spins                           :  4.000    
+ treating system as spin-polarized
+ number of bands                                :         10
+
+ ********************* Electronic Minimization Parameters **********************
+  
+ Method: Treating system as metallic with density mixing treatment of electrons,
+         and number of  SD  steps               :          1
+         and number of  CG  steps               :          4
+  
+ total energy / atom convergence tol.           : 0.1000E-05   eV
+ eigen-energy convergence tolerance             : 0.1000E-06   eV
+ max force / atom convergence tol.              : ignored
+ convergence tolerance window                   :          3   cycles
+ max. number of SCF cycles                      :        100
+ number of fixed-spin iterations                :          6
+ smearing scheme                                : Gaussian
+ smearing width                                 : 0.1000       eV
+ Fermi energy convergence tolerance             : 0.2721E-13   eV
+ periodic dipole correction                     : NONE
+
+ ************************** Density Mixing Parameters **************************
+  
+ density-mixing scheme                          : Pulay
+ max. length of mixing history                  :         20
+ charge density mixing amplitude                : 0.5000    
+   spin density mixing amplitude                :  2.000    
+ cut-off energy for mixing                      :  400.0       eV
+ charge density mixing g-vector                 :  1.500       1/A
+   spin density mixing g-vector                 :  1.500       1/A
+
+ ********************** Geometry Optimization Parameters ***********************
+  
+ optimization method                            : BFGS
+ variable cell method                           : fixed basis quality
+ max. number of steps                           :        100
+ estimated bulk modulus                         :  500.0       GPa
+ estimated <frequency>                          :  1668.       cm-1
+ geom line minimiser                            : on
+ with line minimiser tolerance                  :     0.4000
+  with spin fully able to relax for all steps
+ total energy convergence tolerance             : 0.1000E-04   eV/atom
+        max ionic |force| tolerance             : 0.3000E-01   eV/A
+ max ionic |displacement| tolerance             : 0.1000E-02   A
+   max |stress component| tolerance             : 0.5000E-01   GPa
+ convergence tolerance window                   :          2   steps
+ backup results every                           :          5   steps
+
+ *******************************************************************************
+  
+ 
+                           -------------------------------
+                                      Unit Cell
+                           -------------------------------
+        Real Lattice(A)                      Reciprocal Lattice(1/A)
+   0.0000000   1.7620000   1.7620000       -1.7829697   1.7829697   1.7829697
+   1.7620000  -0.0000000   1.7620000        1.7829697  -1.7829697   1.7829697
+   1.7620000   1.7620000   0.0000000        1.7829697   1.7829697  -1.7829697
+ 
+                       Lattice parameters(A)       Cell Angles
+                    a =    2.491844          alpha =   60.000000
+                    b =    2.491844          beta  =   60.000000
+                    c =    2.491844          gamma =   60.000000
+ 
+                       Current cell volume =   10.940765       A**3
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+                         Total number of ions in cell =    1
+                      Total number of species in cell =    1
+                        Max number of any one species =    1
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element    Atom        Fractional coordinates of atoms  x
+            x            Number           u          v          w      x
+            x----------------------------------------------------------x
+            x  Ni           1         0.000000   0.000000   0.000000   x 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+                         No user defined ionic velocities
+ 
+                           -------------------------------
+                                   Details of Species
+                           -------------------------------
+ 
+                               Mass of species in AMU
+                                    Ni   58.7099991
+ 
+                          Electric Quadrupole Moment (Barn)
+                                    Ni    0.1620000 Isotope 61
+ 
+                          Files used for pseudopotentials:
+                                    Ni 3|2.2|2|1|10|12.1|14.7|40UU:41UU:32UU(qc=6)[]
+ 
+                           -------------------------------
+                              k-Points For BZ Sampling
+                           -------------------------------
+                       MP grid size for SCF calculation is  7  7  7
+                            with an offset of   0.000  0.000  0.000
+                       Number of kpoints used =            20
+ 
+                           -------------------------------
+                               Symmetry and Constraints
+                           -------------------------------
+ 
+                      Maximum deviation from symmetry = 0.200000E-14     ANG
+ 
+                      Number of symmetry operations   =          48
+         There are no ionic constraints specified or generated for this cell
+                      Point group of crystal =    32: Oh, m-3m, 4/m -3 2/m
+                      Space group of crystal =   225: Fm-3m, -F 4 2 3
+ 
+             Set iprint > 1 for details on symmetry rotations/translations
+ 
+                         Centre of mass is NOT constrained
+ 
+                         Number of cell constraints= 5
+                         Cell constraints are:  1 1 1 0 0 0
+ 
+                         External pressure/stress (GPa)
+                          0.00000   0.00000   0.00000
+                                    0.00000   0.00000
+                                              0.00000
+  
++---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+|                                                     Memory          Disk    |
+| Baseline code, static data and system overhead        0.0 MB         0.0 MB |
+| BLAS internal memory storage                          0.0 MB         0.0 MB |
+| Model and support data                               26.3 MB         0.0 MB |
+| Electronic energy minimisation requirements           4.0 MB         0.0 MB |
+| Force calculation requirements                        1.4 MB         0.0 MB |
+| Stress calculation requirements                       1.5 MB         0.0 MB |
+|                                               ----------------------------- |
+| Approx. total storage required per process           30.3 MB         0.0 MB |
+|                                                                             |
+| Requirements will fluctuate during execution and may exceed these estimates |
++-----------------------------------------------------------------------------+
+Calculating finite basis set correction with  3 cut-off energies.
+Calculating total energy with cut-off of  390.000eV.
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -1.19133402E+003  0.00000000E+000                        10.08  <-- SCF
+      1  -1.34321462E+003  1.00961311E+001   1.51880595E+002      10.53  <-- SCF
+      2  -1.36056452E+003  8.71081333E+000   1.73499015E+001      10.81  <-- SCF
+      3  -1.36084913E+003  8.70832877E+000   2.84614751E-001      11.11  <-- SCF
+      4  -1.36081537E+003  8.22038164E+000  -3.37658582E-002      11.42  <-- SCF
+      5  -1.36081872E+003  8.38408948E+000   3.35007596E-003      11.77  <-- SCF
+      6  -1.36236042E+003  5.10975631E+000   1.54170655E+000      12.12  <-- SCF
+      7  -1.36231297E+003  5.85031565E+000  -4.74515831E-002      12.42  <-- SCF
+      8  -1.36250166E+003  5.49457302E+000   1.88693812E-001      12.80  <-- SCF
+      9  -1.36250448E+003  5.53809690E+000   2.81151416E-003      13.14  <-- SCF
+     10  -1.36250505E+003  5.56914283E+000   5.70954468E-004      13.47  <-- SCF
+     11  -1.36250528E+003  5.55732246E+000   2.28599601E-004      13.81  <-- SCF
+     12  -1.36250528E+003  5.55944506E+000   8.00796670E-006      14.19  <-- SCF
+     13  -1.36250526E+003  5.56081423E+000  -1.88325258E-005      14.47  <-- SCF
+     14  -1.36250394E+003  5.56523356E+000  -1.32230388E-003      14.81  <-- SCF
+     15  -1.36250470E+003  5.56369432E+000   7.59544045E-004      15.16  <-- SCF
+     16  -1.36250485E+003  5.56425972E+000   1.50125834E-004      15.50  <-- SCF
+     17  -1.36250495E+003  5.56399148E+000   9.82746529E-005      15.78  <-- SCF
+     18  -1.36250495E+003  5.56391561E+000   4.43427352E-006      16.22  <-- SCF
+     19  -1.36250496E+003  5.56389092E+000   2.26890931E-006      16.47  <-- SCF
+     20  -1.36250496E+003  5.56387265E+000  -1.51906856E-006      16.67  <-- SCF
+     21  -1.36250495E+003  5.56389628E+000  -2.73066946E-006      16.92  <-- SCF
+     22  -1.36250495E+003  5.56389827E+000   2.06213737E-007      17.14  <-- SCF
+     23  -1.36250495E+003  5.56389481E+000   2.61083340E-007      17.38  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Integrated Spin Density     =    0.737399     hbar/2                        
+Integrated |Spin Density|   =    0.824963     hbar/2                        
+ 
+Final energy, E             =  -1362.494083919     eV
+Final free energy (E-TS)    =  -1362.504953336     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -1362.499518627     eV
+ 
+Calculating total energy with cut-off of  395.000eV.
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -1.36249418E+003  0.00000000E+000                        17.47  <-- SCF
+      1  -1.36251321E+003  5.56351784E+000   1.90286152E-002      17.75  <-- SCF
+      2  -1.36251321E+003  5.56351781E+000   8.28665462E-007      18.02  <-- SCF
+      3  -1.36251320E+003  5.56844586E+000  -5.88087563E-006      18.33  <-- SCF
+      4  -1.36251317E+003  5.55836212E+000  -3.88080988E-005      18.72  <-- SCF
+      5  -1.36251317E+003  5.56544809E+000   1.70282428E-006      19.05  <-- SCF
+      6  -1.36251317E+003  5.56603227E+000   1.21800190E-006      19.33  <-- SCF
+      7  -1.36251317E+003  5.56538311E+000  -1.60263939E-006      19.59  <-- SCF
+      8  -1.36251317E+003  5.56556582E+000   5.50840266E-007      19.86  <-- SCF
+      9  -1.36251317E+003  5.56560836E+000   2.07182993E-007      20.09  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Integrated Spin Density     =    0.743276     hbar/2                        
+Integrated |Spin Density|   =    0.830497     hbar/2                        
+ 
+Final energy, E             =  -1362.502453843     eV
+Final free energy (E-TS)    =  -1362.513167700     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -1362.507810772     eV
+ 
+Calculating total energy with cut-off of  400.000eV.
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -1.36250255E+003  0.00000000E+000                        20.19  <-- SCF
+      1  -1.36251879E+003  5.56477885E+000   1.62424202E-002      20.47  <-- SCF
+      2  -1.36251879E+003  5.56477882E+000   6.01571051E-007      20.77  <-- SCF
+      3  -1.36251880E+003  5.56855389E+000   1.02426640E-005      21.06  <-- SCF
+      4  -1.36251879E+003  5.56092917E+000  -8.67676484E-006      21.34  <-- SCF
+      5  -1.36251880E+003  5.56615998E+000   4.86653043E-006      21.67  <-- SCF
+      6  -1.36251880E+003  5.56669900E+000   1.69381811E-006      21.88  <-- SCF
+      7  -1.36251880E+003  5.56622073E+000  -9.18261039E-007      22.12  <-- SCF
+      8  -1.36251880E+003  5.56633395E+000   3.15568180E-007      22.36  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Integrated Spin Density     =    0.742452     hbar/2                        
+Integrated |Spin Density|   =    0.829823     hbar/2                        
+ 
+Final energy, E             =  -1362.508063482     eV
+Final free energy (E-TS)    =  -1362.518800273     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -1362.513431878     eV
+ 
+ For future reference: finite basis dEtot/dlog(Ecut) =      -0.544163eV
+ Total energy corrected for finite basis set =   -1362.519235 eV
+ 
++---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+|                                                     Memory          Disk    |
+| Model and support data                               37.1 MB         0.0 MB |
+| Electronic energy minimisation requirements           4.0 MB         0.0 MB |
+| Geometry minimisation requirements                    5.5 MB         0.0 MB |
+|                                               ----------------------------- |
+| Approx. total storage required per process           46.6 MB         0.0 MB |
+|                                                                             |
+| Requirements will fluctuate during execution and may exceed these estimates |
++-----------------------------------------------------------------------------+
+ 
+ 
+ ***************** Stress Tensor *****************
+ *                                               *
+ *          Cartesian components (GPa)           *
+ * --------------------------------------------- *
+ *             x             y             z     *
+ *                                               *
+ *  x     -0.856929     -0.000000      0.000000  *
+ *  y     -0.000000     -0.856929      0.000000  *
+ *  z      0.000000      0.000000     -0.856929  *
+ *                                               *
+ *  Pressure:    0.8569                          *
+ *                                               *
+ *************************************************
+ BFGS: finished iteration     0 with enthalpy= -1.36251924E+003 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   0.000000E+000 |   1.000000E-005 |         eV | No  | <-- BFGS
+ |   Smax    |   8.569288E-001 |   5.000000E-002 |        GPa | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration          1 ...
+================================================================================
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.003725 |    -1362.519235 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration         1 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
++---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+|                                                     Memory          Disk    |
+| Model and support data                               37.1 MB         0.0 MB |
+| Electronic energy minimisation requirements           4.0 MB         0.0 MB |
+| Geometry minimisation requirements                    5.6 MB         0.0 MB |
+|                                               ----------------------------- |
+| Approx. total storage required per process           46.6 MB         0.0 MB |
+|                                                                             |
+| Requirements will fluctuate during execution and may exceed these estimates |
++-----------------------------------------------------------------------------+
+ 
+ 
+                           -------------------------------
+                                      Unit Cell
+                           -------------------------------
+        Real Lattice(A)              Reciprocal Lattice(1/A)
+  -0.0000000   1.7630066   1.7630066       -1.7819517   1.7819517   1.7819517
+   1.7630066  -0.0000000   1.7630066        1.7819517  -1.7819517   1.7819517
+   1.7630066   1.7630066   0.0000000        1.7819517   1.7819517  -1.7819517
+ 
+                       Lattice parameters(A)       Cell Angles
+                    a =    2.493268          alpha =   60.000000
+                    b =    2.493268          beta  =   60.000000
+                    c =    2.493268          gamma =   60.000000
+ 
+                Current cell volume =   10.959527 A**3
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -1.36250699E+003  0.00000000E+000                        22.73  <-- SCF
+      1  -1.36252259E+003  5.46010141E+000   1.55985170E-002      23.03  <-- SCF
+      2  -1.36252259E+003  5.46010138E+000   1.24255465E-006      23.48  <-- SCF
+      3  -1.36252215E+003  5.62326248E+000  -4.39959601E-004      23.84  <-- SCF
+      4  -1.36252077E+003  5.54980789E+000  -1.38203253E-003      24.20  <-- SCF
+      5  -1.36252077E+003  5.54955601E+000   1.65419152E-006      24.58  <-- SCF
+      6  -1.36252075E+003  5.54961104E+000  -1.84331625E-005      24.80  <-- SCF
+      7  -1.36252072E+003  5.54943786E+000  -3.13797595E-005      25.00  <-- SCF
+      8  -1.36252071E+003  5.54897749E+000  -7.12270445E-006      25.19  <-- SCF
+      9  -1.36252071E+003  5.54896600E+000  -5.56725602E-007      25.42  <-- SCF
+     10  -1.36252071E+003  5.54894965E+000  -2.08881754E-007      25.64  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Integrated Spin Density     =    0.746703     hbar/2                        
+Integrated |Spin Density|   =    0.833969     hbar/2                        
+ 
+Final energy, E             =  -1362.510049483     eV
+Final free energy (E-TS)    =  -1362.520709669     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -1362.515379576     eV
+ 
+ 
+ ***************** Stress Tensor *****************
+ *                                               *
+ *          Cartesian components (GPa)           *
+ * --------------------------------------------- *
+ *             x             y             z     *
+ *                                               *
+ *  x     -0.795789      0.000000      0.000000  *
+ *  y      0.000000     -0.795789      0.000000  *
+ *  z      0.000000      0.000000     -0.795789  *
+ *                                               *
+ *  Pressure:    0.7958                          *
+ *                                               *
+ *************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.003725 |    -1362.519235 | <-- min BFGS
+ | trial step |    1.000000 |    0.003463 |    -1362.518700 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: improving iteration         1 with line minimization (lambda= 14.227629)
+--------------------------------------------------------------------------------
+ 
++---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+|                                                     Memory          Disk    |
+| Model and support data                               37.1 MB         0.0 MB |
+| Electronic energy minimisation requirements           4.1 MB         0.0 MB |
+| Geometry minimisation requirements                    5.6 MB         0.0 MB |
+|                                               ----------------------------- |
+| Approx. total storage required per process           46.8 MB         0.0 MB |
+|                                                                             |
+| Requirements will fluctuate during execution and may exceed these estimates |
++-----------------------------------------------------------------------------+
+ 
+ 
+                           -------------------------------
+                                      Unit Cell
+                           -------------------------------
+        Real Lattice(A)              Reciprocal Lattice(1/A)
+  -0.0000000   1.7763216   1.7763216       -1.7685945   1.7685945   1.7685945
+   1.7763216  -0.0000000   1.7763216        1.7685945  -1.7685945   1.7685945
+   1.7763216   1.7763216   0.0000000        1.7685945   1.7685945  -1.7685945
+ 
+                       Lattice parameters(A)       Cell Angles
+                    a =    2.512098          alpha =   60.000000
+                    b =    2.512098          beta  =   60.000000
+                    c =    2.512098          gamma =   60.000000
+ 
+                Current cell volume =   11.209721 A**3
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -1.36238912E+003  0.00000000E+000                        25.91  <-- SCF
+      1  -1.36283884E+003  4.11049113E+000   4.49723327E-001      26.19  <-- SCF
+      2  -1.36283901E+003  4.11048892E+000   1.70328734E-004      26.59  <-- SCF
+      3  -1.36274424E+003  6.33777729E+000  -9.47758151E-002      26.91  <-- SCF
+      4  -1.36250995E+003  5.30414005E+000  -2.34292414E-001      27.23  <-- SCF
+      5  -1.36251571E+003  5.31644059E+000   5.76052190E-003      27.55  <-- SCF
+      6  -1.36251587E+003  5.32058618E+000   1.64804764E-004      27.86  <-- SCF
+      7  -1.36251594E+003  5.31879799E+000   6.59661485E-005      28.17  <-- SCF
+      8  -1.36251583E+003  5.31674933E+000  -1.05101336E-004      28.48  <-- SCF
+      9  -1.36251550E+003  5.32164407E+000  -3.32499453E-004      28.81  <-- SCF
+     10  -1.36251587E+003  5.31761471E+000   3.67540716E-004      29.14  <-- SCF
+     11  -1.36251589E+003  5.31783777E+000   2.08871854E-005      29.45  <-- SCF
+     12  -1.36251587E+003  5.31803691E+000  -1.45795341E-005      29.64  <-- SCF
+     13  -1.36251587E+003  5.31810590E+000  -5.74573527E-006      29.86  <-- SCF
+     14  -1.36251587E+003  5.31809232E+000   8.40013473E-007      30.05  <-- SCF
+     15  -1.36251587E+003  5.31806747E+000   1.18693950E-006      30.27  <-- SCF
+     16  -1.36251587E+003  5.31806090E+000   5.99132346E-007      30.48  <-- SCF
+     17  -1.36251587E+003  5.31806254E+000   3.13528160E-008      30.69  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Integrated Spin Density     =    0.781737     hbar/2                        
+Integrated |Spin Density|   =    0.869132     hbar/2                        
+ 
+Final energy, E             =  -1362.506171395     eV
+Final free energy (E-TS)    =  -1362.515869873     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -1362.511020634     eV
+ 
+ 
+ ***************** Stress Tensor *****************
+ *                                               *
+ *          Cartesian components (GPa)           *
+ * --------------------------------------------- *
+ *             x             y             z     *
+ *                                               *
+ *  x      3.404243     -0.000000     -0.000000  *
+ *  y     -0.000000      3.404243      0.000000  *
+ *  z     -0.000000      0.000000      3.404243  *
+ *                                               *
+ *  Pressure:   -3.4042                          *
+ *                                               *
+ *************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.003725 |    -1362.519235 | <-- min BFGS
+ | trial step |    1.000000 |    0.003463 |    -1362.518700 | <-- min BFGS
+ |  line step |   14.227629 |   -0.015038 |    -1362.514895 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: improving iteration         1 with quad minimization (lambda=  3.475842)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                      Unit Cell
+                           -------------------------------
+        Real Lattice(A)              Reciprocal Lattice(1/A)
+  -0.0000000   1.7654988   1.7654988       -1.7794363   1.7794363   1.7794363
+   1.7654988  -0.0000000   1.7654988        1.7794363  -1.7794363   1.7794363
+   1.7654988   1.7654988   0.0000000        1.7794363   1.7794363  -1.7794363
+ 
+                       Lattice parameters(A)       Cell Angles
+                    a =    2.496792          alpha =   60.000000
+                    b =    2.496792          beta  =   60.000000
+                    c =    2.496792          gamma =   60.000000
+ 
+                Current cell volume =   11.006070 A**3
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -1.36244118E+003  0.00000000E+000                        30.95  <-- SCF
+      1  -1.36271319E+003  6.44680223E+000   2.72009203E-001      31.28  <-- SCF
+      2  -1.36271329E+003  6.44680091E+000   1.00351237E-004      31.64  <-- SCF
+      3  -1.36264743E+003  4.75669350E+000  -6.58532086E-002      31.97  <-- SCF
+      4  -1.36251688E+003  5.49345851E+000  -1.30549249E-001      32.30  <-- SCF
+      5  -1.36252004E+003  5.50286732E+000   3.16103863E-003      32.62  <-- SCF
+      6  -1.36251998E+003  5.50289377E+000  -6.72968865E-005      32.94  <-- SCF
+      7  -1.36252000E+003  5.50406970E+000   2.24215886E-005      33.23  <-- SCF
+      8  -1.36251998E+003  5.50509267E+000  -1.97220597E-005      33.53  <-- SCF
+      9  -1.36251997E+003  5.50510598E+000  -7.56899673E-006      33.73  <-- SCF
+     10  -1.36251997E+003  5.50507076E+000  -5.48894465E-006      33.91  <-- SCF
+     11  -1.36251997E+003  5.50504182E+000  -9.72964556E-007      34.12  <-- SCF
+     12  -1.36251997E+003  5.50502671E+000   1.74742399E-007      34.36  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Integrated Spin Density     =    0.754334     hbar/2                        
+Integrated |Spin Density|   =    0.841615     hbar/2                        
+ 
+Final energy, E             =  -1362.509506636     eV
+Final free energy (E-TS)    =  -1362.519966383     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -1362.514736510     eV
+ 
+ 
+ ***************** Stress Tensor *****************
+ *                                               *
+ *          Cartesian components (GPa)           *
+ * --------------------------------------------- *
+ *             x             y             z     *
+ *                                               *
+ *  x      0.062757      0.000000     -0.000000  *
+ *  y      0.000000      0.062757      0.000000  *
+ *  z     -0.000000      0.000000      0.062757  *
+ *                                               *
+ *  Pressure:   -0.0628                          *
+ *                                               *
+ *************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.003725 |    -1362.519235 | <-- min BFGS
+ | trial step |    1.000000 |    0.003463 |    -1362.518700 | <-- min BFGS
+ |  line step |   14.227629 |   -0.015038 |    -1362.514895 | <-- min BFGS
+ |  quad step |    3.475842 |   -0.000274 |    -1362.518474 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration     1 with enthalpy= -1.36251847E+003 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   7.612837E-004 |   1.000000E-005 |         eV | No  | <-- BFGS
+ |   Smax    |   6.275699E-002 |   5.000000E-002 |        GPa | No  | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+
+================================================================================
+ Starting BFGS iteration          2 ...
+================================================================================
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.000274 |    -1362.518474 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+
+--------------------------------------------------------------------------------
+ BFGS: starting iteration         2 with trial guess (lambda=  1.000000)
+--------------------------------------------------------------------------------
+ 
+                           -------------------------------
+                                      Unit Cell
+                           -------------------------------
+        Real Lattice(A)              Reciprocal Lattice(1/A)
+  -0.0000000   1.7652592   1.7652592       -1.7796779   1.7796779   1.7796779
+   1.7652592  -0.0000000   1.7652592        1.7796779  -1.7796779   1.7796779
+   1.7652592   1.7652592   0.0000000        1.7796779   1.7796779  -1.7796779
+ 
+                       Lattice parameters(A)       Cell Angles
+                    a =    2.496453          alpha =   60.000000
+                    b =    2.496453          beta  =   60.000000
+                    c =    2.496453          gamma =   60.000000
+ 
+                Current cell volume =   11.001589 A**3
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -1.36250972E+003  0.00000000E+000                        34.62  <-- SCF
+      1  -1.36252022E+003  5.53015000E+000   1.04999677E-002      34.89  <-- SCF
+      2  -1.36252022E+003  5.53015000E+000   4.27539982E-008      35.08  <-- SCF
+      3  -1.36252013E+003  5.49185671E+000  -8.72440514E-005      35.42  <-- SCF
+      4  -1.36252010E+003  5.50900590E+000  -2.94223679E-005      35.73  <-- SCF
+      5  -1.36252011E+003  5.50910345E+000   8.52918133E-006      35.92  <-- SCF
+      6  -1.36252011E+003  5.50909906E+000   4.49326454E-006      36.14  <-- SCF
+      7  -1.36252012E+003  5.50915884E+000   6.11343001E-006      36.36  <-- SCF
+      8  -1.36252012E+003  5.50924838E+000   1.02364778E-006      36.58  <-- SCF
+      9  -1.36252012E+003  5.50924873E+000  -4.99365090E-008      36.75  <-- SCF
+     10  -1.36252012E+003  5.50925289E+000  -3.98765855E-008      36.94  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Integrated Spin Density     =    0.753601     hbar/2                        
+Integrated |Spin Density|   =    0.840889     hbar/2                        
+ 
+Final energy, E             =  -1362.509642665     eV
+Final free energy (E-TS)    =  -1362.520121235     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -1362.514881950     eV
+ 
+ 
+ ***************** Stress Tensor *****************
+ *                                               *
+ *          Cartesian components (GPa)           *
+ * --------------------------------------------- *
+ *             x             y             z     *
+ *                                               *
+ *  x     -0.026816     -0.000000      0.000000  *
+ *  y     -0.000000     -0.026816     -0.000000  *
+ *  z      0.000000     -0.000000     -0.026816  *
+ *                                               *
+ *  Pressure:    0.0268                          *
+ *                                               *
+ *************************************************
+  
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |    Step    |   lambda    |   F.delta'  |    enthalpy     | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+ |  previous  |    0.000000 |    0.000274 |    -1362.518474 | <-- min BFGS
+ | trial step |    1.000000 |   -0.000117 |    -1362.518481 | <-- min BFGS
+ +------------+-------------+-------------+-----------------+ <-- min BFGS
+  
+ BFGS: finished iteration     2 with enthalpy= -1.36251848E+003 eV
+  
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+ |  dE/ion   |   7.122623E-006 |   1.000000E-005 |         eV | Yes | <-- BFGS
+ |   Smax    |   2.681568E-002 |   5.000000E-002 |        GPa | Yes | <-- BFGS
+ +-----------+-----------------+-----------------+------------+-----+ <-- BFGS
+  
+ BFGS: Geometry optimization completed successfully.
+
+================================================================================
+ BFGS: Final Configuration:
+================================================================================
+ 
+                           -------------------------------
+                                      Unit Cell
+                           -------------------------------
+        Real Lattice(A)              Reciprocal Lattice(1/A)
+  -0.0000000   1.7652592   1.7652592       -1.7796779   1.7796779   1.7796779
+   1.7652592  -0.0000000   1.7652592        1.7796779  -1.7796779   1.7796779
+   1.7652592   1.7652592   0.0000000        1.7796779   1.7796779  -1.7796779
+ 
+                       Lattice parameters(A)       Cell Angles
+                    a =    2.496453          alpha =   60.000000
+                    b =    2.496453          beta  =   60.000000
+                    c =    2.496453          gamma =   60.000000
+ 
+                Current cell volume =   11.001589 A**3
+ 
+ BFGS: Final Enthalpy     = -1.36251848E+003 eV
+ BFGS: Final bulk modulus =     222.47387 GPa
+ 
+ ***************************** Symmetrised Forces *****************************
+ *                                                                            *
+ *                        Cartesian components (eV/A)                         *
+ * -------------------------------------------------------------------------- *
+ *                   x                    y                    z              *
+ *                                                                            *
+ * Ni        1      0.00000              0.00000              0.00000         *
+ *                                                                            *
+ ******************************************************************************
+ 
+ *********** Symmetrised Stress Tensor ***********
+ *                                               *
+ *          Cartesian components (GPa)           *
+ * --------------------------------------------- *
+ *             x             y             z     *
+ *                                               *
+ *  x     -0.026816     -0.000000      0.000000  *
+ *  y     -0.000000     -0.026816     -0.000000  *
+ *  z      0.000000     -0.000000     -0.026816  *
+ *                                               *
+ *  Pressure:    0.0268                          *
+ *                                               *
+ *************************************************
+
+Writing analysis data to Ni.castep_bin
+
+Writing model to Ni.check
+ 
+ A BibTeX formatted list of references used in this run has been written to 
+ Ni.bib
+ 
+Initialisation time =      8.47 s
+Calculation time    =     28.59 s
+Finalisation time   =      0.06 s
+Total time          =     37.12 s
