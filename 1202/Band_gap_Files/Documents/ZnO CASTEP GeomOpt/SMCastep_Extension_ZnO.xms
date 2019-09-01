@@ -126,46 +126,17 @@
 	<ITEM>-</ITEM>
 	</VALUE>
 	</PROPERTY>
-	<PROPERTY NAME="PlotPhononDispWithDOS">
-	<VALUE>true</VALUE>
-	</PROPERTY>
-	<PROPERTY NAME="PlotDebyeTemperature">
-	<VALUE>true</VALUE>
-	</PROPERTY>
-	<PROPERTY NAME="PhononUnits">
-	<VALUE>3</VALUE>
-	</PROPERTY>
 	<PROPERTY NAME="BandStructureGenerator">
-	<VALUE>SMXQMUtilities.BandStructureGenerator
-		<STATE NAME="QM Utilities band structure State" VERSION="17.1">
-		<PROPERTIES>
-		</PROPERTIES>
-		</STATE>
-	</VALUE>
+	<VALUE>SMXQMUtilities.BandStructureGenerator</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="DOSGenerator">
-	<VALUE>SMXQMUtilities.DOSGenerator
-		<STATE NAME="QM Utilities DOS Generator State" VERSION="17.1">
-		<PROPERTIES>
-		</PROPERTIES>
-		</STATE>
-	</VALUE>
+	<VALUE>SMXQMUtilities.DOSGenerator</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="PhononDispersionGenerator">
-	<VALUE>SMXQMUtilities.PhononDispersionGenerator
-		<STATE NAME="QM Utilities phonon dispersion State" VERSION="17.1">
-		<PROPERTIES>
-		</PROPERTIES>
-		</STATE>
-	</VALUE>
+	<VALUE>SMXQMUtilities.PhononDispersionGenerator</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="PhononDOSGenerator">
-	<VALUE>SMXQMUtilities.PhononDOSGenerator
-		<STATE NAME="QM Utilities Phonon DOS Generator State" VERSION="17.1">
-		<PROPERTIES>
-		</PROPERTIES>
-		</STATE>
-	</VALUE>
+	<VALUE>SMXQMUtilities.PhononDOSGenerator</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="ThermodynamicsGenerator">
 	<VALUE>SMXQMUtilities.ThermodynamicsGenerator</VALUE>
@@ -310,6 +281,9 @@
 <LOGICITEM NAME="CASTEP">
 	<STATE NAME="CASTEP Setup State" VERSION="17.1">
 	<PROPERTIES>
+	<PROPERTY NAME="Task">
+	<VALUE>2</VALUE>
+	</PROPERTY>
 	</PROPERTIES>
 	</STATE>
 </LOGICITEM>
@@ -334,23 +308,35 @@
 <LOGICITEM NAME="ElasticConstants">
 	<STATE NAME="CASTEP Elastic Constants State" VERSION="17.1">
 	<PROPERTIES>
+	<PROPERTY NAME="EnergyConvergence">
+	<VALUE>2.e-006</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ForceConvergence">
+	<VALUE>6.e-003</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DisplacementConvergence">
+	<VALUE>2.e-004</VALUE>
+	</PROPERTY>
 	</PROPERTIES>
 	</STATE>
 </LOGICITEM>
 <LOGICITEM NAME="Electronic">
 	<STATE NAME="Castep Electronic State" VERSION="17.1">
 	<PROPERTIES>
-	<PROPERTY NAME="TheoryLevel">
-	<VALUE>1</VALUE>
-	</PROPERTY>
 	<PROPERTY NAME="EnergyCutoffQuality">
-	<VALUE>4</VALUE>
+	<VALUE>3</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="FFTQuality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="FFTFineGrid">
+	<VALUE>1.2</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="SCFConvergence">
-	<VALUE>5.e-007</VALUE>
+	<VALUE>1.e-006</VALUE>
 	</PROPERTY>
-	<PROPERTY NAME="DFTDMethod">
-	<VALUE>2</VALUE>
+	<PROPERTY NAME="OptStrategy">
+	<VALUE>3</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="CustomDFTDSetup">
 	<VALUE>true</VALUE>
@@ -368,10 +354,10 @@
 	<VALUE>B3LYP=20 BLYP=20 PBE=20 TPSS=20</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="CustomDFTDLambdaOBS">
-	<VALUE>LDA=0.00075 PW91=0.00075 </VALUE>
+	<VALUE>LDA=0.00075 PW91=0.00075</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="CustomDFTDNOBS">
-	<VALUE>LDA=8 PW91=8 </VALUE>
+	<VALUE>LDA=8 PW91=8</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="CustomDFTDC6TS">
 	<VALUE>
@@ -1358,6 +1344,18 @@
 	<PROPERTY NAME="OptimizeCell">
 	<VALUE>true</VALUE>
 	</PROPERTY>
+	<PROPERTY NAME="EnergyConvergence">
+	<VALUE>1.e-005</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ForceConvergence">
+	<VALUE>3.e-002</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DisplacementConvergence">
+	<VALUE>1.e-003</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="StressConvergence">
+	<VALUE>5.e-002</VALUE>
+	</PROPERTY>
 	</PROPERTIES>
 	</STATE>
 </LOGICITEM>
@@ -1393,14 +1391,11 @@
 <LOGICITEM NAME="KPointSetGenerator">
 	<STATE NAME="QM Utilities k-point set State" VERSION="17.1">
 	<PROPERTIES>
-	<PROPERTY NAME="KPointDerivation">
-	<VALUE>1</VALUE>
-	</PROPERTY>
 	<PROPERTY NAME="KPointQuality">
-	<VALUE>1</VALUE>
+	<VALUE>3</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="KPointOverallQuality">
-	<VALUE>1</VALUE>
+	<VALUE>3</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="DefaultDerivation">
 	<VALUE>
@@ -1417,9 +1412,6 @@
 	<ITEM>7.000000000000001e-002</ITEM>
 	<ITEM>6.e-002</ITEM>
 	</VALUE>
-	</PROPERTY>
-	<PROPERTY NAME="UseInsulatorDerivation">
-	<VALUE>true</VALUE>
 	</PROPERTY>
 	</PROPERTIES>
 	</STATE>
@@ -1439,30 +1431,48 @@
 <LOGICITEM NAME="Properties">
 	<STATE NAME="Castep Properties State" VERSION="17.1">
 	<PROPERTIES>
+	<PROPERTY NAME="KPointQuality">
+	<VALUE>3</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="BandStructure">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DensityOfStates">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OpticalProperties">
+	<VALUE>true</VALUE>
+	</PROPERTY>
 	<PROPERTY NAME="PopulationAnalysis">
 	<VALUE>false</VALUE>
-	</PROPERTY>
-	<PROPERTY NAME="PhononDispersion">
-	<VALUE>true</VALUE>
-	</PROPERTY>
-	<PROPERTY NAME="PhononProperties">
-	<VALUE>false</VALUE>
-	</PROPERTY>
-	<PROPERTY NAME="Polarizability">
-	<VALUE>true</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="BandStructureKPGenerator">
 	<VALUE>SMXQMUtilities.KPointPathGenerator
 		<STATE NAME="QM Utilities k-point path State" VERSION="17.1">
 		<PROPERTIES>
+		<PROPERTY NAME="KPointQuality">
+		<VALUE>3</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="KPointSeparation">
+		<VALUE>1.5e-002</VALUE>
+		</PROPERTY>
 		</PROPERTIES>
 		</STATE>
 	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculatePDOSinDOS">
+	<VALUE>true</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="DOSKPGenerator">
 	<VALUE>SMXQMUtilities.KPointSetGenerator
 		<STATE NAME="QM Utilities k-point set State" VERSION="17.1">
 		<PROPERTIES>
+		<PROPERTY NAME="KPointQuality">
+		<VALUE>3</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="KPointOverallQuality">
+		<VALUE>3</VALUE>
+		</PROPERTY>
 		</PROPERTIES>
 		</STATE>
 	</VALUE>
@@ -1471,6 +1481,12 @@
 	<VALUE>SMXQMUtilities.KPointSetGenerator
 		<STATE NAME="QM Utilities k-point set State" VERSION="17.1">
 		<PROPERTIES>
+		<PROPERTY NAME="KPointQuality">
+		<VALUE>3</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="KPointOverallQuality">
+		<VALUE>3</VALUE>
+		</PROPERTY>
 		</PROPERTIES>
 		</STATE>
 	</VALUE>
@@ -1481,9 +1497,6 @@
 		<PROPERTIES>
 		<PROPERTY NAME="KPointQuality">
 		<VALUE>3</VALUE>
-		</PROPERTY>
-		<PROPERTY NAME="KPathType">
-		<VALUE>2</VALUE>
 		</PROPERTY>
 		<PROPERTY NAME="KPointSeparation">
 		<VALUE>1.5e-002</VALUE>
@@ -1510,6 +1523,12 @@
 	<VALUE>SMXQMUtilities.KPointSetGenerator
 		<STATE NAME="QM Utilities k-point set State" VERSION="17.1">
 		<PROPERTIES>
+		<PROPERTY NAME="KPointQuality">
+		<VALUE>3</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="KPointOverallQuality">
+		<VALUE>3</VALUE>
+		</PROPERTY>
 		</PROPERTIES>
 		</STATE>
 	</VALUE>
@@ -1520,8 +1539,8 @@
 	<PROPERTY NAME="GammaGenerator">
 	<VALUE>SMXQMUtilities.KPointSetGenerator</VALUE>
 	</PROPERTY>
-	<PROPERTY NAME="Raman">
-	<VALUE>true</VALUE>
+	<PROPERTY NAME="OpticsEmax">
+	<VALUE>60.</VALUE>
 	</PROPERTY>
 	</PROPERTIES>
 	</STATE>
@@ -1529,9 +1548,6 @@
 <LOGICITEM NAME="Pseudopotentials">
 	<STATE NAME="Castep Pseudopotential State" VERSION="17.1">
 	<PROPERTIES>
-	<PROPERTY NAME="DefaultPspotScheme">
-	<VALUE>2</VALUE>
-	</PROPERTY>
 	<PROPERTY NAME="CustomPseudopotential">
 	<VALUE>
 	<ITEM>-</ITEM>
@@ -2042,6 +2058,18 @@
 <LOGICITEM NAME="TSSearch">
 	<STATE NAME="Castep Transition State Search State" VERSION="17.1">
 	<PROPERTIES>
+	<PROPERTY NAME="RMSConvergence">
+	<VALUE>5.e-002</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="EnergyConvergence">
+	<VALUE>1.e-005</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ForceConvergence">
+	<VALUE>5.e-002</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DisplacementConvergence">
+	<VALUE>4.e-003</VALUE>
+	</PROPERTY>
 	</PROPERTIES>
 	</STATE>
 </LOGICITEM>
