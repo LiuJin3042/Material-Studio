@@ -1,0 +1,38 @@
+task : Phonon+Efield
+continuation : default
+comment : CASTEP calculation from Materials Studio
+xc_functional : LDA
+spin_polarized : false
+opt_strategy : Default
+page_wvfns :        0
+cut_off_energy :      440.000000000000000
+grid_scale :        1.500000000000000
+fine_grid_scale :        1.500000000000000
+finite_basis_corr :        0
+elec_energy_tol :   1.000000000000000e-010
+elec_eigenvalue_tol :   1.000000000000000e-009
+max_scf_cycles :      100
+fix_occupancy : true
+metals_method : dm
+mixing_scheme : Pulay
+mix_charge_amp :        0.500000000000000
+mix_charge_gmax :        1.500000000000000
+mix_history_length :       20
+nextra_bands : 0
+num_dump_cycles : 0
+efield_ignore_molec_modes : crystal
+efield_calc_ion_permittivity : true
+phonon_max_cycles : 100
+phonon_sum_rule_method : reciprocal
+efield_energy_tol :   1.000000000000000e-005
+excited_state_scissors :   0.000000000000000e+000
+calculate_born_charges : true
+born_charge_sum_rule : true
+bs_max_iter : 200
+efield_max_cycles : 500
+calculate_raman : true
+raman_range_low :   0.000000000000000e+000 cm-1
+raman_range_high :   1.000000000000000e+004 cm-1
+backup_interval : 900
+pdos_calculate_weights : false
+spectral_write_eigenvalues : false

@@ -1,0 +1,1818 @@
+ Job started on host DESKTOP-5CQNRD0
+ at Sun Sep  1 15:22:39 2019
+
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Materials Studio CASTEP version 2017            |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, E. L. Brown, M. S. McFly         |
+ |                                                 |
+ | Copyright (c) 2000 - 2016                       |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ This version was compiled for x86_64-windows-msvc2008 on May 05 2016
+ Intel(R) Math Kernel Library Version 11.1.2 
+ Fundamental constants values: CODATA 2010
+ 
+License checkout of MS_castep successful
+ 
+
+ Warning in parameters_validate: current value of 
+   ELEC_EIGENVALUE_TOL = 0.100000E-08eV
+   is too large to achieve desired level of convergence of response properties.
+   This may cause convergence failures and/or inaccuracy of results
+   of PHONON calculations - recommend you use a smaller value, e.g. 
+   ELEC_EIGENVALUE_TOL = 0.500000E-10eV
+ +-------------------------------------------------+
+ |                                                 |
+ |  D D D D    F F F F F  P P P P     T T T T T    |
+ |  D       D  F          P       P       T        |
+ |  D       D  F F F F    P P P P         T        |
+ |  D       D  F          P               T        |
+ |  D D D D    F          P               T        |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Welcome to Castep Linear Response (DFPT)        |
+ |                                                 |
+ | Copyright (c) 2006 - 2016                       |
+ |                                                 |
+ | Please cite the following publications in all   |
+ | work arising from your use of CASTEP LR.        |
+ |                                                 |
+ | K. Refson, S. J. Clark and P. R. Tulip          |
+ | Variational density functional perturbation     |
+ | theory for dielectrics and lattice dynamics     |
+ | Phys. Rev. B 73(15), 155114 (2006)              |
+ +-------------------------------------------------+
+ 
+Reading continuation data from model file Ge_PhonDOS.check
+ 
+ Pseudo atomic calculation performed for Ge 4s2 4p2
+ 
+ Converged in 17 iterations to a total energy of -102.3132 eV
+ 
+Initialising basis set for model.
+Reinitialising basis set for current geometry.
+Continuing from previous run with ground state wavefunction.
+Continuing from previous run with ground state density.
+ Info: BACKUP_INTERVAL modified from          0 to        900
+ Warning: attempt to modify FINE_GRID_SCALE not allowed
+ Info: ELEC_ENERGY_TOL modified from    0.5000000000000000E-06 eV to    0.1000000000000000E-09 eV
+ Info: ELEC_EIGENVALUE_TOL modified from    0.2500000000000000E-06 eV to    0.1000000000000000E-08 eV
+ Info: BS_MAX_ITER modified from         60 to        250
+ Info: BS_EIGENVALUE_TOL modified from    0.1000000000000000E-05 eV to    0.1000000000000000E-08 eV
+ Info: PHONON_MAX_CYCLES modified from         50 to        100
+ Info: PHONON_FORCE_CONSTANT_CUTOFF modified from     0.000000000000000     A to     11.85006647400522     A
+ Info: PHONON_FINE_METHOD modified from NONE to interpolate
+ Info: SPECTRAL_WRITE_EIGENVALUES modified from T to F
+ 
+ WARNING: Ground state wavefunctions and density data in check file marked as unconverged.
+          because some parameters changed on continuation.
+ 
+ Calculation parallelised over 2 processes.
+ Data is distributed by k-point(2-way)
+
+ ************************************ Title ************************************
+ CASTEP calculation from Materials Studio
+
+ ***************************** General Parameters ******************************
+  
+ output verbosity                               : normal  (1)
+ continuing from                                : Ge_PhonDOS.check
+ write checkpoint data to                       : Ge_PhonDOS.check
+ type of calculation                            : phonon calculation
+ stress calculation                             : off
+ density difference calculation                 : off
+ electron localisation func (ELF) calculation   : off
+ Hirshfeld analysis                             : off
+ unlimited duration calculation
+ timing information                             : on
+ memory usage estimate                          : on
+ write final potential to formatted file        : off
+ write final density to formatted file          : off
+ write BibTeX reference list                    : on
+ write OTFG pseudopotential files               : on
+ checkpoint writing                             : both castep_bin and check files
+  
+ output         length unit                     : A
+ output           mass unit                     : amu
+ output           time unit                     : ps
+ output         charge unit                     : e
+ output           spin unit                     : hbar/2
+ output         energy unit                     : eV
+ output          force unit                     : eV/A
+ output       velocity unit                     : A/ps
+ output       pressure unit                     : GPa
+ output     inv_length unit                     : 1/A
+ output      frequency unit                     : cm-1
+ output force constant unit                     : eV/A**2
+ output         volume unit                     : A**3
+ output   IR intensity unit                     : (D/A)**2/amu
+ output         dipole unit                     : D
+ output         efield unit                     : eV/A/e
+ output        entropy unit                     : J/mol/K
+  
+ wavefunctions paging                           : none
+ random number generator seed                   :  152234988
+ data distribution                              : optimal for this architecture
+ optimization strategy                          : balance speed and memory
+
+ *********************** Exchange-Correlation Parameters ***********************
+  
+ using functional                               : Local Density Approximation
+ relativistic treatment                         : Koelling-Harmon
+ DFT+D: Semi-empirical dispersion correction    : off
+
+ ************************* Pseudopotential Parameters **************************
+  
+ pseudopotential representation                 : reciprocal space
+ <beta|phi> representation                      : reciprocal space
+ spin-orbit coupling                            : off
+
+ **************************** Basis Set Parameters *****************************
+  
+ plane wave basis set cut-off                   :   440.0000   eV
+ size of standard grid                          :     1.5000
+ size of   fine   grid                          :     1.5000
+ size of   fine   gmax                          :    16.1197   1/A
+ largest prime factor in FFT                    :          5
+ finite basis set correction                    : none
+
+ **************************** Electronic Parameters ****************************
+  
+ number of  electrons                           :  8.000    
+ net charge of system                           :  0.000    
+ treating system as non-spin-polarized
+ number of bands                                :          4
+
+ ********************* Electronic Minimization Parameters **********************
+  
+ Method: Treating system as non-metallic,
+         and number of  SD  steps               :          1
+         and number of  CG  steps               :          4
+  
+ total energy / atom convergence tol.           : 0.1000E-09   eV
+ eigen-energy convergence tolerance             : 0.1000E-08   eV
+ max force / atom convergence tol.              : ignored
+ convergence tolerance window                   :          3   cycles
+ max. number of SCF cycles                      :        100
+ periodic dipole correction                     : NONE
+
+ ************************** Density Mixing Parameters **************************
+  
+ density-mixing scheme                          : Pulay
+ max. length of mixing history                  :         20
+ charge density mixing amplitude                : 0.5000    
+ cut-off energy for mixing                      :  440.0       eV
+ charge density mixing g-vector                 :  1.500       1/A
+
+ ****************************** Phonon Parameters ******************************
+  
+ phonon calculation method                      : linear response
+ phonon convergence tolerance                   : 0.1000E-04   eV/A**2
+ max. number of phonon cycles                   :        100
+ max. number of phonon CG steps                 :          0
+ convergence tolerance window                   :          2   cycles
+ DFPT solver method                             : AllBands (Gonze variational method)
+ preconditioning scheme                         : TPA     
+ fine phonon calculation method                 : interpolation
+ non-periodic force constant method             : Weighted cumulant sum
+ force constant cutoff scale factor             :     1.0000
+ LO/TO splitting term                           : included
+ acoustic phonon sum rule                       : correct D(q) in recip-space
+ Born effective charges                         : calculated
+ Born charge sum rule                           : explicitly enforced
+ Raman intensities                              : not calculated
+ phonon k-points                                : use reduced set
+ phonon DOS                                     : not calculated
+ backups results every                          :        900   seconds
+ band convergence tolerance                     : 0.1000E-08   eV
+
+ *******************************************************************************
+  
+ 
+                           -------------------------------
+                                      Unit Cell
+                           -------------------------------
+        Real Lattice(A)                      Reciprocal Lattice(1/A)
+   0.0000000   2.7958833   2.7958833       -1.1236494   1.1236494   1.1236494
+   2.7958833   0.0000000   2.7958833        1.1236494  -1.1236494   1.1236494
+   2.7958833   2.7958833  -0.0000000        1.1236494   1.1236494  -1.1236494
+ 
+                       Lattice parameters(A)       Cell Angles
+                    a =    3.953976          alpha =   60.000000
+                    b =    3.953976          beta  =   60.000000
+                    c =    3.953976          gamma =   60.000000
+ 
+                       Current cell volume =   43.710637       A**3
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+                         Total number of ions in cell =    2
+                      Total number of species in cell =    1
+                        Max number of any one species =    2
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element    Atom        Fractional coordinates of atoms  x
+            x            Number           u          v          w      x
+            x----------------------------------------------------------x
+            x  Ge           1         0.000000   0.000000   0.000000   x 
+            x  Ge           2         0.250000   1.250000   0.250000   x 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+                         No user defined ionic velocities
+ 
+                           -------------------------------
+                                   Details of Species
+                           -------------------------------
+ 
+                               Mass of species in AMU
+                                    Ge   72.5899963
+ 
+                          Electric Quadrupole Moment (Barn)
+                                    Ge   -0.1730000 Isotope 73
+ 
+                          Files used for pseudopotentials:
+                                    Ge Ge_00_OP.recpot
+ 
+                           -------------------------------
+                              k-Points For BZ Sampling
+                           -------------------------------
+                       MP grid size for SCF calculation is  3  3  3
+                            with an offset of   0.000  0.000  0.000
+                       Number of kpoints used =             4
+ 
+                           -------------------------------
+                               Symmetry and Constraints
+                           -------------------------------
+ 
+                      Maximum deviation from symmetry = 0.200000E-14     ANG
+ 
+                      Number of symmetry operations   =          48
+         There are no ionic constraints specified or generated for this cell
+                      Point group of crystal =    32: Oh, m-3m, 4/m -3 2/m
+                      Space group of crystal =   227: Fd-3m, F 4d 2 3 -1d
+ 
+             Set iprint > 1 for details on symmetry rotations/translations
+ 
+                         Centre of mass is NOT constrained
+ 
+                         Number of cell constraints= 5
+                         Cell constraints are:  1 1 1 0 0 0
+ 
+                         External pressure/stress (GPa)
+                          0.00000   0.00000   0.00000
+                                    0.00000   0.00000
+                                              0.00000
+  
++---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+|                                                     Memory          Disk    |
+| Baseline code, static data and system overhead        0.0 MB         0.0 MB |
+| BLAS internal memory storage                          0.0 MB         0.0 MB |
+| Model and support data                                4.9 MB         0.0 MB |
+| Electronic energy minimisation requirements           2.0 MB         0.0 MB |
+| Force calculation requirements                        1.6 MB         0.0 MB |
+|                                               ----------------------------- |
+| Approx. total storage required per process            7.0 MB         0.0 MB |
+|                                                                             |
+| Requirements will fluctuate during execution and may exceed these estimates |
++-----------------------------------------------------------------------------+
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy                           Energy gain       Timer   <-- SCF
+                                               per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -2.14657622E+002                                          0.33  <-- SCF
+      1  -2.14657484E+002                   -6.92435810E-005       0.34  <-- SCF
+      2  -2.14657484E+002                    4.97703259E-010       0.38  <-- SCF
+      3  -2.14657484E+002                   -8.55446359E-011       0.41  <-- SCF
+      4  -2.14657484E+002                   -4.50985423E-011       0.42  <-- SCF
+      5  -2.14657484E+002                    1.58424944E-011       0.44  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy =  -214.6574838467     eV
+(energy not corrected for finite basis set)
+ 
+
+Writing analysis data to Ge_PhonDOS.castep_bin
+
+Writing model to Ge_PhonDOS.check
+
+ Efield perturbation    1:  X                                             0.53s
+  Parallel strategy changed for perturbation using 6 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+  +---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+  |                                                     Memory          Disk    |
+  | Baseline code, static data and system overhead        0.0 MB         0.0 MB |
+  | BLAS internal memory storage                          0.0 MB         0.0 MB |
+  | Model and support data                                4.9 MB         0.0 MB |
+  | DFPT E-field response requirements                    2.3 MB         0.0 MB |
+  |                                               ----------------------------- |
+  | Approx. total storage required per process            7.2 MB         0.0 MB |
+  |                                                                             |
+  | Requirements will fluctuate during execution and may exceed these estimates |
+  +-----------------------------------------------------------------------------+
+ Perturbation    1 (of    1): Ge    1 X at q=( 0.000, 0.000, 0.000):      1.55s
+  Parallel strategy changed for perturbation using 8 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+  +---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+  |                                                     Memory          Disk    |
+  | Baseline code, static data and system overhead        0.0 MB         0.0 MB |
+  | BLAS internal memory storage                          0.0 MB         0.0 MB |
+  | Model and support data                                4.9 MB         0.0 MB |
+  | DFPT phonon calculation requirements                  3.4 MB         0.0 MB |
+  |                                               ----------------------------- |
+  | Approx. total storage required per process            8.4 MB         0.0 MB |
+  |                                                                             |
+  | Requirements will fluctuate during execution and may exceed these estimates |
+  +-----------------------------------------------------------------------------+
+
+ Phonon calculation: q-point   1 (of   16) (-0.333, 0.333, 0.333):        2.69s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    2): Ge    1 X at q=(-0.333, 0.333, 0.333):      2.69s
+  Parallel strategy changed for perturbation using 18 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+  +---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+  |                                                     Memory          Disk    |
+  | Baseline code, static data and system overhead        0.0 MB         0.0 MB |
+  | BLAS internal memory storage                          0.0 MB         0.0 MB |
+  | Model and support data                                4.9 MB         0.0 MB |
+  | DFPT phonon calculation requirements                  6.4 MB         0.0 MB |
+  |                                               ----------------------------- |
+  | Approx. total storage required per process           11.3 MB         0.0 MB |
+  |                                                                             |
+  | Requirements will fluctuate during execution and may exceed these estimates |
+  +-----------------------------------------------------------------------------+
+ Perturbation    2 (of    2): Ge    1 Y at q=(-0.333, 0.333, 0.333):      4.03s
+  Parallel strategy changed for perturbation using 27 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+  +---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+  |                                                     Memory          Disk    |
+  | Baseline code, static data and system overhead        0.0 MB         0.0 MB |
+  | BLAS internal memory storage                          0.0 MB         0.0 MB |
+  | Model and support data                                4.9 MB         0.0 MB |
+  | DFPT phonon calculation requirements                  9.3 MB         0.0 MB |
+  |                                               ----------------------------- |
+  | Approx. total storage required per process           14.2 MB         0.0 MB |
+  |                                                                             |
+  | Requirements will fluctuate during execution and may exceed these estimates |
+  +-----------------------------------------------------------------------------+
+
+ Phonon calculation: q-point   2 (of   16) (-0.000,-0.000,-0.000):        5.72s
+ -------------------------------------------------------------------------------
+
+ Phonon calculation: q-point   3 (of   16) (-0.000, 0.167, 0.500):        5.72s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    2): Ge    1 X at q=(-0.000, 0.167, 0.500):      5.72s
+  Parallel strategy changed for perturbation using 18 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ Perturbation    2 (of    2): Ge    1 Y at q=(-0.000, 0.167, 0.500):      7.59s
+  Parallel strategy changed for perturbation using 27 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+
+ Phonon calculation: q-point   4 (of   16) ( 0.167, 0.167,-0.000):        9.94s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    2): Ge    1 X at q=( 0.167, 0.167,-0.000):      9.94s
+  Parallel strategy changed for perturbation using 27 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ Perturbation    2 (of    2): Ge    1 Z at q=( 0.167, 0.167,-0.000):     12.41s
+  Parallel strategy changed for perturbation using 12 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+
+ Phonon calculation: q-point   5 (of   16) ( 0.167, 0.167, 0.167):       14.31s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    1): Ge    1 X at q=( 0.167, 0.167, 0.167):     14.31s
+  Parallel strategy changed for perturbation using 18 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+
+ Phonon calculation: q-point   6 (of   16) ( 0.333,-0.000, 0.500):       17.14s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    2): Ge    1 X at q=( 0.333,-0.000, 0.500):     17.14s
+  Parallel strategy changed for perturbation using 27 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ Perturbation    2 (of    2): Ge    1 Y at q=( 0.333,-0.000, 0.500):     21.67s
+  Parallel strategy changed for perturbation using 18 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+
+ Phonon calculation: q-point   7 (of   16) ( 0.333, 0.167, 0.167):       25.02s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    2): Ge    1 X at q=( 0.333, 0.167, 0.167):     25.02s
+  Parallel strategy changed for perturbation using 18 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ Perturbation    2 (of    2): Ge    1 Y at q=( 0.333, 0.167, 0.167):     27.91s
+  Parallel strategy changed for perturbation using 27 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+
+ Phonon calculation: q-point   8 (of   16) ( 0.333, 0.167, 0.333):       31.62s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    2): Ge    1 X at q=( 0.333, 0.167, 0.333):     31.62s
+  Parallel strategy changed for perturbation using 27 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ Perturbation    2 (of    2): Ge    1 Y at q=( 0.333, 0.167, 0.333):     34.80s
+  Parallel strategy changed for perturbation using 18 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+
+ Phonon calculation: q-point   9 (of   16) ( 0.333, 0.333,-0.000):       36.77s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    2): Ge    1 X at q=( 0.333, 0.333,-0.000):     36.77s
+  Parallel strategy changed for perturbation using 27 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ Perturbation    2 (of    2): Ge    1 Z at q=( 0.333, 0.333,-0.000):     38.98s
+  Parallel strategy changed for perturbation using 12 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+
+ Phonon calculation: q-point  10 (of   16) ( 0.333, 0.333, 0.333):       40.56s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    1): Ge    1 X at q=( 0.333, 0.333, 0.333):     40.56s
+  Parallel strategy changed for perturbation using 18 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+
+ Phonon calculation: q-point  11 (of   16) ( 0.500,-0.000,-0.000):       42.38s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    1): Ge    1 X at q=( 0.500,-0.000,-0.000):     42.38s
+  Parallel strategy changed for perturbation using 10 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+
+ Phonon calculation: q-point  12 (of   16) ( 0.500,-0.000, 0.500):       44.17s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    2): Ge    1 X at q=( 0.500,-0.000, 0.500):     44.17s
+  Parallel strategy changed for perturbation using 14 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ Perturbation    2 (of    2): Ge    1 Y at q=( 0.500,-0.000, 0.500):     46.00s
+  Parallel strategy changed for perturbation using 8 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+
+ Phonon calculation: q-point  13 (of   16) ( 0.500, 0.167,-0.333):       47.53s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    3): Ge    1 X at q=( 0.500, 0.167,-0.333):     47.53s
+  Parallel strategy changed for perturbation using 27 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ Perturbation    2 (of    3): Ge    1 Y at q=( 0.500, 0.167,-0.333):     49.72s
+ Perturbation    3 (of    3): Ge    1 Z at q=( 0.500, 0.167,-0.333):     51.03s
+
+ Phonon calculation: q-point  14 (of   16) ( 0.500, 0.167, 0.333):       52.34s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    3): Ge    1 X at q=( 0.500, 0.167, 0.333):     52.34s
+  Parallel strategy changed for perturbation using 27 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ Perturbation    2 (of    3): Ge    1 Y at q=( 0.500, 0.167, 0.333):     54.64s
+ Perturbation    3 (of    3): Ge    1 Z at q=( 0.500, 0.167, 0.333):     56.03s
+
+ Phonon calculation: q-point  15 (of   16) ( 0.500, 0.333,-0.333):       57.41s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    2): Ge    1 X at q=( 0.500, 0.333,-0.333):     57.41s
+  Parallel strategy changed for perturbation using 27 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ Perturbation    2 (of    2): Ge    1 Y at q=( 0.500, 0.333,-0.333):     59.84s
+
+ Phonon calculation: q-point  16 (of   16) ( 0.500, 0.333, 0.333):       61.27s
+ -------------------------------------------------------------------------------
+ Perturbation    1 (of    2): Ge    1 X at q=( 0.500, 0.333, 0.333):     61.27s
+  Parallel strategy changed for perturbation using 18 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ Perturbation    2 (of    2): Ge    1 Y at q=( 0.500, 0.333, 0.333):     63.16s
+  Parallel strategy changed for perturbation using 27 k-points
+  Data is distributed by G-vector(1-way) and k-point(2-way) and band(1-way)
+ 
+ ==============================================================================
+ +                           Vibrational Frequencies                          +
+ +                           -----------------------                          +
+ +                                                                            +
+ + Performing frequency calculation at  60 wavevectors (q-pts)                +
+ + ========================================================================== +
+ +                                                                            +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=    1 (  0.437500  0.437500  0.437500)     0.0039062500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.009788 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      53.096254   a                                                   + 
+ +     2      53.096254   a                                                   + 
+ +     3     202.350275   b                                                   + 
+ +     4     255.915527   b                                                   + 
+ +     5     299.305826   a                                                   + 
+ +     6     299.305826   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   3   m                                                   +
+ +           | ------------                                                   +
+ + a       2 |    2  -1   0                                                   +
+ + b       2 |    1   1   1                                                   +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=    2 (  0.437500  0.437500  0.312500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.012317 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      76.892732   a                                                   + 
+ +     2      99.786628   b                                                   + 
+ +     3     186.587371   b                                                   + 
+ +     4     261.411181   b                                                   + 
+ +     5     283.815984   b                                                   + 
+ +     6     290.590656   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=    3 (  0.437500  0.437500  0.187500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.017627 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      89.946283   a                                                   + 
+ +     2     128.051693   b                                                   + 
+ +     3     174.885850   b                                                   + 
+ +     4     255.862322   b                                                   + 
+ +     5     279.763019   a                                                   + 
+ +     6     279.832484   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=    4 (  0.437500  0.437500  0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.034811 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      75.301407   a                                                   + 
+ +     2      85.208191   b                                                   + 
+ +     3     198.650218   b                                                   + 
+ +     4     261.053883   b                                                   + 
+ +     5     276.434725   a                                                   + 
+ +     6     278.560600   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=    5 (  0.437500  0.437500 -0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.035288 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      74.516147   a                                                   + 
+ +     2      86.258358   b                                                   + 
+ +     3     219.194292   b                                                   + 
+ +     4     241.608886   b                                                   + 
+ +     5     278.242547   b                                                   + 
+ +     6     278.612410   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=    6 (  0.437500  0.437500 -0.187500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.018208 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      80.883563   a                                                   + 
+ +     2     132.484294   b                                                   + 
+ +     3     210.494445   b                                                   + 
+ +     4     222.959467   b                                                   + 
+ +     5     276.891154   a                                                   + 
+ +     6     280.299427   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=    7 (  0.437500  0.437500 -0.312500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.011526 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      90.808093   a                                                   + 
+ +     2     138.773410   b                                                   + 
+ +     3     198.026084   b                                                   + 
+ +     4     225.947636   b                                                   + 
+ +     5     275.280352   a                                                   + 
+ +     6     277.772014   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=    8 (  0.437500  0.437500 -0.437500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.013102 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      79.717729   a                                                   + 
+ +     2      98.649259   b                                                   + 
+ +     3     211.713605   b                                                   + 
+ +     4     234.524687   b                                                   + 
+ +     5     286.368023   b                                                   + 
+ +     6     289.359988   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=    9 (  0.437500  0.312500  0.312500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.013506 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      82.843138   a                                                   + 
+ +     2      96.021103   b                                                   + 
+ +     3     175.472010   b                                                   + 
+ +     4     264.242184   b                                                   + 
+ +     5     287.751570   a                                                   + 
+ +     6     288.669533   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   10 (  0.437500  0.312500  0.187500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.013773 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1     102.528979   a                                                   + 
+ +     2     120.811836   a                                                   + 
+ +     3     160.807395   a                                                   + 
+ +     4     259.697272   a                                                   + 
+ +     5     280.554640   a                                                   + 
+ +     6     284.307848   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   11 (  0.437500  0.312500  0.062500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.031700 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      92.601812   a                                                   + 
+ +     2     109.102768   a                                                   + 
+ +     3     176.178970   a                                                   + 
+ +     4     261.000475   a                                                   + 
+ +     5     277.837027   a                                                   + 
+ +     6     281.190273   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   12 (  0.437500  0.312500 -0.062500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.033263 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      92.059327   a                                                   + 
+ +     2     111.891945   a                                                   + 
+ +     3     195.955300   a                                                   + 
+ +     4     247.915285   a                                                   + 
+ +     5     276.614716   a                                                   + 
+ +     6     280.084805   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   13 (  0.437500  0.312500 -0.187500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.019737 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1     114.079426   a                                                   + 
+ +     2     134.459813   a                                                   + 
+ +     3     207.683270   a                                                   + 
+ +     4     222.243804   a                                                   + 
+ +     5     272.857919   a                                                   + 
+ +     6     275.509312   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   14 (  0.437500  0.312500 -0.312500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.009869 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1     111.950772   a                                                   + 
+ +     2     143.671647   a                                                   + 
+ +     3     197.643232   a                                                   + 
+ +     4     221.221856   a                                                   + 
+ +     5     267.040621   a                                                   + 
+ +     6     275.425754   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   15 (  0.437500  0.312500 -0.437500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.012780 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1     103.438273   a                                                   + 
+ +     2     128.685362   a                                                   + 
+ +     3     192.030287   a                                                   + 
+ +     4     235.118807   a                                                   + 
+ +     5     274.722845   a                                                   + 
+ +     6     280.324316   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   16 (  0.437500  0.187500  0.187500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.022374 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      94.489395   a                                                   + 
+ +     2     121.019136   b                                                   + 
+ +     3     161.660969   b                                                   + 
+ +     4     257.884113   b                                                   + 
+ +     5     284.265266   a                                                   + 
+ +     6     286.194532   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   17 (  0.437500  0.187500  0.062500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.032686 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      89.079874   a                                                   + 
+ +     2     113.904011   a                                                   + 
+ +     3     171.534104   a                                                   + 
+ +     4     263.707104   a                                                   + 
+ +     5     280.243937   a                                                   + 
+ +     6     286.812692   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   18 (  0.437500  0.187500 -0.062500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.031352 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      97.520798   a                                                   + 
+ +     2     132.717595   a                                                   + 
+ +     3     181.673781   a                                                   + 
+ +     4     246.786782   a                                                   + 
+ +     5     277.125688   a                                                   + 
+ +     6     281.107015   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   19 (  0.437500  0.187500 -0.187500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.022935 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1     124.757135   a                                                   + 
+ +     2     139.773782   a                                                   + 
+ +     3     191.736977   a                                                   + 
+ +     4     226.262680   a                                                   + 
+ +     5     267.649104   a                                                   + 
+ +     6     275.560477   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   20 (  0.437500  0.187500 -0.312500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.018800 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1     132.411763   a                                                   + 
+ +     2     144.084538   a                                                   + 
+ +     3     201.455592   a                                                   + 
+ +     4     216.203464   a                                                   + 
+ +     5     267.623638   a                                                   + 
+ +     6     271.890535   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   21 (  0.437500  0.187500 -0.437500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.017823 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1     114.545986   a                                                   + 
+ +     2     132.398051   a                                                   + 
+ +     3     191.809667   a                                                   + 
+ +     4     235.449023   a                                                   + 
+ +     5     274.019487   a                                                   + 
+ +     6     277.240256   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   22 (  0.437500  0.062500  0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.045856 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      64.136818   a                                                   + 
+ +     2      66.505940   b                                                   + 
+ +     3     188.540616   b                                                   + 
+ +     4     266.919345   b                                                   + 
+ +     5     294.214639   b                                                   + 
+ +     6     294.356771   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   23 (  0.437500  0.062500 -0.062500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.040338 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      75.751717   a                                                   + 
+ +     2      90.311493   a                                                   + 
+ +     3     201.178340   a                                                   + 
+ +     4     248.874445   a                                                   + 
+ +     5     288.029764   a                                                   + 
+ +     6     291.810865   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   24 (  0.437500  0.062500 -0.187500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.031435 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      96.773204   a                                                   + 
+ +     2     132.500541   a                                                   + 
+ +     3     197.578042   a                                                   + 
+ +     4     227.162129   a                                                   + 
+ +     5     274.201750   a                                                   + 
+ +     6     278.806526   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   25 (  0.437500  0.062500 -0.312500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.033046 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      92.146200   a                                                   + 
+ +     2     141.716689   a                                                   + 
+ +     3     204.633730   a                                                   + 
+ +     4     219.617288   a                                                   + 
+ +     5     272.352499   a                                                   + 
+ +     6     278.379802   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   26 (  0.437500  0.062500 -0.437500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.033536 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      89.897673   a                                                   + 
+ +     2     112.807288   a                                                   + 
+ +     3     214.854611   a                                                   + 
+ +     4     232.110994   a                                                   + 
+ +     5     276.951997   a                                                   + 
+ +     6     278.513207   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   27 (  0.437500 -0.062500 -0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.047708 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      62.610997   a                                                   + 
+ +     2      70.267061   b                                                   + 
+ +     3     218.435623   b                                                   + 
+ +     4     236.850557   b                                                   + 
+ +     5     295.436044   b                                                   + 
+ +     6     297.739322   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   28 (  0.437500 -0.062500 -0.187500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.032814 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      90.058129   a                                                   + 
+ +     2     115.161320   a                                                   + 
+ +     3     205.115330   a                                                   + 
+ +     4     233.593173   a                                                   + 
+ +     5     281.031623   a                                                   + 
+ +     6     283.628701   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   29 (  0.437500 -0.062500 -0.312500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.030755 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      97.588948   a                                                   + 
+ +     2     140.979267   a                                                   + 
+ +     3     194.867395   a                                                   + 
+ +     4     229.637767   a                                                   + 
+ +     5     274.147672   a                                                   + 
+ +     6     278.481010   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   30 (  0.437500 -0.187500 -0.187500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.023488 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      90.868898   a                                                   + 
+ +     2     123.474173   b                                                   + 
+ +     3     194.323536   b                                                   + 
+ +     4     233.890364   b                                                   + 
+ +     5     279.135433   a                                                   + 
+ +     6     282.527480   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   31 (  0.437500 -0.187500 -0.312500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.015304 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1     110.916300   a                                                   + 
+ +     2     136.649320   a                                                   + 
+ +     3     182.885532   a                                                   + 
+ +     4     234.218178   a                                                   + 
+ +     5     271.156821   a                                                   + 
+ +     6     280.596884   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   32 (  0.437500 -0.312500 -0.312500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.010458 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      93.942827   a                                                   + 
+ +     2     137.346434   b                                                   + 
+ +     3     184.334262   b                                                   + 
+ +     4     230.391092   b                                                   + 
+ +     5     273.279075   a                                                   + 
+ +     6     282.139404   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   33 (  0.312500  0.312500  0.312500)     0.0039062500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.019652 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      55.697099   a                                                   + 
+ +     2      55.697099   a                                                   + 
+ +     3     164.038409   b                                                   + 
+ +     4     283.888519   b                                                   + 
+ +     5     294.940561   a                                                   + 
+ +     6     294.940561   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   3   m                                                   +
+ +           | ------------                                                   +
+ + a       2 |    2  -1   0                                                   +
+ + b       2 |    1   1   1                                                   +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   34 (  0.312500  0.312500  0.187500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.019557 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      78.442509   a                                                   + 
+ +     2      95.034014   b                                                   + 
+ +     3     147.560159   b                                                   + 
+ +     4     277.635665   b                                                   + 
+ +     5     288.312034   b                                                   + 
+ +     6     288.511001   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   35 (  0.312500  0.312500  0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.033163 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      82.314783   a                                                   + 
+ +     2      88.629162   b                                                   + 
+ +     3     157.851291   b                                                   + 
+ +     4     272.573028   b                                                   + 
+ +     5     275.285357   a                                                   + 
+ +     6     285.997881   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   36 (  0.312500  0.312500 -0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.036286 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      76.916970   a                                                   + 
+ +     2      84.642570   b                                                   + 
+ +     3     179.463074   b                                                   + 
+ +     4     270.040986   b                                                   + 
+ +     5     274.556295   a                                                   + 
+ +     6     282.242683   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   37 (  0.312500  0.312500 -0.187500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.021041 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      87.383762   a                                                   + 
+ +     2     132.646452   b                                                   + 
+ +     3     194.271105   b                                                   + 
+ +     4     237.513184   b                                                   + 
+ +     5     277.319243   a                                                   + 
+ +     6     280.705909   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   38 (  0.312500  0.312500 -0.312500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.013429 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      84.767466   a                                                   + 
+ +     2     140.593134   b                                                   + 
+ +     3     198.911949   b                                                   + 
+ +     4     221.396308   b                                                   + 
+ +     5     271.182807   a                                                   + 
+ +     6     278.533295   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   39 (  0.312500  0.187500  0.187500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.026858 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      80.111712   a                                                   + 
+ +     2      93.530208   b                                                   + 
+ +     3     134.716019   b                                                   + 
+ +     4     280.466717   b                                                   + 
+ +     5     287.755312   b                                                   + 
+ +     6     296.069857   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   40 (  0.312500  0.187500  0.062500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.032635 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      87.800104   a                                                   + 
+ +     2      98.281030   a                                                   + 
+ +     3     136.648985   a                                                   + 
+ +     4     277.710859   a                                                   + 
+ +     5     283.611072   a                                                   + 
+ +     6     289.448392   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   41 (  0.312500  0.187500 -0.062500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.033094 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      92.090089   a                                                   + 
+ +     2     106.522795   a                                                   + 
+ +     3     155.684377   a                                                   + 
+ +     4     269.270922   a                                                   + 
+ +     5     279.366959   a                                                   + 
+ +     6     284.125409   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   42 (  0.312500  0.187500 -0.187500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.021091 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1     110.797817   a                                                   + 
+ +     2     127.972185   a                                                   + 
+ +     3     175.487319   a                                                   + 
+ +     4     248.016502   a                                                   + 
+ +     5     276.464099   a                                                   + 
+ +     6     280.898370   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   43 (  0.312500  0.187500 -0.312500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.016535 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1     111.343573   a                                                   + 
+ +     2     138.121660   a                                                   + 
+ +     3     196.245593   a                                                   + 
+ +     4     225.522529   a                                                   + 
+ +     5     268.969926   a                                                   + 
+ +     6     276.780677   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   44 (  0.312500  0.062500  0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.042803 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      68.289534   a                                                   + 
+ +     2      70.702213   b                                                   + 
+ +     3     150.365388   b                                                   + 
+ +     4     282.639021   b                                                   + 
+ +     5     292.234748   b                                                   + 
+ +     6     295.107980   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   45 (  0.312500  0.062500 -0.062500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.039806 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      76.835670   a                                                   + 
+ +     2      88.870878   a                                                   + 
+ +     3     162.369483   a                                                   + 
+ +     4     276.509354   a                                                   + 
+ +     5     286.759595   a                                                   + 
+ +     6     291.131018   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   46 (  0.312500  0.062500 -0.187500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.030229 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1     100.349993   a                                                   + 
+ +     2     131.615242   a                                                   + 
+ +     3     173.327032   a                                                   + 
+ +     4     243.466127   a                                                   + 
+ +     5     277.393456   a                                                   + 
+ +     6     284.672059   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   47 (  0.312500  0.062500 -0.312500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.031650 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      95.930365   a                                                   + 
+ +     2     139.824137   a                                                   + 
+ +     3     191.944445   a                                                   + 
+ +     4     225.162072   a                                                   + 
+ +     5     269.479143   a                                                   + 
+ +     6     278.819769   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   48 (  0.312500 -0.062500 -0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.050322 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      60.141689   a                                                   + 
+ +     2      70.241511   b                                                   + 
+ +     3     175.820982   b                                                   + 
+ +     4     277.372486   b                                                   + 
+ +     5     291.297990   b                                                   + 
+ +     6     294.280502   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   49 (  0.312500 -0.062500 -0.187500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.032460 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      91.879893   a                                                   + 
+ +     2     114.040479   a                                                   + 
+ +     3     185.481277   a                                                   + 
+ +     4     248.275201   a                                                   + 
+ +     5     281.358011   a                                                   + 
+ +     6     285.984121   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   50 (  0.312500 -0.187500 -0.187500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.025437 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      89.625134   a                                                   + 
+ +     2     125.544845   b                                                   + 
+ +     3     193.956881   b                                                   + 
+ +     4     241.289450   b                                                   + 
+ +     5     278.782780   b                                                   + 
+ +     6     283.179929   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   51 (  0.187500  0.187500  0.187500)     0.0039062500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.036665 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      61.610373   a                                                   + 
+ +     2      61.610373   a                                                   + 
+ +     3     118.339498   b                                                   + 
+ +     4     286.822836   b                                                   + 
+ +     5     303.129427   a                                                   + 
+ +     6     303.129427   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   3   m                                                   +
+ +           | ------------                                                   +
+ + a       2 |    2  -1   0                                                   +
+ + b       2 |    1   1   1                                                   +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   52 (  0.187500  0.187500  0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.037126 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      75.716915   a                                                   + 
+ +     2      77.709688   b                                                   + 
+ +     3     107.796590   b                                                   + 
+ +     4     290.586361   b                                                   + 
+ +     5     295.281651   a                                                   + 
+ +     6     297.907146   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   53 (  0.187500  0.187500 -0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.034073 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      84.851378   a                                                   + 
+ +     2      89.700723   b                                                   + 
+ +     3     132.763376   b                                                   + 
+ +     4     279.693960   b                                                   + 
+ +     5     282.240149   a                                                   + 
+ +     6     288.818214   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   54 (  0.187500  0.187500 -0.187500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.027816 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      86.526119   a                                                   + 
+ +     2     116.650654   b                                                   + 
+ +     3     158.364553   b                                                   + 
+ +     4     269.449094   b                                                   + 
+ +     5     281.551442   b                                                   + 
+ +     6     283.386208   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   55 (  0.187500  0.062500  0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.049227 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      59.691802   a                                                   + 
+ +     2      66.120442   b                                                   + 
+ +     3     101.537704   b                                                   + 
+ +     4     293.095556   b                                                   + 
+ +     5     302.475389   b                                                   + 
+ +     6     308.492367   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   56 (  0.187500  0.062500 -0.062500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.040420 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      75.161133   a                                                   + 
+ +     2      82.574586   a                                                   + 
+ +     3     119.656367   a                                                   + 
+ +     4     285.376003   a                                                   + 
+ +     5     292.289436   a                                                   + 
+ +     6     299.306793   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   57 (  0.187500  0.062500 -0.187500)     0.0234375000              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.032884 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      91.389174   a                                                   + 
+ +     2     108.049471   a                                                   + 
+ +     3     148.154858   a                                                   + 
+ +     4     271.619478   a                                                   + 
+ +     5     284.811933   a                                                   + 
+ +     6     288.903648   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E                                                           +
+ +           | ----                                                           +
+ + a       6 |    1                                                           +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   58 (  0.187500 -0.062500 -0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.044304 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      68.412269   a                                                   + 
+ +     2      72.380241   b                                                   + 
+ +     3     135.053095   b                                                   + 
+ +     4     283.175921   b                                                   + 
+ +     5     295.575019   a                                                   + 
+ +     6     296.825460   b                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       2 |    1  -1                                                       +
+ + b       4 |    1   1                                                       +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   59 (  0.062500  0.062500  0.062500)     0.0039062500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.102986 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      29.010941   a                                                   + 
+ +     2      29.010941   a                                                   + 
+ +     3      68.756502   b                                                   + 
+ +     4     313.609773   b                                                   + 
+ +     5     317.723987   a                                                   + 
+ +     6     317.723987   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   3   m                                                   +
+ +           | ------------                                                   +
+ + a       2 |    2  -1   0                                                   +
+ + b       2 |    1   1   1                                                   +
+ + -------------------------------------------------------------------------- +
+ +  q-pt=   60 (  0.062500  0.062500 -0.062500)     0.0117187500              +
+ + -------------------------------------------------------------------------- +
+ +  Acoustic sum rule correction <   0.056993 cm-1 applied                    +
+ +     N      Frequency irrep.                                                + 
+ +                (cm-1)                                                      + 
+ +                                                                            +
+ +     1      53.767605   a                                                   + 
+ +     2      54.380764   b                                                   + 
+ +     3      85.371360   a                                                   + 
+ +     4     302.378021   a                                                   + 
+ +     5     308.985867   b                                                   + 
+ +     6     310.967420   a                                                   + 
+ + .......................................................................... +
+ +        Character table from group theory analysis of eigenvectors          +
+ +                           Point Group =  32, Oh                            +
+ + .......................................................................... +
+ +  Rep  Mul |    E   m                                                       +
+ +           | --------                                                       +
+ + a       4 |    1   1                                                       +
+ + b       2 |    1  -1                                                       +
+ ==============================================================================
+ ===================================================
+                   Born Effective Charges
+                   ----------------------
+   Ge      1         0.00000     0.00000     0.00000
+                     0.00000     0.00000     0.00000
+                     0.00000     0.00000     0.00000
+   Ge      2         0.00000     0.00000     0.00000
+                     0.00000     0.00000     0.00000
+                     0.00000     0.00000     0.00000
+ ===================================================
+ 
+ ***************** Symmetrised Forces *****************
+ *                                                    *
+ *            Cartesian components (eV/A)             *
+ * -------------------------------------------------- *
+ *                   x            y            z      *
+ *                                                    *
+ * Ge        1      0.00000      0.00000      0.00000 *
+ * Ge        2      0.00000      0.00000      0.00000 *
+ *                                                    *
+ ******************************************************
+
+Writing analysis data to Ge_PhonDOS.castep_bin
+
+Writing model to Ge_PhonDOS.check
+ 
+ A BibTeX formatted list of references used in this run has been written to 
+ Ge_PhonDOS.bib
+ 
+Initialisation time =      0.23 s
+Calculation time    =     65.48 s
+Finalisation time   =      0.02 s
+Total time          =     65.73 s
+  
+Overall parallel efficiency rating: Excellent (93%)                             
+  
+Data was distributed by:-
+k-point (2-way); efficiency rating: Excellent (97%)                             
+  
+Parallel notes:
+1) Calculation only took 65.8 s, so efficiency estimates may be inaccurate.     
+                             Thermodynamics
+                             ==============
+ 
+            Zero-point energy =         0.074190  eV
+ ------------------------------------------------------------------------------ 
+       T(K)        E(eV)           F(eV)         S(J/mol/K)      Cv(J/mol/K)   
+ ------------------------------------------------------------------------------ 
+     298.0        0.167551       -0.014654          58.994          45.736     
+ ------------------------------------------------------------------------------ 
+ 
+ ==============================================================================
+                      Atomic Displacement Parameters (A**2)
+                      ==============================
+ 
+ ------------------------------------------------------------------------------ 
+      T(K)  Ion        U11       U22       U33       U23       U31       U12    
+ ------------------------------------------------------------------------------ 
+     298.0  Ge 1     0.005178  0.005178  0.005178 -0.000000 -0.000000  0.000000
+     298.0  Ge 2     0.005178  0.005178  0.005178 -0.000000 -0.000000  0.000000
+ ------------------------------------------------------------------------------ 
+ 
+ 
