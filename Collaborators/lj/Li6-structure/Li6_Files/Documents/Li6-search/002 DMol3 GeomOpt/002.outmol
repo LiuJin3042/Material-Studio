@@ -1,0 +1,1208 @@
+ 
+     ===============================================================
+     Materials Studio DMol^3 version 2017            
+     compiled on May 19 2016 09:59:33
+     ===============================================================
+ 
+     ===============================================================
+     Density Functional Theory Electronic Structure Program
+     Copyright (c) 2016, Dassault Systemes, all rights reserved.
+     Cite work using this program as: 
+     B. Delley, J. Chem. Phys. 92,  508  (1990).
+     B. Delley, J. Chem. Phys. 113, 7756 (2000).
+     DMol^3 is available as part of Materials Studio.
+     ===============================================================
+ 
+ 
+DATE:     Oct 20 13:39:04 2019
+ 
+Job started on host YAESAKURA
+
+This run uses    8 processors
+
+Message: License checkout of MS_dmol successful
+ 
+Basis set is read from file:
+C:\Program Files (x86)\BIOVIA\Materials Studio 17.1 x64 Server\share\Resources\Quantum\DMol3\BASFILE_v3.5
+
+ 
+ parallel run with   8 processors
+ 
+ no INCOOR file: try ZMAT
+ no ZMAT file: try CAR
+
+Geometry is read from file: 002.car                                                                                                                                                                                                                                                         
+
+INCOOR, atomic coordinates in au (for archive):
+______________________________________________________________________>8
+
+$coordinates
+Li          -15.27049190342798    3.36907510114568   -2.09269871679818
+Li          -18.08577698108235   -0.41922162079622    0.71347365172665
+Li          -13.33910508415265   -1.33172928390967    0.54878743466857
+Li          -15.76273889306346    2.97567032529512    3.49403167079847
+Li          -16.11077785853888   -2.14892237192313    5.49023116775534
+Li          -16.19881558588086   -3.39010221601931   -1.47878373450167
+$end
+______________________________________________________________________>8
+
+
+N_atoms =    6     N_atom_types =  1
+
+
+INPUT_DMOL keywords (for archive):
+______________________________________________________________________>8
+
+#Warning: no global confinement specs in BASFILE
+                                                                                                                                    <--
+# Task parameters                                                                                                                   <--
+Calculate                     optimize                                                                                              <--
+Opt_energy_convergence        2.0000e-005                                                                                           <--
+Opt_gradient_convergence      4.0000e-003 A                                                                                         <--
+Opt_displacement_convergence  5.0000e-003 A                                                                                         <--
+Opt_iterations                500                                                                                                   <--
+Opt_max_displacement          0.3000 A                                                                                              <--
+Initial_hessian               improved                                                                                              <--
+Symmetry                      off                                                                                                   <--
+Max_memory                    4096                                                                                                  <--
+File_usage                    smart                                                                                                 <--
+Scf_density_convergence       1.000000e-005                                                                                         <--
+Scf_charge_mixing             2.000000e-001                                                                                         <--
+Scf_spin_mixing               5.000000e-001                                                                                         <--
+Scf_diis                      6 pulay                                                                                               <--
+Scf_iterations                500                                                                                                   <--
+                                                                                                                                    <--
+# Electronic parameters                                                                                                             <--
+Spin_polarization             unrestricted                                                                                          <--
+Charge                        0                                                                                                     <--
+Basis                         dnd                                                                                                   <--
+Pseudopotential               dspp                                                                                                  <--
+Functional                    gga(p91)                                                                                              <--
+Aux_density                   hexadecapole                                                                                          <--
+Integration_grid              medium                                                                                                <--
+Occupation                    fermi                                                                                                 <--
+Cutoff_Global                 4.4000 angstrom                                                                                       <--
+                                                                                                                                    <--
+# Calculated properties                                                                                                             <--
+______________________________________________________________________>8
+
+
+Publications of specific relevance to this calculation:
+
+Density functional:
+ P91 exchange: Perdew, Physica B 172, 1 (1991)
+
+Spin unrestricted calculation
+
+
+ The Generation and Use of Delocalized Internal Coordinates in Geometry optimization; 
+ Baker Kessi Delley: J. Chem. Phys., 105, 192 (1996) 
+ Andzelm Fitzgerald King-Smith: Chem. Phys. Lett., 335, 321 (2001)
+
+ Hardness conserving semilocal pseudopotentials; Delley: Phys. Rev. B 66, 155125 (2002)
+
+Parallel eigenvalue solution:
+Parallel solution of partial symmetric eigenvalue problems from electronic structure calculations:
+Auckenthaler, Blum, Bungartz, et al.: Parallel Computing 37, 783 (2011)
+
+
+Warning: dspp            takes precedence over using symmetrized basis
+
+ Warning: Existing Hessian file deleted.
+
+ 
+Calculation is Spin_unrestricted
+ 
+ 
+Warning: no SYM file, no symmetry used in vibrational analysis
+Warning: at least C1 SYM file should be there for optgeom
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -8.080796            1.782838           -1.107408
+            2    Li           -9.570581           -0.221843            0.377554
+            3    Li           -7.058750           -0.704721            0.290406
+            4    Li           -8.341282            1.574657            1.848962
+            5    Li           -8.525456           -1.137161            2.905305
+            6    Li           -8.572044           -1.793965           -0.782539
+          ----------------------------------------------------------------------
+
+  
+
+*** OPTIMIZATION USES DELOCALIZED INTERNALS ***
+
+ The preliminary size of active space is :      12
+ There are :           12  degrees of freedom
+ There are likely:     16  primitive internals
+
+Lithium      nbas=  1, z=   3, nrfn=  5, rcut=  8.31, e_ref= -0.023261 Ha
+                                  rcore=  0.00  zval=   3.00   3.00
+   n=1  L=0  occ= 2.00 e=      -1.870620Ha       -50.9022eV
+   n=2  L=0  occ= 1.00 e=      -0.072085Ha        -1.9615eV
+   n=2  L=0  occ= 0.00 e=      -0.238445Ha        -6.4884eV
+   n=2  L=1  occ= 0.00 e=      -0.159478Ha        -4.3396eV
+   n=3  L=2  occ= 0.00 e=      -0.887673Ha       -24.1548eV
+
+Note: calculation of reference xc derivative is turned on
+ for pseudopotential with core density correction
+
+Symmetry orbitals C1                            
+    n  norb    representation
+    1    66        a    
+  total number of valence orbitals:     66
+
+
+ molecule charge=      0.0   active electron number=      18.0
+ (without charge=             18.0)
+ 
+
+ real array elements, matrices vectors etc:       1.2 MB 
+ integer arrays                           :       0.1 MB 
+ min recommended for all-incl workspace   :       1.9 MB 
+Total memory allocated for arrays         :       6.3 MB 
+Memory for temporary file storage on disk :       1.5 MB
+Total memory allocated                    :       7.8 MB
+Max memory requested                      :    4096.0 MB
+Default spin density on atom Li(  1), L= 0 was used on start: M_s=  1.0
+    1  1.000 start spin density on Li(   1), L= 0 M_s=  1.0
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -45.006910Ha        -0.1944990Ha      5.30E-02     0.0m      1
+Ef          -44.973196Ha        -0.1607844Ha      3.13E-02     0.0m      2
+Ef          -44.961132Ha        -0.1487207Ha      1.30E-02     0.0m      3
+Ef          -44.961942Ha        -0.1495303Ha      8.41E-03     0.0m      4
+Ef          -44.963088Ha        -0.1506769Ha      3.62E-03     0.0m      5
+Ef          -44.963283Ha        -0.1508712Ha      1.61E-03     0.0m      6
+Ef          -44.963296Ha        -0.1508842Ha      9.22E-04     0.0m      7
+Ef          -44.963299Ha        -0.1508875Ha      5.09E-04     0.0m      8
+Ef          -44.963300Ha        -0.1508888Ha      3.69E-04     0.0m      9
+Ef          -44.963305Ha        -0.1508933Ha      4.02E-04     0.0m     10
+Ef          -44.963296Ha        -0.1508848Ha      2.01E-04     0.0m     11
+Ef          -44.963296Ha        -0.1508847Ha      1.56E-04     0.0m     12
+Ef          -44.963297Ha        -0.1508853Ha      4.79E-05     0.0m     13
+Ef          -44.963297Ha        -0.1508852Ha      2.39E-05     0.0m     14
+Ef          -44.963297Ha        -0.1508854Ha      1.13E-05     0.0m     15
+Ef          -44.963297Ha        -0.1508854Ha      6.02E-06     0.0m     16
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.07921Ha    -2.156eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.05552Ha    -1.511eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.270492   3.369075  -2.092699     0.000640   0.004789  -0.000134
+df   Li   -18.085777  -0.419222   0.713474     0.010068  -0.016313  -0.011644
+df   Li   -13.339105  -1.331729   0.548787    -0.014724  -0.016473  -0.015268
+df   Li   -15.762739   2.975670   3.494032    -0.002981  -0.004301  -0.002369
+df   Li   -16.110778  -2.148922   5.490231     0.000016   0.002309   0.004401
+df   Li   -16.198816  -3.390102  -1.478784     0.006980   0.029989   0.025014
+df  binding energy      -0.1508855Ha        -4.10580eV         -94.684kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.4385374Ha
+            Electrostatic =       -0.8108166Ha
+     Exchange-correlation =        0.0818266Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.963297Ha        -0.1508855Ha                   0.0m     17
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -8.080796            1.782838           -1.107408
+            2    Li           -9.570581           -0.221843            0.377554
+            3    Li           -7.058750           -0.704721            0.290406
+            4    Li           -8.341282            1.574657            1.848962
+            5    Li           -8.525456           -1.137161            2.905305
+            6    Li           -8.572044           -1.793965           -0.782539
+          ----------------------------------------------------------------------
+
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   2 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   3 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   4 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   5 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   6 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   7 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   8 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.017076 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.761590
+
+opt==  Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==      tolerance:.......      0.0000200        0.002117       0.009449
+opt==    1       -44.9632969      0.0000000        0.029989       0.426522
+
+ 
+                      Step    1                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.150885E+00 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.299886E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.426522E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -44.975696Ha        -0.1632847Ha      5.09E-03     0.0m      1
+Ef          -44.979821Ha        -0.1674092Ha      5.18E-03     0.0m      2
+Ef          -44.979681Ha        -0.1672695Ha      4.15E-03     0.0m      3
+Ef          -44.979597Ha        -0.1671859Ha      1.79E-03     0.0m      4
+Ef          -44.979571Ha        -0.1671593Ha      8.57E-04     0.0m      5
+Ef          -44.979565Ha        -0.1671533Ha      9.61E-05     0.0m      6
+Ef          -44.979564Ha        -0.1671528Ha      5.66E-05     0.0m      7
+Ef          -44.979564Ha        -0.1671523Ha      2.25E-05     0.0m      8
+Ef          -44.979563Ha        -0.1671521Ha      9.85E-06     0.0m      9
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.07984Ha    -2.172eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.05508Ha    -1.499eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.191233   3.094653  -2.138643     0.001530   0.001976   0.001292
+df   Li   -18.239345  -0.295294   0.775158     0.006109  -0.008394  -0.005707
+df   Li   -13.534585  -0.905207   0.847677    -0.009277  -0.008260  -0.007068
+df   Li   -15.620234   2.975026   3.503274    -0.001914  -0.006500  -0.003743
+df   Li   -16.003214  -2.304348   5.226418     0.001564   0.002950   0.000953
+df   Li   -16.179095  -3.510060  -1.538842     0.001988   0.018228   0.014273
+df  binding energy      -0.1671521Ha        -4.54844eV        -104.892kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.5029179Ha
+            Electrostatic =       -0.8937578Ha
+     Exchange-correlation =        0.0841207Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.979563Ha        -0.1671521Ha                   0.1m     10
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.017076 Ha
+    Actual energy change =  -0.016267 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -8.038854            1.637620           -1.131721
+            2    Li           -9.651846           -0.156263            0.410196
+            3    Li           -7.162194           -0.479015            0.448571
+            4    Li           -8.265872            1.574316            1.853853
+            5    Li           -8.468536           -1.219408            2.765701
+            6    Li           -8.561609           -1.857444           -0.814320
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   2 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   3 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   4 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   5 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   6 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   7 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   8 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.008718 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.733781
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    2       -44.9795635     -0.0162666        0.018228       0.387352
+
+ 
+                      Step    2                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.162666E-01 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.182278E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.387352E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -44.982373Ha        -0.1699611Ha      4.93E-03     0.1m      1
+Ef          -44.985876Ha        -0.1734641Ha      4.37E-03     0.1m      2
+Ef          -44.985785Ha        -0.1733733Ha      3.34E-03     0.1m      3
+Ef          -44.985824Ha        -0.1734121Ha      1.51E-03     0.1m      4
+Ef          -44.985802Ha        -0.1733906Ha      7.73E-04     0.1m      5
+Ef          -44.985785Ha        -0.1733735Ha      1.51E-04     0.1m      6
+Ef          -44.985784Ha        -0.1733726Ha      5.54E-05     0.1m      7
+Ef          -44.985784Ha        -0.1733722Ha      3.08E-05     0.1m      8
+Ef          -44.985783Ha        -0.1733719Ha      1.39E-05     0.1m      9
+Ef          -44.985783Ha        -0.1733717Ha      8.95E-06     0.1m     10
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.08108Ha    -2.206eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.05226Ha    -1.422eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.329339   3.263001  -2.074249     0.000199   0.001118   0.001525
+df   Li   -18.108901  -0.275054   0.798098     0.002406  -0.004971  -0.003980
+df   Li   -13.300766  -0.927384   0.562365    -0.001968  -0.006778  -0.007423
+df   Li   -15.561105   3.149380   3.681034    -0.001526  -0.001339  -0.000757
+df   Li   -16.277299  -2.257760   5.376522    -0.001139   0.001155   0.003267
+df   Li   -16.190296  -3.897413  -1.668728     0.002028   0.010815   0.007368
+df  binding energy      -0.1733717Ha        -4.71769eV        -108.795kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.4801910Ha
+            Electrostatic =       -0.8681034Ha
+     Exchange-correlation =        0.0749735Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.985783Ha        -0.1733717Ha                   0.1m     11
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.008718 Ha
+    Actual energy change =  -0.006220 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -8.111937            1.726706           -1.097645
+            2    Li           -9.582818           -0.145552            0.422335
+            3    Li           -7.038462           -0.490750            0.297591
+            4    Li           -8.234582            1.666580            1.947919
+            5    Li           -8.613576           -1.194755            2.845133
+            6    Li           -8.567536           -2.062422           -0.883053
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   2 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   3 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   4 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   5 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   6 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   7 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.007998 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.935511
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    3       -44.9857832     -0.0062197        0.010815       0.671534
+
+ 
+                      Step    3                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.621967E-02 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.108152E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.671534E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -44.983889Ha        -0.1714779Ha      4.77E-03     0.1m      1
+Ef          -44.989268Ha        -0.1768564Ha      6.44E-03     0.1m      2
+Ef          -44.989249Ha        -0.1768379Ha      6.35E-03     0.1m      3
+Ef          -44.988810Ha        -0.1763983Ha      1.54E-03     0.1m      4
+Ef          -44.988803Ha        -0.1763912Ha      9.67E-04     0.1m      5
+Ef          -44.988790Ha        -0.1763782Ha      3.91E-04     0.1m      6
+Ef          -44.988787Ha        -0.1763759Ha      8.75E-05     0.1m      7
+Ef          -44.988786Ha        -0.1763750Ha      4.11E-05     0.1m      8
+Ef          -44.988786Ha        -0.1763747Ha      2.55E-05     0.1m      9
+Ef          -44.988786Ha        -0.1763746Ha      9.30E-06     0.1m     10
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.08095Ha    -2.203eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.05231Ha    -1.423eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.422716   3.151374  -2.228018    -0.000742   0.003218  -0.000554
+df   Li   -18.264392  -0.116377   0.850981     0.000622  -0.001570   0.000383
+df   Li   -13.539013  -0.879500   1.233898    -0.004420  -0.004694   0.005768
+df   Li   -15.369140   3.198645   3.601190     0.000247  -0.003725  -0.002672
+df   Li   -16.056099  -2.384445   5.005941     0.003339   0.004180  -0.005218
+df   Li   -16.116347  -3.914926  -1.788951     0.000953   0.002590   0.002294
+df  binding energy      -0.1763746Ha        -4.79940eV        -110.679kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.5040093Ha
+            Electrostatic =       -0.8972307Ha
+     Exchange-correlation =        0.0772797Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.988786Ha        -0.1763746Ha                   0.1m     11
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.007998 Ha
+    Actual energy change =  -0.003003 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -8.161350            1.667635           -1.179017
+            2    Li           -9.665100           -0.061584            0.450320
+            3    Li           -7.164537           -0.465412            0.652951
+            4    Li           -8.132999            1.692650            1.905668
+            5    Li           -8.496522           -1.261794            2.649030
+            6    Li           -8.528403           -2.071690           -0.946672
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   2 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   3 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   4 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   5 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   6 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   7 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.006703 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     1.419588
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    4       -44.9887860     -0.0030028        0.005768       0.987697
+
+ 
+                      Step    4                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.300283E-02 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.576801E-02 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.987697E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -44.951987Ha        -0.1395757Ha      7.02E-03     0.1m      1
+Ef          -44.975994Ha        -0.1635824Ha      9.94E-03     0.1m      2
+Ef          -44.975817Ha        -0.1634052Ha      9.33E-03     0.1m      3
+Ef          -44.974850Ha        -0.1624385Ha      2.23E-03     0.1m      4
+Ef          -44.974859Ha        -0.1624481Ha      1.21E-03     0.1m      5
+Ef          -44.974848Ha        -0.1624370Ha      7.20E-04     0.1m      6
+Ef          -44.974844Ha        -0.1624321Ha      1.69E-04     0.1m      7
+Ef          -44.974842Ha        -0.1624308Ha      8.37E-05     0.1m      8
+Ef          -44.974842Ha        -0.1624306Ha      4.72E-05     0.1m      9
+Ef          -44.974842Ha        -0.1624305Ha      1.59E-05     0.1m     10
+Ef          -44.974842Ha        -0.1624305Ha      1.47E-05     0.1m     11
+Ef          -44.974842Ha        -0.1624305Ha      1.50E-05     0.1m     12
+Ef          -44.974842Ha        -0.1624305Ha      1.48E-05     0.1m     13
+Ef          -44.974842Ha        -0.1624305Ha      1.43E-05     0.1m     14
+Ef          -44.974842Ha        -0.1624305Ha      1.33E-05     0.1m     15
+Ef          -44.974842Ha        -0.1624305Ha      1.16E-05     0.1m     16
+Ef          -44.974842Ha        -0.1624305Ha      5.92E-06     0.1m     17
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.08179Ha    -2.226eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.05396Ha    -1.468eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.090865   2.586812  -2.169091     0.008195  -0.014228   0.018602
+df   Li   -18.406337   0.007517   0.992430     0.002704   0.000767   0.000299
+df   Li   -13.749423   0.108197   0.762038    -0.013811   0.025684  -0.011023
+df   Li   -15.249990   2.986928   3.733499     0.003886  -0.012017  -0.010495
+df   Li   -16.195625  -2.702149   4.880169    -0.001163   0.000251   0.002100
+df   Li   -16.075465  -3.932535  -1.524004     0.000188  -0.000457   0.000516
+df  binding energy      -0.1624305Ha        -4.41996eV        -101.929kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.5095700Ha
+            Electrostatic =       -0.8969387Ha
+     Exchange-correlation =        0.0853711Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.974842Ha        -0.1624305Ha                   0.1m     18
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.006703 Ha
+    Actual energy change =   0.013944 Ha
+     Rejection threshold =   0.000200 Ha
+ 
+ Warning: Energy went up too far during optimization. 
+          Dismissing last step and starting in new search direction.
+ 
+  
+
+*** OPTIMIZATION USES DELOCALIZED INTERNALS ***
+
+ The preliminary size of active space is :      12
+ There are :           12  degrees of freedom
+ There are likely:     21  primitive internals
+
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   2 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   3 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   4 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.005251 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.892779
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -44.955147Ha        -0.1427358Ha      8.81E-03     0.1m      1
+Ef          -44.992550Ha        -0.1801387Ha      8.33E-03     0.1m      2
+Ef          -44.992154Ha        -0.1797425Ha      6.50E-03     0.1m      3
+Ef          -44.992040Ha        -0.1796289Ha      2.34E-03     0.1m      4
+Ef          -44.992016Ha        -0.1796042Ha      1.30E-03     0.1m      5
+Ef          -44.991989Ha        -0.1795771Ha      3.37E-04     0.1m      6
+Ef          -44.991986Ha        -0.1795741Ha      1.09E-04     0.1m      7
+Ef          -44.991985Ha        -0.1795738Ha      5.94E-05     0.1m      8
+Ef          -44.991985Ha        -0.1795733Ha      1.60E-05     0.1m      9
+Ef          -44.991985Ha        -0.1795732Ha      5.92E-06     0.1m     10
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.07970Ha    -2.169eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.04937Ha    -1.343eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.425242   2.796036  -2.576160    -0.000514   0.002235  -0.002229
+df   Li   -18.200148   0.054009   1.004780     0.000292  -0.000689  -0.000199
+df   Li   -13.467300  -0.606097   1.246931    -0.001306  -0.002374   0.001791
+df   Li   -15.367429   3.495187   3.843018     0.000429   0.000363   0.000170
+df   Li   -16.167443  -2.867777   4.911614     0.000752  -0.000003  -0.000093
+df   Li   -16.140144  -3.816588  -1.755142     0.000347   0.000468   0.000559
+df  binding energy      -0.1795732Ha        -4.88644eV        -112.686kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.4972840Ha
+            Electrostatic =       -0.8883232Ha
+     Exchange-correlation =        0.0718989Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.991985Ha        -0.1795732Ha                   0.1m     11
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.005251 Ha
+    Actual energy change =  -0.003199 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -8.162687            1.479599           -1.363245
+            2    Li           -9.631104            0.028580            0.531707
+            3    Li           -7.126588           -0.320732            0.659848
+            4    Li           -8.132093            1.849573            2.033638
+            5    Li           -8.555442           -1.517562            2.599114
+            6    Li           -8.540996           -2.019651           -0.928781
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   2 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   3 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   4 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.001596 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.484040
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    5       -44.9919847     -0.0031987        0.002374       0.316759
+
+ 
+                      Step    5                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.319868E-02 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.237415E-02 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.316759E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -44.991442Ha        -0.1790309Ha      2.87E-03     0.1m      1
+Ef          -44.992162Ha        -0.1797502Ha      2.59E-03     0.1m      2
+Ef          -44.992144Ha        -0.1797323Ha      1.99E-03     0.1m      3
+Ef          -44.992181Ha        -0.1797700Ha      6.73E-04     0.1m      4
+Ef          -44.992187Ha        -0.1797757Ha      2.67E-04     0.1m      5
+Ef          -44.992185Ha        -0.1797735Ha      6.30E-05     0.1m      6
+Ef          -44.992185Ha        -0.1797732Ha      3.17E-05     0.1m      7
+Ef          -44.992184Ha        -0.1797729Ha      1.55E-05     0.1m      8
+Ef          -44.992184Ha        -0.1797728Ha      1.14E-05     0.1m      9
+Ef          -44.992184Ha        -0.1797728Ha      1.16E-05     0.1m     10
+Ef          -44.992184Ha        -0.1797728Ha      1.14E-05     0.1m     11
+Ef          -44.992184Ha        -0.1797728Ha      1.13E-05     0.1m     12
+Ef          -44.992184Ha        -0.1797728Ha      1.13E-05     0.1m     13
+Ef          -44.992184Ha        -0.1797728Ha      1.12E-05     0.1m     14
+Ef          -44.992184Ha        -0.1797728Ha      1.11E-05     0.2m     15
+Ef          -44.992184Ha        -0.1797728Ha      1.13E-05     0.2m     16
+Ef          -44.992184Ha        -0.1797727Ha      1.04E-05     0.2m     17
+Ef          -44.992184Ha        -0.1797727Ha      9.25E-06     0.2m     18
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.07890Ha    -2.147eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.05276Ha    -1.436eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.344235   2.479277  -2.422042     0.000501  -0.002348   0.002175
+df   Li   -18.252070   0.081775   1.073211    -0.000581   0.000266   0.000132
+df   Li   -13.346579  -0.453876   1.146989     0.000538   0.001046  -0.000668
+df   Li   -15.457332   3.436160   3.868745    -0.000263  -0.000617  -0.000264
+df   Li   -16.156184  -2.776278   4.830731     0.000363   0.001314  -0.000670
+df   Li   -16.211306  -3.712287  -1.822592    -0.000558   0.000339  -0.000704
+df  binding energy      -0.1797727Ha        -4.89187eV        -112.811kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.5028268Ha
+            Electrostatic =       -0.8968423Ha
+     Exchange-correlation =        0.0746757Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.992184Ha        -0.1797727Ha                   0.2m     19
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.001596 Ha
+    Actual energy change =  -0.000199 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -8.119820            1.311977           -1.281690
+            2    Li           -9.658580            0.043273            0.567919
+            3    Li           -7.062705           -0.240181            0.606960
+            4    Li           -8.179668            1.818337            2.047252
+            5    Li           -8.549484           -1.469143            2.556313
+            6    Li           -8.578654           -1.964458           -0.964474
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   2 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   3 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   4 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.000822 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     1.157379
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    6       -44.9921842     -0.0001995        0.002348       0.708517
+
+ 
+                      Step    6                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.199476E-03 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.234770E-02 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.708517E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -44.986971Ha        -0.1745600Ha      4.90E-03     0.2m      1
+Ef          -44.989627Ha        -0.1772155Ha      2.85E-03     0.2m      2
+Ef          -44.989652Ha        -0.1772408Ha      2.11E-03     0.2m      3
+Ef          -44.989745Ha        -0.1773336Ha      8.91E-04     0.2m      4
+Ef          -44.989752Ha        -0.1773408Ha      3.25E-04     0.2m      5
+Ef          -44.989748Ha        -0.1773369Ha      1.54E-04     0.2m      6
+Ef          -44.989747Ha        -0.1773359Ha      8.73E-05     0.2m      7
+Ef          -44.989747Ha        -0.1773360Ha      9.77E-05     0.2m      8
+Ef          -44.989747Ha        -0.1773356Ha      6.20E-05     0.2m      9
+Ef          -44.989746Ha        -0.1773350Ha      1.89E-05     0.2m     10
+Ef          -44.989746Ha        -0.1773350Ha      1.31E-05     0.2m     11
+Ef          -44.989746Ha        -0.1773350Ha      6.13E-06     0.2m     12
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.07436Ha    -2.024eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.05361Ha    -1.459eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.373416   2.984131  -2.309259     0.000072  -0.000789   0.003951
+df   Li   -18.206083   0.194255   0.942410     0.000124   0.000689   0.000990
+df   Li   -13.309123  -0.319454   0.944848     0.000577   0.002308  -0.000995
+df   Li   -15.377265   3.381475   3.791639     0.000294  -0.000761  -0.003381
+df   Li   -16.309916  -3.012047   4.419478    -0.001329  -0.001136  -0.004785
+df   Li   -16.191903  -4.173590  -1.114075     0.000262  -0.000311   0.004220
+df  binding energy      -0.1773351Ha        -4.82553eV        -111.282kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.4982529Ha
+            Electrostatic =       -0.8910567Ha
+     Exchange-correlation =        0.0759016Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.989747Ha        -0.1773351Ha                   0.2m     13
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.000822 Ha
+    Actual energy change =   0.002438 Ha
+     Rejection threshold =   0.000200 Ha
+ 
+ Warning: Energy went up too far during optimization. 
+          Dismissing last step and starting in new search direction.
+ 
+  
+
+*** OPTIMIZATION USES DELOCALIZED INTERNALS ***
+
+ The preliminary size of active space is :      12
+ There are :           12  degrees of freedom
+ There are likely:     21  primitive internals
+
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   2 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   3 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.002014 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.857829
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -44.990559Ha        -0.1781471Ha      3.87E-03     0.2m      1
+Ef          -44.991472Ha        -0.1790602Ha      2.56E-03     0.2m      2
+Ef          -44.991514Ha        -0.1791026Ha      1.72E-03     0.2m      3
+Ef          -44.991585Ha        -0.1791736Ha      7.32E-04     0.2m      4
+Ef          -44.991590Ha        -0.1791790Ha      2.14E-04     0.2m      5
+Ef          -44.991589Ha        -0.1791771Ha      7.45E-05     0.2m      6
+Ef          -44.991588Ha        -0.1791765Ha      3.04E-05     0.2m      7
+Ef          -44.991588Ha        -0.1791764Ha      1.76E-05     0.2m      8
+Ef          -44.991588Ha        -0.1791763Ha      6.05E-06     0.2m      9
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.07588Ha    -2.065eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.04920Ha    -1.339eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.425560   2.889284  -2.580957    -0.000421   0.001791  -0.000980
+df   Li   -18.147082   0.166791   1.004955     0.000521  -0.000287  -0.000111
+df   Li   -13.421421  -0.410699   1.118892    -0.000539  -0.000722   0.000107
+df   Li   -15.336590   3.568297   3.875389     0.000806   0.001162  -0.000607
+df   Li   -16.291846  -3.129781   4.643898    -0.000781  -0.001828  -0.000359
+df   Li   -16.145207  -4.029123  -1.387137     0.000414  -0.000116   0.001950
+df  binding energy      -0.1791763Ha        -4.87564eV        -112.437kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.4974778Ha
+            Electrostatic =       -0.8880297Ha
+     Exchange-correlation =        0.0718085Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.991588Ha        -0.1791763Ha                   0.2m     10
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.002014 Ha
+    Actual energy change =   0.000596 Ha
+     Rejection threshold =   0.000200 Ha
+ 
+ Warning: optimizer is doing something very strange. 
+ Reverting step and switching to optimizing in cartesian coordinates.
+ 
+  Warning: switching to optimization with Cartesians
+  Switching to Cartesian coordinates
+Warning: molecule has been put into center of geometry coordinate system
+Translated by  -15.79461771769103   -0.15753834436792    1.11250691227486
+
+ Translations and Rotations Projected Out of Hessian
+
+~~~~~~~~~~~~~~~~~~~~~~~~~ End Getting New Geometry ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Energy difference to last converged SCF cycle is too great.
+   | E_new, E_old, thresh     -43.1361136     -44.9915878       0.1500000
+   | Restarting SCF cycle to avoid instabilities.
+ 
+ Resetting SCF cycle automatically
+
+Symmetry orbitals C1                            
+    n  norb    representation
+    1    66        a    
+  total number of valence orbitals:     66
+
+
+ molecule charge=      0.0   active electron number=      18.0
+ (without charge=             18.0)
+ 
+
+ real array elements, matrices vectors etc:       1.2 MB 
+ integer arrays                           :       0.1 MB 
+ min recommended for all-incl workspace   :       1.9 MB 
+Total memory allocated for arrays         :       6.3 MB 
+Memory for temporary file storage on disk :       1.5 MB
+Total memory allocated                    :       7.8 MB
+Max memory requested                      :    4096.0 MB
+    1  1.000 start spin density on Li(   1), L= 0 M_s=  1.0
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -45.036590Ha        -0.2241786Ha      5.13E-02     0.2m      1
+Ef          -45.003353Ha        -0.1909413Ha      3.11E-02     0.2m      2
+Ef          -44.990115Ha        -0.1777031Ha      1.27E-02     0.2m      3
+Ef          -44.990744Ha        -0.1783326Ha      8.69E-03     0.2m      4
+Ef          -44.992110Ha        -0.1796987Ha      3.16E-03     0.2m      5
+Ef          -44.992200Ha        -0.1797889Ha      1.50E-03     0.2m      6
+Ef          -44.992209Ha        -0.1797973Ha      7.42E-04     0.2m      7
+Ef          -44.992202Ha        -0.1797910Ha      3.63E-04     0.2m      8
+Ef          -44.992201Ha        -0.1797896Ha      9.77E-05     0.2m      9
+Ef          -44.992201Ha        -0.1797895Ha      7.73E-05     0.2m     10
+Ef          -44.992201Ha        -0.1797894Ha      6.31E-05     0.2m     11
+Ef          -44.992201Ha        -0.1797895Ha      6.48E-05     0.2m     12
+Ef          -44.992201Ha        -0.1797892Ha      5.88E-05     0.2m     13
+Ef          -44.992200Ha        -0.1797890Ha      4.14E-05     0.2m     14
+Ef          -44.992200Ha        -0.1797889Ha      2.71E-05     0.2m     15
+Ef          -44.992200Ha        -0.1797889Ha      1.74E-05     0.2m     16
+Ef          -44.992200Ha        -0.1797889Ha      1.26E-05     0.2m     17
+Ef          -44.992200Ha        -0.1797889Ha      8.24E-06     0.2m     18
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.07891Ha    -2.147eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.05273Ha    -1.435eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.344746   2.481566  -2.424263     0.000491  -0.002296   0.002113
+df   Li   -18.251486   0.081558   1.073120    -0.000581   0.000250   0.000139
+df   Li   -13.347122  -0.454971   1.147617     0.000540   0.001009  -0.000643
+df   Li   -15.456946   3.436809   3.868952    -0.000259  -0.000603  -0.000258
+df   Li   -16.156533  -2.777532   4.831445     0.000360   0.001302  -0.000664
+df   Li   -16.210873  -3.712659  -1.821829    -0.000550   0.000337  -0.000687
+df  binding energy      -0.1797889Ha        -4.89231eV        -112.821kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.5027423Ha
+            Electrostatic =       -0.8967363Ha
+     Exchange-correlation =        0.0746381Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.992200Ha        -0.1797889Ha                   0.2m     19
+ 
+
+ Cartesian Hessian Update
+ Hessian Updated using BFGS Update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   7
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -8.120090            1.313188           -1.282865
+            2    Li           -9.658270            0.043158            0.567871
+            3    Li           -7.062993           -0.240760            0.607293
+            4    Li           -8.179464            1.818681            2.047361
+            5    Li           -8.549669           -1.469807            2.556690
+            6    Li           -8.578425           -1.964655           -0.964071
+          ----------------------------------------------------------------------
+
+   Energy is     -0.179788863
+
+Warning: molecule has been put into center of geometry coordinate system
+Translated by  -15.79461771769103   -0.15753834436792    1.11250691227486
+
+ Translations and Rotations Projected Out of Hessian
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    7       -44.9922003     -0.0000161        0.002296       0.096771
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~ End Getting New Geometry ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -44.992431Ha        -0.1800194Ha      2.11E-03     0.3m      1
+Ef          -44.992442Ha        -0.1800305Ha      1.65E-03     0.3m      2
+Ef          -44.992496Ha        -0.1800843Ha      1.06E-03     0.3m      3
+Ef          -44.992551Ha        -0.1801395Ha      4.26E-04     0.3m      4
+Ef          -44.992548Ha        -0.1801365Ha      1.06E-04     0.3m      5
+Ef          -44.992547Ha        -0.1801357Ha      3.75E-05     0.3m      6
+Ef          -44.992547Ha        -0.1801355Ha      1.87E-05     0.3m      7
+Ef          -44.992547Ha        -0.1801354Ha      1.26E-05     0.3m      8
+Ef          -44.992547Ha        -0.1801354Ha      1.12E-05     0.3m      9
+Ef          -44.992547Ha        -0.1801354Ha      1.13E-05     0.3m     10
+Ef          -44.992547Ha        -0.1801354Ha      1.11E-05     0.3m     11
+Ef          -44.992547Ha        -0.1801354Ha      1.05E-05     0.3m     12
+Ef          -44.992547Ha        -0.1801353Ha      9.24E-06     0.3m     13
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.07915Ha    -2.154eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.05146Ha    -1.400eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.366478   2.578337  -2.517796     0.000230  -0.000183  -0.000235
+df   Li   -18.226148   0.072832   1.068884    -0.000644  -0.000381   0.000224
+df   Li   -13.370723  -0.500753   1.173756     0.000514  -0.000503   0.000207
+df   Li   -15.440483   3.464368   3.877554    -0.000095  -0.000033   0.000078
+df   Li   -16.171474  -2.831249   4.862151     0.000213   0.000564  -0.000129
+df   Li   -16.192400  -3.728766  -1.789509    -0.000218   0.000536  -0.000144
+df  binding energy      -0.1801354Ha        -4.90173eV        -113.039kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.4996889Ha
+            Electrostatic =       -0.8925577Ha
+     Exchange-correlation =        0.0731663Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.992547Ha        -0.1801354Ha                   0.3m     14
+ 
+
+ Cartesian Hessian Update
+ Hessian Updated using BFGS Update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   8
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -8.131590            1.364397           -1.332360
+            2    Li           -9.644862            0.038541            0.565629
+            3    Li           -7.075482           -0.264987            0.621125
+            4    Li           -8.170752            1.833265            2.051913
+            5    Li           -8.557575           -1.498232            2.572939
+            6    Li           -8.568649           -1.973178           -0.946967
+          ----------------------------------------------------------------------
+
+   Energy is     -0.180135357
+
+Warning: molecule has been put into center of geometry coordinate system
+Translated by  -15.79461771769103   -0.15753834436792    1.11250691227486
+
+ Translations and Rotations Projected Out of Hessian
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    8       -44.9925468     -0.0003465        0.000644       0.008802
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~ End Getting New Geometry ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -44.992551Ha        -0.1801395Ha      1.64E-03     0.3m      1
+Ef          -44.992451Ha        -0.1800394Ha      1.30E-03     0.3m      2
+Ef          -44.992554Ha        -0.1801430Ha      3.11E-04     0.3m      3
+Ef          -44.992552Ha        -0.1801407Ha      2.14E-04     0.3m      4
+Ef          -44.992551Ha        -0.1801400Ha      6.55E-05     0.3m      5
+Ef          -44.992551Ha        -0.1801400Ha      3.78E-05     0.3m      6
+Ef          -44.992551Ha        -0.1801400Ha      1.42E-05     0.3m      7
+Ef          -44.992551Ha        -0.1801400Ha      1.43E-05     0.3m      8
+Ef          -44.992551Ha        -0.1801400Ha      1.42E-05     0.3m      9
+Ef          -44.992551Ha        -0.1801400Ha      1.43E-05     0.3m     10
+Ef          -44.992551Ha        -0.1801400Ha      1.30E-05     0.3m     11
+Ef          -44.992551Ha        -0.1801399Ha      8.65E-06     0.3m     12
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.07918Ha    -2.154eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.05133Ha    -1.397eV
+
+  HOMO is orbital number    18
+  LUMO is orbital number    19
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -15.368640   2.587139  -2.525916     0.000208  -0.000040  -0.000402
+df   Li   -18.223183   0.072514   1.068280    -0.000620  -0.000413   0.000215
+df   Li   -13.373393  -0.504343   1.175852     0.000472  -0.000614   0.000268
+df   Li   -15.438818   3.466879   3.878208    -0.000085   0.000009   0.000101
+df   Li   -16.173065  -2.836619   4.865054     0.000209   0.000490  -0.000076
+df   Li   -16.190606  -3.730801  -1.786436    -0.000184   0.000568  -0.000107
+df  binding energy      -0.1801399Ha        -4.90186eV        -113.042kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -44.8124114Ha
+                  Kinetic =        0.4994615Ha
+            Electrostatic =       -0.8922170Ha
+     Exchange-correlation =        0.0730485Ha
+        Spin polarization =        0.1395671Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -44.992551Ha        -0.1801399Ha                   0.3m     13
+ 
+
+ Cartesian Hessian Update
+ Hessian Updated using BFGS Update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   9
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -8.132734            1.369055           -1.336657
+            2    Li           -9.643293            0.038373            0.565309
+            3    Li           -7.076895           -0.266887            0.622234
+            4    Li           -8.169871            1.834594            2.052259
+            5    Li           -8.558418           -1.501074            2.574476
+            6    Li           -8.567700           -1.974255           -0.945341
+          ----------------------------------------------------------------------
+
+   Energy is     -0.180139909
+
+Warning: molecule has been put into center of geometry coordinate system
+Translated by  -15.79461771769103   -0.15753834436792    1.11250691227486
+
+ Translations and Rotations Projected Out of Hessian
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    9       -44.9925513     -0.0000046        0.000620       0.006392
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~ End Getting New Geometry ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Geometry optimization completed successfully in    9 steps.
+
+
+                              Final Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -8.132734            1.369055           -1.336657
+            2    Li           -9.643293            0.038373            0.565309
+            3    Li           -7.076895           -0.266887            0.622234
+            4    Li           -8.169871            1.834594            2.052259
+            5    Li           -8.558418           -1.501074            2.574476
+            6    Li           -8.567700           -1.974255           -0.945341
+          ----------------------------------------------------------------------
+
+
+ +++ Entering Properties Section +++ 
+
+Message: License checkin of MS_dmol successful
+
+Message: DMol3 job finished successfully
+
+ time all done       0.32m       19.35s
+
+DMol3.pl message: DMol3 job finished in 0 hr 1 min 50 sec.
