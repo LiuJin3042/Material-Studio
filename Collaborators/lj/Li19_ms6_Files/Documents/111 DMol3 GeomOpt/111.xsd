@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="latin1"?>
 <!DOCTYPE XSD []>
 <XSD Version="6.1">
-	<AtomisticTreeRoot ID="1" NumProperties="55" NumChildren="4">
+	<AtomisticTreeRoot ID="1" NumProperties="55" NumChildren="16">
 		<Property Name="AngleEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
 		<Property Name="BeadDocumentID" DefinedOn="MesoMoleculeSet" Type="String"/>
 		<Property Name="BendBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
@@ -57,125 +57,128 @@
 		<Property Name="VanDerWaalsEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
 		<Property Name="_Stress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
 		<Property Name="_TrajectoryStress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
-		<Molecule ID="2" NumChildren="65">
+		<Molecule ID="2" NumChildren="68">
 			<Atom3d ID="3" HasProperties="1" Name="Li1" UserID="1" DisplayStyle="Ball and Stick" XYZ="-1.583338721,2.937180055,-2.584312617" Connections="4,5,6,7" Components="Li">
 				<Properties Force="0.476700059616353,0.490929912142214,-0.0415037365337621"/>
 			</Atom3d>
-			<Atom3d ID="8" HasProperties="1" Name="Li2" UserID="2" DisplayStyle="Ball and Stick" XYZ="3.017816735,-0.866454432,-3.228168851" Connections="9,10,11,12" Components="Li">
+			<Atom3d ID="8" HasProperties="1" Name="Li2" UserID="2" DisplayStyle="Ball and Stick" XYZ="3.017816735,-0.866454432,-3.228168851" Connections="9,10,11,12,13,14" Components="Li">
 				<Properties Force="-0.679475458109876,0.218191072063206,-0.850233688420211"/>
 			</Atom3d>
-			<Atom3d ID="13" HasProperties="1" Name="Li3" UserID="3" DisplayStyle="Ball and Stick" XYZ="2.281226526,0.391184936,-0.801126246" Connections="9,14,15,16,17,18" Components="Li">
+			<Atom3d ID="15" HasProperties="1" Name="Li3" UserID="3" DisplayStyle="Ball and Stick" XYZ="2.281226526,0.391184936,-0.801126246" Connections="ci(12):9,11+16" Components="Li">
 				<Properties Force="-0.332029892270096,0.763668752221222,-0.205147040581167"/>
 			</Atom3d>
-			<Atom3d ID="19" HasProperties="1" Name="Li4" UserID="4" DisplayStyle="Ball and Stick" XYZ="-0.281172632,-0.042903734,-0.154534685" Connections="ci(12):14,11+20" Components="Li">
+			<Atom3d ID="27" HasProperties="1" Name="Li4" UserID="4" DisplayStyle="Ball and Stick" XYZ="-0.281172632,-0.042903734,-0.154534685" Connections="ci(12):16,11+28" Components="Li">
 				<Properties Force="-0.59528216399853,-1.73248454502361,0.598839627129995"/>
 			</Atom3d>
-			<Atom3d ID="31" HasProperties="1" Name="Li5" UserID="5" DisplayStyle="Ball and Stick" XYZ="-0.776569716,-2.785985034,0.167036799" Connections="20,32,33,34,35,36" Components="Li">
+			<Atom3d ID="39" HasProperties="1" Name="Li5" UserID="5" DisplayStyle="Ball and Stick" XYZ="-0.776569716,-2.785985034,0.167036799" Connections="28,40,41,42,43,44" Components="Li">
 				<Properties Force="0.0450611996652274,1.08146879196546,-0.403179154899403"/>
 			</Atom3d>
-			<Atom3d ID="37" HasProperties="1" Name="Li6" UserID="6" DisplayStyle="Ball and Stick" XYZ="-1.909164489,2.109013371,0.284900618" Connections="21,4,38,39,40,41" Components="Li">
+			<Atom3d ID="45" HasProperties="1" Name="Li6" UserID="6" DisplayStyle="Ball and Stick" XYZ="-1.909164489,2.109013371,0.284900618" Connections="29,4,46,47,48,49,50" Components="Li">
 				<Properties Force="-0.677103816022232,-0.545477680158016,0.470770954397244"/>
 			</Atom3d>
-			<Atom3d ID="42" HasProperties="1" Name="Li7" UserID="7" DisplayStyle="Ball and Stick" XYZ="-2.96367532,-0.827751992,0.319771031" Connections="22,38,32,43,44,45" Components="Li">
+			<Atom3d ID="51" HasProperties="1" Name="Li7" UserID="7" DisplayStyle="Ball and Stick" XYZ="-2.96367532,-0.827751992,0.319771031" Connections="30,46,40,52,53" Components="Li">
 				<Properties Force="1.8024479866091,0.088936578286633,-0.364047060453284"/>
 			</Atom3d>
-			<Atom3d ID="46" HasProperties="1" Name="Li8" UserID="8" DisplayStyle="Ball and Stick" XYZ="-1.442498244,0.096231686,2.550546882" Connections="39,23,43,47,48,49" Components="Li">
+			<Atom3d ID="54" HasProperties="1" Name="Li8" UserID="8" DisplayStyle="Ball and Stick" XYZ="-1.442498244,0.096231686,2.550546882" Connections="47,31,52,55,56,44" Components="Li">
 				<Properties Force="1.22139567513643,0.202775398493523,-0.228863461457602"/>
 			</Atom3d>
-			<Atom3d ID="50" HasProperties="1" Name="Li9" UserID="9" DisplayStyle="Ball and Stick" XYZ="0.834069423,2.864725445,-0.972510873" Connections="10,5,15,40,24,51,52" Components="Li">
+			<Atom3d ID="57" HasProperties="1" Name="Li9" UserID="9" DisplayStyle="Ball and Stick" XYZ="0.834069423,2.864725445,-0.972510873" Connections="5,17,48,32,58,59,60,61" Components="Li">
 				<Properties Force="0.974744898021497,-2.14159280514212,-0.645086647839044"/>
 			</Atom3d>
-			<Atom3d ID="53" HasProperties="1" Name="Li10" UserID="10" DisplayStyle="Ball and Stick" XYZ="2.458994826,-2.319477339,-0.395919611" Connections="25,16,33,54,55,56" Components="Li">
+			<Atom3d ID="62" HasProperties="1" Name="Li10" UserID="10" DisplayStyle="Ball and Stick" XYZ="2.458994826,-2.319477339,-0.395919611" Connections="33,18,41,63,64,65,12,66" Components="Li">
 				<Properties Force="-0.932055340443914,-0.100794788724851,0.48855827005457"/>
 			</Atom3d>
-			<Atom3d ID="57" HasProperties="1" Name="Li11" UserID="11" DisplayStyle="Ball and Stick" XYZ="0.313255531,-1.7817662,-2.348257147" Connections="34,11,54,26,58,59" Components="Li">
+			<Atom3d ID="67" HasProperties="1" Name="Li11" UserID="11" DisplayStyle="Ball and Stick" XYZ="0.313255531,-1.7817662,-2.348257147" Connections="42,10,63,34,68,69,21" Components="Li">
 				<Properties Force="0.716235910468351,1.95897636439357,0.24072167189582"/>
 			</Atom3d>
-			<Atom3d ID="60" HasProperties="1" Name="Li12" UserID="12" DisplayStyle="Ball and Stick" XYZ="-2.094899467,0.081513577,-2.290651698" Connections="35,58,6,27,44,61" Components="Li">
+			<Atom3d ID="70" HasProperties="1" Name="Li12" UserID="12" DisplayStyle="Ball and Stick" XYZ="-2.094899467,0.081513577,-2.290651698" Connections="68,6,35,53,71,50" Components="Li">
 				<Properties Force="-0.915453845830409,-1.16210462294534,0.568008279990629"/>
 			</Atom3d>
-			<Atom3d ID="62" HasProperties="1" Name="Li13" UserID="13" DisplayStyle="Ball and Stick" XYZ="3.600799525,-0.164594912,1.663118012" Connections="55,28,17,47,63,64" Components="Li">
+			<Atom3d ID="72" HasProperties="1" Name="Li13" UserID="13" DisplayStyle="Ball and Stick" XYZ="3.600799525,-0.164594912,1.663118012" Connections="64,19,73,74,75,76" Components="Li">
 				<Properties Force="-0.847862046332568,0.0450611996652274,0.0747067257607717"/>
 			</Atom3d>
-			<Atom3d ID="65" HasProperties="1" Name="Li14" UserID="14" DisplayStyle="Ball and Stick" XYZ="0.970654001,-1.386353266,1.986263579" Connections="29,45,56,63,48,36" Components="Li">
+			<Atom3d ID="77" HasProperties="1" Name="Li14" UserID="14" DisplayStyle="Ball and Stick" XYZ="0.970654001,-1.386353266,1.986263579" Connections="36,65,73,55,43,22,78" Components="Li">
 				<Properties Force="-1.21309492782967,0.632042616357005,0.0415037365337621"/>
 			</Atom3d>
-			<Atom3d ID="66" HasProperties="1" Name="Li15" UserID="15" DisplayStyle="Ball and Stick" XYZ="1.083970114,1.639143047,1.789498926" Connections="18,41,49,64,30,51" Components="Li">
+			<Atom3d ID="79" HasProperties="1" Name="Li15" UserID="15" DisplayStyle="Ball and Stick" XYZ="1.083970114,1.639143047,1.789498926" Connections="20,49,56,74,37,58,78,80" Components="Li">
 				<Properties Force="0.470770954397244,-0.123325388557464,-0.556150069552411"/>
 			</Atom3d>
-			<Atom3d ID="67" HasProperties="1" Name="Li16" UserID="16" DisplayStyle="Ball and Stick" XYZ="0.597090532,0.982561701,-3.20878721" Connections="12,52,7,59,61" Components="Li">
+			<Atom3d ID="81" HasProperties="1" Name="Li16" UserID="16" DisplayStyle="Ball and Stick" XYZ="0.597090532,0.982561701,-3.20878721" Connections="11,59,7,69,71,23,38,82" Components="Li">
 				<Properties Force="1.01743445559908,-0.365232881497106,0.629670974269361"/>
 			</Atom3d>
-			<Bond ID="9" Connects="13,8"/>
-			<Bond ID="14" Connects="19,13"/>
-			<Bond ID="20" Connects="31,19"/>
-			<Bond ID="21" Connects="37,19"/>
-			<Bond ID="4" Connects="37,3"/>
-			<Bond ID="22" Connects="42,19"/>
-			<Bond ID="38" Connects="42,37"/>
-			<Bond ID="32" Connects="42,31"/>
-			<Bond ID="39" Connects="46,37"/>
-			<Bond ID="23" Connects="46,19"/>
-			<Bond ID="43" Connects="46,42"/>
-			<Bond ID="10" Connects="50,8"/>
-			<Bond ID="5" Connects="50,3"/>
-			<Bond ID="15" Connects="50,13"/>
-			<Bond ID="40" Connects="50,37"/>
-			<Bond ID="24" Connects="50,19"/>
-			<Bond ID="25" Connects="53,19"/>
-			<Bond ID="16" Connects="53,13"/>
-			<Bond ID="33" Connects="53,31"/>
-			<Bond ID="34" Connects="57,31"/>
-			<Bond ID="11" Connects="57,8"/>
-			<Bond ID="54" Connects="57,53"/>
-			<Bond ID="26" Connects="57,19"/>
-			<Bond ID="35" Connects="60,31"/>
-			<Bond ID="58" Connects="60,57"/>
-			<Bond ID="6" Connects="60,3"/>
-			<Bond ID="27" Connects="60,19"/>
-			<Bond ID="44" Connects="60,42"/>
-			<Bond ID="55" Connects="62,53"/>
-			<Bond ID="28" Connects="62,19"/>
-			<Bond ID="17" Connects="62,13"/>
-			<Bond ID="47" Connects="62,46"/>
-			<Bond ID="29" Connects="65,19"/>
-			<Bond ID="45" Connects="65,42"/>
-			<Bond ID="56" Connects="65,53"/>
-			<Bond ID="63" Connects="65,62"/>
-			<Bond ID="48" Connects="65,46"/>
-			<Bond ID="36" Connects="65,31"/>
-			<Bond ID="18" Connects="66,13"/>
-			<Bond ID="41" Connects="66,37"/>
-			<Bond ID="49" Connects="66,46"/>
-			<Bond ID="64" Connects="66,62"/>
-			<Bond ID="30" Connects="66,19"/>
-			<Bond ID="51" Connects="66,50"/>
-			<Bond ID="12" Connects="67,8"/>
-			<Bond ID="52" Connects="67,50"/>
-			<Bond ID="7" Connects="67,3"/>
-			<Bond ID="59" Connects="67,57"/>
-			<Bond ID="61" Connects="67,60"/>
+			<Bond ID="9" Connects="15,8"/>
+			<Bond ID="16" Connects="27,15"/>
+			<Bond ID="28" Connects="39,27"/>
+			<Bond ID="29" Connects="45,27"/>
+			<Bond ID="4" Connects="45,3"/>
+			<Bond ID="30" Connects="51,27"/>
+			<Bond ID="46" Connects="51,45"/>
+			<Bond ID="40" Connects="51,39"/>
+			<Bond ID="47" Connects="54,45"/>
+			<Bond ID="31" Connects="54,27"/>
+			<Bond ID="52" Connects="54,51"/>
+			<Bond ID="5" Connects="57,3"/>
+			<Bond ID="17" Connects="57,15"/>
+			<Bond ID="48" Connects="57,45"/>
+			<Bond ID="32" Connects="57,27"/>
+			<Bond ID="33" Connects="62,27"/>
+			<Bond ID="18" Connects="62,15"/>
+			<Bond ID="41" Connects="62,39"/>
+			<Bond ID="42" Connects="67,39"/>
+			<Bond ID="10" Connects="67,8"/>
+			<Bond ID="63" Connects="67,62"/>
+			<Bond ID="34" Connects="67,27"/>
+			<Bond ID="68" Connects="70,67"/>
+			<Bond ID="6" Connects="70,3"/>
+			<Bond ID="35" Connects="70,27"/>
+			<Bond ID="53" Connects="70,51"/>
+			<Bond ID="64" Connects="72,62"/>
+			<Bond ID="19" Connects="72,15"/>
+			<Bond ID="36" Connects="77,27"/>
+			<Bond ID="65" Connects="77,62"/>
+			<Bond ID="73" Connects="77,72"/>
+			<Bond ID="55" Connects="77,54"/>
+			<Bond ID="43" Connects="77,39"/>
+			<Bond ID="20" Connects="79,15"/>
+			<Bond ID="49" Connects="79,45"/>
+			<Bond ID="56" Connects="79,54"/>
+			<Bond ID="74" Connects="79,72"/>
+			<Bond ID="37" Connects="79,27"/>
+			<Bond ID="58" Connects="79,57"/>
+			<Bond ID="11" Connects="81,8"/>
+			<Bond ID="59" Connects="81,57"/>
+			<Bond ID="7" Connects="81,3"/>
+			<Bond ID="69" Connects="81,67"/>
+			<Bond ID="71" Connects="81,70"/>
+			<Bond ID="44" Connects="54,39"/>
+			<Bond ID="12" Connects="62,8"/>
+			<Bond ID="21" Connects="67,15"/>
+			<Bond ID="50" Connects="70,45"/>
+			<Bond ID="22" Connects="77,15"/>
+			<Bond ID="78" Connects="79,77"/>
+			<Bond ID="23" Connects="81,15"/>
+			<Bond ID="38" Connects="81,27"/>
 		</Molecule>
-		<Molecule ID="68" NumChildren="6" Name="Sketch 2" XYZ="0.691791990245284,0.881825484674416,-3.74156170559259">
-			<Atom3d ID="69" HasProperties="1" DisplayStyle="Ball and Stick" XYZ="3.313932381,2.151511244,-2.718739302" Connections="70,71" Components="Li">
+		<Molecule ID="83" NumChildren="6" Name="Sketch 2" XYZ="0.691791990245284,0.881825484674416,-3.74156170559259">
+			<Atom3d ID="84" HasProperties="1" DisplayStyle="Ball and Stick" XYZ="3.313932381,2.151511244,-2.718739302" Connections="85,86,24,60,82,13" Components="Li">
 				<Properties Force="-0.0533619469719798,-0.150599272565365,-0.026088062964079"/>
 			</Atom3d>
-			<Atom3d ID="72" HasProperties="1" DisplayStyle="Ball and Stick" XYZ="3.644427164,2.58542316,0.281329887" Connections="70,73" Components="Li">
+			<Atom3d ID="87" HasProperties="1" DisplayStyle="Ball and Stick" XYZ="3.644427164,2.58542316,0.281329887" Connections="85,88,80,75,25,61" Components="Li">
 				<Properties Force="-0.578680669385025,0.752996362826826,0.384206018198254"/>
 			</Atom3d>
-			<Bond ID="70" Connects="69,72"/>
-			<Atom3d ID="74" HasProperties="1" DisplayStyle="Ball and Stick" XYZ="4.950630455,-0.031886839,-1.074861636" Connections="73,71" Components="Li">
+			<Bond ID="85" Connects="84,87"/>
+			<Atom3d ID="89" HasProperties="1" DisplayStyle="Ball and Stick" XYZ="4.950630455,-0.031886839,-1.074861636" Connections="88,86,14,66,26,76" Components="Li">
 				<Properties Force="0.101980609768672,0.0865649361989894,-0.173129872397979"/>
 			</Atom3d>
-			<Bond ID="73" Connects="72,74"/>
-			<Bond ID="71" Connects="69,74"/>
+			<Bond ID="88" Connects="87,89"/>
+			<Bond ID="86" Connects="84,89"/>
 		</Molecule>
-		<IndexProvider ID="75" NumTriggerSets="1">
-			<MonitorTriggerSet ID="76" Objects="ci(19):3,8,13,19,31,37,42,46,50,53,57,60,62,3+65,69,72,74" EventMask="13"/>
+		<IndexProvider ID="90" NumTriggerSets="1">
+			<MonitorTriggerSet ID="91" Objects="ci(19):3,8,15,27,39,45,51,54,57,62,67,70,72,77,79,81,84,87,89" EventMask="13"/>
 		</IndexProvider>
-		<AtomicHessian ID="77" NumTriggerSets="2" NumRows="19">
-			<RestrictableMonitorTriggerSet ID="78" ShouldAllowDeletions="0" ShouldDefineCommonRoot="0"/>
-			<RestrictableMonitorTriggerSet ID="79" Objects="ci(19):3,8,13,19,31,37,42,46,50,53,57,60,62,3+65,69,72,74" EventMask="13" Properties="XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ"/>
+		<AtomicHessian ID="92" NumTriggerSets="2" NumRows="19">
+			<RestrictableMonitorTriggerSet ID="93" ShouldAllowDeletions="0" ShouldDefineCommonRoot="0"/>
+			<RestrictableMonitorTriggerSet ID="94" Objects="ci(19):3,8,15,27,39,45,51,54,57,62,67,70,72,77,79,81,84,87,89" EventMask="13" Properties="XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ,XYZ"/>
 			<HessianRow NumCells="1">
 				<HessianCell Cell="16.56989383646,-3.978900391788,5.396348309137,-3.978900391788,23.32145262859,-1.575376984154,5.396348309137,-1.575376984154,21.43093493035"/>
 			</HessianRow>
@@ -405,5 +408,17 @@
 				<HessianCell Cell="45.21253046874,-0.1184508394646,-3.852623775873,-0.1184508394646,10.68649718668,-1.667286032819,-3.852623775873,-1.667286032819,19.73384855794"/>
 			</HessianRow>
 		</AtomicHessian>
+		<Bond ID="24" Connects="84,15"/>
+		<Bond ID="60" Connects="84,57"/>
+		<Bond ID="82" Connects="84,81"/>
+		<Bond ID="13" Connects="84,8"/>
+		<Bond ID="80" Connects="87,79"/>
+		<Bond ID="75" Connects="87,72"/>
+		<Bond ID="25" Connects="87,15"/>
+		<Bond ID="61" Connects="87,57"/>
+		<Bond ID="14" Connects="89,8"/>
+		<Bond ID="66" Connects="89,62"/>
+		<Bond ID="26" Connects="89,15"/>
+		<Bond ID="76" Connects="89,72"/>
 	</AtomisticTreeRoot>
 </XSD>
