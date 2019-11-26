@@ -64,10 +64,10 @@
 		<Property Name="_ServerAtomNames" DefinedOn="IndexProvider" Type="String"/>
 		<Property Name="_Stress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
 		<Property Name="_TrajectoryStress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
-		<SymmetrySystem ID="2" Mapping="3" Children="ci(21):21+4" Name="P1" OverspecificationTolerance="0.05" HasSymmetryHistory="1">
-			<MappingSet ID="25" SymmetryDefinition="20" ActiveSystem="2" NumFamilies="1" OwnsTotalConstraintMapping="0" TotalConstraintMapping="3">
-				<MappingFamily ID="26" NumImageMappings="0">
-					<IdentityMapping ID="3" Element="1,0,0,0,0,1,0,0,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" MappedObjects="ci(20):15+4,2,4+21" DefectObjects="19,27,20" NumImages="19" NumDefects="3">
+		<SymmetrySystem ID="2" Mapping="3" Children="ci(24):24+4" Name="P1" OverspecificationTolerance="0.05" HasSymmetryHistory="1">
+			<MappingSet ID="28" SymmetryDefinition="20" ActiveSystem="2" NumFamilies="1" OwnsTotalConstraintMapping="0" TotalConstraintMapping="3">
+				<MappingFamily ID="29" NumImageMappings="0">
+					<IdentityMapping ID="3" Element="1,0,0,0,0,1,0,0,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" MappedObjects="ci(20):15+4,2,4+21" DefectObjects="19,30,20,25,31,26,32,27,33" NumImages="19" NumDefects="9">
 						<Atom3d ID="4" Mapping="3" Parent="2" Name="Li1" DisplayStyle="Ball and Stick" XYZ="9.20449995,9.291203064,11.790729868" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Li"/>
 						<Atom3d ID="5" Mapping="3" Parent="2" Name="Li2" DisplayStyle="Ball and Stick" XYZ="9.18518016,9.32644944,9.536792796" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Li"/>
 						<Atom3d ID="6" Mapping="3" Parent="2" Name="Li3" DisplayStyle="Ball and Stick" XYZ="10.81264247,9.844441992,8.981989388" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Li"/>
@@ -87,14 +87,35 @@
 						<Atom3d ID="22" Mapping="3" Parent="2" Name="Li15" DisplayStyle="Ball and Stick" XYZ="9.30714475194001,10.7753883280103,11.7873514739881" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Li"/>
 						<Atom3d ID="23" Mapping="3" Parent="2" Name="Li1" DisplayStyle="Ball and Stick" XYZ="9.94294963391163,8.23985627239095,11.7510957598228" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Li"/>
 						<Atom3d ID="24" Mapping="3" Parent="2" Name="Li1" DisplayStyle="Ball and Stick" XYZ="8.48160989921743,10.3821954031027,7.61120814483883" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Li"/>
-						<SpaceGroup ID="19" Parent="2" Children="27" Name="P1" AVector="18.3998,0,0" BVector="0,18.4536,0" CVector="0,0,19.2908" Visible="0" OrientationBase="C along Z, B in YZ plane" Centering="3D Primitive-Centered" Lattice="3D Triclinic" GroupName="P1" Operators="1,0,0,0,0,1,0,0,0,0,1,0" DisplayRange="0,1,0,1,0,1" LineThickness="2" CylinderRadius="0.2" LabelAxes="1" ActiveSystem="0" ITNumber="1" LongName="P 1" Qualifier="Origin-1" SchoenfliesName="C1-1" System="Triclinic" Class="1"/>
-						<ReciprocalLattice3D ID="27" Parent="19" Visible="0"/>
+						<SpaceGroup ID="19" Parent="2" Children="30" Name="P1" AVector="18.3998,0,0" BVector="0,18.4536,0" CVector="0,0,19.2908" Visible="0" OrientationBase="C along Z, B in YZ plane" Centering="3D Primitive-Centered" Lattice="3D Triclinic" GroupName="P1" Operators="1,0,0,0,0,1,0,0,0,0,1,0" DisplayRange="0,1,0,1,0,1" LineThickness="2" CylinderRadius="0.2" LabelAxes="1" ActiveSystem="0" ITNumber="1" LongName="P 1" Qualifier="Origin-1" SchoenfliesName="C1-1" System="Triclinic" Class="1"/>
+						<ReciprocalLattice3D ID="30" Parent="19" Visible="0"/>
 						<PointGroup ID="20" Parent="2" Name="Default Point Group" AVector="1,0,0" BVector="0,1,0" CVector="0,0,1" OrientationBase="A along X, B along Y and C along Z" Centering="0D No Centering" Lattice="0D No Lattice" GroupName="Default Point Group" Operators="1,0,0,0,0,1,0,0,0,0,1,0" DisplayRange="0,0,0,0,0,0" LineThickness="2" CylinderRadius="0.2" LabelAxes="1" ActiveSystem="2" LongName=" " SchoenfliesName=" " System=" " IsContinuous="0"/>
+						<DistanceStretcher ID="25" Parent="2" Children="31" NumTriggerSets="2">
+							<RestrictableMonitorTriggerSet ID="34" Objects="22,4" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ"/>
+							<MonitorTriggerSet ID="35" Objects="31" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+						</DistanceStretcher>
+						<SymmetryTransformer ID="31" Parent="25" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="36" Objects="4" EventMask="13"/>
+						</SymmetryTransformer>
+						<DistanceStretcher ID="26" Parent="2" Children="32" NumTriggerSets="2">
+							<RestrictableMonitorTriggerSet ID="37" Objects="4,21" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ"/>
+							<MonitorTriggerSet ID="38" Objects="32" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+						</DistanceStretcher>
+						<SymmetryTransformer ID="32" Parent="26" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="39" Objects="21" EventMask="13"/>
+						</SymmetryTransformer>
+						<DistanceStretcher ID="27" Parent="2" Children="33" NumTriggerSets="2">
+							<RestrictableMonitorTriggerSet ID="40" Objects="4,23" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ"/>
+							<MonitorTriggerSet ID="41" Objects="33" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+						</DistanceStretcher>
+						<SymmetryTransformer ID="33" Parent="27" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="42" Objects="23" EventMask="13"/>
+						</SymmetryTransformer>
 					</IdentityMapping>
 					<MappingRepairs NumRepairs="0"/>
 				</MappingFamily>
 			</MappingSet>
-			<OldDefinition ID="28" OldDefinition="19"/>
+			<OldDefinition ID="43" OldDefinition="19"/>
 		</SymmetrySystem>
 	</AtomisticTreeRoot>
 </XSD>
