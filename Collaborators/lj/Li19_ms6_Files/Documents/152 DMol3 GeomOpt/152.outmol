@@ -1,0 +1,1059 @@
+ 
+     ===============================================================
+     Materials Studio DMol^3 version 6.1
+     compiled on Mar  6 2013 07:08:17
+     ===============================================================
+ 
+     ===============================================================
+     Density Functional Theory Electronic Structure Program
+     Copyright (c) 2013, Accelrys Inc. All rights reserved.
+     Cite work using this program as: 
+     B. Delley, J. Chem. Phys. 92,  508  (1990).
+     B. Delley, J. Chem. Phys. 113, 7756 (2000).
+     DMol^3 is available as part of Materials Studio.
+     ===============================================================
+ 
+ 
+DATE:     Dec  1 16:06:57 2019
+ 
+Job started on host YAESAKURA
+
+This run uses    1 processors
+
+Message: License checkout of MS_dmol successful
+ 
+Basis set is read from file:
+C:\PROGRA~2\Accelrys\MATERI~1.1X6\share\Resources\Quantum\DMol3\BASFILE_v3.5
+
+ 
+ no INCOOR file: try ZMAT
+ no ZMAT file: try CAR
+
+Geometry is read from file: 152.car                                                                                                                                                                                                                                                         
+
+INCOOR, atomic coordinates in au (for archive):
+______________________________________________________________________>8
+
+$coordinates
+Li           -8.13842915209681    4.13791985994571   -1.31758133526940
+Li          -10.21739078639854   -0.70895202087943    0.69506409666423
+Li           -6.67940494953756   -5.13758205855073    0.55974099026715
+Li           -0.92108805718056   -3.97994337438690    0.83478652894400
+Li           -2.57795386905955    4.95166214742821   -0.54852016314381
+Li            4.71976841977791   -3.34831296744875   -1.08095389658832
+Li            6.49435767614504    2.03482130375974   -0.64972507882609
+Li            2.96529829511698    6.16233468570979    0.17398486012051
+Li           -4.83581573199524   -0.08491968301519   -0.17550114423786
+Li            1.19652177016993    0.94392944708419   -0.79217297805826
+Li           -1.50032121526878    4.99663707551331    4.76753054082956
+Li            3.13381897057310    3.61181570935481    2.01912738718415
+Li            3.10275593976883   -2.00938655387765    1.65840084396922
+Li           -1.15217602828788   -3.76742830059907    5.07969092421090
+Li           -3.63638645566556    0.70525343567951    7.01414128622184
+Li            1.84343438472200    0.84121748993504    6.83080027678320
+Li           -1.12458385934710    0.52714615502486    2.36505658115540
+Li           -5.79556589060883    2.37710045581577    1.84673627105485
+$end
+______________________________________________________________________>8
+
+
+N_atoms =   18     N_atom_types =  1
+
+
+INPUT_DMOL keywords (for archive):
+______________________________________________________________________>8
+
+#Warning: no global confinement specs in BASFILE
+                                                                                                                                    <--
+# Task parameters                                                                                                                   <--
+Calculate                     optimize                                                                                              <--
+Opt_energy_convergence        2.0000e-005                                                                                           <--
+Opt_gradient_convergence      4.0000e-003 A                                                                                         <--
+Opt_displacement_convergence  5.0000e-003 A                                                                                         <--
+Opt_iterations                500                                                                                                   <--
+Opt_max_displacement          0.3000 A                                                                                              <--
+Initial_hessian               improved                                                                                              <--
+Symmetry                      off                                                                                                   <--
+Max_memory                    1024                                                                                                  <--
+                                                                                                                                    <--
+# Electronic parameters                                                                                                             <--
+Spin_polarization             unrestricted                                                                                          <--
+Charge                        0                                                                                                     <--
+Basis                         dnd                                                                                                   <--
+Pseudopotential               dspp                                                                                                  <--
+Functional                    gga(p91)                                                                                              <--
+Aux_density                   octupole                                                                                              <--
+Integration_grid              medium                                                                                                <--
+Occupation                    fermi                                                                                                 <--
+Cutoff_Global                 4.4000 angstrom                                                                                       <--
+Scf_density_convergence       1.0000e-005                                                                                           <--
+Scf_charge_mixing             2.0000e-001                                                                                           <--
+Scf_spin_mixing               5.0000e-001                                                                                           <--
+Scf_iterations                500                                                                                                   <--
+Scf_diis                      6 pulay                                                                                               <--
+                                                                                                                                    <--
+# Print options                                                                                                                     <--
+Print                         eigval_last_it                                                                                        <--
+                                                                                                                                    <--
+# Calculated properties                                                                                                             <--
+______________________________________________________________________>8
+
+
+Publications of specific relevance to this calculation:
+
+Density functional:
+ P91 exchange: Perdew, Physica B 172, 1 (1991)
+
+Spin unrestricted calculation
+
+
+ The Generation and Use of Delocalized Internal Coordinates in Geometry optimization; 
+ Baker Kessi Delley: J. Chem. Phys., 105, 192 (1996) 
+ Andzelm Fitzgerald King-Smith: Chem. Phys. Lett., 335, 321 (2001)
+
+ Hardness conserving semilocal pseudopotentials; Delley: Phys. Rev. B 66, 155125 (2002)
+
+Warning: dspp            takes precedence over using  symmetrized basis
+Calculation is Spin_unrestricted
+ 
+ 
+Warning: no SYM file, no symmetry used in vibrational analysis
+Warning: at least C1 SYM file should be there for optgeom
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -4.306671            2.189693           -0.697234
+            2    Li           -5.406810           -0.375161            0.367812
+            3    Li           -3.534589           -2.718691            0.296202
+            4    Li           -0.487419           -2.106095            0.441750
+            5    Li           -1.364194            2.620307           -0.290264
+            6    Li            2.497594           -1.771851           -0.572016
+            7    Li            3.436666            1.076781           -0.343820
+            8    Li            1.569168            3.260967            0.092069
+            9    Li           -2.559003           -0.044938           -0.092871
+           10    Li            0.633172            0.499506           -0.419200
+           11    Li           -0.793936            2.644106            2.522869
+           12    Li            1.658346            1.911291            1.068476
+           13    Li            1.641908           -1.063322            0.877588
+           14    Li           -0.609705           -1.993637            2.688057
+           15    Li           -1.924293            0.373204            3.711724
+           16    Li            0.975503            0.445153            3.614704
+           17    Li           -0.595104            0.278954            1.251534
+           18    Li           -3.066881            1.257907            0.977251
+          ----------------------------------------------------------------------
+
+Message: Generating delocalized internals
+  
+  MDF file does not exist.
+  Generating automatic internal coordinates.
+
+*** OPTIMIZATION USES DELOCALIZED INTERNALS ***
+
+ The preliminary size of active space is :      48
+ There are :           48  degrees of freedom
+ There are likely:    141  primitive internals
+
+Message: Generation of delocalized internals is successful
+Lithium      nbas=  1, z=   3, nrfn=  5, rcut=  8.31, e_ref= -0.023261 Ha
+                                  rcore=  0.00  zval=   3.00   3.00
+   n=1  L=0  occ= 2.00 e=      -1.870620Ha       -50.9022eV
+   n=2  L=0  occ= 1.00 e=      -0.072085Ha        -1.9615eV
+   n=2  L=0  occ= 0.00 e=      -0.238445Ha        -6.4884eV
+   n=2  L=1  occ= 0.00 e=      -0.159478Ha        -4.3396eV
+   n=3  L=2  occ= 0.00 e=      -0.887673Ha       -24.1548eV
+
+Note: calculation of reference xc derivative is turned on
+ for pseudopotential with core density correction
+
+Symmetry orbitals C1                            
+    n  norb    representation
+    1   198        a    
+  total number of valence orbitals:    198
+
+
+ molecule charge=      0.0   active electron number=      54.0
+ (without charge=             54.0)
+ 
+
+Integration in 3d (fixed mesh): ipa=    6  f3= F
+ npri,iomax,iomin, thres,  rmaxp,    sp
+   0    6    1   0.00010   10.00    1.00
+Integration points, checksum  0     44010     44010      54.013087
+
+ vxcg/d_diis workspace has max memory requirements        27.5 MB 
+
+ real array elements, matrices vectors etc:      11.3 MB 
+ integer arrays                           :       0.7 MB 
+ min recommended for all-incl workspace   :      27.6 MB 
+Total memory allocated for arrays         :      27.6 MB 
+Default spin density on atom Li(  1), L= 0 was used on start: M_s=  1.0
+    1  1.000 start spin density on Li(   1), L= 0 M_s=  1.0
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef         -135.170581Ha        -0.7333468Ha      5.21E-02     0.1m      1
+Ef         -134.982361Ha        -0.5451264Ha      2.29E-02     0.1m      2
+Ef         -134.970412Ha        -0.5331779Ha      1.53E-02     0.2m      3
+Ef         -134.970172Ha        -0.5329378Ha      1.12E-02     0.2m      4
+Ef         -134.968816Ha        -0.5315814Ha      6.56E-03     0.3m      5
+Ef         -134.970071Ha        -0.5328372Ha      3.99E-03     0.3m      6
+Ef         -134.970606Ha        -0.5333713Ha      2.72E-03     0.4m      7
+Ef         -134.970836Ha        -0.5336018Ha      2.38E-03     0.4m      8
+Ef         -134.970949Ha        -0.5337151Ha      2.14E-03     0.5m      9
+Ef         -134.971120Ha        -0.5338853Ha      2.15E-03     0.5m     10
+Ef         -134.971112Ha        -0.5338781Ha      2.13E-03     0.6m     11
+Ef         -134.971204Ha        -0.5339695Ha      2.17E-03     0.6m     12
+Ef         -134.971023Ha        -0.5337886Ha      2.14E-03     0.7m     13
+Ef         -134.970909Ha        -0.5336746Ha      2.05E-03     0.7m     14
+Ef         -134.970964Ha        -0.5337300Ha      2.02E-03     0.7m     15
+Ef         -134.971115Ha        -0.5338804Ha      2.00E-03     0.8m     16
+Ef         -134.971416Ha        -0.5341813Ha      1.76E-03     0.8m     17
+Ef         -134.971692Ha        -0.5344578Ha      1.73E-03     0.9m     18
+Ef         -134.971950Ha        -0.5347160Ha      1.59E-03     0.9m     19
+Ef         -134.971974Ha        -0.5347398Ha      1.35E-03     1.0m     20
+Ef         -134.972013Ha        -0.5347792Ha      1.41E-03     1.0m     21
+Ef         -134.971958Ha        -0.5347233Ha      1.17E-03     1.1m     22
+Ef         -134.972090Ha        -0.5348558Ha      1.03E-03     1.1m     23
+Ef         -134.972117Ha        -0.5348826Ha      1.02E-03     1.2m     24
+Ef         -134.972163Ha        -0.5349288Ha      1.02E-03     1.2m     25
+Ef         -134.972147Ha        -0.5349127Ha      9.96E-04     1.2m     26
+Ef         -134.972149Ha        -0.5349152Ha      9.87E-04     1.3m     27
+Ef         -134.972099Ha        -0.5348647Ha      9.97E-04     1.3m     28
+Ef         -134.972066Ha        -0.5348320Ha      9.84E-04     1.4m     29
+Ef         -134.972112Ha        -0.5348774Ha      9.85E-04     1.4m     30
+Ef         -134.972105Ha        -0.5348704Ha      9.92E-04     1.5m     31
+Ef         -134.972116Ha        -0.5348820Ha      1.01E-03     1.5m     32
+Ef         -134.972013Ha        -0.5347783Ha      8.90E-04     1.5m     33
+Ef         -134.971897Ha        -0.5346629Ha      8.13E-04     1.6m     34
+Ef         -134.971889Ha        -0.5346550Ha      7.52E-04     1.6m     35
+Ef         -134.971935Ha        -0.5347002Ha      7.15E-04     1.7m     36
+Ef         -134.971983Ha        -0.5347483Ha      6.52E-04     1.7m     37
+Ef         -134.972030Ha        -0.5347955Ha      6.50E-04     1.7m     38
+Ef         -134.972053Ha        -0.5348183Ha      6.47E-04     1.8m     39
+Ef         -134.972045Ha        -0.5348109Ha      6.29E-04     1.8m     40
+Ef         -134.972074Ha        -0.5348398Ha      6.06E-04     1.8m     41
+Ef         -134.972076Ha        -0.5348414Ha      5.68E-04     1.9m     42
+Ef         -134.972108Ha        -0.5348733Ha      5.62E-04     1.9m     43
+Ef         -134.972108Ha        -0.5348739Ha      5.67E-04     2.0m     44
+Ef         -134.972099Ha        -0.5348645Ha      5.44E-04     2.0m     45
+Ef         -134.972051Ha        -0.5348167Ha      4.54E-04     2.0m     46
+Ef         -134.972038Ha        -0.5348037Ha      4.19E-04     2.1m     47
+Ef         -134.972038Ha        -0.5348039Ha      4.14E-04     2.1m     48
+Ef         -134.972034Ha        -0.5347995Ha      4.06E-04     2.2m     49
+Ef         -134.972035Ha        -0.5348008Ha      4.11E-04     2.2m     50
+Ef         -134.972046Ha        -0.5348118Ha      4.27E-04     2.2m     51
+Ef         -134.972026Ha        -0.5347912Ha      3.95E-04     2.3m     52
+Ef         -134.972010Ha        -0.5347759Ha      3.63E-04     2.3m     53
+Ef         -134.972017Ha        -0.5347827Ha      3.63E-04     2.3m     54
+Ef         -134.972008Ha        -0.5347740Ha      3.14E-04     2.4m     55
+Ef         -134.972016Ha        -0.5347812Ha      3.04E-04     2.4m     56
+Ef         -134.972018Ha        -0.5347834Ha      3.12E-04     2.4m     57
+Ef         -134.972022Ha        -0.5347881Ha      3.18E-04     2.5m     58
+Ef         -134.972018Ha        -0.5347833Ha      3.00E-04     2.5m     59
+Ef         -134.972018Ha        -0.5347834Ha      2.93E-04     2.6m     60
+Ef         -134.972015Ha        -0.5347807Ha      2.47E-04     2.6m     61
+Ef         -134.972018Ha        -0.5347836Ha      2.15E-04     2.6m     62
+Ef         -134.972021Ha        -0.5347871Ha      1.63E-04     2.7m     63
+Ef         -134.972025Ha        -0.5347910Ha      1.31E-04     2.7m     64
+Ef         -134.972027Ha        -0.5347923Ha      1.22E-04     2.8m     65
+Ef         -134.972027Ha        -0.5347928Ha      1.17E-04     2.8m     66
+Ef         -134.972027Ha        -0.5347927Ha      1.17E-04     2.8m     67
+Ef         -134.972027Ha        -0.5347924Ha      1.21E-04     2.9m     68
+Ef         -134.972028Ha        -0.5347936Ha      1.18E-04     2.9m     69
+Ef         -134.972028Ha        -0.5347937Ha      1.18E-04     2.9m     70
+Ef         -134.972028Ha        -0.5347936Ha      1.14E-04     3.0m     71
+Ef         -134.972028Ha        -0.5347935Ha      1.08E-04     3.0m     72
+Ef         -134.972028Ha        -0.5347935Ha      1.07E-04     3.1m     73
+Ef         -134.972028Ha        -0.5347938Ha      1.08E-04     3.1m     74
+Ef         -134.972028Ha        -0.5347937Ha      1.18E-04     3.1m     75
+Ef         -134.972028Ha        -0.5347939Ha      1.16E-04     3.2m     76
+Ef         -134.972026Ha        -0.5347921Ha      8.90E-05     3.2m     77
+Ef         -134.972026Ha        -0.5347915Ha      8.55E-05     3.3m     78
+Ef         -134.972026Ha        -0.5347917Ha      8.49E-05     3.3m     79
+Ef         -134.972026Ha        -0.5347913Ha      8.51E-05     3.3m     80
+Ef         -134.972026Ha        -0.5347917Ha      8.67E-05     3.4m     81
+Ef         -134.972027Ha        -0.5347923Ha      9.00E-05     3.4m     82
+Ef         -134.972026Ha        -0.5347913Ha      8.51E-05     3.4m     83
+Ef         -134.972024Ha        -0.5347900Ha      7.05E-05     3.5m     84
+Ef         -134.972024Ha        -0.5347894Ha      5.96E-05     3.5m     85
+Ef         -134.972024Ha        -0.5347896Ha      5.33E-05     3.6m     86
+Ef         -134.972025Ha        -0.5347903Ha      5.02E-05     3.6m     87
+Ef         -134.972026Ha        -0.5347916Ha      4.55E-05     3.6m     88
+Ef         -134.972026Ha        -0.5347921Ha      4.43E-05     3.7m     89
+Ef         -134.972027Ha        -0.5347924Ha      4.15E-05     3.7m     90
+Ef         -134.972027Ha        -0.5347925Ha      4.17E-05     3.8m     91
+Ef         -134.972027Ha        -0.5347925Ha      4.17E-05     3.8m     92
+Ef         -134.972027Ha        -0.5347923Ha      4.14E-05     3.8m     93
+Ef         -134.972025Ha        -0.5347907Ha      3.72E-05     3.9m     94
+Ef         -134.972025Ha        -0.5347902Ha      3.50E-05     3.9m     95
+Ef         -134.972024Ha        -0.5347897Ha      3.40E-05     4.0m     96
+Ef         -134.972024Ha        -0.5347898Ha      3.41E-05     4.0m     97
+Ef         -134.972024Ha        -0.5347899Ha      3.42E-05     4.0m     98
+Ef         -134.972024Ha        -0.5347895Ha      3.40E-05     4.0m     99
+Ef         -134.972024Ha        -0.5347895Ha      3.42E-05     4.1m    100
+Ef         -134.972024Ha        -0.5347897Ha      3.49E-05     4.1m    101
+Ef         -134.972024Ha        -0.5347897Ha      3.47E-05     4.2m    102
+Ef         -134.972023Ha        -0.5347890Ha      2.77E-05     4.2m    103
+Ef         -134.972023Ha        -0.5347888Ha      2.67E-05     4.2m    104
+Ef         -134.972023Ha        -0.5347887Ha      2.60E-05     4.3m    105
+Ef         -134.972023Ha        -0.5347887Ha      2.58E-05     4.3m    106
+Ef         -134.972023Ha        -0.5347888Ha      2.61E-05     4.4m    107
+Ef         -134.972023Ha        -0.5347888Ha      2.62E-05     4.4m    108
+Ef         -134.972023Ha        -0.5347887Ha      2.62E-05     4.4m    109
+Ef         -134.972023Ha        -0.5347889Ha      2.56E-05     4.5m    110
+Ef         -134.972023Ha        -0.5347889Ha      2.38E-05     4.5m    111
+Ef         -134.972023Ha        -0.5347886Ha      2.12E-05     4.6m    112
+Ef         -134.972023Ha        -0.5347886Ha      2.08E-05     4.6m    113
+Ef         -134.972023Ha        -0.5347883Ha      1.94E-05     4.6m    114
+Ef         -134.972023Ha        -0.5347882Ha      1.90E-05     4.7m    115
+Ef         -134.972023Ha        -0.5347883Ha      1.92E-05     4.7m    116
+Ef         -134.972023Ha        -0.5347883Ha      1.91E-05     4.8m    117
+Ef         -134.972023Ha        -0.5347883Ha      1.90E-05     4.8m    118
+Ef         -134.972023Ha        -0.5347883Ha      1.92E-05     4.8m    119
+Ef         -134.972023Ha        -0.5347883Ha      1.96E-05     4.9m    120
+Ef         -134.972023Ha        -0.5347883Ha      1.87E-05     4.9m    121
+Ef         -134.972023Ha        -0.5347883Ha      1.86E-05     5.0m    122
+Ef         -134.972023Ha        -0.5347884Ha      1.87E-05     5.0m    123
+Ef         -134.972023Ha        -0.5347883Ha      1.87E-05     5.0m    124
+Ef         -134.972023Ha        -0.5347883Ha      1.87E-05     5.1m    125
+Ef         -134.972023Ha        -0.5347883Ha      1.90E-05     5.1m    126
+Ef         -134.972023Ha        -0.5347883Ha      1.82E-05     5.2m    127
+Ef         -134.972023Ha        -0.5347883Ha      1.65E-05     5.2m    128
+Ef         -134.972022Ha        -0.5347880Ha      8.66E-06     5.2m    129
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital  -0.07335Ha    -1.996eV
+Energy of Lowest Unoccupied Molecular Orbital  -0.06255Ha    -1.702eV
+
+  HOMO is orbital number    54
+  LUMO is orbital number    55
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a         -1.846703       -50.251     1.000
+    2   +   1   a         -1.846041       -50.233     1.000
+    3   +   2   a         -1.844647       -50.195     1.000
+    4   -   2   a         -1.844102       -50.181     1.000
+    5   -   3   a         -1.840918       -50.094     1.000
+    6   +   3   a         -1.839393       -50.052     1.000
+    7   +   4   a         -1.833160       -49.883     1.000
+    8   -   4   a         -1.832903       -49.876     1.000
+    9   +   5   a         -1.829996       -49.797     1.000
+   10   -   5   a         -1.829681       -49.788     1.000
+   11   +   6   a         -1.825770       -49.682     1.000
+   12   -   6   a         -1.825431       -49.673     1.000
+   13   +   7   a         -1.824643       -49.651     1.000
+   14   -   7   a         -1.824567       -49.649     1.000
+   15   -   8   a         -1.824101       -49.636     1.000
+   16   +   8   a         -1.823378       -49.617     1.000
+   17   -   9   a         -1.811923       -49.305     1.000
+   18   +   9   a         -1.811753       -49.300     1.000
+   19   +  10   a         -1.810927       -49.278     1.000
+   20   -  10   a         -1.810476       -49.266     1.000
+   21   +  11   a         -1.809775       -49.247     1.000
+   22   -  11   a         -1.809278       -49.233     1.000
+   23   -  12   a         -1.807374       -49.181     1.000
+   24   +  12   a         -1.807148       -49.175     1.000
+   25   +  13   a         -1.800727       -49.000     1.000
+   26   -  13   a         -1.800296       -48.989     1.000
+   27   -  14   a         -1.798780       -48.947     1.000
+   28   +  14   a         -1.798065       -48.928     1.000
+   29   -  15   a         -1.797981       -48.926     1.000
+   30   +  15   a         -1.797652       -48.917     1.000
+   31   +  16   a         -1.794964       -48.843     1.000
+   32   -  16   a         -1.794915       -48.842     1.000
+   33   +  17   a         -1.788531       -48.668     1.000
+   34   -  17   a         -1.787369       -48.637     1.000
+   35   -  18   a         -1.761403       -47.930     1.000
+   36   +  18   a         -1.761056       -47.921     1.000
+   37   -  19   a         -0.169337        -4.608     1.000
+   38   +  19   a         -0.168436        -4.583     1.000
+   39   +  20   a         -0.140795        -3.831     1.000
+   40   -  20   a         -0.140704        -3.829     1.000
+   41   -  21   a         -0.132426        -3.604     1.000
+   42   +  21   a         -0.131925        -3.590     1.000
+   43   +  22   a         -0.127392        -3.467     1.000
+   44   -  22   a         -0.125969        -3.428     1.000
+   45   -  23   a         -0.112078        -3.050     1.000
+   46   +  23   a         -0.111005        -3.021     1.000
+   47   +  24   a         -0.099745        -2.714     1.000
+   48   -  24   a         -0.098927        -2.692     1.000
+   49   +  25   a         -0.087702        -2.386     1.000
+   50   -  25   a         -0.087592        -2.383     1.000
+   51   -  26   a         -0.079618        -2.167     1.000
+   52   +  26   a         -0.076117        -2.071     1.000
+   53   -  27   a         -0.074601        -2.030     1.000
+   54   +  27   a         -0.073347        -1.996     1.000
+   55   +  28   a         -0.062551        -1.702     0.000
+   56   -  28   a         -0.062444        -1.699     0.000
+   57   +  29   a         -0.062343        -1.696     0.000
+   58   -  29   a         -0.060838        -1.655     0.000
+   59   +  30   a         -0.060723        -1.652     0.000
+   60   -  30   a         -0.056814        -1.546     0.000
+   61   +  31   a         -0.045994        -1.252     0.000
+   62   -  31   a         -0.044242        -1.204     0.000
+   63   -  32   a         -0.042395        -1.154     0.000
+   64   +  32   a         -0.039689        -1.080     0.000
+   65   +  33   a         -0.033090        -0.900     0.000
+   66   -  33   a         -0.031779        -0.865     0.000
+   67   +  34   a         -0.024790        -0.675     0.000
+   68   -  34   a         -0.023821        -0.648     0.000
+   69   +  35   a         -0.021357        -0.581     0.000
+   70   -  35   a         -0.020747        -0.565     0.000
+   71   -  36   a         -0.017630        -0.480     0.000
+   72   +  36   a         -0.015950        -0.434     0.000
+   73   +  37   a         -0.008711        -0.237     0.000
+   74   -  37   a         -0.007485        -0.204     0.000
+   75   +  38   a         -0.006046        -0.165     0.000
+   76   -  38   a         -0.004670        -0.127     0.000
+   77   +  39   a         -0.003541        -0.096     0.000
+   78   -  39   a         -0.003476        -0.095     0.000
+   79   +  40   a          0.005406         0.147     0.000
+   80   -  40   a          0.006499         0.177     0.000
+ 
+
+  Orbital occupation is:
+     27  a  ( 1) alpha and    27  a  ( 1) beta
+  Total number electrons:              54.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li    -8.138429   4.137920  -1.317581     0.008268  -0.008499   0.015153
+df   Li   -10.217391  -0.708952   0.695064     0.000116   0.001120   0.000408
+df   Li    -6.679405  -5.137582   0.559741    -0.003859  -0.002678  -0.005292
+df   Li    -0.921088  -3.979943   0.834787     0.005349   0.013483   0.024375
+df   Li    -2.577954   4.951662  -0.548520    -0.006102  -0.006096   0.003380
+df   Li     4.719768  -3.348313  -1.080954    -0.019076   0.020880   0.040021
+df   Li     6.494358   2.034821  -0.649725    -0.008825   0.004140   0.009002
+df   Li     2.965298   6.162335   0.173985     0.006904  -0.048767   0.032757
+df   Li    -4.835816  -0.084920  -0.175501    -0.002550   0.033614   0.034509
+df   Li     1.196522   0.943929  -0.792173    -0.005319  -0.005590   0.041880
+df   Li    -1.500321   4.996637   4.767531    -0.003372  -0.005259   0.003503
+df   Li     3.133819   3.611816   2.019127    -0.001306   0.037270  -0.052670
+df   Li     3.102756  -2.009387   1.658401     0.002203  -0.012765  -0.056176
+df   Li    -1.152176  -3.767428   5.079691     0.001697   0.003466  -0.016352
+df   Li    -3.636386   0.705253   7.014141     0.005964   0.002709   0.002586
+df   Li     1.843434   0.841217   6.830800     0.000200   0.000848   0.005931
+df   Li    -1.124584   0.527146   2.365057     0.006689  -0.007463  -0.034280
+df   Li    -5.795566   2.377100   1.846736     0.013017  -0.020414  -0.048736
+df  binding energy      -0.5347880Ha       -14.55233eV        -335.591kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =     -134.4372343Ha
+                  Kinetic =        1.3063181Ha
+            Electrostatic =       -2.5793976Ha
+     Exchange-correlation =        0.3195902Ha
+        Spin polarization =        0.4187013Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef         -134.972022Ha        -0.5347880Ha                   5.3m    130
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -4.306671            2.189693           -0.697234
+            2    Li           -5.406810           -0.375161            0.367812
+            3    Li           -3.534589           -2.718691            0.296202
+            4    Li           -0.487419           -2.106095            0.441750
+            5    Li           -1.364194            2.620307           -0.290264
+            6    Li            2.497594           -1.771851           -0.572016
+            7    Li            3.436666            1.076781           -0.343820
+            8    Li            1.569168            3.260967            0.092069
+            9    Li           -2.559003           -0.044938           -0.092871
+           10    Li            0.633172            0.499506           -0.419200
+           11    Li           -0.793936            2.644106            2.522869
+           12    Li            1.658346            1.911291            1.068476
+           13    Li            1.641908           -1.063322            0.877588
+           14    Li           -0.609705           -1.993637            2.688057
+           15    Li           -1.924293            0.373204            3.711724
+           16    Li            0.975503            0.445153            3.614704
+           17    Li           -0.595104            0.278954            1.251534
+           18    Li           -3.066881            1.257907            0.977251
+          ----------------------------------------------------------------------
+
+
+ 48 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000003    0.000018    0.000019    0.000022    0.000028    0.000031
+     0.000033    0.000034    0.000037    0.000046    0.000049    0.000051
+     0.000060    0.000063    0.000070    0.000071    0.000072    0.000073
+     0.000073    0.000083    0.000086    0.000089    0.000090    0.000100
+     0.000105    0.000117    0.000125    0.000127    0.000141    0.000167
+     0.000273    0.000332    0.000358    0.000389    0.000492    0.000863
+     0.001258    0.002113    0.002484    0.002629    0.004205    0.005285
+     0.006859    0.007548    0.015173    0.092474    0.120827    0.196254
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   2 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   3 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   4 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   5 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   6 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   7 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   8 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   9 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  10 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  11 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  12 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  13 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  14 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  15 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  16 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  17 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  18 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  19 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  20 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  21 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  22 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  23 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue  24 too small.  Replaced by     0.000100
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.971771
+
+opt==  Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==      tolerance:.......      0.0000200        0.002117       0.009449
+opt==    1      -134.9720223      0.0000000        0.056176       0.738931
+
+ 
+                      Step    1                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.534788E+00 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.561755E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.738931E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+Integration points, checksum  0     44010     44010      54.013050
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef         -135.015102Ha        -0.5778680Ha      3.68E-03     5.4m      1
+Ef         -135.018722Ha        -0.5814875Ha      3.13E-03     5.4m      2
+Ef         -135.018763Ha        -0.5815283Ha      2.36E-03     5.4m      3
+Ef         -135.018906Ha        -0.5816717Ha      1.55E-03     5.5m      4
+Ef         -135.018980Ha        -0.5817460Ha      1.09E-03     5.5m      5
+Ef         -135.018978Ha        -0.5817439Ha      8.06E-04     5.6m      6
+Ef         -135.019000Ha        -0.5817654Ha      7.20E-04     5.6m      7
+Ef         -135.019028Ha        -0.5817936Ha      7.39E-04     5.7m      8
+Ef         -135.019010Ha        -0.5817753Ha      7.22E-04     5.7m      9
+Ef         -135.018960Ha        -0.5817254Ha      6.60E-04     5.7m     10
+Ef         -135.018903Ha        -0.5816685Ha      5.75E-04     5.8m     11
+Ef         -135.018893Ha        -0.5816588Ha      5.33E-04     5.8m     12
+Ef         -135.018884Ha        -0.5816500Ha      4.57E-04     5.8m     13
+Ef         -135.018896Ha        -0.5816619Ha      4.40E-04     5.9m     14
+Ef         -135.018914Ha        -0.5816800Ha      4.32E-04     5.9m     15
+Ef         -135.018922Ha        -0.5816879Ha      4.33E-04     5.9m     16
+Ef         -135.018915Ha        -0.5816810Ha      4.31E-04     6.0m     17
+Ef         -135.018910Ha        -0.5816760Ha      4.28E-04     6.0m     18
+Ef         -135.018884Ha        -0.5816496Ha      4.15E-04     6.1m     19
+Ef         -135.018879Ha        -0.5816450Ha      4.11E-04     6.1m     20
+Ef         -135.018885Ha        -0.5816503Ha      4.11E-04     6.1m     21
+Ef         -135.018883Ha        -0.5816491Ha      4.12E-04     6.2m     22
+Ef         -135.018884Ha        -0.5816501Ha      4.12E-04     6.2m     23
+Ef         -135.018894Ha        -0.5816600Ha      4.15E-04     6.3m     24
+Ef         -135.018874Ha        -0.5816395Ha      4.07E-04     6.3m     25
+Ef         -135.018867Ha        -0.5816330Ha      4.00E-04     6.3m     26
+Ef         -135.018864Ha        -0.5816295Ha      3.93E-04     6.4m     27
+Ef         -135.018869Ha        -0.5816351Ha      3.92E-04     6.4m     28
+Ef         -135.018870Ha        -0.5816358Ha      3.93E-04     6.4m     29
+Ef         -135.018872Ha        -0.5816380Ha      3.90E-04     6.5m     30
+Ef         -135.018877Ha        -0.5816429Ha      3.91E-04     6.5m     31
+Ef         -135.018874Ha        -0.5816401Ha      3.89E-04     6.6m     32
+Ef         -135.018871Ha        -0.5816362Ha      3.84E-04     6.6m     33
+Ef         -135.018833Ha        -0.5815989Ha      3.59E-04     6.6m     34
+Ef         -135.018806Ha        -0.5815720Ha      3.20E-04     6.7m     35
+Ef         -135.018801Ha        -0.5815662Ha      2.97E-04     6.7m     36
+Ef         -135.018792Ha        -0.5815577Ha      2.50E-04     6.8m     37
+Ef         -135.018782Ha        -0.5815477Ha      2.09E-04     6.8m     38
+Ef         -135.018782Ha        -0.5815480Ha      1.87E-04     6.8m     39
+Ef         -135.018780Ha        -0.5815455Ha      1.71E-04     6.9m     40
+Ef         -135.018777Ha        -0.5815425Ha      1.40E-04     6.9m     41
+Ef         -135.018777Ha        -0.5815423Ha      1.32E-04     7.0m     42
+Ef         -135.018777Ha        -0.5815422Ha      1.35E-04     7.0m     43
+Ef         -135.018777Ha        -0.5815425Ha      1.34E-04     7.0m     44
+Ef         -135.018777Ha        -0.5815424Ha      1.26E-04     7.1m     45
+Ef         -135.018776Ha        -0.5815421Ha      1.19E-04     7.1m     46
+Ef         -135.018777Ha        -0.5815426Ha      1.18E-04     7.1m     47
+Ef         -135.018778Ha        -0.5815437Ha      1.16E-04     7.2m     48
+Ef         -135.018779Ha        -0.5815444Ha      1.16E-04     7.2m     49
+Ef         -135.018781Ha        -0.5815463Ha      1.16E-04     7.3m     50
+Ef         -135.018780Ha        -0.5815459Ha      1.16E-04     7.3m     51
+Ef         -135.018779Ha        -0.5815450Ha      1.15E-04     7.3m     52
+Ef         -135.018779Ha        -0.5815448Ha      1.16E-04     7.4m     53
+Ef         -135.018779Ha        -0.5815446Ha      1.16E-04     7.4m     54
+Ef         -135.018779Ha        -0.5815446Ha      1.16E-04     7.5m     55
+Ef         -135.018778Ha        -0.5815441Ha      1.15E-04     7.5m     56
+Ef         -135.018779Ha        -0.5815447Ha      1.14E-04     7.5m     57
+Ef         -135.018780Ha        -0.5815458Ha      1.14E-04     7.6m     58
+Ef         -135.018781Ha        -0.5815466Ha      1.14E-04     7.6m     59
+Ef         -135.018781Ha        -0.5815465Ha      1.14E-04     7.6m     60
+Ef         -135.018780Ha        -0.5815459Ha      1.13E-04     7.7m     61
+Ef         -135.018780Ha        -0.5815453Ha      1.13E-04     7.7m     62
+Ef         -135.018779Ha        -0.5815451Ha      1.13E-04     7.8m     63
+Ef         -135.018779Ha        -0.5815446Ha      1.13E-04     7.8m     64
+Ef         -135.018778Ha        -0.5815438Ha      1.13E-04     7.8m     65
+Ef         -135.018778Ha        -0.5815439Ha      1.12E-04     7.9m     66
+Ef         -135.018778Ha        -0.5815440Ha      1.12E-04     7.9m     67
+Ef         -135.018778Ha        -0.5815440Ha      1.12E-04     7.9m     68
+Ef         -135.018779Ha        -0.5815442Ha      1.12E-04     8.0m     69
+Ef         -135.018779Ha        -0.5815452Ha      1.11E-04     8.0m     70
+Ef         -135.018781Ha        -0.5815471Ha      1.11E-04     8.1m     71
+Ef         -135.018781Ha        -0.5815465Ha      1.11E-04     8.1m     72
+Ef         -135.018780Ha        -0.5815461Ha      1.11E-04     8.1m     73
+Ef         -135.018781Ha        -0.5815468Ha      1.11E-04     8.2m     74
+Ef         -135.018780Ha        -0.5815458Ha      1.11E-04     8.2m     75
+Ef         -135.018780Ha        -0.5815456Ha      1.11E-04     8.3m     76
+Ef         -135.018781Ha        -0.5815464Ha      1.11E-04     8.3m     77
+Ef         -135.018780Ha        -0.5815456Ha      1.11E-04     8.3m     78
+Ef         -135.018780Ha        -0.5815461Ha      1.11E-04     8.4m     79
+Ef         -135.018779Ha        -0.5815446Ha      1.12E-04     8.4m     80
+Ef         -135.018778Ha        -0.5815439Ha      1.12E-04     8.5m     81
+Ef         -135.018781Ha        -0.5815462Ha      1.11E-04     8.5m     82
+Ef         -135.018778Ha        -0.5815441Ha      1.11E-04     8.5m     83
+Ef         -135.018779Ha        -0.5815450Ha      1.11E-04     8.6m     84
+Ef         -135.018780Ha        -0.5815455Ha      1.11E-04     8.6m     85
+Ef         -135.018779Ha        -0.5815447Ha      1.11E-04     8.6m     86
+Ef         -135.018777Ha        -0.5815428Ha      1.10E-04     8.7m     87
+Ef         -135.018780Ha        -0.5815453Ha      1.10E-04     8.7m     88
+Ef         -135.018781Ha        -0.5815465Ha      1.10E-04     8.8m     89
+Ef         -135.018780Ha        -0.5815458Ha      1.11E-04     8.8m     90
+Ef         -135.018778Ha        -0.5815439Ha      1.11E-04     8.8m     91
+Ef         -135.018780Ha        -0.5815454Ha      1.11E-04     8.9m     92
+Ef         -135.018776Ha        -0.5815414Ha      1.11E-04     8.9m     93
+Ef         -135.018781Ha        -0.5815470Ha      1.10E-04     9.0m     94
+Ef         -135.018782Ha        -0.5815474Ha      1.10E-04     9.0m     95
+Ef         -135.018777Ha        -0.5815432Ha      1.11E-04     9.0m     96
+Ef         -135.018778Ha        -0.5815433Ha      1.11E-04     9.1m     97
+Ef         -135.018779Ha        -0.5815445Ha      1.10E-04     9.1m     98
+Ef         -135.018778Ha        -0.5815442Ha      1.10E-04     9.1m     99
+Ef         -135.018778Ha        -0.5815435Ha      1.09E-04     9.2m    100
+Ef         -135.018775Ha        -0.5815409Ha      1.10E-04     9.2m    101
+Ef         -135.018775Ha        -0.5815410Ha      1.09E-04     9.3m    102
+Ef         -135.018777Ha        -0.5815423Ha      1.09E-04     9.3m    103
+Ef         -135.018779Ha        -0.5815445Ha      1.09E-04     9.3m    104
+Ef         -135.018776Ha        -0.5815415Ha      1.10E-04     9.4m    105
+Ef         -135.018773Ha        -0.5815391Ha      1.09E-04     9.4m    106
+Ef         -135.018774Ha        -0.5815394Ha      1.09E-04     9.5m    107
+Ef         -135.018769Ha        -0.5815350Ha      1.13E-04     9.5m    108
+Ef         -135.018786Ha        -0.5815513Ha      1.18E-04     9.5m    109
+Ef         -135.018816Ha        -0.5815813Ha      2.38E-04     9.6m    110
+Ef         -135.018803Ha        -0.5815685Ha      1.80E-04     9.6m    111
+Ef         -135.018799Ha        -0.5815645Ha      1.63E-04     9.6m    112
+Ef         -135.018780Ha        -0.5815453Ha      1.19E-04     9.7m    113
+Ef         -135.018754Ha        -0.5815201Ha      2.12E-04     9.7m    114
+Ef         -135.018701Ha        -0.5814663Ha      4.56E-04     9.8m    115
+Ef         -135.018784Ha        -0.5815496Ha      1.39E-04     9.8m    116
+Ef         -135.018792Ha        -0.5815580Ha      1.73E-04     9.8m    117
+Ef         -135.018816Ha        -0.5815819Ha      2.91E-04     9.9m    118
+Ef         -135.018823Ha        -0.5815886Ha      3.22E-04     9.9m    119
+Ef         -135.018907Ha        -0.5816727Ha      7.55E-04     9.9m    120
+Ef         -135.018756Ha        -0.5815218Ha      1.86E-04    10.0m    121
+Ef         -135.018757Ha        -0.5815225Ha      1.87E-04    10.0m    122
+Ef         -135.018589Ha        -0.5813550Ha      8.25E-04    10.1m    123
+Ef         -135.018789Ha        -0.5815544Ha      1.45E-04    10.1m    124
+Ef         -135.018826Ha        -0.5815918Ha      3.22E-04    10.1m    125
+Ef         -135.018838Ha        -0.5816037Ha      3.83E-04    10.2m    126
+Ef         -135.018835Ha        -0.5816012Ha      3.69E-04    10.2m    127
+Ef         -135.018847Ha        -0.5816131Ha      4.24E-04    10.3m    128
+Ef         -135.018749Ha        -0.5815144Ha      2.15E-04    10.3m    129
+Ef         -135.018672Ha        -0.5814378Ha      5.76E-04    10.3m    130
+Ef         -135.018825Ha        -0.5815902Ha      3.11E-04    10.4m    131
+Ef         -135.018845Ha        -0.5816107Ha      3.80E-04    10.4m    132
+Ef         -135.018871Ha        -0.5816366Ha      5.48E-04    10.4m    133
+Ef         -135.018855Ha        -0.5816205Ha      4.63E-04    10.5m    134
+Ef         -135.019019Ha        -0.5817846Ha      1.37E-03    10.5m    135
+Ef         -135.018785Ha        -0.5815508Ha      1.45E-04    10.6m    136
+Ef         -135.018776Ha        -0.5815414Ha      1.28E-04    10.6m    137
+Ef         -135.018765Ha        -0.5815306Ha      1.56E-04    10.7m    138
+Ef         -135.018776Ha        -0.5815415Ha      1.30E-04    10.7m    139
+Ef         -135.019008Ha        -0.5817739Ha      1.23E-03    10.7m    140
+Ef         -135.018944Ha        -0.5817100Ha      8.89E-04    10.8m    141
+Ef         -135.018775Ha        -0.5815408Ha      1.32E-04    10.8m    142
+Ef         -135.018765Ha        -0.5815305Ha      1.59E-04    10.9m    143
+Ef         -135.018753Ha        -0.5815187Ha      2.13E-04    10.9m    144
+Ef         -135.018790Ha        -0.5815557Ha      1.52E-04    10.9m    145
+Ef         -135.018845Ha        -0.5816111Ha      4.03E-04    11.0m    146
+Ef         -135.018819Ha        -0.5815844Ha      2.73E-04    11.0m    147
+Ef         -135.018821Ha        -0.5815863Ha      2.92E-04    11.0m    148
+Ef         -135.018818Ha        -0.5815835Ha      2.79E-04    11.1m    149
+Ef         -135.018744Ha        -0.5815100Ha      2.66E-04    11.1m    150
+Ef         -135.018530Ha        -0.5812957Ha      1.03E-03    11.2m    151
+Ef         -135.018788Ha        -0.5815540Ha      1.44E-04    11.2m    152
+Ef         -135.018799Ha        -0.5815644Ha      1.81E-04    11.2m    153
+Ef         -135.018799Ha        -0.5815651Ha      1.84E-04    11.3m    154
+Ef         -135.018799Ha        -0.5815649Ha      1.83E-04    11.3m    155
+Ef         -135.018839Ha        -0.5816050Ha      3.73E-04    11.4m    156
+Ef         -135.018740Ha        -0.5815058Ha      2.73E-04    11.4m    157
+Ef         -135.018750Ha        -0.5815160Ha      2.32E-04    11.4m    158
+Ef         -135.018768Ha        -0.5815338Ha      1.63E-04    11.5m    159
+Ef         -135.018769Ha        -0.5815344Ha      1.67E-04    11.5m    160
+Ef         -135.018654Ha        -0.5814199Ha      6.86E-04    11.5m    161
+Ef         -135.018780Ha        -0.5815453Ha      1.30E-04    11.6m    162
+Ef         -135.018789Ha        -0.5815551Ha      1.52E-04    11.6m    163
+Ef         -135.018774Ha        -0.5815399Ha      1.31E-04    11.7m    164
+Ef         -135.018774Ha        -0.5815400Ha      1.31E-04    11.7m    165
+Ef         -135.018774Ha        -0.5815394Ha      1.24E-04    11.7m    166
+Ef         -135.018631Ha        -0.5813969Ha      7.06E-04    11.8m    167
+Ef         -135.018780Ha        -0.5815454Ha      1.29E-04    11.8m    168
+Ef         -135.018783Ha        -0.5815484Ha      1.32E-04    11.9m    169
+Ef         -135.018779Ha        -0.5815444Ha      1.29E-04    11.9m    170
+Ef         -135.018779Ha        -0.5815444Ha      1.31E-04    11.9m    171
+Ef         -135.018780Ha        -0.5815460Ha      1.33E-04    12.0m    172
+Ef         -135.018554Ha        -0.5813197Ha      9.19E-04    12.0m    173
+Ef         -135.018787Ha        -0.5815529Ha      1.45E-04    12.0m    174
+Ef         -135.018792Ha        -0.5815581Ha      1.62E-04    12.1m    175
+Ef         -135.018799Ha        -0.5815650Ha      1.91E-04    12.1m    176
+Ef         -135.018795Ha        -0.5815611Ha      1.77E-04    12.2m    177
+Ef         -135.018816Ha        -0.5815814Ha      2.69E-04    12.2m    178
+Ef         -135.018730Ha        -0.5814961Ha      3.30E-04    12.2m    179
+Ef         -135.018596Ha        -0.5813616Ha      8.44E-04    12.3m    180
+Ef         -135.018801Ha        -0.5815666Ha      1.95E-04    12.3m    181
+Ef         -135.018806Ha        -0.5815721Ha      2.14E-04    12.3m    182
+Ef         -135.018839Ha        -0.5816044Ha      3.68E-04    12.4m    183
+Ef         -135.018916Ha        -0.5816820Ha      7.46E-04    12.4m    184
+Ef         -135.018975Ha        -0.5817411Ha      1.04E-03    12.5m    185
+Ef         -135.018777Ha        -0.5815428Ha      1.39E-04    12.5m    186
+Ef         -135.018767Ha        -0.5815322Ha      1.64E-04    12.5m    187
+Ef         -135.018753Ha        -0.5815184Ha      2.29E-04    12.6m    188
+Ef         -135.018787Ha        -0.5815530Ha      1.53E-04    12.6m    189
+Ef         -135.018785Ha        -0.5815505Ha      1.40E-04    12.7m    190
+Ef         -135.018764Ha        -0.5815300Ha      1.64E-04    12.7m    191
+Ef         -135.018766Ha        -0.5815318Ha      1.58E-04    12.7m    192
+Ef         -135.018770Ha        -0.5815360Ha      1.39E-04    12.8m    193
+Ef         -135.018786Ha        -0.5815514Ha      1.41E-04    12.8m    194
+Ef         -135.018761Ha        -0.5815268Ha      1.65E-04    12.8m    195
+Ef         -135.018781Ha        -0.5815466Ha      1.39E-04    12.9m    196
+Ef         -135.018812Ha        -0.5815773Ha      2.87E-04    12.9m    197
+Ef         -135.018774Ha        -0.5815398Ha      1.55E-04    13.0m    198
+Ef         -135.018762Ha        -0.5815280Ha      1.93E-04    13.0m    199
+Ef         -135.018759Ha        -0.5815250Ha      2.07E-04    13.1m    200
+Ef         -135.018766Ha        -0.5815315Ha      1.73E-04    13.1m    201
+Ef         -135.018771Ha        -0.5815370Ha      1.54E-04    13.1m    202
+Ef         -135.018804Ha        -0.5815701Ha      2.33E-04    13.2m    203
+Ef         -135.018751Ha        -0.5815166Ha      2.35E-04    13.2m    204
+Ef         -135.018766Ha        -0.5815312Ha      1.75E-04    13.3m    205
+Ef         -135.018770Ha        -0.5815353Ha      1.67E-04    13.3m    206
+Ef         -135.018770Ha        -0.5815359Ha      1.65E-04    13.3m    207
+Ef         -135.018779Ha        -0.5815450Ha      1.66E-04    13.4m    208
+Ef         -135.018796Ha        -0.5815614Ha      2.11E-04    13.4m    209
+Ef         -135.018634Ha        -0.5813993Ha      7.29E-04    13.4m    210
+Ef         -135.018744Ha        -0.5815097Ha      2.81E-04    13.5m    211
+Ef         -135.018755Ha        -0.5815210Ha      2.29E-04    13.5m    212
+Ef         -135.018757Ha        -0.5815226Ha      2.35E-04    13.5m    213
+Ef         -135.018812Ha        -0.5815777Ha      2.65E-04    13.6m    214
+Ef         -135.018799Ha        -0.5815648Ha      1.94E-04    13.6m    215
+Ef         -135.018792Ha        -0.5815577Ha      1.89E-04    13.7m    216
+Ef         -135.018784Ha        -0.5815493Ha      1.95E-04    13.7m    217
+Ef         -135.018706Ha        -0.5814713Ha      4.74E-04    13.7m    218
+Ef         -135.018868Ha        -0.5816332Ha      5.72E-04    13.8m    219
+Ef         -135.018846Ha        -0.5816115Ha      4.62E-04    13.8m    220
+Ef         -135.018880Ha        -0.5816452Ha      6.46E-04    13.9m    221
+Ef         -135.018982Ha        -0.5817473Ha      1.19E-03    13.9m    222
+Ef         -135.018924Ha        -0.5816894Ha      8.80E-04    13.9m    223
+Ef         -135.018783Ha        -0.5815489Ha      1.68E-04    14.0m    224
+Ef         -135.018766Ha        -0.5815315Ha      1.81E-04    14.0m    225
+Ef         -135.018755Ha        -0.5815203Ha      2.32E-04    14.1m    226
+Ef         -135.018746Ha        -0.5815119Ha      2.75E-04    14.1m    227
+Ef         -135.018833Ha        -0.5815986Ha      3.84E-04    14.1m    228
+Ef         -135.018732Ha        -0.5814973Ha      3.42E-04    14.2m    229
+Ef         -135.018739Ha        -0.5815042Ha      3.06E-04    14.2m    230
+Ef         -135.018686Ha        -0.5814512Ha      5.35E-04    14.2m    231
+Ef         -135.017726Ha        -0.5804919Ha      2.98E-03    14.3m    232
+Ef         -135.018209Ha        -0.5809744Ha      1.77E-03    14.3m    233
+Ef         -135.018780Ha        -0.5815453Ha      1.57E-04    14.4m    234
+Ef         -135.018792Ha        -0.5815579Ha      1.87E-04    14.4m    235
+Ef         -135.018851Ha        -0.5816168Ha      4.87E-04    14.4m    236
+Ef         -135.018788Ha        -0.5815540Ha      1.72E-04    14.5m    237
+Ef         -135.018782Ha        -0.5815479Ha      1.56E-04    14.5m    238
+Ef         -135.018739Ha        -0.5815050Ha      3.01E-04    14.6m    239
+Ef         -135.018823Ha        -0.5815884Ha      3.33E-04    14.6m    240
+Ef         -135.018759Ha        -0.5815252Ha      2.10E-04    14.6m    241
+Ef         -135.018745Ha        -0.5815102Ha      2.81E-04    14.7m    242
+Ef         -135.018831Ha        -0.5815965Ha      3.74E-04    14.7m    243
+Ef         -135.018773Ha        -0.5815383Ha      1.58E-04    14.8m    244
+Ef         -135.018854Ha        -0.5816199Ha      4.99E-04    14.8m    245
+Ef         -135.018983Ha        -0.5817489Ha      1.17E-03    14.8m    246
+Ef         -135.018189Ha        -0.5809544Ha      1.82E-03    14.9m    247
+Ef         -135.018749Ha        -0.5815147Ha      2.58E-04    14.9m    248
+Ef         -135.018732Ha        -0.5814972Ha      3.42E-04    14.9m    249
+Ef         -135.018756Ha        -0.5815213Ha      2.25E-04    15.0m    250
+Ef         -135.018767Ha        -0.5815328Ha      1.78E-04    15.0m    251
+Ef         -135.018790Ha        -0.5815557Ha      1.82E-04    15.1m    252
+Ef         -135.018825Ha        -0.5815905Ha      3.52E-04    15.1m    253
+Ef         -135.018773Ha        -0.5815384Ha      1.64E-04    15.1m    254
+Ef         -135.018716Ha        -0.5814814Ha      4.17E-04    15.2m    255
+Ef         -135.018779Ha        -0.5815449Ha      1.58E-04    15.2m    256
+Ef         -135.018817Ha        -0.5815824Ha      3.03E-04    15.3m    257
+Ef         -135.018823Ha        -0.5815886Ha      3.32E-04    15.3m    258
+Ef         -135.018877Ha        -0.5816422Ha      6.18E-04    15.3m    259
+Ef         -135.018885Ha        -0.5816509Ha      6.62E-04    15.4m    260
+Ef         -135.018755Ha        -0.5815204Ha      2.32E-04    15.4m    261
+Ef         -135.018763Ha        -0.5815288Ha      1.85E-04    15.5m    262
+Ef         -135.018592Ha        -0.5813573Ha      8.53E-04    15.5m    263
+Ef         -135.018806Ha        -0.5815720Ha      2.46E-04    15.5m    264
+Ef         -135.018830Ha        -0.5815953Ha      3.65E-04    15.6m    265
+Ef         -135.018803Ha        -0.5815685Ha      2.28E-04    15.6m    266
+Ef         -135.018822Ha        -0.5815881Ha      3.29E-04    15.7m    267
+Ef         -135.018827Ha        -0.5815931Ha      3.57E-04    15.7m    268
+Ef         -135.018767Ha        -0.5815326Ha      1.79E-04    15.7m    269
+Ef         -135.018716Ha        -0.5814816Ha      4.13E-04    15.8m    270
+Ef         -135.018782Ha        -0.5815480Ha      1.57E-04    15.8m    271
+Ef         -135.018805Ha        -0.5815702Ha      2.40E-04    15.8m    272
+Ef         -135.018813Ha        -0.5815791Ha      2.86E-04    15.9m    273
+Ef         -135.018807Ha        -0.5815725Ha      2.52E-04    15.9m    274
+Ef         -135.018861Ha        -0.5816270Ha      5.34E-04    16.0m    275
+Ef         -135.018757Ha        -0.5815229Ha      2.12E-04    16.0m    276
+Ef         -135.018766Ha        -0.5815321Ha      1.74E-04    16.0m    277
+Ef         -135.018772Ha        -0.5815373Ha      1.59E-04    16.1m    278
+Ef         -135.018804Ha        -0.5815697Ha      2.41E-04    16.1m    279
+Ef         -135.018810Ha        -0.5815760Ha      2.70E-04    16.1m    280
+Ef         -135.018687Ha        -0.5814528Ha      5.24E-04    16.2m    281
+Ef         -135.018773Ha        -0.5815388Ha      1.56E-04    16.2m    282
+Ef         -135.018728Ha        -0.5814937Ha      3.51E-04    16.3m    283
+Ef         -135.018676Ha        -0.5814415Ha      5.66E-04    16.3m    284
+Ef         -135.018740Ha        -0.5815059Ha      2.93E-04    16.3m    285
+Ef         -135.018792Ha        -0.5815579Ha      1.85E-04    16.4m    286
+Ef         -135.018832Ha        -0.5815973Ha      3.83E-04    16.4m    287
+Ef         -135.018753Ha        -0.5815186Ha      2.31E-04    16.4m    288
+Ef         -135.018717Ha        -0.5814825Ha      4.00E-04    16.5m    289
+Ef         -135.018749Ha        -0.5815152Ha      2.48E-04    16.5m    290
+Ef         -135.018747Ha        -0.5815125Ha      2.61E-04    16.6m    291
+Ef         -135.018713Ha        -0.5814785Ha      4.18E-04    16.6m    292
+Ef         -135.018785Ha        -0.5815507Ha      1.62E-04    16.6m    293
+Ef         -135.018802Ha        -0.5815677Ha      2.28E-04    16.7m    294
+Ef         -135.018753Ha        -0.5815190Ha      2.30E-04    16.7m    295
+Ef         -135.018814Ha        -0.5815797Ha      2.87E-04    16.7m    296
+Ef         -135.018867Ha        -0.5816332Ha      5.70E-04    16.8m    297
+Ef         -135.018783Ha        -0.5815489Ha      1.57E-04    16.8m    298
+Ef         -135.018224Ha        -0.5809900Ha      1.74E-03    16.9m    299
+Ef         -135.018804Ha        -0.5815700Ha      2.36E-04    16.9m    300
+Ef         -135.018785Ha        -0.5815506Ha      1.59E-04    16.9m    301
+Ef         -135.018778Ha        -0.5815437Ha      1.50E-04    17.0m    302
+Ef         -135.018759Ha        -0.5815244Ha      2.04E-04    17.0m    303
+Ef         -135.018792Ha        -0.5815576Ha      1.81E-04    17.1m    304
+Ef         -135.018643Ha        -0.5814086Ha      6.84E-04    17.1m    305
+Ef         -135.018876Ha        -0.5816413Ha      6.09E-04    17.1m    306
+Ef         -135.018780Ha        -0.5815461Ha      1.51E-04    17.2m    307
+Ef         -135.018787Ha        -0.5815524Ha      1.64E-04    17.2m    308
+Ef         -135.018799Ha        -0.5815649Ha      2.12E-04    17.2m    309
+Ef         -135.018814Ha        -0.5815798Ha      2.86E-04    17.3m    310
+Ef         -135.018742Ha        -0.5815076Ha      2.85E-04    17.3m    311
+Ef         -135.018669Ha        -0.5814342Ha      5.94E-04    17.3m    312
+Ef         -135.018784Ha        -0.5815496Ha      1.57E-04    17.4m    313
+Ef         -135.018774Ha        -0.5815398Ha      1.53E-04    17.4m    314
+Ef         -135.018786Ha        -0.5815516Ha      1.62E-04    17.5m    315
+Ef         -135.018780Ha        -0.5815460Ha      1.52E-04    17.5m    316
+Ef         -135.018806Ha        -0.5815715Ha      2.44E-04    17.5m    317
+Ef         -135.018651Ha        -0.5814170Ha      6.55E-04    17.6m    318
+Ef         -135.018766Ha        -0.5815316Ha      1.74E-04    17.6m    319
+Ef         -135.018765Ha        -0.5815310Ha      1.76E-04    17.7m    320
+Ef         -135.018756Ha        -0.5815221Ha      2.14E-04    17.7m    321
+Ef         -135.018762Ha        -0.5815281Ha      1.88E-04    17.7m    322
+Ef         -135.018793Ha        -0.5815590Ha      1.86E-04    17.8m    323
+Ef         -135.018767Ha        -0.5815325Ha      1.71E-04    17.8m    324
+Ef         -135.018768Ha        -0.5815335Ha      1.67E-04    17.9m    325
+Ef         -135.018764Ha        -0.5815297Ha      1.82E-04    17.9m    326
+Ef         -135.018708Ha        -0.5814739Ha      4.36E-04    17.9m    327
+Ef         -135.018852Ha        -0.5816177Ha      4.87E-04    18.0m    328
+Ef         -135.018770Ha        -0.5815354Ha      1.63E-04    18.0m    329
+Ef         -135.018769Ha        -0.5815345Ha      1.65E-04    18.1m    330
+Ef         -135.018768Ha        -0.5815339Ha      1.68E-04    18.1m    331
+Ef         -135.018779Ha        -0.5815452Ha      1.51E-04    18.1m    332
+Ef         -135.018547Ha        -0.5813125Ha      9.79E-04    18.2m    333
+Ef         -135.018808Ha        -0.5815739Ha      2.53E-04    18.2m    334
+Ef         -135.018778Ha        -0.5815432Ha      1.50E-04    18.2m    335
+Ef         -135.018770Ha        -0.5815361Ha      1.60E-04    18.3m    336
+Ef         -135.018768Ha        -0.5815332Ha      1.69E-04    18.3m    337
+Ef         -135.018766Ha        -0.5815320Ha      1.74E-04    18.4m    338
+Ef         -135.018697Ha        -0.5814627Ha      4.91E-04    18.4m    339
+Ef         -135.018792Ha        -0.5815578Ha      1.79E-04    18.4m    340
+Ef         -135.018795Ha        -0.5815612Ha      1.92E-04    18.5m    341
+Ef         -135.018774Ha        -0.5815397Ha      1.54E-04    18.5m    342
+Ef         -135.018778Ha        -0.5815435Ha      1.50E-04    18.6m    343
+Ef         -135.018774Ha        -0.5815394Ha      1.54E-04    18.6m    344
+Ef         -135.018714Ha        -0.5814801Ha      4.18E-04    18.6m    345
+Ef         -135.018771Ha        -0.5815367Ha      1.59E-04    18.7m    346
+Ef         -135.018788Ha        -0.5815533Ha      1.63E-04    18.7m    347
+Ef         -135.018789Ha        -0.5815547Ha      1.67E-04    18.7m    348
+Ef         -135.018785Ha        -0.5815510Ha      1.57E-04    18.8m    349
+Ef         -135.018788Ha        -0.5815540Ha      1.65E-04    18.8m    350
+Ef         -135.018712Ha        -0.5814776Ha      4.26E-04    18.9m    351
+Ef         -135.018765Ha        -0.5815311Ha      1.78E-04    18.9m    352
+Ef         -135.018801Ha        -0.5815671Ha      2.20E-04    18.9m    353
+Ef         -135.018784Ha        -0.5815496Ha      1.55E-04    19.0m    354
+Ef         -135.018779Ha        -0.5815445Ha      1.50E-04    19.0m    355
+Ef         -135.018774Ha        -0.5815398Ha      1.53E-04    19.1m    356
+Ef         -135.018735Ha        -0.5815005Ha      3.20E-04    19.1m    357
+Ef         -135.018763Ha        -0.5815289Ha      1.86E-04    19.1m    358
+Ef         -135.018799Ha        -0.5815652Ha      2.14E-04    19.2m    359
+Ef         -135.018772Ha        -0.5815381Ha      1.56E-04    19.2m    360
+Ef         -135.018771Ha        -0.5815370Ha      1.58E-04    19.3m    361
+Ef         -135.018774Ha        -0.5815392Ha      1.53E-04    19.3m    362
+Ef         -135.018708Ha        -0.5814735Ha      4.37E-04    19.3m    363
+Ef         -135.018777Ha        -0.5815426Ha      1.50E-04    19.4m    364
+Ef         -135.018794Ha        -0.5815596Ha      1.89E-04    19.4m    365
+Ef         -135.018777Ha        -0.5815428Ha      1.50E-04    19.4m    366
+Ef         -135.018774Ha        -0.5815397Ha      1.54E-04    19.5m    367
+Ef         -135.018777Ha        -0.5815431Ha      1.51E-04    19.5m    368
+Ef         -135.018730Ha        -0.5814956Ha      3.49E-04    19.6m    369
+Ef         -135.018773Ha        -0.5815384Ha      1.52E-04    19.6m    370
+Ef         -135.018785Ha        -0.5815509Ha      1.56E-04    19.7m    371
+Ef         -135.018780Ha        -0.5815458Ha      1.48E-04    19.7m    372
+Ef         -135.018780Ha        -0.5815461Ha      1.48E-04    19.7m    373
+Ef         -135.018774Ha        -0.5815395Ha      1.47E-04    19.8m    374
+Ef         -135.018740Ha        -0.5815061Ha      2.84E-04    19.8m    375
+Ef         -135.018784Ha        -0.5815493Ha      1.57E-04    19.8m    376
+Ef         -135.018840Ha        -0.5816061Ha      4.27E-04    19.9m    377
+Ef         -135.018820Ha        -0.5815857Ha      3.20E-04    19.9m    378
+Ef         -135.018804Ha        -0.5815696Ha      2.34E-04    19.9m    379
+Ef         -135.018820Ha        -0.5815854Ha      3.19E-04    20.0m    380
+Ef         -135.018754Ha        -0.5815201Ha      2.45E-04    20.0m    381
+Ef         -135.018621Ha        -0.5813866Ha      7.66E-04    20.0m    382
+Ef         -135.018784Ha        -0.5815499Ha      1.54E-04    20.1m    383
+Ef         -135.018783Ha        -0.5815490Ha      1.52E-04    20.1m    384
+Ef         -135.018784Ha        -0.5815502Ha      1.54E-04    20.2m    385
+Ef         -135.018794Ha        -0.5815601Ha      1.85E-04    20.2m    386
+Ef         -135.018793Ha        -0.5815592Ha      1.82E-04    20.2m    387
+Ef         -135.018709Ha        -0.5814746Ha      4.47E-04    20.3m    388
+Ef         -135.018776Ha        -0.5815415Ha      1.53E-04    20.3m    389
+Ef         -135.018788Ha        -0.5815542Ha      1.70E-04    20.3m    390
+Ef         -135.018790Ha        -0.5815557Ha      1.76E-04    20.4m    391
+Ef         -135.018776Ha        -0.5815417Ha      1.50E-04    20.4m    392
+Ef         -135.018780Ha        -0.5815455Ha      1.49E-04    20.5m    393
+Ef         -135.018561Ha        -0.5813265Ha      9.22E-04    20.5m    394
+Ef         -135.018765Ha        -0.5815305Ha      1.68E-04    20.5m    395
+Ef         -135.018767Ha        -0.5815327Ha      1.61E-04    20.6m    396
+Ef         -135.018798Ha        -0.5815639Ha      2.01E-04    20.6m    397
+Ef         -135.018795Ha        -0.5815610Ha      1.92E-04    20.7m    398
+Ef         -135.018794Ha        -0.5815599Ha      1.86E-04    20.7m    399
+Ef         -135.018699Ha        -0.5814645Ha      4.79E-04    20.7m    400
+Ef         -135.018799Ha        -0.5815650Ha      2.10E-04    20.8m    401
+Ef         -135.018896Ha        -0.5816616Ha      7.14E-04    20.8m    402
+Ef         -135.018923Ha        -0.5816885Ha      8.51E-04    20.9m    403
+Ef         -135.018903Ha        -0.5816689Ha      7.46E-04    20.9m    404
+Ef         -135.018820Ha        -0.5815858Ha      3.11E-04    20.9m    405
+Ef         -135.018774Ha        -0.5815396Ha      1.49E-04    21.0m    406
+Ef         -135.018756Ha        -0.5815217Ha      2.07E-04    21.0m    407
+Ef         -135.018772Ha        -0.5815381Ha      1.56E-04    21.1m    408
+Ef         -135.018761Ha        -0.5815263Ha      2.01E-04    21.1m    409
+Ef         -135.018754Ha        -0.5815196Ha      2.40E-04    21.1m    410
+Ef         -135.018795Ha        -0.5815611Ha      1.97E-04    21.2m    411
+Ef         -135.018786Ha        -0.5815515Ha      1.61E-04    21.2m    412
+Ef         -135.018603Ha        -0.5813691Ha      8.05E-04    21.3m    413
+Ef         -135.018791Ha        -0.5815570Ha      1.72E-04    21.3m    414
+Ef         -135.018808Ha        -0.5815739Ha      2.48E-04    21.3m    415
+Ef         -135.018815Ha        -0.5815806Ha      2.83E-04    21.4m    416
+Ef         -135.018817Ha        -0.5815831Ha      2.96E-04    21.4m    417
+Ef         -135.018819Ha        -0.5815845Ha      3.04E-04    21.5m    418
+Ef         -135.018748Ha        -0.5815133Ha      2.79E-04    21.5m    419
+Ef         -135.018113Ha        -0.5808787Ha      1.99E-03    21.6m    420
+Ef         -135.018837Ha        -0.5816022Ha      3.95E-04    21.6m    421
+Ef         -135.018824Ha        -0.5815894Ha      3.29E-04    21.6m    422
+Ef         -135.018804Ha        -0.5815700Ha      2.34E-04    21.7m    423
+Ef         -135.018783Ha        -0.5815482Ha      1.63E-04    21.7m    424
+Ef         -135.018828Ha        -0.5815936Ha      3.51E-04    21.7m    425
+Ef         -135.018755Ha        -0.5815206Ha      2.42E-04    21.8m    426
+Ef         -135.018722Ha        -0.5814880Ha      4.10E-04    21.8m    427
+Ef         -135.018808Ha        -0.5815734Ha      2.50E-04    21.9m    428
+Ef         -135.018812Ha        -0.5815781Ha      2.73E-04    21.9m    429
+Ef         -135.018816Ha        -0.5815812Ha      2.89E-04    22.0m    430
+Ef         -135.018812Ha        -0.5815774Ha      2.69E-04    22.0m    431
+Ef         -135.018778Ha        -0.5815441Ha      1.65E-04    22.0m    432
+Ef         -135.018761Ha        -0.5815266Ha      2.18E-04    22.1m    433
+Ef         -135.018736Ha        -0.5815012Ha      3.47E-04    22.1m    434
+Ef         -135.018797Ha        -0.5815631Ha      2.05E-04    22.1m    435
+Ef         -135.018846Ha        -0.5816112Ha      4.41E-04    22.2m    436
+Ef         -135.018798Ha        -0.5815638Ha      2.11E-04    22.2m    437
+Ef         -135.018825Ha        -0.5815912Ha      3.37E-04    22.2m    438
+Ef         -135.018784Ha        -0.5815498Ha      1.74E-04    22.3m    439
+Ef         -135.018758Ha        -0.5815239Ha      2.36E-04    22.3m    440
+Ef         -135.018709Ha        -0.5814749Ha      4.83E-04    22.4m    441
+Ef         -135.018835Ha        -0.5816006Ha      3.86E-04    22.4m    442
+Ef         -135.018888Ha        -0.5816539Ha      6.57E-04    22.4m    443
+Ef         -135.018830Ha        -0.5815961Ha      3.62E-04    22.5m    444
+Ef         -135.018833Ha        -0.5815987Ha      3.77E-04    22.5m    445
+Ef         -135.019046Ha        -0.5818119Ha      2.87E-03    22.6m    446
+Ef         -135.018787Ha        -0.5815529Ha      1.77E-04    22.6m    447
+Ef         -135.018778Ha        -0.5815433Ha      1.68E-04    22.6m    448
+Ef         -135.018756Ha        -0.5815214Ha      2.50E-04    22.7m    449
+Ef         -135.018787Ha        -0.5815525Ha      1.76E-04    22.7m    450
+Ef         -135.018792Ha        -0.5815581Ha      1.92E-04    22.8m    451
+Ef         -135.018802Ha        -0.5815675Ha      2.27E-04    22.8m    452
+Ef         -135.018785Ha        -0.5815510Ha      1.73E-04    22.8m    453
+Ef         -135.018791Ha        -0.5815571Ha      1.86E-04    22.8m    454
+Ef         -135.018758Ha        -0.5815241Ha      2.48E-04    22.9m    455
+Ef         -135.018783Ha        -0.5815491Ha      1.73E-04    22.9m    456
+Ef         -135.018781Ha        -0.5815464Ha      1.74E-04    23.0m    457
+Ef         -135.018788Ha        -0.5815534Ha      1.91E-04    23.0m    458
+Ef         -135.018782Ha        -0.5815476Ha      1.72E-04    23.0m    459
+Ef         -135.018792Ha        -0.5815581Ha      1.86E-04    23.1m    460
+Ef         -135.018693Ha        -0.5814587Ha      5.31E-04    23.1m    461
+Ef         -135.018801Ha        -0.5815670Ha      2.28E-04    23.1m    462
+Ef         -135.018843Ha        -0.5816087Ha      4.46E-04    23.2m    463
+Ef         -135.018788Ha        -0.5815533Ha      1.91E-04    23.2m    464
+Ef         -135.018775Ha        -0.5815406Ha      1.93E-04    23.2m    465
+Ef         -135.018768Ha        -0.5815340Ha      2.14E-04    23.3m    466
+Ef         -135.018761Ha        -0.5815266Ha      2.48E-04    23.3m    467
+Ef         -135.018764Ha        -0.5815295Ha      2.34E-04    23.3m    468
+Ef         -135.018806Ha        -0.5815713Ha      2.74E-04    23.4m    469
+Ef         -135.018788Ha        -0.5815539Ha      1.95E-04    23.4m    470
+Ef         -135.018785Ha        -0.5815504Ha      1.76E-04    23.4m    471
+Ef         -135.018784Ha        -0.5815501Ha      1.77E-04    23.5m    472
+Ef         -135.018771Ha        -0.5815365Ha      1.79E-04    23.5m    473
+Ef         -135.018772Ha        -0.5815381Ha      1.84E-04    23.5m    474
+Ef         -135.018813Ha        -0.5815789Ha      2.41E-04    23.6m    475
+Ef         -135.018790Ha        -0.5815560Ha      2.26E-04    23.6m    476
+Ef         -135.018715Ha        -0.5814806Ha      4.43E-04    23.6m    477
+Ef         -135.018829Ha        -0.5815945Ha      3.74E-04    23.7m    478
+Ef         -135.018783Ha        -0.5815483Ha      1.76E-04    23.7m    479
+Ef         -135.018782Ha        -0.5815479Ha      1.78E-04    23.7m    480
+Ef         -135.018800Ha        -0.5815659Ha      2.36E-04    23.7m    481
+Ef         -135.018800Ha        -0.5815662Ha      2.36E-04    23.8m    482
+Ef         -135.018756Ha        -0.5815215Ha      2.52E-04    23.8m    483
+Ef         -135.018814Ha        -0.5815798Ha      3.20E-04    23.8m    484
+Ef         -135.018789Ha        -0.5815551Ha      2.05E-04    23.9m    485
+Ef         -135.018725Ha        -0.5814907Ha      3.98E-04    23.9m    486
+Ef         -135.018767Ha        -0.5815327Ha      1.98E-04    23.9m    487
+Ef         -135.018776Ha        -0.5815416Ha      1.74E-04    23.9m    488
+Ef         -135.018794Ha        -0.5815599Ha      2.11E-04    24.0m    489
+Ef         -135.018844Ha        -0.5816099Ha      4.63E-04    24.0m    490
+Ef         -135.018820Ha        -0.5815860Ha      3.37E-04    24.0m    491
+Ef         -135.018751Ha        -0.5815164Ha      2.69E-04    24.1m    492
+Ef         -135.018741Ha        -0.5815070Ha      3.16E-04    24.1m    493
+Ef         -135.018808Ha        -0.5815733Ha      2.72E-04    24.1m    494
+Ef         -135.018808Ha        -0.5815734Ha      2.74E-04    24.2m    495
+Ef         -135.018801Ha        -0.5815668Ha      2.42E-04    24.2m    496
+Ef         -135.018817Ha        -0.5815822Ha      3.19E-04    24.2m    497
+Ef         -135.018705Ha        -0.5814707Ha      4.90E-04    24.3m    498
+Ef         -135.018956Ha        -0.5817214Ha      1.05E-03    24.3m    499
+Ef         -135.018837Ha        -0.5816026Ha      4.24E-04    24.3m    500
+Error: SCF iterations not converged in  500 iterations
+ DELTE =   1.000000000000000E-008
+
+Message: SCF not converging. Choose "Use Smearing" on DMol3 SCF panel
+or set "Occupation  Thermal" in the input file.
+You may also need to change spin or use symmetry.
+Resubmit DMol3.
+Message: DMol3 job failed
+Error: DMol3 exiting
+
+DMol3.pl message: DMol3 job finished in 0 hr 24 min 41 sec.

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="latin1"?>
+<EXTENSION VERSION="6.1">
+<LOGICS>
+<LOGICITEM NAME="Analysis">
+	<STATE NAME="SMDMol3.AnalysisState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="BandStructureGenerator">
+	<VALUE>SMXQMUtilities.BandStructureGenerator</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DOSGenerator">
+	<VALUE>SMXQMUtilities.DOSGenerator</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="DMol3">
+	<STATE NAME="SMDMol3.SetupState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="Task">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseSymmetry">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Quality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="QualityItems">
+	<VALUE>
+	<ITEM>Electronic.Basis</ITEM>
+	<ITEM>Electronic.SCFConvergence</ITEM>
+	<ITEM>Electronic.IntegrationGrid</ITEM>
+	<ITEM>Electronic.OrbitalCutoffQuality</ITEM>
+	<ITEM>Electronic.CutoffQuality</ITEM>
+	<ITEM>Electronic.CutoffType</ITEM>
+	<ITEM>KPointSetGenerator.KPointQuality</ITEM>
+	<ITEM>KPointSetGenerator.KPointDerivation</ITEM>
+	<ITEM>GeometryOptimization.EnergyConvergence</ITEM>
+	<ITEM>GeometryOptimization.ForceConvergence</ITEM>
+	<ITEM>GeometryOptimization.DisplacementConvergence</ITEM>
+	<ITEM>TSOptimization.EnergyConvergence</ITEM>
+	<ITEM>TSOptimization.GradientConvergence</ITEM>
+	<ITEM>TSOptimization.DisplacementConvergence</ITEM>
+	<ITEM>TSConfirmation.EnergyConvergence</ITEM>
+	<ITEM>TSConfirmation.GradientConvergence</ITEM>
+	<ITEM>TSConfirmation.DisplacementConvergence</ITEM>
+	<ITEM>TSSearch.RMSConvergence</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.Basis">
+	<VALUE>
+	<ITEM>DN</ITEM>
+	<ITEM>DND</ITEM>
+	<ITEM>DNP</ITEM>
+	<ITEM>TNP</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.SCFConvergence">
+	<VALUE>
+	<ITEM>1.e-004</ITEM>
+	<ITEM>1.e-005</ITEM>
+	<ITEM>1.e-006</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.IntegrationGrid">
+	<VALUE>
+	<ITEM>Coarse</ITEM>
+	<ITEM>Medium</ITEM>
+	<ITEM>Fine</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.OrbitalCutoffQuality">
+	<VALUE>
+	<ITEM>Coarse</ITEM>
+	<ITEM>Medium</ITEM>
+	<ITEM>Fine</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.CutoffQuality">
+	<VALUE>
+	<ITEM>Coarse</ITEM>
+	<ITEM>Medium</ITEM>
+	<ITEM>Fine</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.CutoffType">
+	<VALUE>
+	<ITEM>Quality</ITEM>
+	<ITEM>Quality</ITEM>
+	<ITEM>Quality</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="KPointSetGenerator.KPointQuality">
+	<VALUE>
+	<ITEM>Coarse</ITEM>
+	<ITEM>Medium</ITEM>
+	<ITEM>Fine</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="KPointSetGenerator.KPointDerivation">
+	<VALUE>
+	<ITEM>Quality</ITEM>
+	<ITEM>Quality</ITEM>
+	<ITEM>Quality</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="GeometryOptimization.EnergyConvergence">
+	<VALUE>
+	<ITEM>1.e-004</ITEM>
+	<ITEM>2.e-005</ITEM>
+	<ITEM>1.e-005</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="GeometryOptimization.ForceConvergence">
+	<VALUE>
+	<ITEM>2.e-002</ITEM>
+	<ITEM>4.e-003</ITEM>
+	<ITEM>2.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="GeometryOptimization.DisplacementConvergence">
+	<VALUE>
+	<ITEM>5.e-002</ITEM>
+	<ITEM>5.e-003</ITEM>
+	<ITEM>5.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSOptimization.EnergyConvergence">
+	<VALUE>
+	<ITEM>1.e-004</ITEM>
+	<ITEM>2.e-005</ITEM>
+	<ITEM>1.e-005</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSOptimization.GradientConvergence">
+	<VALUE>
+	<ITEM>2.e-002</ITEM>
+	<ITEM>4.e-003</ITEM>
+	<ITEM>2.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSOptimization.DisplacementConvergence">
+	<VALUE>
+	<ITEM>5.e-002</ITEM>
+	<ITEM>5.e-003</ITEM>
+	<ITEM>5.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSConfirmation.EnergyConvergence">
+	<VALUE>
+	<ITEM>1.e-004</ITEM>
+	<ITEM>2.e-005</ITEM>
+	<ITEM>1.e-005</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSConfirmation.GradientConvergence">
+	<VALUE>
+	<ITEM>2.e-002</ITEM>
+	<ITEM>4.e-003</ITEM>
+	<ITEM>2.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSConfirmation.DisplacementConvergence">
+	<VALUE>
+	<ITEM>5.e-002</ITEM>
+	<ITEM>5.e-003</ITEM>
+	<ITEM>5.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSSearch.RMSConvergence">
+	<VALUE>
+	<ITEM>2.e-002</ITEM>
+	<ITEM>1.e-002</ITEM>
+	<ITEM>2.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="DMolJob">
+</LOGICITEM>
+<LOGICITEM NAME="Dynamics">
+	<STATE NAME="SMDMol3.Dynamics" VERSION="6.1">
+	<PROPERTIES>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Electronic">
+	<STATE NAME="SMDMol3.ElectronicState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="UseFormalSpin">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SpinUnrestricted">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TheoryLevel">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="AtomCutoff">
+	<VALUE>4.4</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MaxSCFCycles">
+	<VALUE>500</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Smearing">
+	<VALUE>1.5e-002</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CoreTreatment">
+	<VALUE>4</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DFTDMethod">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Energy">
+</LOGICITEM>
+<LOGICITEM NAME="Files">
+</LOGICITEM>
+<LOGICITEM NAME="GeometryOptimization">
+	<STATE NAME="SMDMol3.GeomOptState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="Iterations">
+	<VALUE>500</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="KPointSetGenerator">
+	<STATE NAME="QM Utilities k-point set State" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="KPointDerivation">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="KPointOverallQuality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DefaultDerivation">
+	<VALUE>
+	<ITEM>7.000000000000001e-002</ITEM>
+	<ITEM>5.e-002</ITEM>
+	<ITEM>4.e-002</ITEM>
+	<ITEM>4.e-002</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="InsulatorDerivation">
+	<VALUE>
+	<ITEM>0.1</ITEM>
+	<ITEM>8.e-002</ITEM>
+	<ITEM>7.000000000000001e-002</ITEM>
+	<ITEM>6.e-002</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseInsulatorDerivation">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Properties">
+	<STATE NAME="SMDMol3.PropertyState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="BandStructureKPGenerator">
+	<VALUE>SMXQMUtilities.KPointPathGenerator
+		<STATE NAME="QM Utilities k-point path State" VERSION="6.1">
+		<PROPERTIES>
+		</PROPERTIES>
+		</STATE>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DOSKPGenerator">
+	<VALUE>SMXQMUtilities.KPointSetGenerator
+		<STATE NAME="QM Utilities k-point set State" VERSION="6.1">
+		<PROPERTIES>
+		<PROPERTY NAME="DefaultDerivation">
+		<VALUE>
+		<ITEM>7.000000000000001e-002</ITEM>
+		<ITEM>5.e-002</ITEM>
+		<ITEM>4.e-002</ITEM>
+		<ITEM>4.e-002</ITEM>
+		</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="InsulatorDerivation">
+		<VALUE>
+		<ITEM>0.1</ITEM>
+		<ITEM>8.e-002</ITEM>
+		<ITEM>7.000000000000001e-002</ITEM>
+		<ITEM>6.e-002</ITEM>
+		</VALUE>
+		</PROPERTY>
+		</PROPERTIES>
+		</STATE>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="PolarFrequencies">
+	<VALUE></VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="QMJobTemplate">
+	<STATE NAME="QMJobTemplate" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="DaemonName">
+	<VALUE>My Computer</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="LiveUpdateInterval">
+	<VALUE>300.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="LeaveFilesOnServer">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MpiRequested">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MpiNumProcessors">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="QueueRequested">
+	<VALUE>batch</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="TSConfirmation">
+	<STATE NAME="SMDMol3.TSPathwayState" VERSION="6.1">
+	<PROPERTIES>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="TSOptimization">
+	<STATE NAME="SMDMol3.TSOptState" VERSION="6.1">
+	<PROPERTIES>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="TSSearch">
+	<STATE NAME="SMDMol3.TSSearchState" VERSION="6.1">
+	<PROPERTIES>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Utility">
+</LOGICITEM>
+</LOGICS>
+</EXTENSION>
