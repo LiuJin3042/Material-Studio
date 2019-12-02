@@ -1,0 +1,2634 @@
+ 
+     ===============================================================
+     Materials Studio DMol^3 version 6.1
+     compiled on Mar  6 2013 07:08:17
+     ===============================================================
+ 
+     ===============================================================
+     Density Functional Theory Electronic Structure Program
+     Copyright (c) 2013, Accelrys Inc. All rights reserved.
+     Cite work using this program as: 
+     B. Delley, J. Chem. Phys. 92,  508  (1990).
+     B. Delley, J. Chem. Phys. 113, 7756 (2000).
+     DMol^3 is available as part of Materials Studio.
+     ===============================================================
+ 
+ 
+DATE:     Dec  1 14:12:24 2019
+ 
+Job started on host YAESAKURA
+
+This run uses    1 processors
+
+Message: License checkout of MS_dmol successful
+ 
+Basis set is read from file:
+C:\PROGRA~2\Accelrys\MATERI~1.1X6\share\Resources\Quantum\DMol3\BASFILE_v3.5
+
+ 
+ no INCOOR file: try ZMAT
+ no ZMAT file: try CAR
+
+Geometry is read from file: 13-1.car                                                                                                                                                                                                                                                        
+
+INCOOR, atomic coordinates in au (for archive):
+______________________________________________________________________>8
+
+$coordinates
+Li           -2.86614240947203    5.04973020844986    0.00000000000000
+Li           -6.31882440278360    1.85056934806309    0.00000000000000
+Li           -4.34317902981018   -2.42172143630793    0.00000000000000
+Li            0.33051895363291   -1.86298148688152    0.00000000000000
+Li            1.24337778833162    2.75462957446013    0.00000000000000
+Li           -5.40684307563911    4.04388341433845    3.95989171157255
+Li           -6.51324468185129   -0.53004766130416    3.85658071124177
+Li           -2.51178374819009   -2.99961919864294    4.06911305901611
+Li            1.06765671776733    0.04803273172247    4.30377627478889
+Li           -0.72158834546697    4.40115674573188    4.23627376849993
+Li            0.06113617204167    1.49836022568189   -3.07839089014678
+Li           -0.37616158242920    1.17921548635216    1.84300449659500
+Li           -0.84053770064582    1.02238074119272    6.76976539595155
+$end
+______________________________________________________________________>8
+
+
+N_atoms =   13     N_atom_types =  1
+
+
+INPUT_DMOL keywords (for archive):
+______________________________________________________________________>8
+
+#Warning: no global confinement specs in BASFILE
+                                                                                                                                    <--
+# Task parameters                                                                                                                   <--
+Calculate                     optimize                                                                                              <--
+Opt_energy_convergence        2.0000e-005                                                                                           <--
+Opt_gradient_convergence      4.0000e-003 A                                                                                         <--
+Opt_displacement_convergence  5.0000e-003 A                                                                                         <--
+Opt_iterations                500                                                                                                   <--
+Opt_max_displacement          0.3000 A                                                                                              <--
+Initial_hessian               improved                                                                                              <--
+Symmetry                      off                                                                                                   <--
+Max_memory                    1024                                                                                                  <--
+                                                                                                                                    <--
+# Electronic parameters                                                                                                             <--
+Spin_polarization             unrestricted                                                                                          <--
+Charge                        0                                                                                                     <--
+Basis                         dnd                                                                                                   <--
+Pseudopotential               dspp                                                                                                  <--
+Functional                    gga(p91)                                                                                              <--
+Aux_density                   octupole                                                                                              <--
+Integration_grid              medium                                                                                                <--
+Occupation                    fermi                                                                                                 <--
+Cutoff_Global                 4.4000 angstrom                                                                                       <--
+Scf_density_convergence       1.0000e-005                                                                                           <--
+Scf_charge_mixing             2.0000e-001                                                                                           <--
+Scf_spin_mixing               5.0000e-001                                                                                           <--
+Scf_iterations                500                                                                                                   <--
+Scf_diis                      6 pulay                                                                                               <--
+                                                                                                                                    <--
+# Print options                                                                                                                     <--
+Print                         eigval_last_it                                                                                        <--
+                                                                                                                                    <--
+# Calculated properties                                                                                                             <--
+______________________________________________________________________>8
+
+
+Publications of specific relevance to this calculation:
+
+Density functional:
+ P91 exchange: Perdew, Physica B 172, 1 (1991)
+
+Spin unrestricted calculation
+
+
+ The Generation and Use of Delocalized Internal Coordinates in Geometry optimization; 
+ Baker Kessi Delley: J. Chem. Phys., 105, 192 (1996) 
+ Andzelm Fitzgerald King-Smith: Chem. Phys. Lett., 335, 321 (2001)
+
+ Hardness conserving semilocal pseudopotentials; Delley: Phys. Rev. B 66, 155125 (2002)
+
+Warning: dspp            takes precedence over using  symmetrized basis
+Calculation is Spin_unrestricted
+ 
+ 
+Warning: no SYM file, no symmetry used in vibrational analysis
+Warning: at least C1 SYM file should be there for optgeom
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -1.516697            2.672202            0.000000
+            2    Li           -3.343778            0.979279            0.000000
+            3    Li           -2.298311           -1.281520            0.000000
+            4    Li            0.174903           -0.985847            0.000000
+            5    Li            0.657967            1.457687            0.000000
+            6    Li           -2.861178            2.139931            2.095484
+            7    Li           -3.446661           -0.280489            2.040815
+            8    Li           -1.329179           -1.587330            2.153282
+            9    Li            0.564980            0.025418            2.277460
+           10    Li           -0.381848            2.328992            2.241740
+           11    Li            0.032352            0.792898           -1.629014
+           12    Li           -0.199056            0.624014            0.975276
+           13    Li           -0.444793            0.541021            3.582406
+          ----------------------------------------------------------------------
+
+Message: Generating delocalized internals
+  
+  MDF file does not exist.
+  Generating automatic internal coordinates.
+
+*** OPTIMIZATION USES DELOCALIZED INTERNALS ***
+
+ The preliminary size of active space is :      33
+ There are :           33  degrees of freedom
+ There are likely:     35  primitive internals
+
+Message: Generation of delocalized internals is successful
+Lithium      nbas=  1, z=   3, nrfn=  5, rcut=  8.31, e_ref= -0.023261 Ha
+                                  rcore=  0.00  zval=   3.00   3.00
+   n=1  L=0  occ= 2.00 e=      -1.870620Ha       -50.9022eV
+   n=2  L=0  occ= 1.00 e=      -0.072085Ha        -1.9615eV
+   n=2  L=0  occ= 0.00 e=      -0.238445Ha        -6.4884eV
+   n=2  L=1  occ= 0.00 e=      -0.159478Ha        -4.3396eV
+   n=3  L=2  occ= 0.00 e=      -0.887673Ha       -24.1548eV
+
+Note: calculation of reference xc derivative is turned on
+ for pseudopotential with core density correction
+
+Symmetry orbitals C1                            
+    n  norb    representation
+    1   143        a    
+  total number of valence orbitals:    143
+
+
+ molecule charge=      0.0   active electron number=      39.0
+ (without charge=             39.0)
+ 
+
+Integration in 3d (fixed mesh): ipa=    6  f3= F
+ npri,iomax,iomin, thres,  rmaxp,    sp
+   0    6    1   0.00010   10.00    1.00
+Integration points, checksum  0     31785     31785      39.010044
+
+ vxcg/d_diis workspace has max memory requirements        20.0 MB 
+
+ real array elements, matrices vectors etc:       8.0 MB 
+ integer arrays                           :       0.5 MB 
+ min recommended for all-incl workspace   :      20.0 MB 
+Total memory allocated for arrays         :      20.0 MB 
+Default spin density on atom Li(  1), L= 0 was used on start: M_s=  1.0
+    1  1.000 start spin density on Li(   1), L= 0 M_s=  1.0
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.448994Ha        -0.3554358Ha      6.56E-02     0.0m      1
+Ef          -97.286583Ha        -0.1930251Ha      3.11E-02     0.0m      2
+Ef          -97.269442Ha        -0.1758836Ha      2.26E-02     0.0m      3
+Ef          -97.268868Ha        -0.1753098Ha      1.58E-02     0.0m      4
+Ef          -97.271319Ha        -0.1777613Ha      8.80E-03     0.1m      5
+Ef          -97.272350Ha        -0.1787924Ha      6.34E-03     0.1m      6
+Ef          -97.273356Ha        -0.1797980Ha      5.96E-03     0.1m      7
+Ef          -97.274393Ha        -0.1808349Ha      5.83E-03     0.1m      8
+Ef          -97.275305Ha        -0.1817471Ha      5.32E-03     0.1m      9
+Ef          -97.276232Ha        -0.1826744Ha      4.70E-03     0.1m     10
+Ef          -97.277225Ha        -0.1836670Ha      3.48E-03     0.1m     11
+Ef          -97.277669Ha        -0.1841104Ha      2.09E-03     0.1m     12
+Ef          -97.277710Ha        -0.1841514Ha      1.51E-03     0.1m     13
+Ef          -97.277747Ha        -0.1841891Ha      1.19E-03     0.1m     14
+Ef          -97.277826Ha        -0.1842678Ha      9.95E-04     0.2m     15
+Ef          -97.277873Ha        -0.1843151Ha      9.05E-04     0.2m     16
+Ef          -97.277960Ha        -0.1844014Ha      6.93E-04     0.2m     17
+Ef          -97.278000Ha        -0.1844415Ha      6.20E-04     0.2m     18
+Ef          -97.278024Ha        -0.1844657Ha      5.76E-04     0.2m     19
+Ef          -97.278037Ha        -0.1844792Ha      5.66E-04     0.2m     20
+Ef          -97.278052Ha        -0.1844939Ha      5.59E-04     0.2m     21
+Ef          -97.278071Ha        -0.1845134Ha      5.55E-04     0.2m     22
+Ef          -97.278084Ha        -0.1845258Ha      5.55E-04     0.2m     23
+Ef          -97.278086Ha        -0.1845283Ha      5.55E-04     0.2m     24
+Ef          -97.278073Ha        -0.1845149Ha      5.53E-04     0.2m     25
+Ef          -97.278050Ha        -0.1844915Ha      5.49E-04     0.3m     26
+Ef          -97.277994Ha        -0.1844357Ha      5.41E-04     0.3m     27
+Ef          -97.277995Ha        -0.1844366Ha      5.32E-04     0.3m     28
+Ef          -97.277903Ha        -0.1843453Ha      5.52E-04     0.3m     29
+Ef          -97.277933Ha        -0.1843749Ha      5.14E-04     0.3m     30
+Ef          -97.277956Ha        -0.1843979Ha      5.08E-04     0.3m     31
+Ef          -97.277944Ha        -0.1843858Ha      5.07E-04     0.3m     32
+Ef          -97.277955Ha        -0.1843967Ha      4.98E-04     0.3m     33
+Ef          -97.277970Ha        -0.1844120Ha      5.06E-04     0.3m     34
+Ef          -97.277940Ha        -0.1843824Ha      4.90E-04     0.3m     35
+Ef          -97.277899Ha        -0.1843410Ha      4.63E-04     0.4m     36
+Ef          -97.277847Ha        -0.1842894Ha      4.51E-04     0.4m     37
+Ef          -97.277839Ha        -0.1842806Ha      4.55E-04     0.4m     38
+Ef          -97.277846Ha        -0.1842879Ha      4.40E-04     0.4m     39
+Ef          -97.277825Ha        -0.1842669Ha      2.96E-04     0.4m     40
+Ef          -97.277813Ha        -0.1842547Ha      2.71E-04     0.4m     41
+Ef          -97.277822Ha        -0.1842643Ha      2.20E-04     0.4m     42
+Ef          -97.277828Ha        -0.1842697Ha      1.52E-04     0.4m     43
+Ef          -97.277830Ha        -0.1842716Ha      1.27E-04     0.4m     44
+Ef          -97.277831Ha        -0.1842726Ha      1.01E-04     0.4m     45
+Ef          -97.277831Ha        -0.1842733Ha      8.29E-05     0.4m     46
+Ef          -97.277833Ha        -0.1842746Ha      5.33E-05     0.5m     47
+Ef          -97.277833Ha        -0.1842748Ha      3.98E-05     0.5m     48
+Ef          -97.277832Ha        -0.1842742Ha      2.76E-05     0.5m     49
+Ef          -97.277832Ha        -0.1842739Ha      2.44E-05     0.5m     50
+Ef          -97.277832Ha        -0.1842736Ha      2.23E-05     0.5m     51
+Ef          -97.277832Ha        -0.1842734Ha      2.17E-05     0.5m     52
+Ef          -97.277832Ha        -0.1842734Ha      2.07E-05     0.5m     53
+Ef          -97.277832Ha        -0.1842734Ha      2.05E-05     0.5m     54
+Ef          -97.277832Ha        -0.1842735Ha      2.04E-05     0.5m     55
+Ef          -97.277832Ha        -0.1842735Ha      2.03E-05     0.5m     56
+Ef          -97.277832Ha        -0.1842735Ha      1.94E-05     0.5m     57
+Ef          -97.277832Ha        -0.1842734Ha      1.65E-05     0.6m     58
+Ef          -97.277832Ha        -0.1842734Ha      1.38E-05     0.6m     59
+Ef          -97.277831Ha        -0.1842733Ha      1.14E-05     0.6m     60
+Ef          -97.277831Ha        -0.1842733Ha      1.02E-05     0.6m     61
+Ef          -97.277831Ha        -0.1842733Ha      8.28E-06     0.6m     62
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital  -0.08950Ha    -2.435eV
+Energy of Lowest Unoccupied Molecular Orbital  -0.07863Ha    -2.140eV
+
+  HOMO is orbital number    39
+  LUMO is orbital number    40
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a         -1.878046       -51.104     1.000
+    2   +   1   a         -1.876353       -51.058     1.000
+    3   +   2   a         -1.857669       -50.550     1.000
+    4   -   2   a         -1.856202       -50.510     1.000
+    5   +   3   a         -1.847332       -50.268     1.000
+    6   -   3   a         -1.845190       -50.210     1.000
+    7   +   4   a         -1.841291       -50.104     1.000
+    8   -   4   a         -1.839811       -50.064     1.000
+    9   -   5   a         -1.830644       -49.814     1.000
+   10   +   5   a         -1.830381       -49.807     1.000
+   11   -   6   a         -1.827627       -49.732     1.000
+   12   +   6   a         -1.825362       -49.671     1.000
+   13   -   7   a         -1.825087       -49.663     1.000
+   14   +   7   a         -1.823739       -49.626     1.000
+   15   +   8   a         -1.817197       -49.448     1.000
+   16   -   8   a         -1.816631       -49.433     1.000
+   17   -   9   a         -1.814904       -49.386     1.000
+   18   +   9   a         -1.814012       -49.362     1.000
+   19   +  10   a         -1.805517       -49.131     1.000
+   20   -  10   a         -1.802628       -49.052     1.000
+   21   +  11   a         -1.802270       -49.042     1.000
+   22   +  12   a         -1.801139       -49.012     1.000
+   23   -  11   a         -1.800317       -48.989     1.000
+   24   +  13   a         -1.798625       -48.943     1.000
+   25   -  12   a         -1.798369       -48.936     1.000
+   26   -  13   a         -1.797742       -48.919     1.000
+   27   +  14   a         -0.186447        -5.073     1.000
+   28   -  14   a         -0.186331        -5.070     1.000
+   29   +  15   a         -0.145403        -3.957     1.000
+   30   +  16   a         -0.142353        -3.874     1.000
+   31   -  15   a         -0.139433        -3.794     1.000
+   32   -  16   a         -0.128481        -3.496     1.000
+   33   -  17   a         -0.124919        -3.399     1.000
+   34   +  17   a         -0.118412        -3.222     1.000
+   35   -  18   a         -0.102137        -2.779     1.000
+   36   +  18   a         -0.094776        -2.579     1.000
+   37   +  19   a         -0.092795        -2.525     1.000
+   38   -  19   a         -0.089514        -2.436     1.000
+   39   +  20   a         -0.089496        -2.435     1.000
+   40   +  21   a         -0.078633        -2.140     0.000
+   41   +  22   a         -0.072856        -1.983     0.000
+   42   -  20   a         -0.070122        -1.908     0.000
+   43   +  23   a         -0.068789        -1.872     0.000
+   44   -  21   a         -0.064167        -1.746     0.000
+   45   -  22   a         -0.060908        -1.657     0.000
+   46   -  23   a         -0.058414        -1.590     0.000
+   47   +  24   a         -0.048000        -1.306     0.000
+   48   -  24   a         -0.038585        -1.050     0.000
+   49   +  25   a         -0.037905        -1.031     0.000
+   50   -  25   a         -0.033984        -0.925     0.000
+   51   +  26   a         -0.031954        -0.870     0.000
+   52   +  27   a         -0.025601        -0.697     0.000
+   53   -  26   a         -0.022757        -0.619     0.000
+   54   -  27   a         -0.020031        -0.545     0.000
+   55   +  28   a         -0.018435        -0.502     0.000
+   56   -  28   a         -0.018114        -0.493     0.000
+   57   +  29   a          0.000642         0.017     0.000
+   58   -  29   a          0.009433         0.257     0.000
+ 
+
+  Orbital occupation is:
+     20  a  ( 1) alpha and    19  a  ( 1) beta
+  Total number electrons:              39.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li    -2.866142   5.049730   0.000000     0.000465  -0.016768   0.015454
+df   Li    -6.318824   1.850569   0.000000     0.006421  -0.001937   0.016652
+df   Li    -4.343179  -2.421721   0.000000     0.004896   0.006966   0.018773
+df   Li     0.330519  -1.862981   0.000000    -0.018780   0.054252   0.018107
+df   Li     1.243378   2.754630   0.000000    -0.062411  -0.053909   0.001952
+df   Li    -5.406843   4.043883   3.959892     0.007964  -0.008665  -0.015604
+df   Li    -6.513245  -0.530048   3.856581     0.008589   0.005347  -0.015449
+df   Li    -2.511784  -2.999619   4.069113    -0.002040   0.017278  -0.015005
+df   Li     1.067657   0.048033   4.303776    -0.071156   0.039809  -0.012910
+df   Li    -0.721588   4.401157   4.236274    -0.005717  -0.049184  -0.010917
+df   Li     0.061136   1.498360  -3.078391     0.019072   0.006609   0.049340
+df   Li    -0.376162   1.179215   1.843004     0.078475   0.000573   0.003469
+df   Li    -0.840538   1.022381   6.769765     0.034223  -0.000372  -0.053861
+df  binding energy      -0.1842733Ha        -5.01433eV        -115.636kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.0935581Ha
+                  Kinetic =        0.4586482Ha
+            Electrostatic =       -1.2560039Ha
+     Exchange-correlation =        0.3106870Ha
+        Spin polarization =        0.3023954Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.277831Ha        -0.1842733Ha                   0.6m     63
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -1.516697            2.672202            0.000000
+            2    Li           -3.343778            0.979279            0.000000
+            3    Li           -2.298311           -1.281520            0.000000
+            4    Li            0.174903           -0.985847            0.000000
+            5    Li            0.657967            1.457687            0.000000
+            6    Li           -2.861178            2.139931            2.095484
+            7    Li           -3.446661           -0.280489            2.040815
+            8    Li           -1.329179           -1.587330            2.153282
+            9    Li            0.564980            0.025418            2.277460
+           10    Li           -0.381848            2.328992            2.241740
+           11    Li            0.032352            0.792898           -1.629014
+           12    Li           -0.199056            0.624014            0.975276
+           13    Li           -0.444793            0.541021            3.582406
+          ----------------------------------------------------------------------
+
+
+ 33 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000036    0.000140    0.000285    0.000386    0.000424    0.000480
+     0.000710    0.000726    0.001091    0.001241    0.001247    0.001361
+     0.001472    0.001779    0.001845    0.001845    0.001845    0.001845
+     0.001845    0.001845    0.001845    0.001845    0.002564    0.002792
+     0.003440    0.003924    0.008708    0.016525    0.055774    0.082328
+     0.164057    0.229110    0.368763
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     2.043413
+ Norm of Displacement of Delocalized Coordinates:   0.283459
+ Norm of Displacement of Cartesian Coordinates:     1.092104
+
+opt==  Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==      tolerance:.......      0.0000200        0.002117       0.009449
+opt==    1       -97.2778314      0.0000000        0.078475       0.567340
+
+ 
+                      Step    1                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.184273E+00 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.784748E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.567340E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+Integration points, checksum  0     31785     31785      39.009930
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.309363Ha        -0.2158047Ha      5.73E-03     0.6m      1
+Ef          -97.316038Ha        -0.2224798Ha      4.73E-03     0.6m      2
+Ef          -97.316063Ha        -0.2225050Ha      3.29E-03     0.7m      3
+Ef          -97.316154Ha        -0.2225963Ha      1.84E-03     0.7m      4
+Ef          -97.316161Ha        -0.2226027Ha      1.30E-03     0.7m      5
+Ef          -97.316181Ha        -0.2226232Ha      1.01E-03     0.7m      6
+Ef          -97.316222Ha        -0.2226640Ha      9.56E-04     0.7m      7
+Ef          -97.316271Ha        -0.2227126Ha      9.41E-04     0.7m      8
+Ef          -97.316286Ha        -0.2227277Ha      9.38E-04     0.7m      9
+Ef          -97.316325Ha        -0.2227668Ha      9.40E-04     0.7m     10
+Ef          -97.316302Ha        -0.2227434Ha      9.33E-04     0.7m     11
+Ef          -97.316247Ha        -0.2226888Ha      8.72E-04     0.7m     12
+Ef          -97.316138Ha        -0.2225800Ha      7.25E-04     0.8m     13
+Ef          -97.316095Ha        -0.2225371Ha      6.45E-04     0.8m     14
+Ef          -97.316063Ha        -0.2225053Ha      6.02E-04     0.8m     15
+Ef          -97.316069Ha        -0.2225106Ha      5.12E-04     0.8m     16
+Ef          -97.316060Ha        -0.2225018Ha      5.01E-04     0.8m     17
+Ef          -97.316076Ha        -0.2225176Ha      2.94E-04     0.8m     18
+Ef          -97.316083Ha        -0.2225245Ha      2.24E-04     0.8m     19
+Ef          -97.316086Ha        -0.2225279Ha      1.85E-04     0.8m     20
+Ef          -97.316087Ha        -0.2225291Ha      1.46E-04     0.8m     21
+Ef          -97.316088Ha        -0.2225303Ha      1.16E-04     0.8m     22
+Ef          -97.316089Ha        -0.2225308Ha      9.83E-05     0.8m     23
+Ef          -97.316089Ha        -0.2225309Ha      8.64E-05     0.9m     24
+Ef          -97.316089Ha        -0.2225309Ha      8.03E-05     0.9m     25
+Ef          -97.316089Ha        -0.2225311Ha      7.92E-05     0.9m     26
+Ef          -97.316089Ha        -0.2225314Ha      7.99E-05     0.9m     27
+Ef          -97.316089Ha        -0.2225310Ha      7.93E-05     0.9m     28
+Ef          -97.316089Ha        -0.2225310Ha      7.92E-05     0.9m     29
+Ef          -97.316089Ha        -0.2225313Ha      7.98E-05     0.9m     30
+Ef          -97.316089Ha        -0.2225313Ha      7.97E-05     0.9m     31
+Ef          -97.316089Ha        -0.2225313Ha      8.13E-05     0.9m     32
+Ef          -97.316089Ha        -0.2225311Ha      7.76E-05     0.9m     33
+Ef          -97.316089Ha        -0.2225310Ha      7.65E-05     0.9m     34
+Ef          -97.316089Ha        -0.2225309Ha      7.47E-05     1.0m     35
+Ef          -97.316089Ha        -0.2225310Ha      7.26E-05     1.0m     36
+Ef          -97.316089Ha        -0.2225312Ha      6.88E-05     1.0m     37
+Ef          -97.316090Ha        -0.2225315Ha      6.05E-05     1.0m     38
+Ef          -97.316090Ha        -0.2225315Ha      5.81E-05     1.0m     39
+Ef          -97.316090Ha        -0.2225314Ha      5.43E-05     1.0m     40
+Ef          -97.316089Ha        -0.2225312Ha      5.36E-05     1.0m     41
+Ef          -97.316089Ha        -0.2225312Ha      5.34E-05     1.0m     42
+Ef          -97.316089Ha        -0.2225311Ha      5.36E-05     1.0m     43
+Ef          -97.316089Ha        -0.2225311Ha      5.35E-05     1.0m     44
+Ef          -97.316089Ha        -0.2225310Ha      5.30E-05     1.1m     45
+Ef          -97.316089Ha        -0.2225311Ha      5.33E-05     1.1m     46
+Ef          -97.316089Ha        -0.2225307Ha      5.27E-05     1.1m     47
+Ef          -97.316089Ha        -0.2225307Ha      5.31E-05     1.1m     48
+Ef          -97.316089Ha        -0.2225307Ha      5.13E-05     1.1m     49
+Ef          -97.316088Ha        -0.2225303Ha      4.72E-05     1.1m     50
+Ef          -97.316087Ha        -0.2225291Ha      3.87E-05     1.1m     51
+Ef          -97.316086Ha        -0.2225281Ha      2.77E-05     1.1m     52
+Ef          -97.316086Ha        -0.2225281Ha      1.99E-05     1.1m     53
+Ef          -97.316086Ha        -0.2225277Ha      1.31E-05     1.1m     54
+Ef          -97.316086Ha        -0.2225279Ha      8.68E-06     1.1m     55
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital  -0.08671Ha    -2.360eV
+Energy of Lowest Unoccupied Molecular Orbital  -0.07961Ha    -2.166eV
+
+  HOMO is orbital number    39
+  LUMO is orbital number    40
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a         -1.864033       -50.723     1.000
+    2   +   1   a         -1.862628       -50.685     1.000
+    3   +   2   a         -1.846908       -50.257     1.000
+    4   -   2   a         -1.846113       -50.235     1.000
+    5   +   3   a         -1.842155       -50.128     1.000
+    6   -   3   a         -1.839641       -50.059     1.000
+    7   +   4   a         -1.833997       -49.906     1.000
+    8   -   4   a         -1.833271       -49.886     1.000
+    9   -   5   a         -1.823576       -49.622     1.000
+   10   +   5   a         -1.823199       -49.612     1.000
+   11   -   6   a         -1.819870       -49.521     1.000
+   12   +   6   a         -1.818987       -49.497     1.000
+   13   -   7   a         -1.818413       -49.482     1.000
+   14   +   7   a         -1.816007       -49.416     1.000
+   15   +   8   a         -1.815284       -49.396     1.000
+   16   -   8   a         -1.815094       -49.391     1.000
+   17   +   9   a         -1.814702       -49.381     1.000
+   18   -   9   a         -1.814578       -49.377     1.000
+   19   +  10   a         -1.807965       -49.197     1.000
+   20   -  10   a         -1.805040       -49.118     1.000
+   21   +  11   a         -1.803798       -49.084     1.000
+   22   -  11   a         -1.799812       -48.975     1.000
+   23   +  12   a         -1.799602       -48.970     1.000
+   24   +  13   a         -1.798764       -48.947     1.000
+   25   -  12   a         -1.798518       -48.940     1.000
+   26   -  13   a         -1.797878       -48.923     1.000
+   27   +  14   a         -0.187885        -5.113     1.000
+   28   -  14   a         -0.187555        -5.104     1.000
+   29   +  15   a         -0.150128        -4.085     1.000
+   30   +  16   a         -0.145275        -3.953     1.000
+   31   -  15   a         -0.141703        -3.856     1.000
+   32   -  16   a         -0.130382        -3.548     1.000
+   33   -  17   a         -0.127235        -3.462     1.000
+   34   +  17   a         -0.115478        -3.142     1.000
+   35   -  18   a         -0.096773        -2.633     1.000
+   36   +  18   a         -0.096338        -2.621     1.000
+   37   +  19   a         -0.094428        -2.570     1.000
+   38   +  20   a         -0.089121        -2.425     1.000
+   39   -  19   a         -0.086713        -2.360     1.000
+   40   +  21   a         -0.079605        -2.166     0.000
+   41   -  20   a         -0.072533        -1.974     0.000
+   42   +  22   a         -0.070104        -1.908     0.000
+   43   +  23   a         -0.063785        -1.736     0.000
+   44   -  21   a         -0.063586        -1.730     0.000
+   45   -  22   a         -0.061952        -1.686     0.000
+   46   -  23   a         -0.058499        -1.592     0.000
+   47   +  24   a         -0.047873        -1.303     0.000
+   48   +  25   a         -0.037660        -1.025     0.000
+   49   -  24   a         -0.034536        -0.940     0.000
+   50   +  26   a         -0.031056        -0.845     0.000
+   51   -  25   a         -0.029850        -0.812     0.000
+   52   +  27   a         -0.029443        -0.801     0.000
+   53   -  26   a         -0.022870        -0.622     0.000
+   54   -  27   a         -0.022281        -0.606     0.000
+   55   +  28   a         -0.019607        -0.534     0.000
+   56   -  28   a         -0.016717        -0.455     0.000
+   57   +  29   a         -0.003858        -0.105     0.000
+   58   -  29   a          0.000813         0.022     0.000
+   59   +  30   a          0.020319         0.553     0.000
+ 
+
+  Orbital occupation is:
+     20  a  ( 1) alpha and    19  a  ( 1) beta
+  Total number electrons:              39.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li    -2.723782   5.411320   0.062621     0.002212  -0.019693   0.013940
+df   Li    -5.751485   1.793395  -0.052896     0.003101  -0.001130   0.015508
+df   Li    -4.320896  -2.708524  -0.003700     0.007683   0.009267   0.017873
+df   Li     0.342585  -1.902494  -0.001512    -0.019946   0.047740   0.016250
+df   Li     1.123905   2.717911  -0.002049    -0.064492  -0.048730   0.006714
+df   Li    -5.307484   4.125832   3.948077     0.009162  -0.008608  -0.012939
+df   Li    -6.247230  -0.506619   3.860320     0.009443   0.004243  -0.013230
+df   Li    -2.396617  -3.219958   4.076573    -0.002398   0.017965  -0.013229
+df   Li     0.931551   0.087347   4.307137    -0.069262   0.034298  -0.015211
+df   Li    -0.605964   4.527897   4.281684    -0.010877  -0.044988  -0.010972
+df   Li    -0.381701   1.485877  -3.067557     0.021806   0.006862   0.043264
+df   Li    -0.660933   1.199040   1.834571     0.079316   0.001375  -0.000164
+df   Li    -1.197565   1.022564   6.716747     0.034253   0.001399  -0.047805
+df  binding energy      -0.2225279Ha        -6.05530eV        -139.641kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.0935581Ha
+                  Kinetic =        0.5643898Ha
+            Electrostatic =       -1.4011528Ha
+     Exchange-correlation =        0.3118396Ha
+        Spin polarization =        0.3023954Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.316086Ha        -0.2225279Ha                   1.2m     56
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -1.441364            2.863547            0.033138
+            2    Li           -3.043555            0.949024           -0.027992
+            3    Li           -2.286520           -1.433289           -0.001958
+            4    Li            0.181288           -1.006756           -0.000800
+            5    Li            0.594745            1.438257           -0.001084
+            6    Li           -2.808599            2.183296            2.089232
+            7    Li           -3.305892           -0.268091            2.042793
+            8    Li           -1.268235           -1.703928            2.157229
+            9    Li            0.492956            0.046222            2.279239
+           10    Li           -0.320662            2.396060            2.265770
+           11    Li           -0.201987            0.786292           -1.623281
+           12    Li           -0.349751            0.634505            0.970813
+           13    Li           -0.633724            0.541118            3.554350
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+
+ 27 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000035    0.000139    0.000295    0.000385    0.000415    0.000474
+     0.000678    0.000745    0.001091    0.001244    0.001276    0.001359
+     0.001459    0.001698    0.001789    0.001913    0.002596    0.002855
+     0.003467    0.003990    0.008792    0.022255    0.063371    0.084269
+     0.147267    0.214204    0.286865
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     1.628753
+ Norm of Displacement of Delocalized Coordinates:   0.283459
+ Norm of Displacement of Cartesian Coordinates:     0.842177
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    2       -97.3160860     -0.0382546        0.079316       0.517296
+
+ 
+                      Step    2                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.382546E-01 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.793159E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.517296E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+Integration points, checksum  0     31785     31785      39.009989
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.343590Ha        -0.2500317Ha      6.01E-03     1.2m      1
+Ef          -97.348807Ha        -0.2552489Ha      5.58E-03     1.2m      2
+Ef          -97.348830Ha        -0.2552723Ha      4.38E-03     1.2m      3
+Ef          -97.349046Ha        -0.2554883Ha      2.81E-03     1.2m      4
+Ef          -97.349269Ha        -0.2557113Ha      2.15E-03     1.2m      5
+Ef          -97.349468Ha        -0.2559104Ha      1.79E-03     1.2m      6
+Ef          -97.349687Ha        -0.2561292Ha      1.55E-03     1.2m      7
+Ef          -97.349827Ha        -0.2562688Ha      1.40E-03     1.3m      8
+Ef          -97.349982Ha        -0.2564242Ha      1.28E-03     1.3m      9
+Ef          -97.350244Ha        -0.2566861Ha      1.11E-03     1.3m     10
+Ef          -97.350263Ha        -0.2567053Ha      1.01E-03     1.3m     11
+Ef          -97.350498Ha        -0.2569403Ha      1.12E-03     1.3m     12
+Ef          -97.350465Ha        -0.2569071Ha      7.94E-04     1.3m     13
+Ef          -97.350620Ha        -0.2570616Ha      8.75E-04     1.3m     14
+Ef          -97.350591Ha        -0.2570324Ha      6.29E-04     1.3m     15
+Ef          -97.350647Ha        -0.2570891Ha      5.90E-04     1.3m     16
+Ef          -97.350660Ha        -0.2571024Ha      5.84E-04     1.3m     17
+Ef          -97.350712Ha        -0.2571542Ha      4.72E-04     1.3m     18
+Ef          -97.350734Ha        -0.2571758Ha      4.51E-04     1.4m     19
+Ef          -97.350787Ha        -0.2572286Ha      3.85E-04     1.4m     20
+Ef          -97.350789Ha        -0.2572313Ha      3.89E-04     1.4m     21
+Ef          -97.350795Ha        -0.2572366Ha      3.84E-04     1.4m     22
+Ef          -97.350810Ha        -0.2572517Ha      3.60E-04     1.4m     23
+Ef          -97.350822Ha        -0.2572635Ha      3.41E-04     1.4m     24
+Ef          -97.350862Ha        -0.2573035Ha      3.13E-04     1.4m     25
+Ef          -97.350866Ha        -0.2573081Ha      2.75E-04     1.4m     26
+Ef          -97.350893Ha        -0.2573353Ha      3.10E-04     1.4m     27
+Ef          -97.350889Ha        -0.2573306Ha      2.91E-04     1.4m     28
+Ef          -97.350910Ha        -0.2573515Ha      2.89E-04     1.4m     29
+Ef          -97.350909Ha        -0.2573513Ha      3.51E-04     1.5m     30
+Ef          -97.350918Ha        -0.2573598Ha      1.34E-04     1.5m     31
+Ef          -97.350920Ha        -0.2573615Ha      9.31E-05     1.5m     32
+Ef          -97.350921Ha        -0.2573625Ha      6.36E-05     1.5m     33
+Ef          -97.350921Ha        -0.2573624Ha      4.43E-05     1.5m     34
+Ef          -97.350921Ha        -0.2573627Ha      4.02E-05     1.5m     35
+Ef          -97.350921Ha        -0.2573627Ha      2.82E-05     1.5m     36
+Ef          -97.350921Ha        -0.2573629Ha      2.09E-05     1.5m     37
+Ef          -97.350921Ha        -0.2573631Ha      1.66E-05     1.5m     38
+Ef          -97.350921Ha        -0.2573631Ha      1.35E-05     1.5m     39
+Ef          -97.350921Ha        -0.2573631Ha      9.59E-06     1.5m     40
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital  -0.08892Ha    -2.420eV
+Energy of Lowest Unoccupied Molecular Orbital  -0.07313Ha    -1.990eV
+
+  HOMO is orbital number    39
+  LUMO is orbital number    40
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   +   1   a         -1.848993       -50.314     1.000
+    2   -   1   a         -1.848912       -50.311     1.000
+    3   +   2   a         -1.841632       -50.113     1.000
+    4   -   2   a         -1.840781       -50.090     1.000
+    5   +   3   a         -1.832180       -49.856     1.000
+    6   -   3   a         -1.831323       -49.833     1.000
+    7   +   4   a         -1.828509       -49.756     1.000
+    8   -   4   a         -1.828287       -49.750     1.000
+    9   +   5   a         -1.824949       -49.659     1.000
+   10   -   5   a         -1.823408       -49.617     1.000
+   11   +   6   a         -1.822936       -49.605     1.000
+   12   -   6   a         -1.819208       -49.503     1.000
+   13   -   7   a         -1.815686       -49.407     1.000
+   14   +   7   a         -1.815612       -49.405     1.000
+   15   -   8   a         -1.814180       -49.366     1.000
+   16   +   8   a         -1.812850       -49.330     1.000
+   17   -   9   a         -1.812409       -49.318     1.000
+   18   +   9   a         -1.811458       -49.292     1.000
+   19   +  10   a         -1.809306       -49.234     1.000
+   20   -  10   a         -1.807564       -49.186     1.000
+   21   +  11   a         -1.802662       -49.053     1.000
+   22   -  11   a         -1.799333       -48.962     1.000
+   23   +  12   a         -1.797138       -48.903     1.000
+   24   -  12   a         -1.796222       -48.878     1.000
+   25   -  13   a         -1.795959       -48.871     1.000
+   26   +  13   a         -1.795567       -48.860     1.000
+   27   +  14   a         -0.189164        -5.147     1.000
+   28   -  14   a         -0.186141        -5.065     1.000
+   29   +  15   a         -0.150722        -4.101     1.000
+   30   -  15   a         -0.146886        -3.997     1.000
+   31   +  16   a         -0.144391        -3.929     1.000
+   32   -  16   a         -0.136694        -3.720     1.000
+   33   -  17   a         -0.123788        -3.368     1.000
+   34   +  17   a         -0.121891        -3.317     1.000
+   35   +  18   a         -0.101190        -2.754     1.000
+   36   -  18   a         -0.095354        -2.595     1.000
+   37   +  19   a         -0.092046        -2.505     1.000
+   38   +  20   a         -0.090104        -2.452     1.000
+   39   -  19   a         -0.088922        -2.420     1.000
+   40   +  21   a         -0.073133        -1.990     0.000
+   41   -  20   a         -0.071898        -1.956     0.000
+   42   +  22   a         -0.068605        -1.867     0.000
+   43   -  21   a         -0.067347        -1.833     0.000
+   44   +  23   a         -0.064869        -1.765     0.000
+   45   -  22   a         -0.062099        -1.690     0.000
+   46   -  23   a         -0.057128        -1.555     0.000
+   47   +  24   a         -0.047129        -1.282     0.000
+   48   +  25   a         -0.040893        -1.113     0.000
+   49   -  24   a         -0.037382        -1.017     0.000
+   50   +  26   a         -0.030323        -0.825     0.000
+   51   -  25   a         -0.029404        -0.800     0.000
+   52   -  26   a         -0.027397        -0.746     0.000
+   53   +  27   a         -0.026686        -0.726     0.000
+   54   +  28   a         -0.020673        -0.563     0.000
+   55   -  27   a         -0.019996        -0.544     0.000
+   56   -  28   a         -0.019494        -0.530     0.000
+   57   +  29   a         -0.007091        -0.193     0.000
+   58   -  29   a         -0.000990        -0.027     0.000
+   59   +  30   a          0.017422         0.474     0.000
+   60   -  30   a          0.022214         0.604     0.000
+ 
+
+  Orbital occupation is:
+     20  a  ( 1) alpha and    19  a  ( 1) beta
+  Total number electrons:              39.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li    -2.623021   5.659842   0.126896     0.001976  -0.021760   0.013309
+df   Li    -5.234188   1.729434  -0.135258     0.005746  -0.002218   0.014479
+df   Li    -4.290001  -2.902949  -0.028106     0.004221   0.009790   0.013767
+df   Li     0.332527  -1.912610   0.008425    -0.019747   0.040652   0.015485
+df   Li     1.043239   2.732481  -0.029995    -0.059853  -0.043067   0.013276
+df   Li    -5.238552   4.089370   3.898388     0.006352  -0.008323  -0.013301
+df   Li    -6.286880  -0.539416   3.714388     0.009307   0.004893  -0.013714
+df   Li    -2.398525  -3.228626   4.121949    -0.000785   0.018389  -0.011356
+df   Li     0.961817   0.099715   4.303869    -0.067623   0.033167  -0.013428
+df   Li    -0.526287   4.588539   4.335397    -0.010565  -0.040102  -0.011803
+df   Li    -0.833611   1.440855  -3.013863     0.018400   0.005696   0.040054
+df   Li    -0.860672   1.240329   1.873242     0.076748   0.003954  -0.000138
+df   Li    -1.241459   1.036624   6.784681     0.035824  -0.001071  -0.046629
+df  binding energy      -0.2573631Ha        -7.00321eV        -161.501kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.0935581Ha
+                  Kinetic =        0.6288738Ha
+            Electrostatic =       -1.5007595Ha
+     Exchange-correlation =        0.3121272Ha
+        Spin polarization =        0.3023954Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.350921Ha        -0.2573631Ha                   1.6m     41
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -1.388043            2.995059            0.067151
+            2    Li           -2.769813            0.915177           -0.071575
+            3    Li           -2.270171           -1.536175           -0.014873
+            4    Li            0.175966           -1.012110            0.004458
+            5    Li            0.552058            1.445967           -0.015872
+            6    Li           -2.772123            2.164002            2.062938
+            7    Li           -3.326874           -0.285447            1.965570
+            8    Li           -1.269245           -1.708515            2.181242
+            9    Li            0.508971            0.052767            2.277509
+           10    Li           -0.278499            2.428150            2.294194
+           11    Li           -0.441128            0.762468           -1.594868
+           12    Li           -0.455448            0.656354            0.991277
+           13    Li           -0.656952            0.548558            3.590299
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+
+ 28 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000036    0.000138    0.000304    0.000383    0.000430    0.000519
+     0.000651    0.000813    0.000987    0.001242    0.001250    0.001337
+     0.001406    0.001623    0.001791    0.001879    0.002499    0.002648
+     0.002916    0.003466    0.003985    0.008856    0.025491    0.061869
+     0.103655    0.166413    0.261853    0.303155
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.951010
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    3       -97.3509212     -0.0348352        0.076748       0.521265
+
+ 
+                      Step    3                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.348352E-01 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.767476E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.521265E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+Integration points, checksum  0     31785     31785      39.010050
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.396476Ha        -0.3029182Ha      5.55E-03     1.6m      1
+Ef          -97.405053Ha        -0.3114951Ha      4.89E-03     1.6m      2
+Ef          -97.404835Ha        -0.3112771Ha      3.42E-03     1.6m      3
+Ef          -97.404904Ha        -0.3113460Ha      2.04E-03     1.6m      4
+Ef          -97.404876Ha        -0.3113179Ha      1.21E-03     1.6m      5
+Ef          -97.404820Ha        -0.3112618Ha      5.02E-04     1.6m      6
+Ef          -97.404814Ha        -0.3112560Ha      3.84E-04     1.6m      7
+Ef          -97.404817Ha        -0.3112590Ha      3.19E-04     1.7m      8
+Ef          -97.404824Ha        -0.3112657Ha      2.68E-04     1.7m      9
+Ef          -97.404828Ha        -0.3112696Ha      2.16E-04     1.7m     10
+Ef          -97.404832Ha        -0.3112742Ha      1.70E-04     1.7m     11
+Ef          -97.404839Ha        -0.3112809Ha      9.45E-05     1.7m     12
+Ef          -97.404842Ha        -0.3112838Ha      6.57E-05     1.7m     13
+Ef          -97.404844Ha        -0.3112860Ha      3.78E-05     1.7m     14
+Ef          -97.404845Ha        -0.3112867Ha      2.54E-05     1.7m     15
+Ef          -97.404845Ha        -0.3112872Ha      1.40E-05     1.7m     16
+Ef          -97.404845Ha        -0.3112873Ha      1.06E-05     1.7m     17
+Ef          -97.404846Ha        -0.3112874Ha      8.08E-06     1.7m     18
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital  -0.08741Ha    -2.379eV
+Energy of Lowest Unoccupied Molecular Orbital  -0.06932Ha    -1.886eV
+
+  HOMO is orbital number    39
+  LUMO is orbital number    40
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a         -1.829046       -49.771     1.000
+    2   +   1   a         -1.829012       -49.770     1.000
+    3   +   2   a         -1.826828       -49.711     1.000
+    4   -   2   a         -1.826375       -49.698     1.000
+    5   +   3   a         -1.822348       -49.589     1.000
+    6   -   3   a         -1.822334       -49.588     1.000
+    7   +   4   a         -1.820299       -49.533     1.000
+    8   +   5   a         -1.818390       -49.481     1.000
+    9   -   4   a         -1.817952       -49.469     1.000
+   10   -   5   a         -1.816820       -49.438     1.000
+   11   -   6   a         -1.815240       -49.395     1.000
+   12   +   6   a         -1.814683       -49.380     1.000
+   13   +   7   a         -1.812196       -49.312     1.000
+   14   -   7   a         -1.810797       -49.274     1.000
+   15   -   8   a         -1.810013       -49.253     1.000
+   16   +   8   a         -1.809572       -49.241     1.000
+   17   +   9   a         -1.808721       -49.218     1.000
+   18   -   9   a         -1.807460       -49.184     1.000
+   19   +  10   a         -1.804180       -49.094     1.000
+   20   -  10   a         -1.800529       -48.995     1.000
+   21   +  11   a         -1.799696       -48.972     1.000
+   22   -  11   a         -1.799480       -48.966     1.000
+   23   +  12   a         -1.797886       -48.923     1.000
+   24   -  12   a         -1.797278       -48.906     1.000
+   25   -  13   a         -1.795024       -48.845     1.000
+   26   +  13   a         -1.794691       -48.836     1.000
+   27   +  14   a         -0.188257        -5.123     1.000
+   28   -  14   a         -0.184963        -5.033     1.000
+   29   +  15   a         -0.151180        -4.114     1.000
+   30   -  15   a         -0.146327        -3.982     1.000
+   31   +  16   a         -0.142570        -3.880     1.000
+   32   -  16   a         -0.137092        -3.730     1.000
+   33   -  17   a         -0.123037        -3.348     1.000
+   34   +  17   a         -0.122695        -3.339     1.000
+   35   +  18   a         -0.097678        -2.658     1.000
+   36   -  18   a         -0.092189        -2.509     1.000
+   37   +  19   a         -0.090470        -2.462     1.000
+   38   +  20   a         -0.088827        -2.417     1.000
+   39   -  19   a         -0.087411        -2.379     1.000
+   40   +  21   a         -0.069319        -1.886     0.000
+   41   -  20   a         -0.069162        -1.882     0.000
+   42   -  21   a         -0.066923        -1.821     0.000
+   43   +  22   a         -0.065639        -1.786     0.000
+   44   +  23   a         -0.063820        -1.737     0.000
+   45   -  22   a         -0.060329        -1.642     0.000
+   46   -  23   a         -0.057006        -1.551     0.000
+   47   +  24   a         -0.047039        -1.280     0.000
+   48   +  25   a         -0.040152        -1.093     0.000
+   49   -  24   a         -0.036665        -0.998     0.000
+   50   -  25   a         -0.027959        -0.761     0.000
+   51   +  26   a         -0.027950        -0.761     0.000
+   52   -  26   a         -0.025901        -0.705     0.000
+   53   +  27   a         -0.024686        -0.672     0.000
+   54   +  28   a         -0.021495        -0.585     0.000
+   55   -  27   a         -0.019671        -0.535     0.000
+   56   -  28   a         -0.016702        -0.454     0.000
+   57   +  29   a         -0.006605        -0.180     0.000
+   58   -  29   a         -0.001300        -0.035     0.000
+   59   +  30   a          0.015529         0.423     0.000
+   60   -  30   a          0.021435         0.583     0.000
+ 
+
+  Orbital occupation is:
+     20  a  ( 1) alpha and    19  a  ( 1) beta
+  Total number electrons:              39.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li    -2.580145   5.686571   0.034259     0.001120  -0.018933   0.011309
+df   Li    -5.353040   1.765254  -0.060049     0.007966  -0.001484   0.015247
+df   Li    -4.355209  -2.943474   0.008607     0.004406   0.008178   0.012082
+df   Li     0.365985  -1.942643  -0.066593    -0.017081   0.033251   0.012802
+df   Li     1.179900   2.761352   0.026243    -0.055855  -0.034880   0.008012
+df   Li    -5.250234   4.314343   3.905635     0.009202  -0.010431  -0.012175
+df   Li    -5.824516  -0.443503   3.982386     0.010296   0.007125  -0.010658
+df   Li    -2.180116  -3.485299   4.056359    -0.000538   0.018753  -0.009429
+df   Li     0.963215   0.055698   4.358480    -0.060676   0.024675  -0.015277
+df   Li    -0.515298   4.606622   4.347239    -0.010889  -0.034681  -0.011252
+df   Li    -0.780185   1.452937  -3.120928     0.017082   0.004808   0.032350
+df   Li    -1.103247   1.228136   1.824707     0.064962   0.005187   0.004933
+df   Li    -1.762724   0.977594   6.663671     0.030006  -0.001567  -0.037944
+df  binding energy      -0.3112875Ha        -8.47057eV        -195.340kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.0935581Ha
+                  Kinetic =        0.8136890Ha
+            Electrostatic =       -1.7337179Ha
+     Exchange-correlation =        0.3063461Ha
+        Spin polarization =        0.3023954Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.404846Ha        -0.3112875Ha                   1.8m     19
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -1.365354            3.009204            0.018129
+            2    Li           -2.832707            0.934132           -0.031777
+            3    Li           -2.304678           -1.557619            0.004554
+            4    Li            0.193671           -1.028002           -0.035240
+            5    Li            0.624376            1.461245            0.013887
+            6    Li           -2.778304            2.283052            2.066773
+            7    Li           -3.082201           -0.234691            2.107388
+            8    Li           -1.153668           -1.844341            2.146533
+            9    Li            0.509711            0.029474            2.306408
+           10    Li           -0.272684            2.437719            2.300460
+           11    Li           -0.412856            0.768861           -1.651524
+           12    Li           -0.583813            0.649902            0.965593
+           13    Li           -0.932794            0.517320            3.526263
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+
+ 29 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000044    0.000141    0.000282    0.000384    0.000402    0.000468
+     0.000694    0.000870    0.001152    0.001213    0.001304    0.001347
+     0.001473    0.001646    0.001810    0.001860    0.001921    0.002584
+     0.002851    0.003455    0.003956    0.008023    0.009031    0.033632
+     0.068450    0.140337    0.147901    0.248899    0.266582
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     1.192348
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    4       -97.4048456     -0.0539244        0.064962       0.592610
+
+ 
+                      Step    4                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.539244E-01 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.649624E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.592610E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+Integration points, checksum  0     31785     31785      39.009921
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.431410Ha        -0.3378519Ha      5.96E-03     1.8m      1
+Ef          -97.445715Ha        -0.3521565Ha      4.61E-03     1.8m      2
+Ef          -97.445633Ha        -0.3520747Ha      2.94E-03     1.8m      3
+Ef          -97.445681Ha        -0.3521226Ha      1.77E-03     1.8m      4
+Ef          -97.445670Ha        -0.3521124Ha      1.03E-03     1.8m      5
+Ef          -97.445644Ha        -0.3520862Ha      5.65E-04     1.8m      6
+Ef          -97.445639Ha        -0.3520813Ha      3.83E-04     1.8m      7
+Ef          -97.445642Ha        -0.3520838Ha      3.31E-04     1.9m      8
+Ef          -97.445649Ha        -0.3520907Ha      2.73E-04     1.9m      9
+Ef          -97.445654Ha        -0.3520960Ha      2.35E-04     1.9m     10
+Ef          -97.445663Ha        -0.3521044Ha      1.43E-04     1.9m     11
+Ef          -97.445664Ha        -0.3521060Ha      1.07E-04     1.9m     12
+Ef          -97.445665Ha        -0.3521068Ha      6.62E-05     1.9m     13
+Ef          -97.445666Ha        -0.3521077Ha      4.37E-05     1.9m     14
+Ef          -97.445667Ha        -0.3521090Ha      2.46E-05     1.9m     15
+Ef          -97.445668Ha        -0.3521097Ha      1.52E-05     1.9m     16
+Ef          -97.445668Ha        -0.3521101Ha      1.01E-05     1.9m     17
+Ef          -97.445668Ha        -0.3521102Ha      7.67E-06     1.9m     18
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital  -0.08741Ha    -2.378eV
+Energy of Lowest Unoccupied Molecular Orbital  -0.07260Ha    -1.975eV
+
+  HOMO is orbital number    39
+  LUMO is orbital number    40
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a         -1.821216       -49.558     1.000
+    2   +   1   a         -1.821092       -49.554     1.000
+    3   +   2   a         -1.819484       -49.511     1.000
+    4   -   2   a         -1.819035       -49.498     1.000
+    5   +   3   a         -1.818254       -49.477     1.000
+    6   -   3   a         -1.817079       -49.445     1.000
+    7   +   4   a         -1.816217       -49.422     1.000
+    8   -   4   a         -1.815979       -49.415     1.000
+    9   +   5   a         -1.815739       -49.409     1.000
+   10   +   6   a         -1.815065       -49.390     1.000
+   11   -   5   a         -1.814828       -49.384     1.000
+   12   +   7   a         -1.813634       -49.352     1.000
+   13   -   6   a         -1.813122       -49.338     1.000
+   14   -   7   a         -1.812875       -49.331     1.000
+   15   +   8   a         -1.810632       -49.270     1.000
+   16   -   8   a         -1.808345       -49.208     1.000
+   17   -   9   a         -1.802929       -49.060     1.000
+   18   +   9   a         -1.802675       -49.053     1.000
+   19   +  10   a         -1.801474       -49.021     1.000
+   20   +  11   a         -1.799308       -48.962     1.000
+   21   -  10   a         -1.799130       -48.957     1.000
+   22   -  11   a         -1.798441       -48.938     1.000
+   23   -  12   a         -1.797254       -48.906     1.000
+   24   +  12   a         -1.796697       -48.891     1.000
+   25   -  13   a         -1.787374       -48.637     1.000
+   26   +  13   a         -1.786928       -48.625     1.000
+   27   +  14   a         -0.186401        -5.072     1.000
+   28   -  14   a         -0.183404        -4.991     1.000
+   29   +  15   a         -0.148706        -4.047     1.000
+   30   -  15   a         -0.143742        -3.911     1.000
+   31   +  16   a         -0.141710        -3.856     1.000
+   32   -  16   a         -0.132529        -3.606     1.000
+   33   -  17   a         -0.127439        -3.468     1.000
+   34   +  17   a         -0.124573        -3.390     1.000
+   35   +  18   a         -0.095266        -2.592     1.000
+   36   +  19   a         -0.087801        -2.389     1.000
+   37   -  18   a         -0.087689        -2.386     1.000
+   38   +  20   a         -0.087595        -2.384     1.000
+   39   -  19   a         -0.087406        -2.378     1.000
+   40   +  21   a         -0.072597        -1.975     0.000
+   41   -  20   a         -0.067174        -1.828     0.000
+   42   -  21   a         -0.065616        -1.786     0.000
+   43   +  22   a         -0.064045        -1.743     0.000
+   44   -  22   a         -0.060423        -1.644     0.000
+   45   +  23   a         -0.059584        -1.621     0.000
+   46   -  23   a         -0.055589        -1.513     0.000
+   47   +  24   a         -0.040813        -1.111     0.000
+   48   +  25   a         -0.036851        -1.003     0.000
+   49   -  24   a         -0.034285        -0.933     0.000
+   50   -  25   a         -0.026296        -0.716     0.000
+   51   +  26   a         -0.025981        -0.707     0.000
+   52   +  27   a         -0.022977        -0.625     0.000
+   53   -  26   a         -0.022935        -0.624     0.000
+   54   +  28   a         -0.018734        -0.510     0.000
+   55   -  27   a         -0.016278        -0.443     0.000
+   56   -  28   a         -0.012555        -0.342     0.000
+   57   +  29   a         -0.012325        -0.335     0.000
+   58   -  29   a         -0.004346        -0.118     0.000
+   59   +  30   a          0.009675         0.263     0.000
+   60   -  30   a          0.009923         0.270     0.000
+ 
+
+  Orbital occupation is:
+     20  a  ( 1) alpha and    19  a  ( 1) beta
+  Total number electrons:              39.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li    -2.614338   5.654935   0.057894    -0.000040  -0.016305   0.010172
+df   Li    -5.668966   1.829756  -0.151886     0.005730  -0.001088   0.013524
+df   Li    -4.253047  -2.857758  -0.161770     0.003867   0.006971   0.011160
+df   Li     0.508069  -1.972964   0.025017    -0.017564   0.028759   0.011231
+df   Li     1.337111   2.807526  -0.025869    -0.047648  -0.029397   0.010907
+df   Li    -4.923971   3.881208   4.078667     0.010094  -0.010124  -0.011145
+df   Li    -6.417126  -0.733864   3.719065     0.009352   0.005377  -0.011232
+df   Li    -2.333536  -3.262763   4.129150    -0.000479   0.014745  -0.009704
+df   Li     1.193724   0.090473   4.411179    -0.050390   0.020829  -0.012679
+df   Li    -0.214084   4.763547   4.317605    -0.013261  -0.030364  -0.009411
+df   Li    -0.948011   1.338652  -3.090485     0.015435   0.003741   0.026083
+df   Li    -1.152985   1.286413   1.870203     0.058952   0.005138   0.002920
+df   Li    -1.708456   1.208429   6.781243     0.025952   0.001719  -0.031826
+df  binding energy      -0.3521102Ha        -9.58141eV        -220.957kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.0935581Ha
+                  Kinetic =        0.9141650Ha
+            Electrostatic =       -1.8641177Ha
+     Exchange-correlation =        0.2954471Ha
+        Spin polarization =        0.3023954Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.445668Ha        -0.3521102Ha                   2.0m     19
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -1.383448            2.992463            0.030636
+            2    Li           -2.999888            0.968265           -0.080375
+            3    Li           -2.250616           -1.512260           -0.085605
+            4    Li            0.268859           -1.044047            0.013239
+            5    Li            0.707568            1.485679           -0.013689
+            6    Li           -2.605653            2.053847            2.158338
+            7    Li           -3.395797           -0.388344            1.968045
+            8    Li           -1.234854           -1.726580            2.185052
+            9    Li            0.631692            0.047876            2.334295
+           10    Li           -0.113288            2.520760            2.284778
+           11    Li           -0.501666            0.708384           -1.635414
+           12    Li           -0.610133            0.680740            0.989669
+           13    Li           -0.904076            0.639473            3.588479
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+
+ 30 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000045    0.000140    0.000328    0.000382    0.000404    0.000526
+     0.000723    0.000872    0.001153    0.001238    0.001304    0.001351
+     0.001556    0.001644    0.001816    0.001846    0.001904    0.002548
+     0.002850    0.003392    0.003816    0.005764    0.008902    0.009962
+     0.055462    0.070768    0.125081    0.219195    0.235304    0.272271
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     1.018801
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    5       -97.4456683     -0.0408227        0.058952       0.453849
+
+ 
+                      Step    5                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.408227E-01 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.589520E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.453849E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+Integration points, checksum  0     31785     31785      39.009976
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.473766Ha        -0.3802081Ha      5.49E-03     2.0m      1
+Ef          -97.482261Ha        -0.3887026Ha      4.83E-03     2.0m      2
+Ef          -97.482197Ha        -0.3886390Ha      3.60E-03     2.0m      3
+Ef          -97.482377Ha        -0.3888186Ha      2.27E-03     2.0m      4
+Ef          -97.482491Ha        -0.3889333Ha      1.64E-03     2.0m      5
+Ef          -97.482601Ha        -0.3890427Ha      1.24E-03     2.0m      6
+Ef          -97.482669Ha        -0.3891108Ha      9.95E-04     2.0m      7
+Ef          -97.482715Ha        -0.3891571Ha      7.77E-04     2.1m      8
+Ef          -97.482763Ha        -0.3892049Ha      4.79E-04     2.1m      9
+Ef          -97.482780Ha        -0.3892215Ha      2.66E-04     2.1m     10
+Ef          -97.482777Ha        -0.3892193Ha      1.50E-04     2.1m     11
+Ef          -97.482779Ha        -0.3892209Ha      1.02E-04     2.1m     12
+Ef          -97.482781Ha        -0.3892233Ha      5.69E-05     2.1m     13
+Ef          -97.482782Ha        -0.3892238Ha      3.52E-05     2.1m     14
+Ef          -97.482782Ha        -0.3892238Ha      2.41E-05     2.1m     15
+Ef          -97.482782Ha        -0.3892234Ha      1.65E-05     2.1m     16
+Ef          -97.482782Ha        -0.3892234Ha      1.26E-05     2.1m     17
+Ef          -97.482782Ha        -0.3892236Ha      8.40E-06     2.1m     18
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital  -0.08511Ha    -2.316eV
+Energy of Lowest Unoccupied Molecular Orbital  -0.06911Ha    -1.881eV
+
+  HOMO is orbital number    39
+  LUMO is orbital number    40
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a         -1.816495       -49.429     1.000
+    2   -   2   a         -1.816390       -49.427     1.000
+    3   +   1   a         -1.816021       -49.416     1.000
+    4   +   2   a         -1.815776       -49.410     1.000
+    5   +   3   a         -1.815326       -49.398     1.000
+    6   -   3   a         -1.814633       -49.379     1.000
+    7   +   4   a         -1.814350       -49.371     1.000
+    8   -   4   a         -1.812547       -49.322     1.000
+    9   +   5   a         -1.811402       -49.291     1.000
+   10   -   5   a         -1.811164       -49.284     1.000
+   11   +   6   a         -1.809929       -49.251     1.000
+   12   -   6   a         -1.809912       -49.250     1.000
+   13   +   7   a         -1.809186       -49.230     1.000
+   14   -   7   a         -1.808267       -49.205     1.000
+   15   +   8   a         -1.806672       -49.162     1.000
+   16   -   8   a         -1.804340       -49.099     1.000
+   17   +   9   a         -1.804084       -49.092     1.000
+   18   -   9   a         -1.803391       -49.073     1.000
+   19   +  10   a         -1.801885       -49.032     1.000
+   20   +  11   a         -1.801779       -49.029     1.000
+   21   -  10   a         -1.801193       -49.013     1.000
+   22   -  11   a         -1.798280       -48.934     1.000
+   23   -  12   a         -1.796640       -48.889     1.000
+   24   +  12   a         -1.796167       -48.876     1.000
+   25   +  13   a         -1.776791       -48.349     1.000
+   26   -  13   a         -1.776641       -48.345     1.000
+   27   +  14   a         -0.185481        -5.047     1.000
+   28   -  14   a         -0.182580        -4.968     1.000
+   29   +  15   a         -0.148624        -4.044     1.000
+   30   -  15   a         -0.143228        -3.897     1.000
+   31   +  16   a         -0.138442        -3.767     1.000
+   32   -  16   a         -0.133348        -3.629     1.000
+   33   +  17   a         -0.127234        -3.462     1.000
+   34   -  17   a         -0.126151        -3.433     1.000
+   35   +  18   a         -0.092193        -2.509     1.000
+   36   +  19   a         -0.087617        -2.384     1.000
+   37   -  18   a         -0.086531        -2.355     1.000
+   38   +  20   a         -0.085354        -2.323     1.000
+   39   -  19   a         -0.085111        -2.316     1.000
+   40   +  21   a         -0.069111        -1.881     0.000
+   41   -  20   a         -0.068097        -1.853     0.000
+   42   -  21   a         -0.064279        -1.749     0.000
+   43   +  22   a         -0.061888        -1.684     0.000
+   44   -  22   a         -0.058549        -1.593     0.000
+   45   +  23   a         -0.058328        -1.587     0.000
+   46   -  23   a         -0.053305        -1.450     0.000
+   47   +  24   a         -0.042132        -1.146     0.000
+   48   +  25   a         -0.036413        -0.991     0.000
+   49   -  24   a         -0.031147        -0.848     0.000
+   50   +  26   a         -0.026660        -0.725     0.000
+   51   -  25   a         -0.026554        -0.723     0.000
+   52   -  26   a         -0.021777        -0.593     0.000
+   53   +  27   a         -0.020447        -0.556     0.000
+   54   -  27   a         -0.015861        -0.432     0.000
+   55   +  28   a         -0.015402        -0.419     0.000
+   56   -  28   a         -0.013799        -0.375     0.000
+   57   +  29   a         -0.010372        -0.282     0.000
+   58   -  29   a         -0.005224        -0.142     0.000
+   59   +  30   a          0.007349         0.200     0.000
+   60   -  30   a          0.010222         0.278     0.000
+ 
+
+  Orbital occupation is:
+     20  a  ( 1) alpha and    19  a  ( 1) beta
+  Total number electrons:              39.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li    -2.488742   5.791944   0.019860    -0.000675  -0.015324   0.009034
+df   Li    -5.404330   1.811053  -0.238099     0.010740  -0.001945   0.013678
+df   Li    -4.306050  -3.012936  -0.114125     0.003658   0.007727   0.009969
+df   Li     0.494504  -1.999680  -0.056660    -0.014561   0.023683   0.011180
+df   Li     1.396840   2.841698   0.004763    -0.040662  -0.022941   0.008909
+df   Li    -5.277533   4.335057   3.884709     0.007467  -0.008750  -0.012299
+df   Li    -6.056536  -0.541035   3.834545     0.008324   0.006400  -0.011353
+df   Li    -2.168907  -3.445300   4.135998    -0.000526   0.014125  -0.008394
+df   Li     1.349544   0.018142   4.354170    -0.041632   0.013412  -0.008798
+df   Li    -0.414231   4.667392   4.410814    -0.008980  -0.025678  -0.008401
+df   Li    -1.162600   1.348163  -3.088418     0.010175   0.003600   0.022047
+df   Li    -1.401091   1.233352   1.895937     0.044523   0.004678  -0.001307
+df   Li    -1.756483   0.985738   6.916521     0.022149   0.001014  -0.024265
+df  binding energy      -0.3892236Ha       -10.59132eV        -244.246kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.0935581Ha
+                  Kinetic =        1.0020788Ha
+            Electrostatic =       -1.9802797Ha
+     Exchange-correlation =        0.2865820Ha
+        Spin polarization =        0.3023954Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.482782Ha        -0.3892236Ha                   2.2m     19
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -1.316985            3.064965            0.010509
+            2    Li           -2.859848            0.958368           -0.125996
+            3    Li           -2.278664           -1.594377           -0.060392
+            4    Li            0.261680           -1.058185           -0.029983
+            5    Li            0.739176            1.503762            0.002520
+            6    Li           -2.792750            2.294013            2.055700
+            7    Li           -3.204981           -0.286304            2.029154
+            8    Li           -1.147736           -1.823174            2.188676
+            9    Li            0.714148            0.009601            2.304128
+           10    Li           -0.219202            2.469878            2.334102
+           11    Li           -0.615222            0.713417           -1.634321
+           12    Li           -0.741425            0.652662            1.003287
+           13    Li           -0.929491            0.521630            3.660065
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+
+ 31 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000046    0.000141    0.000343    0.000387    0.000466    0.000616
+     0.000842    0.001031    0.001154    0.001287    0.001293    0.001392
+     0.001614    0.001803    0.001830    0.001846    0.001866    0.002029
+     0.002562    0.002852    0.003424    0.003873    0.005665    0.008823
+     0.028716    0.040329    0.070541    0.138420    0.234108    0.261030
+     0.316330
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.899937
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    6       -97.4827817     -0.0371134        0.044523       0.585377
+
+ 
+                      Step    6                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.371134E-01 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.445227E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.585377E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+Integration points, checksum  0     31785     31785      39.009902
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.503444Ha        -0.4098861Ha      5.07E-03     2.2m      1
+Ef          -97.510089Ha        -0.4165306Ha      4.16E-03     2.2m      2
+Ef          -97.509939Ha        -0.4163811Ha      2.91E-03     2.2m      3
+Ef          -97.509993Ha        -0.4164345Ha      1.53E-03     2.2m      4
+Ef          -97.509950Ha        -0.4163916Ha      1.01E-03     2.2m      5
+Ef          -97.509907Ha        -0.4163492Ha      4.73E-04     2.2m      6
+Ef          -97.509897Ha        -0.4163389Ha      3.40E-04     2.2m      7
+Ef          -97.509895Ha        -0.4163371Ha      2.60E-04     2.2m      8
+Ef          -97.509896Ha        -0.4163382Ha      1.92E-04     2.3m      9
+Ef          -97.509898Ha        -0.4163400Ha      1.59E-04     2.3m     10
+Ef          -97.509902Ha        -0.4163436Ha      1.00E-04     2.3m     11
+Ef          -97.509903Ha        -0.4163446Ha      6.50E-05     2.3m     12
+Ef          -97.509903Ha        -0.4163450Ha      4.83E-05     2.3m     13
+Ef          -97.509903Ha        -0.4163451Ha      3.85E-05     2.3m     14
+Ef          -97.509903Ha        -0.4163453Ha      3.19E-05     2.3m     15
+Ef          -97.509904Ha        -0.4163456Ha      2.64E-05     2.3m     16
+Ef          -97.509904Ha        -0.4163459Ha      2.16E-05     2.3m     17
+Ef          -97.509904Ha        -0.4163460Ha      1.41E-05     2.3m     18
+Ef          -97.509904Ha        -0.4163460Ha      9.84E-06     2.3m     19
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital  -0.08192Ha    -2.229eV
+Energy of Lowest Unoccupied Molecular Orbital  -0.06895Ha    -1.876eV
+
+  HOMO is orbital number    39
+  LUMO is orbital number    40
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   +   1   a         -1.819327       -49.506     1.000
+    2   -   1   a         -1.819262       -49.505     1.000
+    3   -   2   a         -1.816112       -49.419     1.000
+    4   +   2   a         -1.815439       -49.401     1.000
+    5   -   3   a         -1.813550       -49.349     1.000
+    6   +   3   a         -1.813370       -49.344     1.000
+    7   +   4   a         -1.812883       -49.331     1.000
+    8   -   4   a         -1.810758       -49.273     1.000
+    9   -   5   a         -1.810346       -49.262     1.000
+   10   +   5   a         -1.809918       -49.250     1.000
+   11   +   6   a         -1.809772       -49.246     1.000
+   12   -   6   a         -1.809492       -49.239     1.000
+   13   +   7   a         -1.807907       -49.196     1.000
+   14   -   7   a         -1.806436       -49.156     1.000
+   15   +   8   a         -1.804501       -49.103     1.000
+   16   +   9   a         -1.802587       -49.051     1.000
+   17   -   8   a         -1.802305       -49.043     1.000
+   18   +  10   a         -1.801935       -49.033     1.000
+   19   -   9   a         -1.801641       -49.025     1.000
+   20   +  11   a         -1.800621       -48.997     1.000
+   21   -  10   a         -1.799768       -48.974     1.000
+   22   -  11   a         -1.798483       -48.939     1.000
+   23   -  12   a         -1.796643       -48.889     1.000
+   24   +  12   a         -1.796016       -48.872     1.000
+   25   -  13   a         -1.773699       -48.265     1.000
+   26   +  13   a         -1.773594       -48.262     1.000
+   27   +  14   a         -0.183150        -4.984     1.000
+   28   -  14   a         -0.180546        -4.913     1.000
+   29   +  15   a         -0.144722        -3.938     1.000
+   30   -  15   a         -0.141000        -3.837     1.000
+   31   +  16   a         -0.136067        -3.703     1.000
+   32   -  16   a         -0.132560        -3.607     1.000
+   33   +  17   a         -0.127858        -3.479     1.000
+   34   -  17   a         -0.122251        -3.327     1.000
+   35   +  18   a         -0.088690        -2.413     1.000
+   36   +  19   a         -0.086177        -2.345     1.000
+   37   -  18   a         -0.084355        -2.295     1.000
+   38   -  19   a         -0.083651        -2.276     1.000
+   39   +  20   a         -0.081921        -2.229     1.000
+   40   +  21   a         -0.068954        -1.876     0.000
+   41   -  20   a         -0.067336        -1.832     0.000
+   42   -  21   a         -0.061806        -1.682     0.000
+   43   +  22   a         -0.061261        -1.667     0.000
+   44   -  22   a         -0.057990        -1.578     0.000
+   45   +  23   a         -0.057007        -1.551     0.000
+   46   -  23   a         -0.049882        -1.357     0.000
+   47   +  24   a         -0.037554        -1.022     0.000
+   48   +  25   a         -0.032237        -0.877     0.000
+   49   -  24   a         -0.029144        -0.793     0.000
+   50   +  26   a         -0.024935        -0.679     0.000
+   51   -  25   a         -0.022696        -0.618     0.000
+   52   -  26   a         -0.019693        -0.536     0.000
+   53   +  27   a         -0.018619        -0.507     0.000
+   54   +  28   a         -0.013140        -0.358     0.000
+   55   -  27   a         -0.012593        -0.343     0.000
+   56   -  28   a         -0.011727        -0.319     0.000
+   57   +  29   a         -0.009919        -0.270     0.000
+   58   -  29   a         -0.008482        -0.231     0.000
+   59   +  30   a          0.002489         0.068     0.000
+   60   -  30   a          0.008067         0.220     0.000
+ 
+
+  Orbital occupation is:
+     20  a  ( 1) alpha and    19  a  ( 1) beta
+  Total number electrons:              39.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li    -2.519393   5.643901  -0.084744    -0.000850  -0.012073   0.008301
+df   Li    -5.989707   1.950177  -0.218091     0.004917  -0.001312   0.010714
+df   Li    -4.304969  -2.839086  -0.207619     0.002681   0.006101   0.008276
+df   Li     0.674191  -2.093179  -0.064523    -0.013164   0.019426   0.008870
+df   Li     1.597615   2.857237   0.056306    -0.033542  -0.018164   0.006238
+df   Li    -5.441409   4.582027   3.904168     0.005578  -0.006278  -0.010126
+df   Li    -5.837758  -0.430056   3.967181     0.009078   0.005134  -0.008560
+df   Li    -2.065594  -3.559781   4.067204    -0.000401   0.013984  -0.007005
+df   Li     1.492671  -0.011722   4.424225    -0.034137   0.010375  -0.007016
+df   Li    -0.482748   4.665008   4.426254    -0.007521  -0.022000  -0.008086
+df   Li    -1.038194   1.219018  -3.142026     0.011081   0.001709   0.016406
+df   Li    -1.422046   1.195141   1.899563     0.038587   0.004462   0.003945
+df   Li    -1.858275   0.854903   6.932115     0.017693  -0.001364  -0.021957
+df  binding energy      -0.4163459Ha       -11.32935eV        -261.266kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.0935581Ha
+                  Kinetic =        1.0539187Ha
+            Electrostatic =       -2.0453202Ha
+     Exchange-correlation =        0.2726603Ha
+        Spin polarization =        0.3023954Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.509904Ha        -0.4163459Ha                   2.4m     20
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -1.333205            2.986624           -0.044844
+            2    Li           -3.169616            1.031989           -0.115409
+            3    Li           -2.278092           -1.502380           -0.109867
+            4    Li            0.356766           -1.107663           -0.034144
+            5    Li            0.845422            1.511985            0.029796
+            6    Li           -2.879470            2.424704            2.065997
+            7    Li           -3.089208           -0.227576            2.099342
+            8    Li           -1.093065           -1.883755            2.152272
+            9    Li            0.789888           -0.006203            2.341199
+           10    Li           -0.255459            2.468616            2.342273
+           11    Li           -0.549389            0.645077           -1.662688
+           12    Li           -0.752514            0.632441            1.005205
+           13    Li           -0.983357            0.452395            3.668317
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+
+ 32 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000044    0.000139    0.000335    0.000385    0.000465    0.000622
+     0.000854    0.001014    0.001149    0.001265    0.001310    0.001408
+     0.001555    0.001778    0.001820    0.001846    0.001848    0.001925
+     0.002306    0.002805    0.002838    0.003350    0.003877    0.007940
+     0.009286    0.028718    0.056984    0.083001    0.151359    0.245384
+     0.287540    0.318400
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.887807
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    7       -97.5099040     -0.0271224        0.038587       0.446987
+
+ 
+                      Step    7                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.271224E-01 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.385867E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.446987E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+Integration points, checksum  0     31785     31785      39.009818
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.529863Ha        -0.4363051Ha      4.91E-03     2.4m      1
+Ef          -97.534747Ha        -0.4411894Ha      3.82E-03     2.4m      2
+Ef          -97.534714Ha        -0.4411557Ha      2.48E-03     2.4m      3
+Ef          -97.534767Ha        -0.4412091Ha      1.39E-03     2.4m      4
+Ef          -97.534764Ha        -0.4412063Ha      9.28E-04     2.4m      5
+Ef          -97.534738Ha        -0.4411801Ha      4.65E-04     2.4m      6
+Ef          -97.534730Ha        -0.4411717Ha      3.04E-04     2.4m      7
+Ef          -97.534728Ha        -0.4411697Ha      2.06E-04     2.5m      8
+Ef          -97.534728Ha        -0.4411694Ha      1.32E-04     2.5m      9
+Ef          -97.534728Ha        -0.4411703Ha      8.09E-05     2.5m     10
+Ef          -97.534730Ha        -0.4411716Ha      4.24E-05     2.5m     11
+Ef          -97.534731Ha        -0.4411724Ha      2.58E-05     2.5m     12
+Ef          -97.534731Ha        -0.4411730Ha      1.59E-05     2.5m     13
+Ef          -97.534732Ha        -0.4411734Ha      1.08E-05     2.5m     14
+Ef          -97.534732Ha        -0.4411736Ha      9.13E-06     2.5m     15
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital  -0.08217Ha    -2.236eV
+Energy of Lowest Unoccupied Molecular Orbital  -0.06672Ha    -1.816eV
+
+  HOMO is orbital number    39
+  LUMO is orbital number    40
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   +   1   a         -1.816700       -49.435     1.000
+    2   -   1   a         -1.816237       -49.422     1.000
+    3   -   2   a         -1.814395       -49.372     1.000
+    4   +   2   a         -1.813684       -49.353     1.000
+    5   +   3   a         -1.812779       -49.328     1.000
+    6   +   4   a         -1.810629       -49.270     1.000
+    7   -   3   a         -1.810510       -49.267     1.000
+    8   -   4   a         -1.810459       -49.265     1.000
+    9   +   5   a         -1.809391       -49.236     1.000
+   10   -   5   a         -1.808498       -49.212     1.000
+   11   -   6   a         -1.807791       -49.193     1.000
+   12   +   6   a         -1.807678       -49.189     1.000
+   13   +   7   a         -1.806498       -49.157     1.000
+   14   -   7   a         -1.805999       -49.144     1.000
+   15   +   8   a         -1.805038       -49.118     1.000
+   16   -   8   a         -1.803838       -49.085     1.000
+   17   +   9   a         -1.802652       -49.053     1.000
+   18   +  10   a         -1.802492       -49.048     1.000
+   19   -   9   a         -1.801724       -49.027     1.000
+   20   +  11   a         -1.800642       -48.998     1.000
+   21   -  10   a         -1.799852       -48.976     1.000
+   22   -  11   a         -1.799080       -48.955     1.000
+   23   -  12   a         -1.798613       -48.943     1.000
+   24   +  12   a         -1.798099       -48.929     1.000
+   25   -  13   a         -1.770344       -48.174     1.000
+   26   +  13   a         -1.770168       -48.169     1.000
+   27   +  14   a         -0.182295        -4.960     1.000
+   28   -  14   a         -0.179814        -4.893     1.000
+   29   +  15   a         -0.144668        -3.937     1.000
+   30   -  15   a         -0.139746        -3.803     1.000
+   31   +  16   a         -0.133852        -3.642     1.000
+   32   -  16   a         -0.129722        -3.530     1.000
+   33   +  17   a         -0.128142        -3.487     1.000
+   34   -  17   a         -0.124552        -3.389     1.000
+   35   +  18   a         -0.087249        -2.374     1.000
+   36   +  19   a         -0.084467        -2.298     1.000
+   37   -  18   a         -0.082963        -2.258     1.000
+   38   +  20   a         -0.082841        -2.254     1.000
+   39   -  19   a         -0.082171        -2.236     1.000
+   40   +  21   a         -0.066720        -1.816     0.000
+   41   -  20   a         -0.064547        -1.756     0.000
+   42   +  22   a         -0.060818        -1.655     0.000
+   43   -  21   a         -0.060660        -1.651     0.000
+   44   -  22   a         -0.057544        -1.566     0.000
+   45   +  23   a         -0.054074        -1.471     0.000
+   46   -  23   a         -0.050344        -1.370     0.000
+   47   +  24   a         -0.034534        -0.940     0.000
+   48   +  25   a         -0.032244        -0.877     0.000
+   49   -  24   a         -0.028675        -0.780     0.000
+   50   -  25   a         -0.021703        -0.591     0.000
+   51   +  26   a         -0.021225        -0.578     0.000
+   52   +  27   a         -0.018316        -0.498     0.000
+   53   -  26   a         -0.016052        -0.437     0.000
+   54   +  28   a         -0.011491        -0.313     0.000
+   55   +  29   a         -0.011150        -0.303     0.000
+   56   -  27   a         -0.010581        -0.288     0.000
+   57   -  28   a         -0.008768        -0.239     0.000
+   58   -  29   a         -0.007159        -0.195     0.000
+   59   +  30   a         -0.000919        -0.025     0.000
+   60   -  30   a          0.000990         0.027     0.000
+   61   +  31   a          0.022577         0.614     0.000
+ 
+
+  Orbital occupation is:
+     20  a  ( 1) alpha and    19  a  ( 1) beta
+  Total number electrons:              39.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li    -2.468545   5.745522  -0.070787    -0.000820  -0.011312   0.007525
+df   Li    -5.874608   1.905999  -0.224934     0.006212  -0.001055   0.010557
+df   Li    -4.312168  -2.958886  -0.221461     0.002403   0.006005   0.007626
+df   Li     0.664859  -2.080515  -0.081453    -0.011259   0.016357   0.008097
+df   Li     1.727783   2.911146  -0.002864    -0.026703  -0.013711   0.005322
+df   Li    -5.180565   4.270554   4.077409     0.006572  -0.007879  -0.009081
+df   Li    -6.284744  -0.722394   3.911770     0.006339   0.004629  -0.008278
+df   Li    -2.109168  -3.461088   4.162921     0.000345   0.010773  -0.005837
+df   Li     1.584045   0.024103   4.426921    -0.026577   0.007100  -0.006908
+df   Li    -0.220626   4.798255   4.394075    -0.008246  -0.018951  -0.007353
+df   Li    -1.110236   1.285348  -3.207363     0.009272   0.001880   0.013470
+df   Li    -1.570598   1.244320   1.861076     0.028244   0.004417   0.001467
+df   Li    -2.041042   1.071226   6.934704     0.014220   0.001748  -0.016608
+df  binding energy      -0.4411736Ha       -12.00495eV        -276.846kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.0935581Ha
+                  Kinetic =        1.0869615Ha
+            Electrostatic =       -2.0947613Ha
+     Exchange-correlation =        0.2642308Ha
+        Spin polarization =        0.3023954Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.534732Ha        -0.4411736Ha                   2.5m     16
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -1.306298            3.040399           -0.037459
+            2    Li           -3.108709            1.008611           -0.119030
+            3    Li           -2.281901           -1.565775           -0.117192
+            4    Li            0.351828           -1.100961           -0.043103
+            5    Li            0.914304            1.540512           -0.001516
+            6    Li           -2.741437            2.259880            2.157672
+            7    Li           -3.325743           -0.382275            2.070019
+            8    Li           -1.116123           -1.831529            2.202923
+            9    Li            0.838240            0.012755            2.342626
+           10    Li           -0.116751            2.539127            2.325244
+           11    Li           -0.587512            0.680177           -1.697263
+           12    Li           -0.831125            0.658466            0.984839
+           13    Li           -1.080073            0.566868            3.669688
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+
+ 33 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000053    0.000143    0.000345    0.000389    0.000464    0.000643
+     0.000851    0.001008    0.001156    0.001298    0.001314    0.001404
+     0.001632    0.001817    0.001844    0.001846    0.001847    0.001914
+     0.001928    0.002303    0.002717    0.002951    0.003479    0.003897
+     0.008675    0.023459    0.027160    0.056943    0.097380    0.150905
+     0.246653    0.313526    0.326435
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.383419
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    8       -97.5347317     -0.0248277        0.028244       0.151811
+
+ 
+                      Step    8                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.248277E-01 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.282437E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.151811E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+Integration points, checksum  0     31785     31785      39.009768
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.552553Ha        -0.4589951Ha      3.85E-03     2.6m      1
+Ef          -97.554123Ha        -0.4605648Ha      2.96E-03     2.6m      2
+Ef          -97.554062Ha        -0.4605039Ha      1.79E-03     2.6m      3
+Ef          -97.554104Ha        -0.4605463Ha      1.10E-03     2.6m      4
+Ef          -97.554084Ha        -0.4605255Ha      7.46E-04     2.6m      5
+Ef          -97.554040Ha        -0.4604823Ha      2.88E-04     2.6m      6
+Ef          -97.554035Ha        -0.4604766Ha      1.29E-04     2.6m      7
+Ef          -97.554034Ha        -0.4604754Ha      9.90E-05     2.6m      8
+Ef          -97.554034Ha        -0.4604756Ha      6.94E-05     2.6m      9
+Ef          -97.554034Ha        -0.4604754Ha      5.80E-05     2.6m     10
+Ef          -97.554033Ha        -0.4604752Ha      4.78E-05     2.7m     11
+Ef          -97.554033Ha        -0.4604751Ha      4.01E-05     2.7m     12
+Ef          -97.554033Ha        -0.4604753Ha      3.29E-05     2.7m     13
+Ef          -97.554034Ha        -0.4604761Ha      2.28E-05     2.7m     14
+Ef          -97.554035Ha        -0.4604765Ha      1.86E-05     2.7m     15
+Ef          -97.554035Ha        -0.4604768Ha      1.47E-05     2.7m     16
+Ef          -97.554035Ha        -0.4604769Ha      1.02E-05     2.7m     17
+Ef          -97.554035Ha        -0.4604768Ha      6.72E-06     2.7m     18
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital  -0.08045Ha    -2.189eV
+Energy of Lowest Unoccupied Molecular Orbital  -0.06543Ha    -1.780eV
+
+  HOMO is orbital number    39
+  LUMO is orbital number    40
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   +   1   a         -1.816041       -49.417     1.000
+    2   -   1   a         -1.815453       -49.401     1.000
+    3   -   2   a         -1.811423       -49.291     1.000
+    4   +   2   a         -1.811325       -49.289     1.000
+    5   +   3   a         -1.810864       -49.276     1.000
+    6   -   3   a         -1.810738       -49.273     1.000
+    7   +   4   a         -1.810614       -49.269     1.000
+    8   +   5   a         -1.809341       -49.235     1.000
+    9   -   4   a         -1.809206       -49.231     1.000
+   10   -   5   a         -1.808303       -49.206     1.000
+   11   -   6   a         -1.807690       -49.190     1.000
+   12   +   6   a         -1.807359       -49.181     1.000
+   13   -   7   a         -1.807095       -49.174     1.000
+   14   +   7   a         -1.806447       -49.156     1.000
+   15   +   8   a         -1.806100       -49.146     1.000
+   16   +   9   a         -1.803650       -49.080     1.000
+   17   -   8   a         -1.803631       -49.079     1.000
+   18   +  10   a         -1.803068       -49.064     1.000
+   19   -   9   a         -1.802806       -49.057     1.000
+   20   +  11   a         -1.801489       -49.021     1.000
+   21   -  10   a         -1.800576       -48.996     1.000
+   22   -  11   a         -1.799791       -48.975     1.000
+   23   -  12   a         -1.799516       -48.967     1.000
+   24   +  12   a         -1.799145       -48.957     1.000
+   25   -  13   a         -1.771019       -48.192     1.000
+   26   +  13   a         -1.770803       -48.186     1.000
+   27   +  14   a         -0.180390        -4.909     1.000
+   28   -  14   a         -0.178046        -4.845     1.000
+   29   +  15   a         -0.142664        -3.882     1.000
+   30   -  15   a         -0.137992        -3.755     1.000
+   31   +  16   a         -0.131889        -3.589     1.000
+   32   -  16   a         -0.128945        -3.509     1.000
+   33   +  17   a         -0.127370        -3.466     1.000
+   34   -  17   a         -0.122208        -3.325     1.000
+   35   +  18   a         -0.084826        -2.308     1.000
+   36   +  19   a         -0.083030        -2.259     1.000
+   37   -  18   a         -0.081508        -2.218     1.000
+   38   +  20   a         -0.081131        -2.208     1.000
+   39   -  19   a         -0.080450        -2.189     1.000
+   40   +  21   a         -0.065428        -1.780     0.000
+   41   -  20   a         -0.063621        -1.731     0.000
+   42   +  22   a         -0.060034        -1.634     0.000
+   43   -  21   a         -0.058910        -1.603     0.000
+   44   -  22   a         -0.056544        -1.539     0.000
+   45   +  23   a         -0.052632        -1.432     0.000
+   46   -  23   a         -0.048441        -1.318     0.000
+   47   +  24   a         -0.032002        -0.871     0.000
+   48   +  25   a         -0.029734        -0.809     0.000
+   49   -  24   a         -0.026681        -0.726     0.000
+   50   -  25   a         -0.020125        -0.548     0.000
+   51   +  26   a         -0.019773        -0.538     0.000
+   52   +  27   a         -0.016433        -0.447     0.000
+   53   -  26   a         -0.014595        -0.397     0.000
+   54   +  28   a         -0.010346        -0.282     0.000
+   55   +  29   a         -0.009207        -0.251     0.000
+   56   -  27   a         -0.008725        -0.237     0.000
+   57   -  28   a         -0.007770        -0.211     0.000
+   58   -  29   a         -0.006297        -0.171     0.000
+   59   +  30   a         -0.002699        -0.073     0.000
+   60   -  30   a          0.000682         0.019     0.000
+   61   +  31   a          0.022164         0.603     0.000
+ 
+
+  Orbital occupation is:
+     20  a  ( 1) alpha and    19  a  ( 1) beta
+  Total number electrons:              39.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li    -2.438837   5.780630  -0.091744    -0.000650  -0.009462   0.006360
+df   Li    -5.980350   1.953194  -0.305632     0.004824  -0.000559   0.007987
+df   Li    -4.282340  -2.969049  -0.290964     0.002592   0.004963   0.006354
+df   Li     0.767002  -2.137879  -0.100057    -0.010008   0.013959   0.007154
+df   Li     1.834037   2.938945  -0.063631    -0.021888  -0.010873   0.004613
+df   Li    -5.240144   4.356493   4.109214     0.005313  -0.005844  -0.007578
+df   Li    -6.344043  -0.746016   3.902237     0.005356   0.003405  -0.007040
+df   Li    -2.095862  -3.504966   4.177243    -0.000035   0.009372  -0.004825
+df   Li     1.727745   0.020184   4.472348    -0.020228   0.004672  -0.005726
+df   Li    -0.177709   4.853829   4.435455    -0.007195  -0.014767  -0.006255
+df   Li    -1.262048   1.235273  -3.190483     0.007536   0.001259   0.011279
+df   Li    -1.597574   1.203470   1.883370     0.023243   0.003073   0.000038
+df   Li    -2.105493   1.049479   7.022657     0.011140   0.000800  -0.012361
+df  binding energy      -0.4604768Ha       -12.53022eV        -288.959kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.0935581Ha
+                  Kinetic =        1.1092894Ha
+            Electrostatic =       -2.1245902Ha
+     Exchange-correlation =        0.2524287Ha
+        Spin polarization =        0.3023954Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.554035Ha        -0.4604768Ha                   2.7m     19
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -1.290577            3.058978           -0.048549
+            2    Li           -3.164665            1.033586           -0.161733
+            3    Li           -2.266117           -1.571153           -0.153971
+            4    Li            0.405880           -1.131317           -0.052948
+            5    Li            0.970530            1.555223           -0.033672
+            6    Li           -2.772965            2.305357            2.174503
+            7    Li           -3.357123           -0.394774            2.064975
+            8    Li           -1.109082           -1.854748            2.210502
+            9    Li            0.914283            0.010681            2.366665
+           10    Li           -0.094040            2.568536            2.347142
+           11    Li           -0.667847            0.653679           -1.688331
+           12    Li           -0.845400            0.636849            0.996637
+           13    Li           -1.114179            0.555360            3.716230
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+
+ 33 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000051    0.000143    0.000351    0.000389    0.000479    0.000639
+     0.000860    0.001115    0.001157    0.001306    0.001311    0.001429
+     0.001640    0.001809    0.001846    0.001847    0.001849    0.001903
+     0.001925    0.002350    0.002865    0.003431    0.003569    0.003910
+     0.008756    0.014898    0.029105    0.056841    0.097806    0.150877
+     0.246897    0.312730    0.321991
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.375934
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    9       -97.5540349     -0.0193031        0.023243       0.164489
+
+ 
+                      Step    9                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.193031E-01 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.232428E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.164489E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+Integration points, checksum  0     31785     31785      39.009766
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.567653Ha        -0.4740946Ha      3.56E-03     2.8m      1
+Ef          -97.568971Ha        -0.4754128Ha      2.66E-03     2.8m      2
+Ef          -97.568948Ha        -0.4753899Ha      1.64E-03     2.8m      3
+Ef          -97.568984Ha        -0.4754261Ha      9.36E-04     2.8m      4
+Ef          -97.568971Ha        -0.4754129Ha      5.62E-04     2.8m      5
+Ef          -97.568943Ha        -0.4753847Ha      1.88E-04     2.8m      6
+Ef          -97.568937Ha        -0.4753793Ha      8.93E-05     2.8m      7
+Ef          -97.568935Ha        -0.4753773Ha      5.05E-05     2.8m      8
+Ef          -97.568935Ha        -0.4753767Ha      2.91E-05     2.8m      9
+Ef          -97.568935Ha        -0.4753766Ha      1.46E-05     2.8m     10
+Ef          -97.568935Ha        -0.4753765Ha      8.38E-06     2.9m     11
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital  -0.07959Ha    -2.166eV
+Energy of Lowest Unoccupied Molecular Orbital  -0.06353Ha    -1.729eV
+
+  HOMO is orbital number    39
+  LUMO is orbital number    40
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   +   1   a         -1.815809       -49.411     1.000
+    2   -   1   a         -1.815254       -49.396     1.000
+    3   -   2   a         -1.812701       -49.326     1.000
+    4   +   2   a         -1.812049       -49.308     1.000
+    5   +   3   a         -1.811927       -49.305     1.000
+    6   -   3   a         -1.811870       -49.304     1.000
+    7   +   4   a         -1.811830       -49.302     1.000
+    8   -   4   a         -1.809780       -49.247     1.000
+    9   +   5   a         -1.808110       -49.201     1.000
+   10   -   5   a         -1.807525       -49.185     1.000
+   11   +   6   a         -1.806974       -49.170     1.000
+   12   +   7   a         -1.806543       -49.159     1.000
+   13   -   6   a         -1.806534       -49.158     1.000
+   14   -   7   a         -1.806314       -49.152     1.000
+   15   +   8   a         -1.805403       -49.128     1.000
+   16   -   8   a         -1.804292       -49.097     1.000
+   17   +   9   a         -1.804146       -49.093     1.000
+   18   +  10   a         -1.803846       -49.085     1.000
+   19   -   9   a         -1.803301       -49.070     1.000
+   20   +  11   a         -1.802598       -49.051     1.000
+   21   -  10   a         -1.801814       -49.030     1.000
+   22   -  11   a         -1.801479       -49.021     1.000
+   23   +  12   a         -1.801097       -49.010     1.000
+   24   -  12   a         -1.800339       -48.990     1.000
+   25   -  13   a         -1.770835       -48.187     1.000
+   26   +  13   a         -1.770565       -48.180     1.000
+   27   +  14   a         -0.178683        -4.862     1.000
+   28   -  14   a         -0.176366        -4.799     1.000
+   29   +  15   a         -0.141246        -3.843     1.000
+   30   -  15   a         -0.136547        -3.716     1.000
+   31   +  16   a         -0.129864        -3.534     1.000
+   32   -  16   a         -0.127388        -3.466     1.000
+   33   +  17   a         -0.126678        -3.447     1.000
+   34   -  17   a         -0.120962        -3.292     1.000
+   35   +  18   a         -0.083232        -2.265     1.000
+   36   +  19   a         -0.081925        -2.229     1.000
+   37   +  20   a         -0.079946        -2.175     1.000
+   38   -  18   a         -0.079713        -2.169     1.000
+   39   -  19   a         -0.079595        -2.166     1.000
+   40   +  21   a         -0.063529        -1.729     0.000
+   41   -  20   a         -0.061625        -1.677     0.000
+   42   +  22   a         -0.058865        -1.602     0.000
+   43   -  21   a         -0.057496        -1.565     0.000
+   44   -  22   a         -0.056068        -1.526     0.000
+   45   +  23   a         -0.051464        -1.400     0.000
+   46   -  23   a         -0.047512        -1.293     0.000
+   47   +  24   a         -0.030231        -0.823     0.000
+   48   +  25   a         -0.028258        -0.769     0.000
+   49   -  24   a         -0.026088        -0.710     0.000
+   50   +  26   a         -0.019605        -0.533     0.000
+   51   -  25   a         -0.018367        -0.500     0.000
+   52   +  27   a         -0.014612        -0.398     0.000
+   53   -  26   a         -0.012074        -0.329     0.000
+   54   +  28   a         -0.009245        -0.252     0.000
+   55   -  27   a         -0.007685        -0.209     0.000
+   56   +  29   a         -0.007185        -0.196     0.000
+   57   -  28   a         -0.006362        -0.173     0.000
+   58   -  29   a         -0.005106        -0.139     0.000
+   59   +  30   a         -0.003370        -0.092     0.000
+   60   -  30   a         -0.000329        -0.009     0.000
+   61   +  31   a          0.021063         0.573     0.000
+   63   -  31   a          0.026795         0.729     0.000
+ 
+
+  Orbital occupation is:
+     20  a  ( 1) alpha and    19  a  ( 1) beta
+  Total number electrons:              39.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li    -2.410235   5.808717  -0.139130    -0.000738  -0.008135   0.004943
+df   Li    -6.047637   1.947689  -0.280493     0.004508  -0.000668   0.007405
+df   Li    -4.330603  -3.030216  -0.305218     0.001890   0.003746   0.005603
+df   Li     0.829238  -2.188179  -0.169070    -0.007569   0.010761   0.005468
+df   Li     1.981915   2.971152  -0.044885    -0.015831  -0.007365   0.003694
+df   Li    -5.268467   4.426078   4.177333     0.004514  -0.005189  -0.005163
+df   Li    -6.349455  -0.776259   4.011554     0.005571   0.003252  -0.005399
+df   Li    -2.043584  -3.570305   4.176848    -0.000335   0.007948  -0.003880
+df   Li     1.791855   0.017097   4.504143    -0.015049   0.002924  -0.004895
+df   Li    -0.125717   4.906759   4.449638    -0.006152  -0.011805  -0.005236
+df   Li    -1.245608   1.258421  -3.287621     0.006038   0.001010   0.007766
+df   Li    -1.707335   1.201461   1.851204     0.015730   0.002486   0.000404
+df   Li    -2.269983   1.061173   7.015711     0.007424   0.001036  -0.010711
+df  binding energy      -0.4753765Ha       -12.93566eV        -298.309kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.0935581Ha
+                  Kinetic =        1.1181503Ha
+            Electrostatic =       -2.1379420Ha
+     Exchange-correlation =        0.2420197Ha
+        Spin polarization =        0.3023954Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.568935Ha        -0.4753765Ha                   2.9m     12
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -1.275442            3.073841           -0.073625
+            2    Li           -3.200271            1.030673           -0.148430
+            3    Li           -2.291656           -1.603521           -0.161515
+            4    Li            0.438814           -1.157935           -0.089468
+            5    Li            1.048784            1.572266           -0.023752
+            6    Li           -2.787953            2.342180            2.210549
+            7    Li           -3.359987           -0.410778            2.122823
+            8    Li           -1.081418           -1.889324            2.210293
+            9    Li            0.948209            0.009047            2.383490
+           10    Li           -0.066526            2.596545            2.354647
+           11    Li           -0.659147            0.665928           -1.739734
+           12    Li           -0.903483            0.635786            0.979615
+           13    Li           -1.201223            0.561549            3.712554
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+
+ 33 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.000055    0.000144    0.000354    0.000387    0.000481    0.000656
+     0.000857    0.001067    0.001154    0.001290    0.001322    0.001434
+     0.001630    0.001798    0.001845    0.001846    0.001860    0.001910
+     0.001954    0.002279    0.002889    0.003337    0.003479    0.003910
+     0.008638    0.015885    0.034484    0.057945    0.099240    0.150944
+     0.246884    0.311939    0.328806
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.522453
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==   10       -97.5689346     -0.0148998        0.015831       0.211501
+
+ 
+                      Step   10                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.148998E-01 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.158312E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.211501E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+Integration points, checksum  0     31785     31785      39.009786
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.577937Ha        -0.4843788Ha      3.88E-03     2.9m      1
+Ef          -97.580001Ha        -0.4864431Ha      3.02E-03     2.9m      2
+Ef          -97.579926Ha        -0.4863674Ha      1.85E-03     2.9m      3
+Ef          -97.579996Ha        -0.4864380Ha      1.09E-03     2.9m      4
+Ef          -97.579975Ha        -0.4864170Ha      6.37E-04     2.9m      5
+Ef          -97.579952Ha        -0.4863936Ha      2.76E-04     2.9m      6
+Ef          -97.579947Ha        -0.4863885Ha      1.56E-04     3.0m      7
+Ef          -97.579945Ha        -0.4863871Ha      1.15E-04     3.0m      8
+Ef          -97.579946Ha        -0.4863875Ha      8.43E-05     3.0m      9
+Ef          -97.579946Ha        -0.4863879Ha      7.01E-05     3.0m     10
+Ef          -97.579946Ha        -0.4863882Ha      5.72E-05     3.0m     11
+Ef          -97.579947Ha        -0.4863885Ha      4.93E-05     3.0m     12
+Ef          -97.579947Ha        -0.4863892Ha      4.38E-05     3.0m     13
+Ef          -97.579948Ha        -0.4863898Ha      4.09E-05     3.0m     14
+Ef          -97.579948Ha        -0.4863903Ha      3.98E-05     3.0m     15
+Ef          -97.579949Ha        -0.4863906Ha      3.89E-05     3.0m     16
+Ef          -97.579949Ha        -0.4863911Ha      3.77E-05     3.0m     17
+Ef          -97.579950Ha        -0.4863919Ha      3.63E-05     3.1m     18
+Ef          -97.579951Ha        -0.4863927Ha      3.50E-05     3.1m     19
+Ef          -97.579952Ha        -0.4863934Ha      3.33E-05     3.1m     20
+Ef          -97.579953Ha        -0.4863950Ha      3.38E-05     3.1m     21
+Ef          -97.579953Ha        -0.4863951Ha      3.16E-05     3.1m     22
+Ef          -97.579954Ha        -0.4863956Ha      1.13E-04     3.1m     23
+Ef          -97.579954Ha        -0.4863960Ha      3.31E-05     3.1m     24
+Ef          -97.579955Ha        -0.4863965Ha      3.24E-05     3.1m     25
+Ef          -97.579954Ha        -0.4863964Ha      2.29E-05     3.1m     26
+Ef          -97.579955Ha        -0.4863967Ha      2.45E-05     3.1m     27
+Ef          -97.579955Ha        -0.4863965Ha      2.06E-05     3.1m     28
+Ef          -97.579955Ha        -0.4863966Ha      1.92E-05     3.2m     29
+Ef          -97.579955Ha        -0.4863969Ha      1.89E-05     3.2m     30
+Ef          -97.579955Ha        -0.4863969Ha      1.81E-05     3.2m     31
+Ef          -97.579955Ha        -0.4863972Ha      1.83E-05     3.2m     32
+Ef          -97.579955Ha        -0.4863973Ha      1.76E-05     3.2m     33
+Ef          -97.579956Ha        -0.4863976Ha      2.04E-05     3.2m     34
+Ef          -97.579956Ha        -0.4863976Ha      1.71E-05     3.2m     35
+Ef          -97.579956Ha        -0.4863977Ha      1.78E-05     3.2m     36
+Ef          -97.579956Ha        -0.4863977Ha      1.69E-05     3.2m     37
+Ef          -97.579956Ha        -0.4863977Ha      1.67E-05     3.2m     38
+Ef          -97.579956Ha        -0.4863977Ha      1.64E-05     3.3m     39
+Ef          -97.579956Ha        -0.4863977Ha      1.63E-05     3.3m     40
+Ef          -97.579956Ha        -0.4863977Ha      1.63E-05     3.3m     41
+Ef          -97.579956Ha        -0.4863978Ha      1.63E-05     3.3m     42
+Ef          -97.579956Ha        -0.4863977Ha      1.63E-05     3.3m     43
+Ef          -97.579956Ha        -0.4863977Ha      1.63E-05     3.3m     44
+Ef          -97.579956Ha        -0.4863978Ha      1.63E-05     3.3m     45
+Ef          -97.579956Ha        -0.4863977Ha      1.63E-05     3.3m     46
+Ef          -97.579956Ha        -0.4863976Ha      1.63E-05     3.3m     47
+Ef          -97.579956Ha        -0.4863975Ha      1.63E-05     3.3m     48
+Ef          -97.579956Ha        -0.4863977Ha      1.64E-05     3.3m     49
+Ef          -97.579956Ha        -0.4863975Ha      1.64E-05     3.4m     50
+Ef          -97.579956Ha        -0.4863977Ha      1.64E-05     3.4m     51
+Ef          -97.579956Ha        -0.4863978Ha      1.64E-05     3.4m     52
+Ef          -97.579955Ha        -0.4863970Ha      1.82E-05     3.4m     53
+Ef          -97.579956Ha        -0.4863980Ha      1.99E-05     3.4m     54
+Ef          -97.579958Ha        -0.4863998Ha      2.22E-04     3.4m     55
+Ef          -97.579959Ha        -0.4864004Ha      2.39E-04     3.4m     56
+Ef          -97.579959Ha        -0.4864004Ha      2.49E-04     3.4m     57
+Ef          -97.579958Ha        -0.4863996Ha      1.37E-04     3.4m     58
+Ef          -97.579954Ha        -0.4863963Ha      2.97E-05     3.4m     59
+Ef          -97.579952Ha        -0.4863939Ha      7.65E-05     3.5m     60
+Ef          -97.579958Ha        -0.4863996Ha      1.57E-04     3.5m     61
+Ef          -97.579958Ha        -0.4863996Ha      1.56E-04     3.5m     62
+Ef          -97.579957Ha        -0.4863991Ha      8.36E-05     3.5m     63
+Ef          -97.579958Ha        -0.4863999Ha      1.93E-04     3.5m     64
+Ef          -97.579951Ha        -0.4863925Ha      7.37E-04     3.5m     65
+Ef          -97.579956Ha        -0.4863979Ha      2.14E-05     3.5m     66
+Ef          -97.579956Ha        -0.4863974Ha      1.93E-05     3.5m     67
+Ef          -97.579956Ha        -0.4863976Ha      1.89E-05     3.5m     68
+Ef          -97.579955Ha        -0.4863974Ha      1.82E-05     3.5m     69
+Ef          -97.579956Ha        -0.4863981Ha      2.30E-05     3.5m     70
+Ef          -97.579958Ha        -0.4863998Ha      3.56E-04     3.6m     71
+Ef          -97.579956Ha        -0.4863984Ha      2.51E-05     3.6m     72
+Ef          -97.579901Ha        -0.4863431Ha      6.50E-04     3.6m     73
+Ef          -97.579955Ha        -0.4863964Ha      2.83E-05     3.6m     74
+Ef          -97.579954Ha        -0.4863963Ha      3.05E-05     3.6m     75
+Ef          -97.579956Ha        -0.4863974Ha      2.00E-05     3.6m     76
+Ef          -97.579949Ha        -0.4863910Ha      1.34E-04     3.6m     77
+Ef          -97.579955Ha        -0.4863973Ha      2.09E-05     3.6m     78
+Ef          -97.579896Ha        -0.4863383Ha      6.87E-04     3.6m     79
+Ef          -97.579951Ha        -0.4863925Ha      1.08E-04     3.6m     80
+Ef          -97.579953Ha        -0.4863947Ha      6.33E-05     3.6m     81
+Ef          -97.579951Ha        -0.4863929Ha      1.00E-04     3.7m     82
+Ef          -97.579952Ha        -0.4863936Ha      8.70E-05     3.7m     83
+Ef          -97.579953Ha        -0.4863948Ha      6.14E-05     3.7m     84
+Ef          -97.579951Ha        -0.4863930Ha      1.00E-04     3.7m     85
+Ef          -97.579952Ha        -0.4863934Ha      9.17E-05     3.7m     86
+Ef          -97.579955Ha        -0.4863964Ha      3.12E-05     3.7m     87
+Ef          -97.579955Ha        -0.4863968Ha      2.57E-05     3.7m     88
+Ef          -97.579955Ha        -0.4863973Ha      2.30E-05     3.7m     89
+Ef          -97.579957Ha        -0.4863987Ha      1.05E-04     3.7m     90
+Ef          -97.579957Ha        -0.4863985Ha      7.30E-05     3.7m     91
+Ef          -97.579957Ha        -0.4863987Ha      1.08E-04     3.8m     92
+Ef          -97.579957Ha        -0.4863987Ha      1.08E-04     3.8m     93
+Ef          -97.579952Ha        -0.4863943Ha      7.47E-05     3.8m     94
+Ef          -97.579957Ha        -0.4863993Ha      3.17E-04     3.8m     95
+Ef          -97.579956Ha        -0.4863977Ha      4.53E-04     3.8m     96
+Ef          -97.579956Ha        -0.4863982Ha      1.15E-04     3.8m     97
+Ef          -97.579955Ha        -0.4863972Ha      1.87E-05     3.8m     98
+Ef          -97.579955Ha        -0.4863969Ha      2.03E-05     3.8m     99
+Ef          -97.579953Ha        -0.4863945Ha      6.28E-05     3.8m    100
+Ef          -97.579957Ha        -0.4863987Ha      4.38E-05     3.8m    101
+Ef          -97.579958Ha        -0.4863996Ha      3.54E-04     3.8m    102
+Ef          -97.579957Ha        -0.4863984Ha      2.65E-05     3.9m    103
+Ef          -97.579956Ha        -0.4863984Ha      2.18E-05     3.9m    104
+Ef          -97.579957Ha        -0.4863987Ha      3.08E-05     3.9m    105
+Ef          -97.579954Ha        -0.4863955Ha      4.21E-05     3.9m    106
+Ef          -97.579958Ha        -0.4864004Ha      1.66E-04     3.9m    107
+Ef          -97.579957Ha        -0.4863988Ha      5.61E-04     3.9m    108
+Ef          -97.579957Ha        -0.4863984Ha      2.14E-05     3.9m    109
+Ef          -97.579957Ha        -0.4863985Ha      2.08E-05     3.9m    110
+Ef          -97.579957Ha        -0.4863985Ha      2.14E-05     3.9m    111
+Ef          -97.579956Ha        -0.4863974Ha      2.23E-05     3.9m    112
+Ef          -97.579879Ha        -0.4863212Ha      8.05E-04     3.9m    113
+Ef          -97.579958Ha        -0.4864000Ha      3.86E-04     4.0m    114
+Ef          -97.579957Ha        -0.4863984Ha      2.14E-05     4.0m    115
+Ef          -97.579957Ha        -0.4863989Ha      4.02E-05     4.0m    116
+Ef          -97.579958Ha        -0.4863996Ha      8.46E-05     4.0m    117
+Ef          -97.579958Ha        -0.4863999Ha      1.08E-04     4.0m    118
+Ef          -97.579955Ha        -0.4863972Ha      2.05E-05     4.0m    119
+Ef          -97.579958Ha        -0.4863996Ha      3.23E-05     4.0m    120
+Ef          -97.579956Ha        -0.4863980Ha      2.51E-05     4.0m    121
+Ef          -97.579954Ha        -0.4863955Ha      4.96E-05     4.0m    122
+Ef          -97.579956Ha        -0.4863983Ha      6.71E-05     4.0m    123
+Ef          -97.579957Ha        -0.4863985Ha      1.16E-04     4.0m    124
+Ef          -97.579954Ha        -0.4863962Ha      4.27E-05     4.1m    125
+Ef          -97.579958Ha        -0.4863998Ha      3.90E-04     4.1m    126
+Ef          -97.579959Ha        -0.4864013Ha      1.24E-04     4.1m    127
+Ef          -97.579958Ha        -0.4864002Ha      8.25E-05     4.1m    128
+Ef          -97.579951Ha        -0.4863927Ha      1.05E-04     4.1m    129
+Ef          -97.579956Ha        -0.4863977Ha      6.14E-05     4.1m    130
+Ef          -97.579955Ha        -0.4863967Ha      6.92E-05     4.1m    131
+Ef          -97.579957Ha        -0.4863985Ha      3.06E-04     4.1m    132
+Ef          -97.579954Ha        -0.4863962Ha      6.10E-04     4.1m    133
+Ef          -97.579958Ha        -0.4863998Ha      1.19E-04     4.1m    134
+Ef          -97.579954Ha        -0.4863964Ha      6.65E-05     4.2m    135
+Ef          -97.579942Ha        -0.4863836Ha      3.05E-04     4.2m    136
+Ef          -97.579954Ha        -0.4863956Ha      7.80E-05     4.2m    137
+Ef          -97.579954Ha        -0.4863963Ha      5.01E-05     4.2m    138
+Ef          -97.579954Ha        -0.4863964Ha      4.86E-05     4.2m    139
+Ef          -97.579955Ha        -0.4863965Ha      4.28E-05     4.2m    140
+Ef          -97.579955Ha        -0.4863973Ha      3.76E-05     4.2m    141
+Ef          -97.579956Ha        -0.4863981Ha      1.72E-04     4.2m    142
+Ef          -97.579955Ha        -0.4863973Ha      1.26E-04     4.2m    143
+Ef          -97.579955Ha        -0.4863965Ha      9.41E-05     4.2m    144
+Ef          -97.579955Ha        -0.4863965Ha      8.77E-05     4.2m    145
+Ef          -97.579953Ha        -0.4863948Ha      1.19E-04     4.3m    146
+Ef          -97.579950Ha        -0.4863920Ha      1.75E-04     4.3m    147
+Ef          -97.579956Ha        -0.4863976Ha      4.56E-05     4.3m    148
+Ef          -97.579956Ha        -0.4863981Ha      5.75E-05     4.3m    149
+Ef          -97.579955Ha        -0.4863974Ha      5.28E-05     4.3m    150
+Ef          -97.579954Ha        -0.4863960Ha      7.02E-05     4.3m    151
+Ef          -97.579953Ha        -0.4863952Ha      1.64E-04     4.3m    152
+Ef          -97.579959Ha        -0.4864012Ha      2.16E-04     4.3m    153
+Ef          -97.579957Ha        -0.4863986Ha      1.39E-04     4.3m    154
+Ef          -97.579955Ha        -0.4863973Ha      5.39E-05     4.3m    155
+Ef          -97.579925Ha        -0.4863669Ha      4.79E-04     4.3m    156
+Ef          -97.579960Ha        -0.4864016Ha      1.06E-04     4.4m    157
+Ef          -97.579964Ha        -0.4864054Ha      2.40E-04     4.4m    158
+Ef          -97.579964Ha        -0.4864057Ha      2.12E-04     4.4m    159
+Ef          -97.579963Ha        -0.4864049Ha      2.08E-04     4.4m    160
+Ef          -97.579969Ha        -0.4864112Ha      4.62E-04     4.4m    161
+Ef          -97.579955Ha        -0.4863969Ha      1.11E-04     4.4m    162
+Ef          -97.579957Ha        -0.4863986Ha      8.21E-05     4.4m    163
+Ef          -97.579945Ha        -0.4863873Ha      2.88E-04     4.4m    164
+Ef          -97.579956Ha        -0.4863982Ha      9.61E-05     4.4m    165
+Ef          -97.579957Ha        -0.4863990Ha      1.10E-04     4.4m    166
+Ef          -97.579958Ha        -0.4864001Ha      1.03E-04     4.5m    167
+Ef          -97.579958Ha        -0.4864003Ha      1.09E-04     4.5m    168
+Ef          -97.579958Ha        -0.4864003Ha      1.06E-04     4.5m    169
+Ef          -97.579953Ha        -0.4863950Ha      1.14E-04     4.5m    170
+Ef          -97.579956Ha        -0.4863980Ha      1.38E-04     4.5m    171
+Ef          -97.579960Ha        -0.4864023Ha      3.82E-04     4.5m    172
+Ef          -97.579950Ha        -0.4863924Ha      1.94E-04     4.5m    173
+Ef          -97.579954Ha        -0.4863958Ha      1.89E-04     4.5m    174
+Ef          -97.579955Ha        -0.4863972Ha      2.00E-04     4.5m    175
+Ef          -97.579954Ha        -0.4863963Ha      1.87E-04     4.5m    176
+Ef          -97.579954Ha        -0.4863963Ha      1.83E-04     4.5m    177
+Ef          -97.579951Ha        -0.4863931Ha      1.59E-04     4.6m    178
+Ef          -97.579955Ha        -0.4863973Ha      1.48E-04     4.6m    179
+Ef          -97.579962Ha        -0.4864043Ha      3.84E-04     4.6m    180
+Ef          -97.579946Ha        -0.4863882Ha      2.66E-04     4.6m    181
+Ef          -97.579956Ha        -0.4863975Ha      1.72E-04     4.6m    182
+Ef          -97.579961Ha        -0.4864029Ha      2.91E-04     4.6m    183
+Ef          -97.579962Ha        -0.4864036Ha      3.09E-04     4.6m    184
+Ef          -97.579962Ha        -0.4864036Ha      3.07E-04     4.6m    185
+Ef          -97.579957Ha        -0.4863985Ha      1.70E-04     4.6m    186
+Ef          -97.579950Ha        -0.4863915Ha      2.12E-04     4.6m    187
+Ef          -97.579903Ha        -0.4863445Ha      7.00E-04     4.7m    188
+Ef          -97.579964Ha        -0.4864061Ha      3.62E-04     4.7m    189
+Ef          -97.579951Ha        -0.4863930Ha      1.75E-04     4.7m    190
+Ef          -97.579966Ha        -0.4864078Ha      4.91E-04     4.7m    191
+Ef          -97.579954Ha        -0.4863957Ha      1.16E-04     4.7m    192
+Ef          -97.579956Ha        -0.4863978Ha      9.02E-05     4.7m    193
+Ef          -97.579966Ha        -0.4864078Ha      1.71E-04     4.7m    194
+Ef          -97.579963Ha        -0.4864045Ha      2.22E-04     4.7m    195
+Ef          -97.579940Ha        -0.4863823Ha      3.46E-04     4.7m    196
+Ef          -97.579965Ha        -0.4864067Ha      2.21E-04     4.7m    197
+Ef          -97.579965Ha        -0.4864071Ha      2.42E-04     4.7m    198
+Ef          -97.579975Ha        -0.4864165Ha      1.03E-03     4.8m    199
+Ef          -97.579966Ha        -0.4864083Ha      1.64E-04     4.8m    200
+Ef          -97.579901Ha        -0.4863433Ha      2.18E-03     4.8m    201
+Ef          -97.579962Ha        -0.4864037Ha      6.35E-05     4.8m    202
+Ef          -97.579962Ha        -0.4864035Ha      6.31E-05     4.8m    203
+Ef          -97.579961Ha        -0.4864032Ha      8.71E-05     4.8m    204
+Ef          -97.579963Ha        -0.4864045Ha      1.41E-04     4.8m    205
+Ef          -97.579961Ha        -0.4864030Ha      1.20E-04     4.8m    206
+Ef          -97.579956Ha        -0.4863976Ha      6.21E-05     4.8m    207
+Ef          -97.579956Ha        -0.4863978Ha      6.23E-05     4.8m    208
+Ef          -97.579956Ha        -0.4863977Ha      6.08E-05     4.8m    209
+Ef          -97.579944Ha        -0.4863859Ha      2.47E-04     4.9m    210
+Ef          -97.579955Ha        -0.4863968Ha      6.34E-05     4.9m    211
+Ef          -97.579957Ha        -0.4863987Ha      8.40E-05     4.9m    212
+Ef          -97.579959Ha        -0.4864013Ha      1.85E-04     4.9m    213
+Ef          -97.579960Ha        -0.4864014Ha      1.87E-04     4.9m    214
+Ef          -97.579960Ha        -0.4864017Ha      2.09E-04     4.9m    215
+Ef          -97.579948Ha        -0.4863899Ha      1.92E-04     4.9m    216
+Ef          -97.579963Ha        -0.4864046Ha      3.23E-04     4.9m    217
+Ef          -97.579944Ha        -0.4863855Ha      1.36E-03     4.9m    218
+Ef          -97.579952Ha        -0.4863938Ha      1.23E-04     4.9m    219
+Ef          -97.579953Ha        -0.4863945Ha      1.17E-04     5.0m    220
+Ef          -97.579951Ha        -0.4863932Ha      1.56E-04     5.0m    221
+Ef          -97.579943Ha        -0.4863847Ha      2.75E-04     5.0m    222
+Ef          -97.579953Ha        -0.4863945Ha      1.45E-04     5.0m    223
+Ef          -97.579956Ha        -0.4863981Ha      5.53E-05     5.0m    224
+Ef          -97.579958Ha        -0.4864002Ha      1.40E-04     5.0m    225
+Ef          -97.579960Ha        -0.4864015Ha      1.74E-04     5.0m    226
+Ef          -97.579960Ha        -0.4864022Ha      2.24E-04     5.0m    227
+Ef          -97.579937Ha        -0.4863785Ha      3.65E-04     5.0m    228
+Ef          -97.579962Ha        -0.4864041Ha      2.18E-04     5.0m    229
+Ef          -97.579961Ha        -0.4864028Ha      1.91E-04     5.0m    230
+Ef          -97.579968Ha        -0.4864094Ha      4.20E-04     5.1m    231
+Ef          -97.579968Ha        -0.4864099Ha      4.45E-04     5.1m    232
+Ef          -97.579968Ha        -0.4864095Ha      4.23E-04     5.1m    233
+Ef          -97.579956Ha        -0.4863980Ha      6.10E-05     5.1m    234
+Ef          -97.579954Ha        -0.4863957Ha      8.26E-05     5.1m    235
+Ef          -97.579957Ha        -0.4863988Ha      7.63E-05     5.1m    236
+Ef          -97.579957Ha        -0.4863991Ha      8.08E-05     5.1m    237
+Ef          -97.579953Ha        -0.4863952Ha      9.29E-05     5.1m    238
+Ef          -97.579954Ha        -0.4863960Ha      7.94E-05     5.1m    239
+Ef          -97.579956Ha        -0.4863976Ha      9.81E-04     5.1m    240
+Ef          -97.579945Ha        -0.4863866Ha      1.32E-03     5.1m    241
+Ef          -97.579959Ha        -0.4864013Ha      2.21E-04     5.2m    242
+Ef          -97.579957Ha        -0.4863990Ha      1.29E-04     5.2m    243
+Ef          -97.579955Ha        -0.4863969Ha      6.08E-05     5.2m    244
+Ef          -97.579955Ha        -0.4863970Ha      5.34E-05     5.2m    245
+Ef          -97.579950Ha        -0.4863914Ha      1.62E-04     5.2m    246
+Ef          -97.579955Ha        -0.4863969Ha      6.66E-05     5.2m    247
+Ef          -97.579957Ha        -0.4863987Ha      1.10E-04     5.2m    248
+Ef          -97.579959Ha        -0.4864005Ha      1.79E-04     5.2m    249
+Ef          -97.579959Ha        -0.4864012Ha      2.56E-04     5.2m    250
+Ef          -97.579960Ha        -0.4864023Ha      2.97E-04     5.2m    251
+Ef          -97.579955Ha        -0.4863970Ha      5.92E-05     5.2m    252
+Ef          -97.579956Ha        -0.4863979Ha      1.56E-04     5.3m    253
+Ef          -97.579951Ha        -0.4863925Ha      1.54E-04     5.3m    254
+Ef          -97.579955Ha        -0.4863968Ha      7.84E-05     5.3m    255
+Ef          -97.579958Ha        -0.4863999Ha      1.19E-04     5.3m    256
+Ef          -97.579963Ha        -0.4864047Ha      3.64E-04     5.3m    257
+Ef          -97.579962Ha        -0.4864037Ha      2.43E-04     5.3m    258
+Ef          -97.579961Ha        -0.4864027Ha      2.40E-04     5.3m    259
+Ef          -97.579947Ha        -0.4863890Ha      2.16E-04     5.3m    260
+Ef          -97.579971Ha        -0.4864133Ha      6.92E-04     5.3m    261
+Ef          -97.579951Ha        -0.4863930Ha      1.49E-04     5.3m    262
+Ef          -97.579867Ha        -0.4863092Ha      8.88E-04     5.4m    263
+Ef          -97.579906Ha        -0.4863481Ha      1.80E-03     5.4m    264
+Ef          -97.579954Ha        -0.4863960Ha      9.45E-05     5.4m    265
+Ef          -97.579956Ha        -0.4863982Ha      1.13E-04     5.4m    266
+Ef          -97.579958Ha        -0.4864003Ha      2.30E-04     5.4m    267
+Ef          -97.579958Ha        -0.4864004Ha      2.35E-04     5.4m    268
+Ef          -97.579954Ha        -0.4863961Ha      6.99E-05     5.4m    269
+Ef          -97.579898Ha        -0.4863400Ha      7.05E-04     5.4m    270
+Ef          -97.579962Ha        -0.4864042Ha      2.89E-04     5.4m    271
+Ef          -97.579961Ha        -0.4864025Ha      1.86E-04     5.4m    272
+Ef          -97.579964Ha        -0.4864064Ha      2.91E-04     5.4m    273
+Ef          -97.579964Ha        -0.4864062Ha      2.77E-04     5.5m    274
+Ef          -97.579964Ha        -0.4864059Ha      2.51E-04     5.5m    275
+Ef          -97.579955Ha        -0.4863969Ha      7.42E-05     5.5m    276
+Ef          -97.579949Ha        -0.4863906Ha      1.89E-04     5.5m    277
+Ef          -97.579960Ha        -0.4864022Ha      1.83E-04     5.5m    278
+Ef          -97.579968Ha        -0.4864094Ha      5.40E-04     5.5m    279
+Ef          -97.579967Ha        -0.4864090Ha      5.40E-04     5.5m    280
+Ef          -97.579967Ha        -0.4864087Ha      4.89E-04     5.5m    281
+Ef          -97.579971Ha        -0.4864133Ha      7.88E-04     5.5m    282
+Ef          -97.579957Ha        -0.4863992Ha      4.00E-05     5.5m    283
+Ef          -97.579954Ha        -0.4863963Ha      1.53E-04     5.6m    284
+Ef          -97.579949Ha        -0.4863912Ha      2.23E-04     5.6m    285
+Ef          -97.579944Ha        -0.4863857Ha      2.92E-04     5.6m    286
+Ef          -97.579956Ha        -0.4863977Ha      5.59E-05     5.6m    287
+Ef          -97.579955Ha        -0.4863972Ha      6.82E-05     5.6m    288
+Ef          -97.579956Ha        -0.4863975Ha      6.75E-05     5.6m    289
+Ef          -97.579958Ha        -0.4863995Ha      1.09E-04     5.6m    290
+Ef          -97.579944Ha        -0.4863861Ha      2.63E-04     5.6m    291
+Ef          -97.579961Ha        -0.4864029Ha      2.18E-04     5.6m    292
+Ef          -97.579964Ha        -0.4864060Ha      3.15E-04     5.6m    293
+Ef          -97.579958Ha        -0.4863997Ha      7.89E-05     5.6m    294
+Ef          -97.579956Ha        -0.4863983Ha      1.11E-04     5.7m    295
+Ef          -97.579954Ha        -0.4863954Ha      1.38E-04     5.7m    296
+Ef          -97.579951Ha        -0.4863931Ha      1.70E-04     5.7m    297
+Ef          -97.579952Ha        -0.4863937Ha      1.61E-04     5.7m    298
+Ef          -97.579964Ha        -0.4864062Ha      4.07E-04     5.7m    299
+Ef          -97.579959Ha        -0.4864004Ha      2.43E-04     5.7m    300
+Ef          -97.579953Ha        -0.4863949Ha      1.94E-04     5.7m    301
+Ef          -97.579957Ha        -0.4863993Ha      2.53E-04     5.7m    302
+Ef          -97.579949Ha        -0.4863909Ha      2.46E-04     5.7m    303
+Ef          -97.579952Ha        -0.4863935Ha      1.77E-04     5.7m    304
+Ef          -97.579952Ha        -0.4863939Ha      1.46E-04     5.7m    305
+Ef          -97.579945Ha        -0.4863865Ha      2.69E-04     5.8m    306
+Ef          -97.579952Ha        -0.4863940Ha      1.24E-04     5.8m    307
+Ef          -97.579955Ha        -0.4863972Ha      5.93E-05     5.8m    308
+Ef          -97.579957Ha        -0.4863993Ha      1.19E-04     5.8m    309
+Ef          -97.579964Ha        -0.4864063Ha      3.77E-04     5.8m    310
+Ef          -97.579969Ha        -0.4864107Ha      9.15E-04     5.8m    311
+Ef          -97.579961Ha        -0.4864025Ha      1.88E-04     5.8m    312
+Ef          -97.579956Ha        -0.4863975Ha      6.11E-05     5.8m    313
+Ef          -97.579956Ha        -0.4863974Ha      4.32E-05     5.8m    314
+Ef          -97.579954Ha        -0.4863956Ha      9.75E-05     5.8m    315
+Ef          -97.579952Ha        -0.4863941Ha      1.36E-04     5.9m    316
+Ef          -97.579953Ha        -0.4863950Ha      1.21E-04     5.9m    317
+Ef          -97.579960Ha        -0.4864019Ha      2.45E-04     5.9m    318
+Ef          -97.579951Ha        -0.4863930Ha      1.53E-04     5.9m    319
+Ef          -97.579948Ha        -0.4863897Ha      2.16E-04     5.9m    320
+Ef          -97.579947Ha        -0.4863886Ha      2.33E-04     5.9m    321
+Ef          -97.579948Ha        -0.4863903Ha      2.04E-04     5.9m    322
+Ef          -97.579921Ha        -0.4863625Ha      5.24E-04     5.9m    323
+Ef          -97.579956Ha        -0.4863976Ha      1.28E-04     5.9m    324
+Ef          -97.579962Ha        -0.4864035Ha      6.18E-04     5.9m    325
+Ef          -97.579836Ha        -0.4862779Ha      1.07E-03     5.9m    326
+Ef          -97.579951Ha        -0.4863930Ha      1.51E-04     6.0m    327
+Ef          -97.579942Ha        -0.4863839Ha      2.86E-04     6.0m    328
+Ef          -97.579763Ha        -0.4862047Ha      1.41E-03     6.0m    329
+Ef          -97.579945Ha        -0.4863874Ha      2.36E-04     6.0m    330
+Ef          -97.579955Ha        -0.4863967Ha      7.83E-05     6.0m    331
+Ef          -97.579956Ha        -0.4863975Ha      2.65E-05     6.0m    332
+Ef          -97.579956Ha        -0.4863981Ha      2.52E-04     6.0m    333
+Ef          -97.579746Ha        -0.4861877Ha      1.48E-03     6.0m    334
+Ef          -97.579947Ha        -0.4863888Ha      2.21E-04     6.0m    335
+Ef          -97.579890Ha        -0.4863319Ha      7.43E-04     6.0m    336
+Ef          -97.579898Ha        -0.4863395Ha      6.90E-04     6.0m    337
+Ef          -97.579755Ha        -0.4861973Ha      1.44E-03     6.1m    338
+Ef          -97.579954Ha        -0.4863957Ha      2.25E-04     6.1m    339
+Ef          -97.579835Ha        -0.4862765Ha      1.07E-03     6.1m    340
+Ef          -97.579471Ha        -0.4859134Ha      2.41E-03     6.1m    341
+Ef          -97.577732Ha        -0.4841738Ha      6.06E-03     6.1m    342
+Ef          -97.574566Ha        -0.4810081Ha      1.32E-02     6.1m    343
+Ef          -97.579662Ha        -0.4861044Ha      1.18E-02     6.1m    344
+Ef          -97.579828Ha        -0.4862698Ha      1.64E-03     6.1m    345
+Ef          -97.579890Ha        -0.4863321Ha      6.73E-04     6.1m    346
+Ef          -97.579925Ha        -0.4863665Ha      3.70E-04     6.1m    347
+Ef          -97.579942Ha        -0.4863834Ha      1.56E-04     6.2m    348
+Ef          -97.579946Ha        -0.4863876Ha      1.01E-04     6.2m    349
+Ef          -97.579948Ha        -0.4863896Ha      8.51E-05     6.2m    350
+Ef          -97.579949Ha        -0.4863912Ha      7.89E-05     6.2m    351
+Ef          -97.579951Ha        -0.4863927Ha      6.96E-05     6.2m    352
+Ef          -97.579953Ha        -0.4863944Ha      5.06E-05     6.2m    353
+Ef          -97.579954Ha        -0.4863956Ha      2.95E-05     6.2m    354
+Ef          -97.579954Ha        -0.4863958Ha      2.37E-05     6.2m    355
+Ef          -97.579954Ha        -0.4863960Ha      2.10E-05     6.2m    356
+Ef          -97.579954Ha        -0.4863961Ha      2.06E-05     6.2m    357
+Ef          -97.579954Ha        -0.4863962Ha      1.98E-05     6.2m    358
+Ef          -97.579954Ha        -0.4863964Ha      1.82E-05     6.3m    359
+Ef          -97.579955Ha        -0.4863966Ha      1.71E-05     6.3m    360
+Ef          -97.579955Ha        -0.4863966Ha      1.71E-05     6.3m    361
+Ef          -97.579955Ha        -0.4863967Ha      1.71E-05     6.3m    362
+Ef          -97.579955Ha        -0.4863966Ha      1.73E-05     6.3m    363
+Ef          -97.579955Ha        -0.4863967Ha      1.71E-05     6.3m    364
+Ef          -97.579955Ha        -0.4863969Ha      1.64E-05     6.3m    365
+Ef          -97.579955Ha        -0.4863970Ha      1.61E-05     6.3m    366
+Ef          -97.579955Ha        -0.4863972Ha      1.57E-05     6.3m    367
+Ef          -97.579955Ha        -0.4863972Ha      1.56E-05     6.3m    368
+Ef          -97.579955Ha        -0.4863972Ha      1.60E-05     6.4m    369
+Ef          -97.579955Ha        -0.4863973Ha      1.58E-05     6.4m    370
+Ef          -97.579955Ha        -0.4863972Ha      1.60E-05     6.4m    371
+Ef          -97.579955Ha        -0.4863971Ha      1.58E-05     6.4m    372
+Ef          -97.579955Ha        -0.4863973Ha      1.58E-05     6.4m    373
+Ef          -97.579955Ha        -0.4863973Ha      1.60E-05     6.4m    374
+Ef          -97.579955Ha        -0.4863972Ha      1.58E-05     6.4m    375
+Ef          -97.579955Ha        -0.4863972Ha      1.58E-05     6.4m    376
+Ef          -97.579955Ha        -0.4863974Ha      1.54E-05     6.4m    377
+Ef          -97.579956Ha        -0.4863975Ha      1.53E-05     6.4m    378
+Ef          -97.579955Ha        -0.4863974Ha      1.54E-05     6.4m    379
+Ef          -97.579956Ha        -0.4863974Ha      1.56E-05     6.5m    380
+Ef          -97.579955Ha        -0.4863973Ha      1.55E-05     6.5m    381
+Ef          -97.579956Ha        -0.4863975Ha      1.52E-05     6.5m    382
+Ef          -97.579956Ha        -0.4863976Ha      1.53E-05     6.5m    383
+Ef          -97.579956Ha        -0.4863975Ha      1.52E-05     6.5m    384
+Ef          -97.579956Ha        -0.4863975Ha      1.51E-05     6.5m    385
+Ef          -97.579956Ha        -0.4863978Ha      1.68E-05     6.5m    386
+Ef          -97.579955Ha        -0.4863972Ha      1.59E-05     6.5m    387
+Ef          -97.579956Ha        -0.4863982Ha      2.83E-05     6.5m    388
+Ef          -97.579956Ha        -0.4863983Ha      2.65E-05     6.5m    389
+Ef          -97.579956Ha        -0.4863978Ha      1.59E-05     6.5m    390
+Ef          -97.579955Ha        -0.4863972Ha      1.64E-05     6.6m    391
+Ef          -97.579956Ha        -0.4863980Ha      1.89E-05     6.6m    392
+Ef          -97.579956Ha        -0.4863979Ha      1.66E-05     6.6m    393
+Ef          -97.579956Ha        -0.4863980Ha      2.61E-05     6.6m    394
+Ef          -97.579957Ha        -0.4863985Ha      3.57E-05     6.6m    395
+Ef          -97.579955Ha        -0.4863973Ha      1.98E-05     6.6m    396
+Ef          -97.579956Ha        -0.4863978Ha      2.19E-05     6.6m    397
+Ef          -97.579956Ha        -0.4863974Ha      1.98E-05     6.6m    398
+Ef          -97.579955Ha        -0.4863972Ha      2.55E-05     6.6m    399
+Ef          -97.579956Ha        -0.4863978Ha      1.86E-05     6.6m    400
+Ef          -97.579956Ha        -0.4863975Ha      1.57E-05     6.7m    401
+Ef          -97.579956Ha        -0.4863979Ha      1.58E-05     6.7m    402
+Ef          -97.579956Ha        -0.4863980Ha      1.58E-05     6.7m    403
+Ef          -97.579955Ha        -0.4863973Ha      1.79E-05     6.7m    404
+Ef          -97.579956Ha        -0.4863980Ha      2.46E-05     6.7m    405
+Ef          -97.579956Ha        -0.4863975Ha      1.88E-05     6.7m    406
+Ef          -97.579956Ha        -0.4863975Ha      1.77E-05     6.7m    407
+Ef          -97.579953Ha        -0.4863949Ha      6.13E-05     6.7m    408
+Ef          -97.579958Ha        -0.4863999Ha      2.15E-04     6.7m    409
+Ef          -97.579957Ha        -0.4863988Ha      3.17E-05     6.7m    410
+Ef          -97.579958Ha        -0.4864003Ha      1.61E-04     6.8m    411
+Ef          -97.579959Ha        -0.4864004Ha      2.63E-04     6.8m    412
+Ef          -97.579957Ha        -0.4863992Ha      7.65E-05     6.8m    413
+Ef          -97.579955Ha        -0.4863973Ha      1.77E-05     6.8m    414
+Ef          -97.579956Ha        -0.4863975Ha      1.63E-05     6.8m    415
+Ef          -97.579951Ha        -0.4863925Ha      1.04E-04     6.8m    416
+Ef          -97.579955Ha        -0.4863972Ha      1.75E-05     6.8m    417
+Ef          -97.579957Ha        -0.4863994Ha      7.21E-05     6.8m    418
+Ef          -97.579958Ha        -0.4864001Ha      2.16E-04     6.8m    419
+Ef          -97.579957Ha        -0.4863989Ha      3.62E-05     6.9m    420
+Ef          -97.579957Ha        -0.4863986Ha      3.11E-05     6.9m    421
+Ef          -97.579950Ha        -0.4863917Ha      1.29E-04     6.9m    422
+Ef          -97.579958Ha        -0.4863998Ha      1.30E-04     6.9m    423
+Ef          -97.579958Ha        -0.4864001Ha      3.95E-04     6.9m    424
+Ef          -97.579957Ha        -0.4863987Ha      3.11E-05     6.9m    425
+Ef          -97.579958Ha        -0.4863994Ha      6.39E-05     6.9m    426
+Ef          -97.579958Ha        -0.4863997Ha      9.75E-05     6.9m    427
+Ef          -97.579955Ha        -0.4863972Ha      1.82E-05     6.9m    428
+Ef          -97.579956Ha        -0.4863980Ha      2.07E-05     6.9m    429
+Ef          -97.579953Ha        -0.4863950Ha      7.57E-05     7.0m    430
+Ef          -97.579867Ha        -0.4863092Ha      1.70E-03     7.0m    431
+Ef          -97.579958Ha        -0.4863994Ha      8.91E-05     7.0m    432
+Ef          -97.579956Ha        -0.4863980Ha      2.55E-05     7.0m    433
+Ef          -97.579955Ha        -0.4863971Ha      1.96E-05     7.0m    434
+Ef          -97.579947Ha        -0.4863884Ha      1.77E-04     7.0m    435
+Ef          -97.579955Ha        -0.4863970Ha      2.06E-05     7.0m    436
+Ef          -97.579957Ha        -0.4863993Ha      2.50E-04     7.0m    437
+Ef          -97.579956Ha        -0.4863984Ha      5.08E-05     7.0m    438
+Ef          -97.579957Ha        -0.4863992Ha      1.60E-04     7.0m    439
+Ef          -97.579957Ha        -0.4863992Ha      2.01E-04     7.1m    440
+Ef          -97.579953Ha        -0.4863953Ha      5.25E-05     7.1m    441
+Ef          -97.579957Ha        -0.4863987Ha      9.39E-05     7.1m    442
+Ef          -97.579957Ha        -0.4863991Ha      1.75E-04     7.1m    443
+Ef          -97.579875Ha        -0.4863166Ha      1.61E-03     7.1m    444
+Ef          -97.579953Ha        -0.4863952Ha      5.52E-05     7.1m    445
+Ef          -97.579948Ha        -0.4863894Ha      1.65E-04     7.1m    446
+Ef          -97.579957Ha        -0.4863985Ha      6.77E-05     7.1m    447
+Ef          -97.579957Ha        -0.4863987Ha      9.82E-05     7.1m    448
+Ef          -97.579957Ha        -0.4863986Ha      8.10E-05     7.1m    449
+Ef          -97.579957Ha        -0.4863987Ha      9.83E-05     7.2m    450
+Ef          -97.579957Ha        -0.4863990Ha      1.61E-04     7.2m    451
+Ef          -97.579953Ha        -0.4863953Ha      6.19E-05     7.2m    452
+Ef          -97.579956Ha        -0.4863983Ha      7.66E-05     7.2m    453
+Ef          -97.579956Ha        -0.4863979Ha      4.37E-05     7.2m    454
+Ef          -97.579957Ha        -0.4863989Ha      1.67E-04     7.2m    455
+Ef          -97.579956Ha        -0.4863983Ha      4.02E-04     7.2m    456
+Ef          -97.579955Ha        -0.4863973Ha      2.73E-05     7.2m    457
+Ef          -97.579953Ha        -0.4863944Ha      7.45E-05     7.2m    458
+Ef          -97.579957Ha        -0.4863984Ha      6.58E-05     7.2m    459
+Ef          -97.579957Ha        -0.4863987Ha      1.06E-04     7.3m    460
+Ef          -97.579957Ha        -0.4863990Ha      1.33E-04     7.3m    461
+Ef          -97.579957Ha        -0.4863992Ha      2.42E-04     7.3m    462
+Ef          -97.579956Ha        -0.4863982Ha      3.95E-05     7.3m    463
+Ef          -97.579954Ha        -0.4863963Ha      3.65E-05     7.3m    464
+Ef          -97.579925Ha        -0.4863665Ha      4.41E-04     7.3m    465
+Ef          -97.579956Ha        -0.4863981Ha      3.95E-05     7.3m    466
+Ef          -97.579957Ha        -0.4863986Ha      7.71E-05     7.3m    467
+Ef          -97.579957Ha        -0.4863987Ha      8.62E-05     7.3m    468
+Ef          -97.579957Ha        -0.4863984Ha      5.45E-05     7.3m    469
+Ef          -97.579957Ha        -0.4863986Ha      6.79E-05     7.4m    470
+Ef          -97.579948Ha        -0.4863901Ha      1.59E-04     7.4m    471
+Ef          -97.579958Ha        -0.4863994Ha      2.28E-04     7.4m    472
+Ef          -97.579956Ha        -0.4863984Ha      3.80E-05     7.4m    473
+Ef          -97.579955Ha        -0.4863967Ha      2.90E-05     7.4m    474
+Ef          -97.579957Ha        -0.4863992Ha      8.51E-05     7.4m    475
+Ef          -97.579958Ha        -0.4863997Ha      1.36E-04     7.4m    476
+Ef          -97.579952Ha        -0.4863941Ha      6.56E-04     7.4m    477
+Ef          -97.579953Ha        -0.4863947Ha      6.59E-05     7.4m    478
+Ef          -97.579957Ha        -0.4863985Ha      6.99E-05     7.4m    479
+Ef          -97.579955Ha        -0.4863972Ha      2.02E-05     7.5m    480
+Ef          -97.579958Ha        -0.4863997Ha      1.30E-04     7.5m    481
+Ef          -97.579958Ha        -0.4864002Ha      2.12E-04     7.5m    482
+Ef          -97.579959Ha        -0.4864005Ha      2.54E-04     7.5m    483
+Ef          -97.579949Ha        -0.4863911Ha      1.29E-04     7.5m    484
+Ef          -97.579955Ha        -0.4863968Ha      2.57E-05     7.5m    485
+Ef          -97.579954Ha        -0.4863956Ha      5.05E-05     7.5m    486
+Ef          -97.579955Ha        -0.4863970Ha      2.26E-05     7.5m    487
+Ef          -97.579958Ha        -0.4864001Ha      1.58E-04     7.5m    488
+Ef          -97.579959Ha        -0.4864010Ha      2.86E-04     7.5m    489
+Ef          -97.579957Ha        -0.4863989Ha      3.40E-05     7.6m    490
+Ef          -97.579957Ha        -0.4863990Ha      4.27E-05     7.6m    491
+Ef          -97.579953Ha        -0.4863952Ha      4.45E-05     7.6m    492
+Ef          -97.579957Ha        -0.4863985Ha      3.05E-05     7.6m    493
+Ef          -97.579956Ha        -0.4863983Ha      2.37E-05     7.6m    494
+Ef          -97.579955Ha        -0.4863969Ha      2.25E-04     7.6m    495
+Ef          -97.579955Ha        -0.4863968Ha      4.01E-04     7.6m    496
+Ef          -97.579943Ha        -0.4863847Ha      8.07E-04     7.6m    497
+Ef          -97.579956Ha        -0.4863979Ha      2.24E-05     7.6m    498
+Ef          -97.579956Ha        -0.4863974Ha      2.97E-05     7.6m    499
+Ef          -97.579956Ha        -0.4863976Ha      2.53E-05     7.7m    500
+Error: SCF iterations not converged in  500 iterations
+ DELTE =   1.000000000000000E-008
+
+Message: SCF not converging. Choose "Use Smearing" on DMol3 SCF panel
+or set "Occupation  Thermal" in the input file.
+You may also need to change spin or use symmetry.
+Resubmit DMol3.
+Message: DMol3 job failed
+Error: DMol3 exiting
+
+DMol3.pl message: DMol3 job finished in 0 hr 8 min 0 sec.
