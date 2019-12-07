@@ -1,0 +1,44 @@
+
+# Task parameters
+Calculate                     optimize
+Opt_energy_convergence        2.0000e-005
+Opt_gradient_convergence      4.0000e-003 A
+Opt_displacement_convergence  5.0000e-003 A
+Opt_iterations                500
+Opt_max_displacement          0.3000 A
+Initial_hessian               improved
+Symmetry                      off
+Max_memory                    1024
+File_usage                    smart
+Scf_density_convergence       1.000000e-005
+Scf_charge_mixing             2.000000e-001
+Scf_spin_mixing               5.000000e-001
+Scf_diis                      6 pulay
+Scf_iterations                500
+
+# Electronic parameters
+Spin_polarization             unrestricted
+Charge                        0
+Basis                         dnd
+Pseudopotential               dspp
+Functional                    gga(p91)
+Aux_density                   hexadecapole
+Integration_grid              medium
+Occupation                    fermi
+Cutoff_Global                 3.2000 angstrom
+
+# Calculated properties
+Print_eigval_window           -1.d9
+Plot                          homo
+Plot                          lumo
+Plot                          fermi 10
+Plot                          density
+Plot                          deformation
+Plot                          spindensity
+Mulliken_analysis             charge
+Hirshfeld_analysis            charge
+Bond_orders                   on
+Grid                          msbox  3 0.2500 0.2500 0.2500 3.0000
+plot_dos                     on
+empty_bands                  12
+plot_pdos                     on

@@ -1,0 +1,2093 @@
+ 
+     ===============================================================
+     Materials Studio DMol^3 version 2017            
+     compiled on May 19 2016 09:59:33
+     ===============================================================
+ 
+     ===============================================================
+     Density Functional Theory Electronic Structure Program
+     Copyright (c) 2016, Dassault Systemes, all rights reserved.
+     Cite work using this program as: 
+     B. Delley, J. Chem. Phys. 92,  508  (1990).
+     B. Delley, J. Chem. Phys. 113, 7756 (2000).
+     DMol^3 is available as part of Materials Studio.
+     ===============================================================
+ 
+ 
+DATE:     Dec  2 19:03:39 2019
+ 
+Job started on host YAESAKURA
+
+This run uses    6 processors
+
+Message: License checkout of MS_dmol successful
+ 
+Basis set is read from file:
+C:\Program Files (x86)\BIOVIA\Materials Studio 17.1 x64 Server\share\Resources\Quantum\DMol3\BASFILE_v3.5
+
+ 
+ parallel run with   6 processors
+ 
+ no INCOOR file: try ZMAT
+ no ZMAT file: try CAR
+
+Geometry is read from file: Li3O.car                                                                                                                                                                                                                                                        
+
+INCOOR, atomic coordinates in au (for archive):
+______________________________________________________________________>8
+
+$coordinates
+Li          -12.44174291263716    2.75452643698768    0.61498936907734
+Li           -7.42550101139012    1.28713977113695   -0.33297662371669
+Li          -11.21283812095712   -1.53808519223557   -1.90132982952712
+O           -10.61936986194947    0.59264111076493   -0.45468247326119
+$end
+______________________________________________________________________>8
+
+
+N_atoms =    4     N_atom_types =  2
+
+
+INPUT_DMOL keywords (for archive):
+______________________________________________________________________>8
+
+#Warning: no global confinement specs in BASFILE
+                                                                                                                                    <--
+# Task parameters                                                                                                                   <--
+Calculate                     optimize                                                                                              <--
+Opt_energy_convergence        2.0000e-005                                                                                           <--
+Opt_gradient_convergence      4.0000e-003 A                                                                                         <--
+Opt_displacement_convergence  5.0000e-003 A                                                                                         <--
+Opt_iterations                500                                                                                                   <--
+Opt_max_displacement          0.3000 A                                                                                              <--
+Initial_hessian               improved                                                                                              <--
+Symmetry                      off                                                                                                   <--
+Max_memory                    1024                                                                                                  <--
+File_usage                    smart                                                                                                 <--
+Scf_density_convergence       1.000000e-005                                                                                         <--
+Scf_charge_mixing             2.000000e-001                                                                                         <--
+Scf_spin_mixing               5.000000e-001                                                                                         <--
+Scf_diis                      6 pulay                                                                                               <--
+Scf_iterations                500                                                                                                   <--
+                                                                                                                                    <--
+# Electronic parameters                                                                                                             <--
+Spin_polarization             unrestricted                                                                                          <--
+Charge                        0                                                                                                     <--
+Basis                         dnd                                                                                                   <--
+Pseudopotential               dspp                                                                                                  <--
+Functional                    gga(p91)                                                                                              <--
+Aux_density                   hexadecapole                                                                                          <--
+Integration_grid              medium                                                                                                <--
+Occupation                    fermi                                                                                                 <--
+Cutoff_Global                 4.4000 angstrom                                                                                       <--
+                                                                                                                                    <--
+# Calculated properties                                                                                                             <--
+Print_eigval_window           -1.d9                                                                                                 <--
+Plot                          homo                                                                                                  <--
+Plot                          lumo                                                                                                  <--
+Plot                          fermi 20                                                                                              <--
+Plot                          density                                                                                               <--
+Plot                          deformation                                                                                           <--
+Plot                          spindensity                                                                                           <--
+Mulliken_analysis             charge                                                                                                <--
+Hirshfeld_analysis            charge                                                                                                <--
+Bond_orders                   on                                                                                                    <--
+Grid                          msbox  3 0.2500 0.2500 0.2500 3.0000                                                                  <--
+plot_dos                     on                                                                                                     <--
+empty_bands                  12                                                                                                     <--
+plot_pdos                     on                                                                                                    <--
+______________________________________________________________________>8
+
+
+Publications of specific relevance to this calculation:
+
+Density functional:
+ P91 exchange: Perdew, Physica B 172, 1 (1991)
+
+Spin unrestricted calculation
+
+
+ The Generation and Use of Delocalized Internal Coordinates in Geometry optimization; 
+ Baker Kessi Delley: J. Chem. Phys., 105, 192 (1996) 
+ Andzelm Fitzgerald King-Smith: Chem. Phys. Lett., 335, 321 (2001)
+
+ Hardness conserving semilocal pseudopotentials; Delley: Phys. Rev. B 66, 155125 (2002)
+
+Parallel eigenvalue solution:
+Parallel solution of partial symmetric eigenvalue problems from electronic structure calculations:
+Auckenthaler, Blum, Bungartz, et al.: Parallel Computing 37, 783 (2011)
+
+
+Warning: dspp            takes precedence over using symmetrized basis
+ 
+Calculation is Spin_unrestricted
+ 
+ 
+Warning: no SYM file, no symmetry used in vibrational analysis
+Warning: at least C1 SYM file should be there for optgeom
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -6.583887            1.457633            0.325438
+            2    Li           -3.929406            0.681125           -0.176204
+            3    Li           -5.933578           -0.813920           -1.006140
+            4    O            -5.619529            0.313612           -0.240608
+          ----------------------------------------------------------------------
+
+  
+
+*** OPTIMIZATION USES DELOCALIZED INTERNALS ***
+
+ The preliminary size of active space is :       6
+ There are :            6  degrees of freedom
+ There are likely:      6  primitive internals
+
+Lithium      nbas=  1, z=   3, nrfn=  5, rcut=  8.31, e_ref= -0.023261 Ha
+                                  rcore=  0.00  zval=   3.00   3.00
+   n=1  L=0  occ= 2.00 e=      -1.870620Ha       -50.9022eV
+   n=2  L=0  occ= 1.00 e=      -0.072085Ha        -1.9615eV
+   n=2  L=0  occ= 0.00 e=      -0.238445Ha        -6.4884eV
+   n=2  L=1  occ= 0.00 e=      -0.159478Ha        -4.3396eV
+   n=3  L=2  occ= 0.00 e=      -0.887673Ha       -24.1548eV
+Oxygen       nbas=  2, z=   8, nrfn=  7, rcut=  8.31, e_ref= -0.056238 Ha
+                                  rcore=  0.00  zval=   8.00   8.00
+   n=1  L=0  occ= 2.00 e=     -18.912066Ha      -514.6237eV
+   n=2  L=0  occ= 2.00 e=      -0.879538Ha       -23.9335eV
+   n=2  L=1  occ= 4.00 e=      -0.334083Ha        -9.0909eV
+   n=2  L=0  occ= 0.00 e=      -2.144814Ha       -58.3634eV
+   n=2  L=1  occ= 0.00 e=      -1.593915Ha       -43.3727eV
+   n=3  L=2  occ= 0.00 e=      -2.722222Ha       -74.0755eV
+   n=3  L=2  occ= 0.00 e=      -1.388789Ha       -37.7909eV  eliminated
+
+Note: calculation of reference xc derivative is turned on
+ for pseudopotential with core density correction
+
+Symmetry orbitals C1                            
+    n  norb    representation
+    1    47        a    
+  total number of valence orbitals:     47
+
+
+ molecule charge=      0.0   active electron number=      17.0
+ (without charge=             17.0)
+ 
+
+ real array elements, matrices vectors etc:       1.3 MB 
+ integer arrays                           :       0.1 MB 
+ min recommended for all-incl workspace   :       2.2 MB 
+Total memory allocated for arrays         :       5.0 MB 
+Memory for temporary file storage on disk :       1.5 MB
+Total memory allocated                    :       6.4 MB
+Max memory requested                      :    1024.0 MB
+Default spin density on atom Li(  1), L= 0 was used on start: M_s=  1.0
+    1  1.000 start spin density on Li(   1), L= 0 M_s=  1.0
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -98.051197Ha        -0.5906807Ha      2.49E-01     0.0m      1
+Ef          -97.836448Ha        -0.3759326Ha      9.58E-02     0.0m      2
+Ef          -97.792474Ha        -0.3319581Ha      6.22E-02     0.0m      3
+Ef          -97.806806Ha        -0.3462900Ha      7.24E-02     0.0m      4
+Ef          -97.787287Ha        -0.3267716Ha      9.28E-03     0.0m      5
+Ef          -97.785959Ha        -0.3254429Ha      1.28E-02     0.0m      6
+Ef          -97.787530Ha        -0.3270137Ha      3.40E-03     0.0m      7
+Ef          -97.786750Ha        -0.3262337Ha      2.28E-03     0.0m      8
+Ef          -97.786504Ha        -0.3259884Ha      2.11E-03     0.0m      9
+Ef          -97.787633Ha        -0.3271170Ha      1.75E-03     0.0m     10
+Ef          -97.789744Ha        -0.3292281Ha      9.44E-04     0.0m     11
+Ef          -97.789674Ha        -0.3291584Ha      7.33E-04     0.0m     12
+Ef          -97.790262Ha        -0.3297461Ha      7.62E-04     0.0m     13
+Ef          -97.790320Ha        -0.3298039Ha      7.30E-04     0.0m     14
+Ef          -97.790250Ha        -0.3297340Ha      6.32E-04     0.0m     15
+Ef          -97.790352Ha        -0.3298357Ha      7.25E-04     0.0m     16
+Ef          -97.790446Ha        -0.3299304Ha      7.60E-04     0.0m     17
+Ef          -97.790329Ha        -0.3298128Ha      7.30E-04     0.0m     18
+Ef          -97.790245Ha        -0.3297289Ha      7.88E-04     0.0m     19
+Ef          -97.790479Ha        -0.3299629Ha      7.24E-04     0.0m     20
+Ef          -97.790640Ha        -0.3301241Ha      3.13E-04     0.0m     21
+Ef          -97.790640Ha        -0.3301242Ha      3.44E-04     0.0m     22
+Ef          -97.790639Ha        -0.3301230Ha      2.69E-04     0.0m     23
+Ef          -97.790640Ha        -0.3301243Ha      1.14E-04     0.0m     24
+Ef          -97.790640Ha        -0.3301246Ha      4.31E-05     0.0m     25
+Ef          -97.790640Ha        -0.3301246Ha      1.36E-05     0.0m     26
+Ef          -97.790640Ha        -0.3301246Ha      9.60E-06     0.0m     27
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.05459Ha    -1.485eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.03278Ha    -0.892eV
+
+  HOMO is orbital number    17
+  LUMO is orbital number    18
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a        -18.612112      -506.462     1.000
+    2   +   1   a        -18.611472      -506.444     1.000
+    3   +   2   a         -1.794209       -48.823     1.000
+    4   +   3   a         -1.792190       -48.768     1.000
+    5   -   2   a         -1.789946       -48.707     1.000
+    6   -   3   a         -1.788938       -48.680     1.000
+    7   +   4   a         -1.775687       -48.319     1.000
+    8   -   4   a         -1.773262       -48.253     1.000
+    9   -   5   a         -0.703453       -19.142     1.000
+   10   +   5   a         -0.702439       -19.114     1.000
+   11   +   6   a         -0.199340        -5.424     1.000
+   12   -   6   a         -0.198050        -5.389     1.000
+   13   +   7   a         -0.186123        -5.065     1.000
+   14   -   7   a         -0.185162        -5.039     1.000
+   15   +   8   a         -0.181255        -4.932     1.000
+   16   -   8   a         -0.180095        -4.901     1.000
+   17   +   9   a         -0.054587        -1.485     1.000
+   18   -   9   a         -0.032779        -0.892     0.000
+   19   +  10   a         -0.028996        -0.789     0.000
+   20   +  11   a         -0.021628        -0.589     0.000
+   21   -  10   a         -0.009038        -0.246     0.000
+   22   -  11   a          0.005687         0.155     0.000
+   23   +  12   a          0.067284         1.831     0.000
+   24   -  12   a          0.084123         2.289     0.000
+   25   +  13   a          0.087498         2.381     0.000
+   26   +  14   a          0.092832         2.526     0.000
+   27   -  13   a          0.101899         2.773     0.000
+   28   +  15   a          0.102364         2.785     0.000
+   29   -  14   a          0.105735         2.877     0.000
+   30   -  15   a          0.114310         3.111     0.000
+   31   +  16   a          0.124934         3.400     0.000
+   32   -  16   a          0.133256         3.626     0.000
+   33   +  17   a          0.177236         4.823     0.000
+   34   +  18   a          0.180386         4.909     0.000
+   35   -  17   a          0.193283         5.259     0.000
+   36   -  18   a          0.195448         5.318     0.000
+   37   +  19   a          0.347116         9.446     0.000
+   38   -  19   a          0.362850         9.874     0.000
+   39   +  20   a          0.392763        10.688     0.000
+   40   -  20   a          0.402481        10.952     0.000
+   41   +  21   a          0.456832        12.431     0.000
+   42   -  21   a          0.468489        12.748     0.000
+   43   +  22   a          0.511629        13.922     0.000
+   44   +  23   a          0.521501        14.191     0.000
+   45   -  22   a          0.523139        14.235     0.000
+   46   +  24   a          0.524693        14.278     0.000
+   47   -  23   a          0.531036        14.450     0.000
+   48   +  25   a          0.531796        14.471     0.000
+   49   -  24   a          0.536003        14.585     0.000
+   50   -  25   a          0.543161        14.780     0.000
+   51   +  26   a          0.546963        14.884     0.000
+   52   -  26   a          0.555800        15.124     0.000
+   53   +  27   a          0.607204        16.523     0.000
+   54   -  27   a          0.619461        16.856     0.000
+   55   +  28   a          0.635125        17.283     0.000
+   56   +  29   a          0.641278        17.450     0.000
+   57   -  28   a          0.643453        17.509     0.000
+   58   -  29   a          0.652157        17.746     0.000
+   59   +  30   a          0.749439        20.393     0.000
+   60   -  30   a          0.761326        20.717     0.000
+   61   +  31   a          0.768125        20.902     0.000
+   62   -  31   a          0.777839        21.166     0.000
+   63   +  32   a          0.789111        21.473     0.000
+   64   -  32   a          0.797068        21.689     0.000
+   65   +  33   a          0.803942        21.876     0.000
+   66   -  33   a          0.813659        22.141     0.000
+   67   +  34   a          0.831394        22.623     0.000
+   68   -  34   a          0.838864        22.827     0.000
+   69   +  35   a          0.969785        26.389     0.000
+   70   -  35   a          0.983425        26.760     0.000
+   71   +  36   a          1.064756        28.973     0.000
+   72   -  36   a          1.071874        29.167     0.000
+   73   +  37   a          1.109365        30.187     0.000
+   74   -  37   a          1.117854        30.418     0.000
+   75   +  38   a          1.327668        36.128     0.000
+   76   -  38   a          1.330794        36.213     0.000
+   77   +  39   a          1.442398        39.250     0.000
+   78   -  39   a          1.445783        39.342     0.000
+   79   +  40   a          1.685823        45.874     0.000
+   80   -  40   a          1.686651        45.896     0.000
+   81   +  41   a          1.717821        46.744     0.000
+   82   -  41   a          1.722153        46.862     0.000
+   83   +  42   a          1.788498        48.668     0.000
+   84   -  42   a          1.792864        48.786     0.000
+   85   +  43   a          1.974370        53.725     0.000
+   86   -  43   a          1.975420        53.754     0.000
+   87   +  44   a          2.120578        57.704     0.000
+   88   -  44   a          2.121062        57.717     0.000
+   89   +  45   a          2.222364        60.474     0.000
+   90   -  45   a          2.227046        60.601     0.000
+   91   +  46   a          2.673790        72.758     0.000
+   92   -  46   a          2.676431        72.829     0.000
+   93   +  47   a          2.772230        75.436     0.000
+   94   -  47   a          2.774970        75.511     0.000
+ 
+
+  Orbital occupation is:
+      9  a  ( 1) alpha and     8  a  ( 1) beta
+  Total number electrons:              17.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -12.441743   2.754526   0.614989     0.014189  -0.019003  -0.009805
+df   Li    -7.425501   1.287140  -0.332977     0.001544  -0.001255  -0.001015
+df   Li   -11.212838  -1.538085  -1.901330     0.030748   0.108759   0.073200
+df    O   -10.619370   0.592641  -0.454682    -0.046481  -0.088501  -0.062379
+df  binding energy      -0.3301246Ha        -8.98315eV        -207.160kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.4605158Ha
+                  Kinetic =        1.8311977Ha
+            Electrostatic =       -2.4679853Ha
+     Exchange-correlation =        0.1806413Ha
+        Spin polarization =        0.1260217Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.790640Ha        -0.3301246Ha                   0.0m     28
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -6.583887            1.457633            0.325438
+            2    Li           -3.929406            0.681125           -0.176204
+            3    Li           -5.933578           -0.813920           -1.006140
+            4    O            -5.619529            0.313612           -0.240608
+          ----------------------------------------------------------------------
+
+ Geometry optimization: predicted energy change is  -0.012133 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.302209
+ Norm of Displacement of Cartesian Coordinates:     0.170804
+
+opt==  Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==      tolerance:.......      0.0000200        0.002117       0.009449
+opt==    1       -97.7906404      0.0000000        0.108759       0.110481
+
+ 
+                      Step    1                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.330125E+00 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.108759E+00 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.110481E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.808129Ha        -0.3476136Ha      2.21E-02     0.0m      1
+Ef          -97.807631Ha        -0.3471153Ha      7.96E-03     0.0m      2
+Ef          -97.807692Ha        -0.3471767Ha      5.60E-03     0.0m      3
+Ef          -97.808668Ha        -0.3481523Ha      1.70E-03     0.0m      4
+Ef          -97.808682Ha        -0.3481660Ha      1.04E-03     0.0m      5
+Ef          -97.808689Ha        -0.3481732Ha      6.22E-04     0.0m      6
+Ef          -97.808961Ha        -0.3484449Ha      4.37E-04     0.0m      7
+Ef          -97.808967Ha        -0.3484511Ha      3.48E-04     0.0m      8
+Ef          -97.808967Ha        -0.3484516Ha      1.48E-04     0.0m      9
+Ef          -97.808967Ha        -0.3484510Ha      8.70E-05     0.0m     10
+Ef          -97.808968Ha        -0.3484522Ha      4.70E-05     0.0m     11
+Ef          -97.808968Ha        -0.3484523Ha      2.46E-05     0.0m     12
+Ef          -97.808968Ha        -0.3484523Ha      1.01E-05     0.0m     13
+Ef          -97.808968Ha        -0.3484523Ha      6.41E-06     0.0m     14
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.05365Ha    -1.460eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.03238Ha    -0.881eV
+
+  HOMO is orbital number    17
+  LUMO is orbital number    18
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a        -18.614192      -506.518     1.000
+    2   +   1   a        -18.613492      -506.499     1.000
+    3   +   2   a         -1.791904       -48.760     1.000
+    4   +   3   a         -1.791415       -48.747     1.000
+    5   -   2   a         -1.788427       -48.666     1.000
+    6   -   3   a         -1.787411       -48.638     1.000
+    7   +   4   a         -1.781775       -48.485     1.000
+    8   -   4   a         -1.779165       -48.414     1.000
+    9   -   5   a         -0.698043       -18.995     1.000
+   10   +   5   a         -0.696897       -18.964     1.000
+   11   +   6   a         -0.190941        -5.196     1.000
+   12   -   6   a         -0.189848        -5.166     1.000
+   13   +   7   a         -0.184590        -5.023     1.000
+   14   -   7   a         -0.183710        -4.999     1.000
+   15   +   8   a         -0.172873        -4.704     1.000
+   16   -   8   a         -0.171747        -4.673     1.000
+   17   +   9   a         -0.053648        -1.460     1.000
+   18   -   9   a         -0.032380        -0.881     0.000
+   19   +  10   a         -0.027912        -0.760     0.000
+   20   +  11   a         -0.023421        -0.637     0.000
+   21   -  10   a         -0.008570        -0.233     0.000
+   22   -  11   a          0.003952         0.108     0.000
+   23   +  12   a          0.067191         1.828     0.000
+   24   -  12   a          0.083594         2.275     0.000
+   25   +  13   a          0.086393         2.351     0.000
+   26   +  14   a          0.092460         2.516     0.000
+   27   -  13   a          0.100276         2.729     0.000
+   28   +  15   a          0.102820         2.798     0.000
+   29   -  14   a          0.104874         2.854     0.000
+   30   -  15   a          0.114712         3.121     0.000
+   31   +  16   a          0.116389         3.167     0.000
+   32   -  16   a          0.125175         3.406     0.000
+   33   +  17   a          0.171878         4.677     0.000
+   34   +  18   a          0.174692         4.754     0.000
+   35   -  17   a          0.186065         5.063     0.000
+   36   -  18   a          0.191089         5.200     0.000
+   37   +  19   a          0.345600         9.404     0.000
+   38   -  19   a          0.361137         9.827     0.000
+   39   +  20   a          0.372760        10.143     0.000
+   40   -  20   a          0.383459        10.434     0.000
+   41   +  21   a          0.460787        12.539     0.000
+   42   -  21   a          0.471772        12.838     0.000
+   43   +  22   a          0.515529        14.028     0.000
+   44   +  23   a          0.521567        14.193     0.000
+   45   -  22   a          0.525983        14.313     0.000
+   46   +  24   a          0.526821        14.336     0.000
+   47   -  23   a          0.531737        14.469     0.000
+   48   +  25   a          0.532735        14.496     0.000
+   49   -  24   a          0.537451        14.625     0.000
+   50   -  25   a          0.543532        14.790     0.000
+   51   +  26   a          0.548208        14.918     0.000
+   52   -  26   a          0.557113        15.160     0.000
+   53   +  27   a          0.602926        16.406     0.000
+   54   -  27   a          0.615004        16.735     0.000
+   55   +  28   a          0.628168        17.093     0.000
+   56   +  29   a          0.629002        17.116     0.000
+   57   -  28   a          0.635970        17.306     0.000
+   58   -  29   a          0.639390        17.399     0.000
+   59   +  30   a          0.742252        20.198     0.000
+   60   -  30   a          0.753806        20.512     0.000
+   61   +  31   a          0.754340        20.527     0.000
+   62   -  31   a          0.764439        20.801     0.000
+   63   +  32   a          0.777067        21.145     0.000
+   64   -  32   a          0.785127        21.364     0.000
+   65   +  33   a          0.788512        21.457     0.000
+   66   -  33   a          0.797700        21.707     0.000
+   67   +  34   a          0.806941        21.958     0.000
+   68   -  34   a          0.815085        22.180     0.000
+   69   +  35   a          0.964407        26.243     0.000
+   70   -  35   a          0.977268        26.593     0.000
+   71   +  36   a          1.041836        28.350     0.000
+   72   -  36   a          1.049015        28.545     0.000
+   73   +  37   a          1.092989        29.742     0.000
+   74   -  37   a          1.102067        29.989     0.000
+   75   +  38   a          1.253647        34.113     0.000
+   76   -  38   a          1.257407        34.216     0.000
+   77   +  39   a          1.411072        38.397     0.000
+   78   -  39   a          1.414466        38.490     0.000
+   79   +  40   a          1.669845        45.439     0.000
+   80   -  40   a          1.670621        45.460     0.000
+   81   +  41   a          1.704359        46.378     0.000
+   82   -  41   a          1.708656        46.495     0.000
+   83   +  42   a          1.752493        47.688     0.000
+   84   -  42   a          1.756494        47.797     0.000
+   85   +  43   a          1.973429        53.700     0.000
+   86   -  43   a          1.974263        53.722     0.000
+   87   +  44   a          2.076305        56.499     0.000
+   88   -  44   a          2.076633        56.508     0.000
+   89   +  45   a          2.268571        61.731     0.000
+   90   -  45   a          2.273192        61.857     0.000
+   91   +  46   a          2.703556        73.568     0.000
+   92   -  46   a          2.706052        73.635     0.000
+   93   +  47   a          2.750777        74.852     0.000
+   94   -  47   a          2.753087        74.915     0.000
+ 
+
+  Orbital occupation is:
+      9  a  ( 1) alpha and     8  a  ( 1) beta
+  Total number electrons:              17.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -12.441565   2.810550   0.640623     0.008383  -0.011608  -0.005905
+df   Li    -7.417728   1.334865  -0.307913     0.000689  -0.001083  -0.000735
+df   Li   -11.264517  -1.648567  -1.973007     0.017871   0.057775   0.039140
+df    O   -10.575643   0.599374  -0.433703    -0.026943  -0.045085  -0.032500
+df  binding energy      -0.3484523Ha        -9.48187eV        -218.661kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.4605158Ha
+                  Kinetic =        1.8694362Ha
+            Electrostatic =       -2.5146598Ha
+     Exchange-correlation =        0.1707496Ha
+        Spin polarization =        0.1260217Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.808968Ha        -0.3484523Ha                   0.0m     15
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.012133 Ha
+    Actual energy change =  -0.018328 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -6.583792            1.487279            0.339003
+            2    Li           -3.925293            0.706380           -0.162940
+            3    Li           -5.960926           -0.872384           -1.044070
+            4    O            -5.596389            0.317175           -0.229506
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+ Geometry optimization: predicted energy change is  -0.007170 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.231526
+ Norm of Displacement of Cartesian Coordinates:     0.447592
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    2       -97.8089681     -0.0183277        0.057775       0.336095
+
+ 
+                      Step    2                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.183277E-01 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.577751E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.336095E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.803823Ha        -0.3433068Ha      2.52E-02     0.0m      1
+Ef          -97.817352Ha        -0.3568366Ha      1.03E-02     0.0m      2
+Ef          -97.817214Ha        -0.3566986Ha      7.65E-03     0.0m      3
+Ef          -97.818178Ha        -0.3576624Ha      2.48E-03     0.0m      4
+Ef          -97.818295Ha        -0.3577792Ha      1.40E-03     0.0m      5
+Ef          -97.818105Ha        -0.3575896Ha      8.81E-04     0.0m      6
+Ef          -97.818233Ha        -0.3577172Ha      4.54E-04     0.0m      7
+Ef          -97.818367Ha        -0.3578511Ha      3.44E-04     0.0m      8
+Ef          -97.818372Ha        -0.3578565Ha      2.69E-04     0.0m      9
+Ef          -97.818372Ha        -0.3578560Ha      9.39E-05     0.0m     10
+Ef          -97.818373Ha        -0.3578573Ha      5.62E-05     0.0m     11
+Ef          -97.818373Ha        -0.3578574Ha      2.82E-05     0.0m     12
+Ef          -97.818373Ha        -0.3578574Ha      1.59E-05     0.0m     13
+Ef          -97.818373Ha        -0.3578574Ha      8.58E-06     0.0m     14
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.05686Ha    -1.547eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.03440Ha    -0.936eV
+
+  HOMO is orbital number    17
+  LUMO is orbital number    18
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a        -18.616818      -506.590     1.000
+    2   +   1   a        -18.616186      -506.572     1.000
+    3   +   2   a         -1.794741       -48.837     1.000
+    4   +   3   a         -1.792366       -48.773     1.000
+    5   -   2   a         -1.791317       -48.744     1.000
+    6   +   4   a         -1.789402       -48.692     1.000
+    7   -   3   a         -1.788597       -48.670     1.000
+    8   -   4   a         -1.786495       -48.613     1.000
+    9   -   5   a         -0.691912       -18.828     1.000
+   10   +   5   a         -0.690867       -18.799     1.000
+   11   +   6   a         -0.182634        -4.970     1.000
+   12   -   6   a         -0.181754        -4.946     1.000
+   13   +   7   a         -0.180808        -4.920     1.000
+   14   -   7   a         -0.179944        -4.897     1.000
+   15   +   8   a         -0.166012        -4.517     1.000
+   16   -   8   a         -0.164442        -4.475     1.000
+   17   +   9   a         -0.056858        -1.547     1.000
+   18   -   9   a         -0.034397        -0.936     0.000
+   19   +  10   a         -0.028410        -0.773     0.000
+   20   +  11   a         -0.025696        -0.699     0.000
+   21   -  10   a         -0.007363        -0.200     0.000
+   22   -  11   a          0.000955         0.026     0.000
+   23   +  12   a          0.062333         1.696     0.000
+   24   +  13   a          0.073554         2.002     0.000
+   25   -  12   a          0.077977         2.122     0.000
+   26   +  14   a          0.085700         2.332     0.000
+   27   -  13   a          0.087563         2.383     0.000
+   28   -  14   a          0.097062         2.641     0.000
+   29   +  15   a          0.110976         3.020     0.000
+   30   +  16   a          0.116238         3.163     0.000
+   31   -  15   a          0.122844         3.343     0.000
+   32   -  16   a          0.129047         3.512     0.000
+   33   +  17   a          0.169571         4.614     0.000
+   34   +  18   a          0.171687         4.672     0.000
+   35   -  17   a          0.183304         4.988     0.000
+   36   -  18   a          0.188137         5.119     0.000
+   37   +  19   a          0.347233         9.449     0.000
+   38   +  20   a          0.359037         9.770     0.000
+   39   -  19   a          0.361784         9.845     0.000
+   40   -  20   a          0.371430        10.107     0.000
+   41   +  21   a          0.462863        12.595     0.000
+   42   -  21   a          0.474084        12.900     0.000
+   43   +  22   a          0.505816        13.764     0.000
+   44   +  23   a          0.509198        13.856     0.000
+   45   -  22   a          0.514723        14.006     0.000
+   46   -  23   a          0.518448        14.108     0.000
+   47   +  24   a          0.530079        14.424     0.000
+   48   -  24   a          0.538320        14.648     0.000
+   49   +  25   a          0.540539        14.709     0.000
+   50   +  26   a          0.544219        14.809     0.000
+   51   -  25   a          0.552325        15.030     0.000
+   52   -  26   a          0.556286        15.137     0.000
+   53   +  27   a          0.598822        16.295     0.000
+   54   -  27   a          0.610426        16.611     0.000
+   55   +  28   a          0.611590        16.642     0.000
+   56   +  29   a          0.619505        16.858     0.000
+   57   -  28   a          0.621655        16.916     0.000
+   58   -  29   a          0.628111        17.092     0.000
+   59   +  30   a          0.737597        20.071     0.000
+   60   +  31   a          0.748610        20.371     0.000
+   61   -  30   a          0.749298        20.389     0.000
+   62   -  31   a          0.759466        20.666     0.000
+   63   +  32   a          0.771485        20.993     0.000
+   64   -  32   a          0.781714        21.272     0.000
+   65   +  33   a          0.801513        21.810     0.000
+   66   -  33   a          0.808751        22.007     0.000
+   67   +  34   a          0.823615        22.412     0.000
+   68   -  34   a          0.831796        22.634     0.000
+   69   +  35   a          0.926476        25.211     0.000
+   70   -  35   a          0.938072        25.526     0.000
+   71   +  36   a          1.042398        28.365     0.000
+   72   -  36   a          1.049041        28.546     0.000
+   73   +  37   a          1.077250        29.313     0.000
+   74   -  37   a          1.086563        29.567     0.000
+   75   +  38   a          1.145692        31.176     0.000
+   76   -  38   a          1.151687        31.339     0.000
+   77   +  39   a          1.254859        34.146     0.000
+   78   -  39   a          1.258523        34.246     0.000
+   79   +  40   a          1.617518        44.015     0.000
+   80   -  40   a          1.621055        44.111     0.000
+   81   +  41   a          1.643191        44.714     0.000
+   82   -  41   a          1.646861        44.813     0.000
+   83   +  42   a          1.791045        48.737     0.000
+   84   -  42   a          1.792579        48.779     0.000
+   85   +  43   a          2.011081        54.724     0.000
+   86   -  43   a          2.012015        54.750     0.000
+   87   +  44   a          2.041647        55.556     0.000
+   88   -  44   a          2.042681        55.584     0.000
+   89   +  45   a          2.277369        61.970     0.000
+   90   -  45   a          2.281146        62.073     0.000
+   91   +  46   a          2.693923        73.305     0.000
+   92   -  46   a          2.696474        73.375     0.000
+   93   +  47   a          2.754634        74.957     0.000
+   94   -  47   a          2.756741        75.015     0.000
+ 
+
+  Orbital occupation is:
+      9  a  ( 1) alpha and     8  a  ( 1) beta
+  Total number electrons:              17.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -12.425126   2.881339   0.531089     0.002495  -0.003639  -0.001195
+df   Li    -7.456494   1.407320  -0.375464    -0.000813  -0.000342  -0.000543
+df   Li   -11.304149  -1.625767  -2.132017     0.007721   0.020040   0.018764
+df    O   -10.513683   0.433330  -0.097608    -0.009403  -0.016060  -0.017027
+df  binding energy      -0.3578574Ha        -9.73780eV        -224.563kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.4605158Ha
+                  Kinetic =        1.8883615Ha
+            Electrostatic =       -2.5336354Ha
+     Exchange-correlation =        0.1613948Ha
+        Spin polarization =        0.1260217Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.818373Ha        -0.3578574Ha                   0.0m     15
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.007170 Ha
+    Actual energy change =  -0.009405 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -6.575093            1.524739            0.281040
+            2    Li           -3.945807            0.744722           -0.198687
+            3    Li           -5.981898           -0.860319           -1.128215
+            4    O            -5.563602            0.229309           -0.051652
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+ Geometry optimization: predicted energy change is  -0.001899 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.381064
+ Norm of Displacement of Cartesian Coordinates:     0.518995
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    3       -97.8183733     -0.0094052        0.020040       0.318861
+
+ 
+                      Step    3                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.940516E-02 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.200402E-01 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.318861E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.806868Ha        -0.3463517Ha      1.55E-02     0.0m      1
+Ef          -97.818530Ha        -0.3580143Ha      8.36E-03     0.0m      2
+Ef          -97.817290Ha        -0.3567741Ha      6.48E-03     0.0m      3
+Ef          -97.819523Ha        -0.3590075Ha      3.90E-03     0.0m      4
+Ef          -97.819463Ha        -0.3589469Ha      1.55E-03     0.0m      5
+Ef          -97.819838Ha        -0.3593223Ha      1.06E-03     0.1m      6
+Ef          -97.819862Ha        -0.3593466Ha      6.75E-04     0.1m      7
+Ef          -97.820242Ha        -0.3597266Ha      6.46E-04     0.1m      8
+Ef          -97.820288Ha        -0.3597717Ha      6.85E-04     0.1m      9
+Ef          -97.820349Ha        -0.3598329Ha      6.49E-04     0.1m     10
+Ef          -97.820409Ha        -0.3598934Ha      6.41E-04     0.1m     11
+Ef          -97.820380Ha        -0.3598647Ha      6.32E-04     0.1m     12
+Ef          -97.820337Ha        -0.3598213Ha      6.97E-04     0.1m     13
+Ef          -97.820505Ha        -0.3599892Ha      4.36E-04     0.1m     14
+Ef          -97.820573Ha        -0.3600568Ha      3.95E-04     0.1m     15
+Ef          -97.820611Ha        -0.3600949Ha      2.67E-04     0.1m     16
+Ef          -97.820613Ha        -0.3600976Ha      1.58E-04     0.1m     17
+Ef          -97.820613Ha        -0.3600974Ha      9.35E-05     0.1m     18
+Ef          -97.820614Ha        -0.3600977Ha      4.96E-05     0.1m     19
+Ef          -97.820614Ha        -0.3600981Ha      2.04E-05     0.1m     20
+Ef          -97.820614Ha        -0.3600981Ha      1.09E-05     0.1m     21
+Ef          -97.820614Ha        -0.3600981Ha      8.34E-06     0.1m     22
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.05248Ha    -1.428eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.03027Ha    -0.824eV
+
+  HOMO is orbital number    17
+  LUMO is orbital number    18
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a        -18.616121      -506.571     1.000
+    2   +   1   a        -18.615300      -506.548     1.000
+    3   +   2   a         -1.794566       -48.833     1.000
+    4   +   3   a         -1.791599       -48.752     1.000
+    5   -   2   a         -1.791081       -48.738     1.000
+    6   +   4   a         -1.789726       -48.701     1.000
+    7   -   3   a         -1.787956       -48.653     1.000
+    8   -   4   a         -1.786469       -48.612     1.000
+    9   -   5   a         -0.687398       -18.705     1.000
+   10   +   5   a         -0.685998       -18.667     1.000
+   11   +   6   a         -0.179397        -4.882     1.000
+   12   -   6   a         -0.178596        -4.860     1.000
+   13   +   7   a         -0.177853        -4.840     1.000
+   14   -   7   a         -0.177106        -4.819     1.000
+   15   +   8   a         -0.159695        -4.346     1.000
+   16   -   8   a         -0.158737        -4.319     1.000
+   17   +   9   a         -0.052482        -1.428     1.000
+   18   -   9   a         -0.030273        -0.824     0.000
+   19   +  10   a         -0.028139        -0.766     0.000
+   20   +  11   a         -0.025961        -0.706     0.000
+   21   -  10   a         -0.004553        -0.124     0.000
+   22   -  11   a         -0.000831        -0.023     0.000
+   23   +  12   a          0.071353         1.942     0.000
+   24   +  13   a          0.076720         2.088     0.000
+   25   -  12   a          0.086856         2.363     0.000
+   26   -  13   a          0.091407         2.487     0.000
+   27   +  14   a          0.095568         2.601     0.000
+   28   +  15   a          0.100058         2.723     0.000
+   29   +  16   a          0.104598         2.846     0.000
+   30   -  14   a          0.106069         2.886     0.000
+   31   -  15   a          0.111887         3.045     0.000
+   32   -  16   a          0.115844         3.152     0.000
+   33   +  17   a          0.160579         4.370     0.000
+   34   +  18   a          0.166195         4.522     0.000
+   35   -  17   a          0.174862         4.758     0.000
+   36   -  18   a          0.183217         4.986     0.000
+   37   +  19   a          0.333465         9.074     0.000
+   38   +  20   a          0.343562         9.349     0.000
+   39   -  19   a          0.348372         9.480     0.000
+   40   -  20   a          0.357246         9.721     0.000
+   41   +  21   a          0.470069        12.791     0.000
+   42   -  21   a          0.479812        13.056     0.000
+   43   +  22   a          0.518135        14.099     0.000
+   44   +  23   a          0.521638        14.194     0.000
+   45   -  22   a          0.526985        14.340     0.000
+   46   +  24   a          0.526994        14.340     0.000
+   47   -  23   a          0.530306        14.430     0.000
+   48   +  25   a          0.531098        14.452     0.000
+   49   -  24   a          0.538537        14.654     0.000
+   50   -  25   a          0.542782        14.770     0.000
+   51   +  26   a          0.546469        14.870     0.000
+   52   -  26   a          0.556120        15.133     0.000
+   53   +  27   a          0.598595        16.289     0.000
+   54   +  28   a          0.605511        16.477     0.000
+   55   -  27   a          0.609995        16.599     0.000
+   56   +  29   a          0.614901        16.732     0.000
+   57   -  28   a          0.616295        16.770     0.000
+   58   -  29   a          0.622512        16.939     0.000
+   59   +  30   a          0.723362        19.684     0.000
+   60   -  30   a          0.735194        20.006     0.000
+   61   +  31   a          0.741803        20.185     0.000
+   62   -  31   a          0.752207        20.469     0.000
+   63   +  32   a          0.756846        20.595     0.000
+   64   +  33   a          0.758562        20.642     0.000
+   65   -  32   a          0.766347        20.853     0.000
+   66   -  33   a          0.768121        20.902     0.000
+   67   +  34   a          0.770784        20.974     0.000
+   68   -  34   a          0.779555        21.213     0.000
+   69   +  35   a          0.937306        25.505     0.000
+   70   -  35   a          0.950001        25.851     0.000
+   71   +  36   a          0.998382        27.167     0.000
+   72   -  36   a          1.006026        27.375     0.000
+   73   +  37   a          1.081389        29.426     0.000
+   74   -  37   a          1.090513        29.674     0.000
+   75   +  38   a          1.120238        30.483     0.000
+   76   -  38   a          1.127655        30.685     0.000
+   77   +  39   a          1.382265        37.613     0.000
+   78   -  39   a          1.385867        37.711     0.000
+   79   +  40   a          1.642203        44.687     0.000
+   80   -  40   a          1.642665        44.699     0.000
+   81   +  41   a          1.682137        45.773     0.000
+   82   -  41   a          1.686292        45.886     0.000
+   83   +  42   a          1.710362        46.541     0.000
+   84   -  42   a          1.714406        46.651     0.000
+   85   +  43   a          1.975392        53.753     0.000
+   86   -  43   a          1.975852        53.766     0.000
+   87   +  44   a          2.000128        54.426     0.000
+   88   -  44   a          2.000459        54.435     0.000
+   89   +  45   a          2.301951        62.639     0.000
+   90   -  45   a          2.306381        62.760     0.000
+   91   +  46   a          2.679779        72.921     0.000
+   92   -  46   a          2.681987        72.981     0.000
+   93   +  47   a          2.717629        73.950     0.000
+   94   -  47   a          2.719736        74.008     0.000
+ 
+
+  Orbital occupation is:
+      9  a  ( 1) alpha and     8  a  ( 1) beta
+  Total number electrons:              17.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -12.546279   2.861370   0.678048    -0.000571   0.000055   0.000385
+df   Li    -7.329068   1.332045  -0.266991     0.000382  -0.000445  -0.000403
+df   Li   -11.356620  -1.782954  -2.068589     0.003671   0.009081   0.005782
+df    O   -10.467486   0.685761  -0.416468    -0.003482  -0.008691  -0.005763
+df  binding energy      -0.3600981Ha        -9.79877eV        -225.969kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.4605158Ha
+                  Kinetic =        1.9294355Ha
+            Electrostatic =       -2.5720762Ha
+     Exchange-correlation =        0.1565208Ha
+        Spin polarization =        0.1260217Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.820614Ha        -0.3600981Ha                   0.1m     23
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.001899 Ha
+    Actual energy change =  -0.002241 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -6.639205            1.514172            0.358808
+            2    Li           -3.878376            0.704888           -0.141285
+            3    Li           -6.009664           -0.943499           -1.094650
+            4    O            -5.539155            0.362889           -0.220386
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+ Geometry optimization: predicted energy change is  -0.000992 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.566918
+ Norm of Displacement of Cartesian Coordinates:     0.826696
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    4       -97.8206139     -0.0022407        0.009081       0.470215
+
+ 
+                      Step    4                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.224066E-02 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.908073E-02 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.470215E+00 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.782205Ha        -0.3216891Ha      1.96E-02     0.1m      1
+Ef          -97.818104Ha        -0.3575881Ha      1.21E-02     0.1m      2
+Ef          -97.814038Ha        -0.3535222Ha      9.39E-03     0.1m      3
+Ef          -97.816166Ha        -0.3556500Ha      5.74E-03     0.1m      4
+Ef          -97.820025Ha        -0.3595090Ha      3.47E-03     0.1m      5
+Ef          -97.819600Ha        -0.3590839Ha      1.88E-03     0.1m      6
+Ef          -97.819680Ha        -0.3591640Ha      1.18E-03     0.1m      7
+Ef          -97.819960Ha        -0.3594442Ha      9.80E-04     0.1m      8
+Ef          -97.820120Ha        -0.3596038Ha      5.21E-04     0.1m      9
+Ef          -97.820276Ha        -0.3597598Ha      4.70E-04     0.1m     10
+Ef          -97.820277Ha        -0.3597614Ha      3.31E-04     0.1m     11
+Ef          -97.820279Ha        -0.3597630Ha      1.27E-04     0.1m     12
+Ef          -97.820280Ha        -0.3597637Ha      8.63E-05     0.1m     13
+Ef          -97.820279Ha        -0.3597634Ha      3.74E-05     0.1m     14
+Ef          -97.820280Ha        -0.3597637Ha      2.49E-05     0.1m     15
+Ef          -97.820280Ha        -0.3597638Ha      1.68E-05     0.1m     16
+Ef          -97.820280Ha        -0.3597637Ha      3.92E-06     0.1m     17
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.05983Ha    -1.628eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.03583Ha    -0.975eV
+
+  HOMO is orbital number    17
+  LUMO is orbital number    18
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a        -18.618136      -506.625     1.000
+    2   +   1   a        -18.617648      -506.612     1.000
+    3   +   2   a         -1.802164       -49.039     1.000
+    4   -   2   a         -1.799090       -48.956     1.000
+    5   +   3   a         -1.796415       -48.883     1.000
+    6   -   3   a         -1.793181       -48.795     1.000
+    7   +   4   a         -1.790109       -48.711     1.000
+    8   -   4   a         -1.786364       -48.609     1.000
+    9   -   5   a         -0.685146       -18.644     1.000
+   10   +   5   a         -0.684361       -18.622     1.000
+   11   +   6   a         -0.177097        -4.819     1.000
+   12   -   6   a         -0.176304        -4.797     1.000
+   13   +   7   a         -0.173422        -4.719     1.000
+   14   -   7   a         -0.172543        -4.695     1.000
+   15   +   8   a         -0.160107        -4.357     1.000
+   16   -   8   a         -0.157993        -4.299     1.000
+   17   +   9   a         -0.059835        -1.628     1.000
+   18   -   9   a         -0.035830        -0.975     0.000
+   19   +  10   a         -0.031872        -0.867     0.000
+   20   +  11   a         -0.023670        -0.644     0.000
+   21   -  10   a         -0.008834        -0.240     0.000
+   22   -  11   a          0.002550         0.069     0.000
+   23   +  12   a          0.054793         1.491     0.000
+   24   -  12   a          0.070412         1.916     0.000
+   25   +  13   a          0.071109         1.935     0.000
+   26   +  14   a          0.076542         2.083     0.000
+   27   -  13   a          0.084963         2.312     0.000
+   28   -  14   a          0.088323         2.403     0.000
+   29   +  15   a          0.108698         2.958     0.000
+   30   -  15   a          0.120790         3.287     0.000
+   31   +  16   a          0.124089         3.377     0.000
+   32   -  16   a          0.137786         3.749     0.000
+   33   +  17   a          0.167843         4.567     0.000
+   34   +  18   a          0.169515         4.613     0.000
+   35   -  17   a          0.183353         4.989     0.000
+   36   -  18   a          0.184445         5.019     0.000
+   37   +  19   a          0.338051         9.199     0.000
+   38   -  19   a          0.351585         9.567     0.000
+   39   +  20   a          0.357915         9.739     0.000
+   40   -  20   a          0.371435        10.107     0.000
+   41   +  21   a          0.463270        12.606     0.000
+   42   -  21   a          0.474832        12.921     0.000
+   43   +  22   a          0.495850        13.493     0.000
+   44   -  22   a          0.503859        13.711     0.000
+   45   +  23   a          0.509213        13.856     0.000
+   46   +  24   a          0.513920        13.984     0.000
+   47   -  23   a          0.517820        14.091     0.000
+   48   -  24   a          0.522286        14.212     0.000
+   49   +  25   a          0.538568        14.655     0.000
+   50   -  25   a          0.551432        15.005     0.000
+   51   +  26   a          0.554281        15.083     0.000
+   52   -  26   a          0.566758        15.422     0.000
+   53   +  27   a          0.598670        16.291     0.000
+   54   +  28   a          0.600768        16.348     0.000
+   55   -  27   a          0.608948        16.570     0.000
+   56   -  28   a          0.610290        16.607     0.000
+   57   +  29   a          0.615629        16.752     0.000
+   58   -  29   a          0.626243        17.041     0.000
+   59   +  30   a          0.714676        19.447     0.000
+   60   -  30   a          0.725608        19.745     0.000
+   61   +  31   a          0.738878        20.106     0.000
+   62   -  31   a          0.750801        20.430     0.000
+   63   +  32   a          0.788062        21.444     0.000
+   64   -  32   a          0.798036        21.716     0.000
+   65   +  33   a          0.803069        21.853     0.000
+   66   -  33   a          0.811112        22.071     0.000
+   67   +  34   a          0.849074        23.104     0.000
+   68   -  34   a          0.856928        23.318     0.000
+   69   +  35   a          0.885026        24.083     0.000
+   70   -  35   a          0.896117        24.385     0.000
+   71   +  36   a          1.045468        28.449     0.000
+   72   -  36   a          1.052367        28.636     0.000
+   73   +  37   a          1.061875        28.895     0.000
+   74   -  37   a          1.071356        29.153     0.000
+   75   +  38   a          1.089413        29.644     0.000
+   76   -  38   a          1.096314        29.832     0.000
+   77   +  39   a          1.164886        31.698     0.000
+   78   -  39   a          1.169566        31.826     0.000
+   79   +  40   a          1.521563        41.404     0.000
+   80   -  40   a          1.525019        41.498     0.000
+   81   +  41   a          1.591999        43.321     0.000
+   82   -  41   a          1.595274        43.410     0.000
+   83   +  42   a          1.833620        49.895     0.000
+   84   -  42   a          1.835307        49.941     0.000
+   85   +  43   a          1.991356        54.188     0.000
+   86   -  43   a          1.992305        54.213     0.000
+   87   +  44   a          2.029167        55.216     0.000
+   88   -  44   a          2.030441        55.251     0.000
+   89   +  45   a          2.258908        61.468     0.000
+   90   -  45   a          2.262392        61.563     0.000
+   91   +  46   a          2.678064        72.874     0.000
+   92   -  46   a          2.680244        72.933     0.000
+   93   +  47   a          2.688851        73.167     0.000
+   94   -  47   a          2.691196        73.231     0.000
+ 
+
+  Orbital occupation is:
+      9  a  ( 1) alpha and     8  a  ( 1) beta
+  Total number electrons:              17.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -12.334343   2.846544   0.363580    -0.000143   0.000776  -0.000798
+df   Li    -7.458019   1.598638  -0.285515    -0.001602   0.000254  -0.000221
+df   Li   -11.551379  -1.654568  -2.205811    -0.001435  -0.001420  -0.002159
+df    O   -10.355712   0.305609   0.053747     0.003179   0.000390   0.003177
+df  binding energy      -0.3597637Ha        -9.78967eV        -225.760kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.4605158Ha
+                  Kinetic =        1.9096015Ha
+            Electrostatic =       -2.5492413Ha
+     Exchange-correlation =        0.1538544Ha
+        Spin polarization =        0.1260217Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.820280Ha        -0.3597637Ha                   0.1m     18
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.000992 Ha
+    Actual energy change =   0.000334 Ha
+     Rejection threshold =   0.000200 Ha
+ 
+ Warning: Energy went up too far during optimization. 
+          Dismissing last step and starting in new search direction.
+ 
+  
+
+*** OPTIMIZATION USES DELOCALIZED INTERNALS ***
+
+ The preliminary size of active space is :       6
+ There are :            6  degrees of freedom
+ There are likely:      6  primitive internals
+
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   2 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.000578 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.113384
+ Norm of Displacement of Cartesian Coordinates:     0.131141
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.770072Ha        -0.3095561Ha      1.57E-02     0.1m      1
+Ef          -97.817246Ha        -0.3567298Ha      1.30E-02     0.1m      2
+Ef          -97.812646Ha        -0.3521298Ha      9.32E-03     0.1m      3
+Ef          -97.816086Ha        -0.3555700Ha      6.10E-03     0.1m      4
+Ef          -97.818762Ha        -0.3582459Ha      3.60E-03     0.1m      5
+Ef          -97.817319Ha        -0.3568032Ha      2.02E-03     0.1m      6
+Ef          -97.817769Ha        -0.3572528Ha      1.26E-03     0.1m      7
+Ef          -97.818839Ha        -0.3583235Ha      1.11E-03     0.1m      8
+Ef          -97.819190Ha        -0.3586742Ha      1.02E-03     0.1m      9
+Ef          -97.819752Ha        -0.3592366Ha      9.37E-04     0.1m     10
+Ef          -97.819844Ha        -0.3593286Ha      9.56E-04     0.1m     11
+Ef          -97.819846Ha        -0.3593303Ha      8.81E-04     0.1m     12
+Ef          -97.820090Ha        -0.3595745Ha      8.16E-04     0.1m     13
+Ef          -97.820226Ha        -0.3597104Ha      7.00E-04     0.1m     14
+Ef          -97.820544Ha        -0.3600286Ha      6.50E-04     0.1m     15
+Ef          -97.820643Ha        -0.3601269Ha      5.41E-04     0.1m     16
+Ef          -97.820674Ha        -0.3601584Ha      3.44E-04     0.1m     17
+Ef          -97.820773Ha        -0.3602568Ha      2.49E-04     0.1m     18
+Ef          -97.820774Ha        -0.3602581Ha      2.26E-04     0.1m     19
+Ef          -97.820776Ha        -0.3602605Ha      8.03E-05     0.1m     20
+Ef          -97.820777Ha        -0.3602607Ha      3.60E-05     0.1m     21
+Ef          -97.820777Ha        -0.3602608Ha      2.12E-05     0.1m     22
+Ef          -97.820777Ha        -0.3602608Ha      1.36E-05     0.1m     23
+Ef          -97.820777Ha        -0.3602609Ha      8.58E-06     0.1m     24
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.05223Ha    -1.421eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.03008Ha    -0.819eV
+
+  HOMO is orbital number    17
+  LUMO is orbital number    18
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a        -18.616068      -506.569     1.000
+    2   +   1   a        -18.615245      -506.547     1.000
+    3   +   2   a         -1.792392       -48.773     1.000
+    4   +   3   a         -1.791833       -48.758     1.000
+    5   +   4   a         -1.791574       -48.751     1.000
+    6   -   2   a         -1.788910       -48.679     1.000
+    7   -   3   a         -1.788514       -48.668     1.000
+    8   -   4   a         -1.787983       -48.654     1.000
+    9   -   5   a         -0.687178       -18.699     1.000
+   10   +   5   a         -0.685773       -18.661     1.000
+   11   +   6   a         -0.178637        -4.861     1.000
+   12   +   7   a         -0.178364        -4.854     1.000
+   13   -   6   a         -0.177848        -4.840     1.000
+   14   -   7   a         -0.177594        -4.833     1.000
+   15   +   8   a         -0.159392        -4.337     1.000
+   16   -   8   a         -0.158464        -4.312     1.000
+   17   +   9   a         -0.052228        -1.421     1.000
+   18   -   9   a         -0.030081        -0.819     0.000
+   19   +  10   a         -0.027391        -0.745     0.000
+   20   +  11   a         -0.026551        -0.722     0.000
+   21   -  10   a         -0.005043        -0.137     0.000
+   22   -  11   a         -0.000085        -0.002     0.000
+   23   +  12   a          0.071023         1.933     0.000
+   24   +  13   a          0.078072         2.124     0.000
+   25   -  12   a          0.086803         2.362     0.000
+   26   -  13   a          0.092519         2.518     0.000
+   27   +  14   a          0.095415         2.596     0.000
+   28   +  15   a          0.101609         2.765     0.000
+   29   +  16   a          0.102519         2.790     0.000
+   30   -  14   a          0.106365         2.894     0.000
+   31   -  15   a          0.112154         3.052     0.000
+   32   -  16   a          0.114379         3.112     0.000
+   33   +  17   a          0.160084         4.356     0.000
+   34   +  18   a          0.165997         4.517     0.000
+   35   -  17   a          0.174422         4.746     0.000
+   36   -  18   a          0.183055         4.981     0.000
+   37   +  19   a          0.336364         9.153     0.000
+   38   +  20   a          0.339314         9.233     0.000
+   39   -  19   a          0.351327         9.560     0.000
+   40   -  20   a          0.353009         9.606     0.000
+   41   +  21   a          0.470434        12.801     0.000
+   42   -  21   a          0.480121        13.065     0.000
+   43   +  22   a          0.520955        14.176     0.000
+   44   +  23   a          0.522573        14.220     0.000
+   45   +  24   a          0.526802        14.335     0.000
+   46   +  25   a          0.527929        14.366     0.000
+   47   -  22   a          0.529568        14.410     0.000
+   48   -  23   a          0.530690        14.441     0.000
+   49   -  24   a          0.538746        14.660     0.000
+   50   -  25   a          0.539882        14.691     0.000
+   51   +  26   a          0.546872        14.881     0.000
+   52   -  26   a          0.556633        15.147     0.000
+   53   +  27   a          0.598538        16.287     0.000
+   54   +  28   a          0.605837        16.486     0.000
+   55   -  27   a          0.610010        16.599     0.000
+   56   +  29   a          0.614672        16.726     0.000
+   57   -  28   a          0.616571        16.778     0.000
+   58   -  29   a          0.622232        16.932     0.000
+   59   +  30   a          0.723353        19.683     0.000
+   60   -  30   a          0.735185        20.005     0.000
+   61   +  31   a          0.743125        20.221     0.000
+   62   -  31   a          0.753713        20.510     0.000
+   63   +  32   a          0.755850        20.568     0.000
+   64   +  33   a          0.757798        20.621     0.000
+   65   -  32   a          0.764031        20.790     0.000
+   66   +  34   a          0.765323        20.826     0.000
+   67   -  33   a          0.768069        20.900     0.000
+   68   -  34   a          0.774445        21.074     0.000
+   69   +  35   a          0.937903        25.522     0.000
+   70   -  35   a          0.950652        25.869     0.000
+   71   +  36   a          0.995838        27.098     0.000
+   72   -  36   a          1.003612        27.310     0.000
+   73   +  37   a          1.080058        29.390     0.000
+   74   -  37   a          1.089331        29.642     0.000
+   75   +  38   a          1.120497        30.490     0.000
+   76   -  38   a          1.127797        30.689     0.000
+   77   +  39   a          1.396361        37.997     0.000
+   78   -  39   a          1.400087        38.098     0.000
+   79   +  40   a          1.628803        44.322     0.000
+   80   -  40   a          1.629088        44.330     0.000
+   81   +  41   a          1.697644        46.195     0.000
+   82   -  41   a          1.701755        46.307     0.000
+   83   +  42   a          1.702260        46.321     0.000
+   84   -  42   a          1.706429        46.434     0.000
+   85   +  43   a          1.970403        53.617     0.000
+   86   -  43   a          1.970827        53.629     0.000
+   87   +  44   a          1.999696        54.415     0.000
+   88   -  44   a          1.999971        54.422     0.000
+   89   +  45   a          2.303227        62.674     0.000
+   90   -  45   a          2.307707        62.796     0.000
+   91   +  46   a          2.687935        73.142     0.000
+   92   -  46   a          2.690163        73.203     0.000
+   93   +  47   a          2.706315        73.643     0.000
+   94   -  47   a          2.708392        73.699     0.000
+ 
+
+  Orbital occupation is:
+      9  a  ( 1) alpha and     8  a  ( 1) beta
+  Total number electrons:              17.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -12.506810   2.843815   0.694125    -0.000304  -0.000308  -0.000092
+df   Li    -7.332764   1.375873  -0.213826     0.000312  -0.000288  -0.000211
+df   Li   -11.405786  -1.817440  -2.058144     0.003362   0.007982   0.004855
+df    O   -10.454092   0.693975  -0.496155    -0.003370  -0.007385  -0.004552
+df  binding energy      -0.3602609Ha        -9.80320eV        -226.072kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.4605158Ha
+                  Kinetic =        1.9315191Ha
+            Electrostatic =       -2.5741401Ha
+     Exchange-correlation =        0.1563384Ha
+        Spin polarization =        0.1260217Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.820777Ha        -0.3602609Ha                   0.1m     25
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.000578 Ha
+    Actual energy change =  -0.000163 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -6.618319            1.504882            0.367315
+            2    Li           -3.880332            0.728080           -0.113152
+            3    Li           -6.035682           -0.961748           -1.089123
+            4    O            -5.532067            0.367236           -0.262554
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+   Warning: Magnitude of eigenvalue   2 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.001161 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+
+Warning: Exceeded allowed number of iterative cycles in get_card
+   an internal coordinate may have approached 180 degrees,
+   new set of delocalized internals will be generated
+  Warning: Backtransformation failed
+  Message: New Coordinates will be constructed
+  
+
+*** OPTIMIZATION USES DELOCALIZED INTERNALS ***
+
+ The preliminary size of active space is :       6
+ There are :            6  degrees of freedom
+ There are likely:     30  primitive internals
+
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.000204 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.092439
+ Norm of Displacement of Cartesian Coordinates:     0.055644
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    5       -97.8207767     -0.0001628        0.007982       0.032183
+
+ 
+                      Step    5                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.162772E-03 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.798211E-02 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.321827E-01 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.821026Ha        -0.3605099Ha      4.17E-03     0.1m      1
+Ef          -97.819510Ha        -0.3589940Ha      2.82E-03     0.1m      2
+Ef          -97.820134Ha        -0.3596182Ha      1.84E-03     0.1m      3
+Ef          -97.820649Ha        -0.3601333Ha      1.05E-03     0.1m      4
+Ef          -97.820888Ha        -0.3603718Ha      6.75E-04     0.1m      5
+Ef          -97.820927Ha        -0.3604109Ha      4.06E-04     0.1m      6
+Ef          -97.821057Ha        -0.3605414Ha      3.04E-04     0.1m      7
+Ef          -97.821071Ha        -0.3605549Ha      2.99E-04     0.1m      8
+Ef          -97.821078Ha        -0.3605619Ha      1.58E-04     0.1m      9
+Ef          -97.821078Ha        -0.3605620Ha      7.50E-05     0.1m     10
+Ef          -97.821078Ha        -0.3605620Ha      4.61E-05     0.1m     11
+Ef          -97.821078Ha        -0.3605620Ha      2.87E-05     0.1m     12
+Ef          -97.821078Ha        -0.3605620Ha      1.51E-05     0.1m     13
+Ef          -97.821078Ha        -0.3605620Ha      1.02E-05     0.1m     14
+Ef          -97.821078Ha        -0.3605621Ha      5.66E-06     0.1m     15
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.05217Ha    -1.420eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.02989Ha    -0.813eV
+
+  HOMO is orbital number    17
+  LUMO is orbital number    18
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a        -18.616129      -506.571     1.000
+    2   +   1   a        -18.615303      -506.548     1.000
+    3   +   2   a         -1.794046       -48.818     1.000
+    4   +   3   a         -1.791704       -48.755     1.000
+    5   +   4   a         -1.791318       -48.744     1.000
+    6   -   2   a         -1.790831       -48.731     1.000
+    7   -   3   a         -1.788117       -48.657     1.000
+    8   -   4   a         -1.787709       -48.646     1.000
+    9   -   5   a         -0.686080       -18.669     1.000
+   10   +   5   a         -0.684666       -18.631     1.000
+   11   +   6   a         -0.177974        -4.843     1.000
+   12   -   6   a         -0.177209        -4.822     1.000
+   13   +   7   a         -0.177168        -4.821     1.000
+   14   -   7   a         -0.176397        -4.800     1.000
+   15   +   8   a         -0.158174        -4.304     1.000
+   16   -   8   a         -0.157264        -4.279     1.000
+   17   +   9   a         -0.052175        -1.420     1.000
+   18   -   9   a         -0.029886        -0.813     0.000
+   19   +  10   a         -0.028076        -0.764     0.000
+   20   +  11   a         -0.026013        -0.708     0.000
+   21   -  10   a         -0.005185        -0.141     0.000
+   22   -  11   a          0.000145         0.004     0.000
+   23   +  12   a          0.070455         1.917     0.000
+   24   +  13   a          0.078140         2.126     0.000
+   25   -  12   a          0.086223         2.346     0.000
+   26   -  13   a          0.092546         2.518     0.000
+   27   +  14   a          0.095389         2.596     0.000
+   28   +  15   a          0.100282         2.729     0.000
+   29   +  16   a          0.102956         2.802     0.000
+   30   -  14   a          0.106341         2.894     0.000
+   31   -  15   a          0.110592         3.009     0.000
+   32   -  16   a          0.115098         3.132     0.000
+   33   +  17   a          0.159252         4.333     0.000
+   34   +  18   a          0.165205         4.495     0.000
+   35   -  17   a          0.173678         4.726     0.000
+   36   -  18   a          0.182287         4.960     0.000
+   37   +  19   a          0.334422         9.100     0.000
+   38   +  20   a          0.337589         9.186     0.000
+   39   -  19   a          0.348372         9.480     0.000
+   40   -  20   a          0.352422         9.590     0.000
+   41   +  21   a          0.471080        12.819     0.000
+   42   -  21   a          0.480666        13.080     0.000
+   43   +  22   a          0.521212        14.183     0.000
+   44   +  23   a          0.521447        14.189     0.000
+   45   +  24   a          0.525752        14.306     0.000
+   46   -  22   a          0.529283        14.403     0.000
+   47   +  25   a          0.529367        14.405     0.000
+   48   -  23   a          0.529825        14.417     0.000
+   49   -  24   a          0.537842        14.635     0.000
+   50   -  25   a          0.541350        14.731     0.000
+   51   +  26   a          0.546311        14.866     0.000
+   52   -  26   a          0.556186        15.135     0.000
+   53   +  27   a          0.598887        16.297     0.000
+   54   +  28   a          0.604350        16.445     0.000
+   55   -  27   a          0.610286        16.607     0.000
+   56   +  29   a          0.613370        16.691     0.000
+   57   -  28   a          0.615163        16.739     0.000
+   58   -  29   a          0.620931        16.896     0.000
+   59   +  30   a          0.720922        19.617     0.000
+   60   -  30   a          0.732700        19.938     0.000
+   61   +  31   a          0.737834        20.077     0.000
+   62   -  31   a          0.748434        20.366     0.000
+   63   +  32   a          0.750438        20.420     0.000
+   64   -  32   a          0.758833        20.649     0.000
+   65   +  33   a          0.759668        20.672     0.000
+   66   +  34   a          0.766943        20.870     0.000
+   67   -  33   a          0.770030        20.954     0.000
+   68   -  34   a          0.776001        21.116     0.000
+   69   +  35   a          0.934267        25.423     0.000
+   70   -  35   a          0.947025        25.770     0.000
+   71   +  36   a          0.992426        27.005     0.000
+   72   -  36   a          1.000312        27.220     0.000
+   73   +  37   a          1.080061        29.390     0.000
+   74   -  37   a          1.089241        29.640     0.000
+   75   +  38   a          1.108629        30.167     0.000
+   76   -  38   a          1.116270        30.375     0.000
+   77   +  39   a          1.393133        37.909     0.000
+   78   -  39   a          1.396875        38.011     0.000
+   79   +  40   a          1.625985        44.245     0.000
+   80   -  40   a          1.626262        44.253     0.000
+   81   +  41   a          1.688371        45.943     0.000
+   82   -  41   a          1.692320        46.050     0.000
+   83   +  42   a          1.706293        46.431     0.000
+   84   -  42   a          1.710552        46.547     0.000
+   85   +  43   a          1.969697        53.598     0.000
+   86   -  43   a          1.970097        53.609     0.000
+   87   +  44   a          1.993519        54.246     0.000
+   88   -  44   a          1.993798        54.254     0.000
+   89   +  45   a          2.304345        62.704     0.000
+   90   -  45   a          2.308790        62.825     0.000
+   91   +  46   a          2.689509        73.185     0.000
+   92   +  47   a          2.690754        73.219     0.000
+   93   -  46   a          2.691593        73.242     0.000
+   94   -  47   a          2.692931        73.278     0.000
+ 
+
+  Orbital occupation is:
+      9  a  ( 1) alpha and     8  a  ( 1) beta
+  Total number electrons:              17.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -12.487067   2.851819   0.700869    -0.000302  -0.000154  -0.000067
+df   Li    -7.337163   1.399647  -0.197464     0.000354  -0.000194  -0.000078
+df   Li   -11.425282  -1.849623  -2.074410     0.001766   0.003766   0.002239
+df    O   -10.449940   0.694379  -0.502994    -0.001818  -0.003418  -0.002094
+df  binding energy      -0.3605621Ha        -9.81140eV        -226.261kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.4605158Ha
+                  Kinetic =        1.9372513Ha
+            Electrostatic =       -2.5789920Ha
+     Exchange-correlation =        0.1551569Ha
+        Spin polarization =        0.1260217Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.821078Ha        -0.3605621Ha                   0.1m     16
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.000204 Ha
+    Actual energy change =  -0.000301 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -6.607871            1.509117            0.370884
+            2    Li           -3.882660            0.740661           -0.104494
+            3    Li           -6.045999           -0.978778           -1.097731
+            4    O            -5.529870            0.367450           -0.266173
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is  -0.000102 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.104905
+ Norm of Displacement of Cartesian Coordinates:     0.068136
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    6       -97.8210779     -0.0003012        0.003766       0.033668
+
+ 
+                      Step    6                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.301207E-03 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.376624E-02 |    0.211671E-02 |      au    | No  | <-- DELOC
+ |  |dR|max  |    0.336685E-01 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.821117Ha        -0.3606009Ha      3.98E-03     0.1m      1
+Ef          -97.819598Ha        -0.3590823Ha      2.83E-03     0.1m      2
+Ef          -97.820207Ha        -0.3596911Ha      1.80E-03     0.1m      3
+Ef          -97.820723Ha        -0.3602070Ha      1.11E-03     0.1m      4
+Ef          -97.821018Ha        -0.3605020Ha      7.76E-04     0.1m      5
+Ef          -97.820991Ha        -0.3604756Ha      4.79E-04     0.1m      6
+Ef          -97.821154Ha        -0.3606386Ha      3.10E-04     0.1m      7
+Ef          -97.821168Ha        -0.3606525Ha      2.88E-04     0.1m      8
+Ef          -97.821185Ha        -0.3606697Ha      2.24E-04     0.1m      9
+Ef          -97.821187Ha        -0.3606708Ha      9.84E-05     0.1m     10
+Ef          -97.821187Ha        -0.3606710Ha      5.45E-05     0.1m     11
+Ef          -97.821187Ha        -0.3606710Ha      2.72E-05     0.1m     12
+Ef          -97.821187Ha        -0.3606710Ha      1.42E-05     0.1m     13
+Ef          -97.821187Ha        -0.3606710Ha      4.88E-06     0.1m     14
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.05218Ha    -1.420eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.02975Ha    -0.810eV
+
+  HOMO is orbital number    17
+  LUMO is orbital number    18
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a        -18.616147      -506.571     1.000
+    2   +   1   a        -18.615320      -506.549     1.000
+    3   +   2   a         -1.796483       -48.885     1.000
+    4   -   2   a         -1.793245       -48.797     1.000
+    5   +   3   a         -1.791164       -48.740     1.000
+    6   +   4   a         -1.790578       -48.724     1.000
+    7   -   3   a         -1.787577       -48.642     1.000
+    8   -   4   a         -1.786976       -48.626     1.000
+    9   -   5   a         -0.685095       -18.642     1.000
+   10   +   5   a         -0.683676       -18.604     1.000
+   11   +   6   a         -0.177678        -4.835     1.000
+   12   -   6   a         -0.176901        -4.814     1.000
+   13   +   7   a         -0.175776        -4.783     1.000
+   14   -   7   a         -0.175033        -4.763     1.000
+   15   +   8   a         -0.157113        -4.275     1.000
+   16   -   8   a         -0.156218        -4.251     1.000
+   17   +   9   a         -0.052183        -1.420     1.000
+   18   -   9   a         -0.029749        -0.810     0.000
+   19   +  10   a         -0.028939        -0.787     0.000
+   20   +  11   a         -0.025220        -0.686     0.000
+   21   -  10   a         -0.005544        -0.151     0.000
+   22   -  11   a          0.000620         0.017     0.000
+   23   +  12   a          0.069548         1.892     0.000
+   24   +  13   a          0.078511         2.136     0.000
+   25   -  12   a          0.085322         2.322     0.000
+   26   -  13   a          0.092792         2.525     0.000
+   27   +  14   a          0.095140         2.589     0.000
+   28   +  15   a          0.098513         2.681     0.000
+   29   +  16   a          0.104235         2.836     0.000
+   30   -  14   a          0.106222         2.890     0.000
+   31   -  15   a          0.108806         2.961     0.000
+   32   -  16   a          0.116296         3.165     0.000
+   33   +  17   a          0.158804         4.321     0.000
+   34   +  18   a          0.164541         4.477     0.000
+   35   -  17   a          0.173309         4.716     0.000
+   36   -  18   a          0.181636         4.943     0.000
+   37   +  19   a          0.329544         8.967     0.000
+   38   +  20   a          0.339614         9.241     0.000
+   39   -  19   a          0.343814         9.356     0.000
+   40   -  20   a          0.354203         9.638     0.000
+   41   +  21   a          0.471386        12.827     0.000
+   42   -  21   a          0.480893        13.086     0.000
+   43   +  22   a          0.519596        14.139     0.000
+   44   +  23   a          0.521494        14.191     0.000
+   45   +  24   a          0.524389        14.269     0.000
+   46   -  22   a          0.527382        14.351     0.000
+   47   -  23   a          0.530027        14.423     0.000
+   48   +  25   a          0.531424        14.461     0.000
+   49   -  24   a          0.536565        14.601     0.000
+   50   -  25   a          0.543366        14.786     0.000
+   51   +  26   a          0.545811        14.852     0.000
+   52   -  26   a          0.555774        15.123     0.000
+   53   +  27   a          0.599786        16.321     0.000
+   54   +  28   a          0.603459        16.421     0.000
+   55   -  27   a          0.611093        16.629     0.000
+   56   +  29   a          0.612252        16.660     0.000
+   57   -  28   a          0.614316        16.716     0.000
+   58   -  29   a          0.619808        16.866     0.000
+   59   +  30   a          0.718034        19.539     0.000
+   60   -  30   a          0.729717        19.857     0.000
+   61   +  31   a          0.731379        19.902     0.000
+   62   -  31   a          0.741959        20.190     0.000
+   63   +  32   a          0.744633        20.263     0.000
+   64   -  32   a          0.753260        20.497     0.000
+   65   +  33   a          0.762920        20.760     0.000
+   66   +  34   a          0.771232        20.986     0.000
+   67   -  33   a          0.773390        21.045     0.000
+   68   -  34   a          0.780183        21.230     0.000
+   69   +  35   a          0.930432        25.318     0.000
+   70   -  35   a          0.943225        25.666     0.000
+   71   +  36   a          0.990609        26.956     0.000
+   72   -  36   a          0.998579        27.173     0.000
+   73   +  37   a          1.080354        29.398     0.000
+   74   -  37   a          1.089469        29.646     0.000
+   75   +  38   a          1.098924        29.903     0.000
+   76   -  38   a          1.106858        30.119     0.000
+   77   +  39   a          1.389056        37.798     0.000
+   78   -  39   a          1.392798        37.900     0.000
+   79   +  40   a          1.623844        44.187     0.000
+   80   -  40   a          1.624137        44.195     0.000
+   81   +  41   a          1.675628        45.596     0.000
+   82   -  41   a          1.679547        45.703     0.000
+   83   +  42   a          1.714672        46.659     0.000
+   84   -  42   a          1.718845        46.772     0.000
+   85   +  43   a          1.968700        53.571     0.000
+   86   -  43   a          1.969082        53.581     0.000
+   87   +  44   a          1.988930        54.122     0.000
+   88   -  44   a          1.989214        54.129     0.000
+   89   +  45   a          2.305071        62.724     0.000
+   90   -  45   a          2.309487        62.844     0.000
+   91   +  46   a          2.670722        72.674     0.000
+   92   -  46   a          2.672790        72.730     0.000
+   93   +  47   a          2.694561        73.323     0.000
+   94   -  47   a          2.696730        73.382     0.000
+ 
+
+  Orbital occupation is:
+      9  a  ( 1) alpha and     8  a  ( 1) beta
+  Total number electrons:              17.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -12.458871   2.858668   0.704039    -0.000180  -0.000138  -0.000120
+df   Li    -7.345677   1.433316  -0.177914     0.000194  -0.000102   0.000052
+df   Li   -11.451661  -1.881498  -2.093276     0.000319   0.000017  -0.000039
+df    O   -10.443243   0.685736  -0.506848    -0.000333   0.000223   0.000107
+df  binding energy      -0.3606710Ha        -9.81436eV        -226.329kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.4605158Ha
+                  Kinetic =        1.9423523Ha
+            Electrostatic =       -2.5832229Ha
+     Exchange-correlation =        0.1541779Ha
+        Spin polarization =        0.1260217Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.821187Ha        -0.3606710Ha                   0.1m     15
+ 
+ Evaluating last optimization step: 
+ Predicted energy change =  -0.000102 Ha
+    Actual energy change =  -0.000109 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -6.592950            1.512742            0.372561
+            2    Li           -3.887165            0.758478           -0.094148
+            3    Li           -6.059958           -0.995646           -1.107714
+            4    O            -5.526326            0.362876           -0.268213
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is -0.514E-05 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.097509
+ Norm of Displacement of Cartesian Coordinates:     0.035182
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    7       -97.8211868     -0.0001089        0.000333       0.017487
+
+ 
+                      Step    7                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.108929E-03 |    0.200000E-04 |      Ha    | No  | <-- DELOC
+ |  |F|max   |    0.332618E-03 |    0.211671E-02 |      au    | Yes | <-- DELOC
+ |  |dR|max  |    0.174872E-01 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -97.821158Ha        -0.3606424Ha      2.99E-03     0.1m      1
+Ef          -97.819553Ha        -0.3590372Ha      2.61E-03     0.1m      2
+Ef          -97.820209Ha        -0.3596931Ha      1.71E-03     0.1m      3
+Ef          -97.820996Ha        -0.3604802Ha      1.13E-03     0.1m      4
+Ef          -97.821155Ha        -0.3606391Ha      8.83E-04     0.1m      5
+Ef          -97.821188Ha        -0.3606725Ha      5.73E-04     0.1m      6
+Ef          -97.821194Ha        -0.3606783Ha      1.74E-04     0.1m      7
+Ef          -97.821195Ha        -0.3606789Ha      1.07E-04     0.1m      8
+Ef          -97.821194Ha        -0.3606785Ha      4.02E-05     0.1m      9
+Ef          -97.821195Ha        -0.3606788Ha      2.54E-05     0.1m     10
+Ef          -97.821195Ha        -0.3606789Ha      1.18E-05     0.1m     11
+Ef          -97.821195Ha        -0.3606789Ha      6.03E-06     0.1m     12
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.05224Ha    -1.422eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.02979Ha    -0.811eV
+
+  HOMO is orbital number    17
+  LUMO is orbital number    18
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   -   1   a        -18.616141      -506.571     1.000
+    2   +   1   a        -18.615318      -506.549     1.000
+    3   +   2   a         -1.797138       -48.903     1.000
+    4   -   2   a         -1.793916       -48.815     1.000
+    5   +   3   a         -1.791057       -48.737     1.000
+    6   +   4   a         -1.790184       -48.713     1.000
+    7   -   3   a         -1.787472       -48.640     1.000
+    8   -   4   a         -1.786567       -48.615     1.000
+    9   -   5   a         -0.684986       -18.639     1.000
+   10   +   5   a         -0.683574       -18.601     1.000
+   11   +   6   a         -0.177730        -4.836     1.000
+   12   -   6   a         -0.176946        -4.815     1.000
+   13   +   7   a         -0.175518        -4.776     1.000
+   14   -   7   a         -0.174779        -4.756     1.000
+   15   +   8   a         -0.157020        -4.273     1.000
+   16   -   8   a         -0.156120        -4.248     1.000
+   17   +   9   a         -0.052242        -1.422     1.000
+   18   -   9   a         -0.029787        -0.811     0.000
+   19   +  10   a         -0.029193        -0.794     0.000
+   20   +  11   a         -0.024919        -0.678     0.000
+   21   -  10   a         -0.005810        -0.158     0.000
+   22   -  11   a          0.000916         0.025     0.000
+   23   +  12   a          0.069015         1.878     0.000
+   24   +  13   a          0.078802         2.144     0.000
+   25   -  12   a          0.084818         2.308     0.000
+   26   -  13   a          0.092979         2.530     0.000
+   27   +  14   a          0.094870         2.582     0.000
+   28   +  15   a          0.098219         2.673     0.000
+   29   +  16   a          0.104875         2.854     0.000
+   30   -  14   a          0.106071         2.886     0.000
+   31   -  15   a          0.108413         2.950     0.000
+   32   -  16   a          0.116951         3.182     0.000
+   33   +  17   a          0.158971         4.326     0.000
+   34   +  18   a          0.164534         4.477     0.000
+   35   -  17   a          0.173508         4.721     0.000
+   36   -  18   a          0.181602         4.942     0.000
+   37   +  19   a          0.328634         8.943     0.000
+   38   +  20   a          0.340604         9.268     0.000
+   39   -  19   a          0.342925         9.331     0.000
+   40   -  20   a          0.355128         9.664     0.000
+   41   +  21   a          0.471207        12.822     0.000
+   42   -  21   a          0.480728        13.081     0.000
+   43   +  22   a          0.518669        14.114     0.000
+   44   +  23   a          0.521362        14.187     0.000
+   45   +  24   a          0.524420        14.270     0.000
+   46   -  22   a          0.526588        14.329     0.000
+   47   -  23   a          0.529951        14.421     0.000
+   48   +  25   a          0.532242        14.483     0.000
+   49   -  24   a          0.536434        14.597     0.000
+   50   -  25   a          0.544129        14.807     0.000
+   51   +  26   a          0.545534        14.845     0.000
+   52   -  26   a          0.555508        15.116     0.000
+   53   +  27   a          0.600159        16.331     0.000
+   54   +  28   a          0.603728        16.428     0.000
+   55   -  27   a          0.611442        16.638     0.000
+   56   +  29   a          0.612164        16.658     0.000
+   57   -  28   a          0.614576        16.723     0.000
+   58   -  29   a          0.619736        16.864     0.000
+   59   +  30   a          0.717398        19.521     0.000
+   60   -  30   a          0.729035        19.838     0.000
+   61   +  31   a          0.729110        19.840     0.000
+   62   -  31   a          0.739658        20.127     0.000
+   63   +  32   a          0.743758        20.239     0.000
+   64   -  32   a          0.752441        20.475     0.000
+   65   +  33   a          0.764394        20.800     0.000
+   66   +  34   a          0.774102        21.064     0.000
+   67   -  33   a          0.774840        21.084     0.000
+   68   -  34   a          0.783068        21.308     0.000
+   69   +  35   a          0.929765        25.300     0.000
+   70   -  35   a          0.942535        25.648     0.000
+   71   +  36   a          0.991401        26.977     0.000
+   72   -  36   a          0.999386        27.195     0.000
+   73   +  37   a          1.080167        29.393     0.000
+   74   -  37   a          1.089280        29.641     0.000
+   75   +  38   a          1.098409        29.889     0.000
+   76   -  38   a          1.106333        30.105     0.000
+   77   +  39   a          1.385477        37.701     0.000
+   78   -  39   a          1.389184        37.802     0.000
+   79   +  40   a          1.626024        44.246     0.000
+   80   -  40   a          1.626369        44.256     0.000
+   81   +  41   a          1.671691        45.489     0.000
+   82   -  41   a          1.675579        45.595     0.000
+   83   +  42   a          1.716873        46.719     0.000
+   84   -  42   a          1.721015        46.831     0.000
+   85   +  43   a          1.968299        53.560     0.000
+   86   -  43   a          1.968690        53.571     0.000
+   87   +  44   a          1.989495        54.137     0.000
+   88   -  44   a          1.989791        54.145     0.000
+   89   +  45   a          2.305274        62.730     0.000
+   90   -  45   a          2.309681        62.850     0.000
+   91   +  46   a          2.666835        72.568     0.000
+   92   -  46   a          2.668904        72.625     0.000
+   93   +  47   a          2.695963        73.361     0.000
+   94   -  47   a          2.698135        73.420     0.000
+ 
+
+  Orbital occupation is:
+      9  a  ( 1) alpha and     8  a  ( 1) beta
+  Total number electrons:              17.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Li   -12.447229   2.861604   0.697258    -0.000135  -0.000215  -0.000110
+df   Li    -7.350536   1.449763  -0.176502     0.000097  -0.000091   0.000039
+df   Li   -11.461507  -1.883393  -2.103268     0.000156  -0.000464  -0.000339
+df    O   -10.440180   0.668249  -0.491487    -0.000118   0.000770   0.000410
+df  binding energy      -0.3606789Ha        -9.81458eV        -226.334kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =      -97.4605158Ha
+                  Kinetic =        1.9428058Ha
+            Electrostatic =       -2.5836114Ha
+     Exchange-correlation =        0.1541051Ha
+        Spin polarization =        0.1260217Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef          -97.821195Ha        -0.3606789Ha                   0.1m     13
+ 
+ Evaluating last optimization step: 
+ Predicted energy change = -0.514E-05 Ha
+    Actual energy change = -0.789E-05 Ha
+ 
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED COORDINATES **
+
+   Searching for a Minimum
+
+                              Input Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -6.586790            1.514296            0.368973
+            2    Li           -3.889736            0.767181           -0.093401
+            3    Li           -6.065168           -0.996649           -1.113001
+            4    O            -5.524705            0.353622           -0.260084
+          ----------------------------------------------------------------------
+
+ Hessian Updated using BFGS Update
+   Warning: Magnitude of eigenvalue   1 too small.  Replaced by     0.000100
+ Geometry optimization: predicted energy change is -0.219E-04 Ha
+
+ New Cartesian Coordinates Obtained by Inverse Iteration
+ Norm of Displacement of Delocalized Coordinates:   0.291681
+ Norm of Displacement of Cartesian Coordinates:     0.133699
+
+       Cycle    Total Energy   Energy change   Max Gradient   Max Displacement
+opt==    8       -97.8211947     -0.0000079        0.000770       0.071411
+
+ 
+                      Step    8                                       <-- DELOC
+                                                                      <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ | Parameter |      value      |    tolerance    |    units   | OK? | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ |  delta E  |   -0.789265E-05 |    0.200000E-04 |      Ha    | Yes | <-- DELOC
+ |  |F|max   |    0.770200E-03 |    0.211671E-02 |      au    | Yes | <-- DELOC
+ |  |dR|max  |    0.714110E-01 |    0.944863E-02 |      au    | No  | <-- DELOC
+ +-----------+-----------------+-----------------+------------+-----+ <-- DELOC
+ 
+  Geometry optimization completed successfully in    8 steps.
+
+
+                              Final Coordinates (Angstroms)
+          ----------------------------------------------------------------------
+               ATOM               X                   Y                   Z
+            1    Li           -6.557997            1.516058            0.357879
+            2    Li           -3.901284            0.804971           -0.082474
+            3    Li           -6.090788           -1.002772           -1.128542
+            4    O            -5.516331            0.320194           -0.244376
+          ----------------------------------------------------------------------
+
+
+ +++ Entering Properties Section +++ 
+
+
+
+Charge partitioning by Hirshfeld method: (  0.0036    1.0000)
+  Li    1 charge   spin                    0.2061    0.3509
+  Li    2 charge   spin                    0.2111    0.3453
+  Li    3 charge   spin                    0.2544    0.2920
+  O     4 charge   spin                   -0.6671    0.0124
+
+Mulliken Population analysis
+
+ Population analysis for representation  1    a    
+              spin up    down    charge    spin
+ Li(  1) 10 0   0.996   0.997     1.993  -0.000
+ Li(  1) 20 0   0.371   0.042     0.412   0.329
+ Li(  1) 20 0   0.005   0.001     0.005   0.004
+ Li(  1) 21-1   0.068   0.046     0.114   0.022
+ Li(  1) 21 0   0.051   0.042     0.093   0.009
+ Li(  1) 21 1   0.053   0.041     0.093   0.012
+ Li(  1) 32-2   0.005   0.005     0.009   0.000
+ Li(  1) 32-1   0.003   0.004     0.007  -0.000
+ Li(  1) 32 0   0.003   0.003     0.006   0.000
+ Li(  1) 32 1   0.003   0.003     0.006   0.000
+ Li(  1) 32 2   0.005   0.005     0.010   0.000
+ Li(  2) 10 0   0.996   0.996     1.993  -0.000
+ Li(  2) 20 0   0.366   0.042     0.408   0.324
+ Li(  2) 20 0   0.004   0.001     0.005   0.004
+ Li(  2) 21-1   0.044   0.034     0.078   0.010
+ Li(  2) 21 0   0.044   0.039     0.083   0.006
+ Li(  2) 21 1   0.084   0.057     0.141   0.027
+ Li(  2) 32-2   0.006   0.005     0.011   0.000
+ Li(  2) 32-1   0.001   0.000     0.001   0.000
+ Li(  2) 32 0   0.002   0.002     0.004  -0.000
+ Li(  2) 32 1   0.006   0.006     0.012   0.000
+ Li(  2) 32 2   0.005   0.005     0.011  -0.000
+ Li(  3) 10 0   0.996   0.996     1.992  -0.000
+ Li(  3) 20 0   0.318   0.043     0.361   0.275
+ Li(  3) 20 0   0.003   0.001     0.004   0.002
+ Li(  3) 21-1   0.070   0.054     0.124   0.016
+ Li(  3) 21 0   0.058   0.048     0.106   0.010
+ Li(  3) 21 1   0.043   0.035     0.078   0.008
+ Li(  3) 32-2   0.004   0.004     0.008   0.000
+ Li(  3) 32-1   0.005   0.006     0.011  -0.000
+ Li(  3) 32 0   0.004   0.004     0.008   0.000
+ Li(  3) 32 1   0.002   0.002     0.004   0.000
+ Li(  3) 32 2   0.004   0.004     0.008   0.000
+ O (  4) 10 0   1.000   1.000     2.000   0.000
+ O (  4) 20 0   0.922   0.922     1.844   0.000
+ O (  4) 20 0  -0.012   0.001    -0.011  -0.013
+ O (  4) 21-1   0.813   0.828     1.640  -0.015
+ O (  4) 21-1   0.004   0.004     0.008   0.000
+ O (  4) 21 0   0.825   0.839     1.664  -0.014
+ O (  4) 21 0   0.007   0.007     0.014   0.000
+ O (  4) 21 1   0.809   0.823     1.632  -0.015
+ O (  4) 21 1   0.002   0.002     0.005   0.000
+ O (  4) 32-2   0.000   0.000     0.001   0.000
+ O (  4) 32-1   0.000   0.000     0.000  -0.000
+ O (  4) 32 0   0.000   0.000     0.000  -0.000
+ O (  4) 32 1   0.000   0.000     0.000   0.000
+ O (  4) 32 2   0.000   0.000     0.001   0.000
+
+
+ summarized population analysis
+              spin up    down    charge    spin
+ Li(  1) 10     0.996   0.997     1.993  -0.000
+ Li(  1) 20     0.375   0.043     0.418   0.333
+ Li(  1) 21     0.172   0.129     0.301   0.043
+ Li(  1) 32     0.019   0.019     0.039   0.000
+ Li(  2) 10     0.996   0.996     1.993  -0.000
+ Li(  2) 20     0.370   0.043     0.413   0.327
+ Li(  2) 21     0.172   0.130     0.302   0.043
+ Li(  2) 32     0.019   0.019     0.039   0.000
+ Li(  3) 10     0.996   0.996     1.992  -0.000
+ Li(  3) 20     0.322   0.044     0.366   0.278
+ Li(  3) 21     0.170   0.137     0.307   0.033
+ Li(  3) 32     0.020   0.020     0.040   0.000
+ O (  4) 10     1.000   1.000     2.000   0.000
+ O (  4) 20     0.910   0.923     1.833  -0.013
+ O (  4) 21     2.460   2.504     4.963  -0.044
+ O (  4) 32     0.001   0.001     0.002  -0.000
+
+ Mulliken atomic charges:
+          charge    spin 
+ Li(  1)   0.250   0.376
+ Li(  2)   0.254   0.370
+ Li(  3)   0.295   0.311
+ O (  4)  -0.799  -0.057
+ 
+ Mulliken bond orders
+    Li   1    O    4    0.4373
+    Li   2    O    4    0.4412
+    Li   3    O    4    0.4754
+ 
+ Mayer bond orders
+    Li   1    Li   2    0.2840
+    Li   1    Li   3    0.2389
+    Li   2    Li   3    0.2347
+    Li   1    O    4    0.6517
+    Li   2    O    4    0.6556
+    Li   3    O    4    0.6925
+ 
+ Mayer total valence
+  Li    1    1.3064
+  Li    2    1.3017
+  Li    3    1.2557
+  O     4    2.0005
+ 
+ Mayer free valence
+  Li    1    0.1317
+  Li    2    0.1273
+  Li    3    0.0896
+  O     4    0.0008
+
+Fermi energy:   -0.052242   -0.052242   -0.052242
+
+
+Plotting output:
+  property:                                                file name:
+  DMol3 total electron density                             Li3O_density.grd              
+  DMol3 deformation electron density                       Li3O_deformation_density.grd  
+  DMol3 spin density                                       Li3O_spin_density.grd         
+  orbital   17   9 +a     -0.0522  1.00   Li3O_homo.grd                 
+  orbital   18   9 -a     -0.0298  0.00   Li3O_lumo.grd                 
+  orbital   16   8 -a     -0.1561  1.00   Li3O_16_mo.grd                
+  orbital   19  10 +a     -0.0292  0.00   Li3O_19_mo.grd                
+  orbital   15   8 +a     -0.1570  1.00   Li3O_15_mo.grd                
+  orbital   20  11 +a     -0.0249  0.00   Li3O_20_mo.grd                
+  orbital   14   7 -a     -0.1748  1.00   Li3O_14_mo.grd                
+  orbital   21  10 -a     -0.0058  0.00   Li3O_21_mo.grd                
+  orbital   13   7 +a     -0.1755  1.00   Li3O_13_mo.grd                
+  orbital   22  11 -a      0.0009  0.00   Li3O_22_mo.grd                
+  orbital   12   6 -a     -0.1769  1.00   Li3O_12_mo.grd                
+  orbital   23  12 +a      0.0690  0.00   Li3O_23_mo.grd                
+  orbital   11   6 +a     -0.1777  1.00   Li3O_11_mo.grd                
+  orbital   24  13 +a      0.0788  0.00   Li3O_24_mo.grd                
+  orbital   10   5 +a     -0.6836  1.00   Li3O_10_mo.grd                
+  orbital   25  12 -a      0.0848  0.00   Li3O_25_mo.grd                
+  orbital    9   5 -a     -0.6850  1.00   Li3O_9_mo.grd                 
+  orbital   26  13 -a      0.0930  0.00   Li3O_26_mo.grd                
+  orbital    8   4 -a     -1.7866  1.00   Li3O_8_mo.grd                 
+  orbital   27  14 +a      0.0949  0.00   Li3O_27_mo.grd                
+  orbital    7   3 -a     -1.7875  1.00   Li3O_7_mo.grd                 
+  orbital   28  15 +a      0.0982  0.00   Li3O_28_mo.grd                
+  orbital    6   4 +a     -1.7902  1.00   Li3O_6_mo.grd                 
+  orbital   29  16 +a      0.1049  0.00   Li3O_29_mo.grd                
+  orbital    5   3 +a     -1.7911  1.00   Li3O_5_mo.grd                 
+  orbital   30  14 -a      0.1061  0.00   Li3O_30_mo.grd                
+  orbital    4   2 -a     -1.7939  1.00   Li3O_4_mo.grd                 
+  orbital   31  15 -a      0.1084  0.00   Li3O_31_mo.grd                
+  orbital    3   2 +a     -1.7971  1.00   Li3O_3_mo.grd                 
+  orbital   32  16 -a      0.1170  0.00   Li3O_32_mo.grd                
+  orbital    2   1 +a    -18.6153  1.00   Li3O_2_mo.grd                 
+  orbital   33  17 +a      0.1590  0.00   Li3O_33_mo.grd                
+  orbital    1   1 -a    -18.6161  1.00   Li3O_1_mo.grd                 
+  orbital   34  18 +a      0.1645  0.00   Li3O_34_mo.grd                
+  orbital   35  17 -a      0.1735  0.00   Li3O_35_mo.grd                
+  orbital   36  18 -a      0.1816  0.00   Li3O_36_mo.grd                
+  orbital   37  19 +a      0.3286  0.00   Li3O_37_mo.grd                
+  orbital   38  20 +a      0.3406  0.00   Li3O_38_mo.grd                
+
+ grid specifications: I_dim, Origin, n_intervals to corner:
+    3  -17.9524   -7.5589   -7.5589   29  -17.9524   -7.5589    6.1416
+   34  -17.9524    8.5038   -7.5589   34   -1.8897   -7.5589   -7.5589
+ 
+Message: License checkin of MS_dmol successful
+
+Message: DMol3 job finished successfully
+
+ time all done       0.23m       14.08s
+
+DMol3.pl message: DMol3 job finished in 0 hr 0 min 18 sec.
