@@ -1,0 +1,178 @@
+ 
+     ===============================================================
+     Materials Studio DMol^3 version 6.1
+     compiled on Nov  5 2012 07:33:37
+     ===============================================================
+ 
+     ===============================================================
+     Density Functional Theory Electronic Structure Program
+     Copyright (c) 2012, Accelrys Inc. All rights reserved.
+     Cite work using this program as: 
+     B. Delley, J. Chem. Phys. 92,  508  (1990).
+     B. Delley, J. Chem. Phys. 113, 7756 (2000).
+     DMol^3 is available as part of Materials Studio.
+     ===============================================================
+ 
+ 
+DATE:     Dec  4 12:39:11 2019
+ 
+Job started on host cu06
+
+This run uses    6 processors
+
+Message: License checkout of MS_dmol successful
+ 
+Basis set is read from file:
+/home/ms6.1/Accelrys/MaterialsStudio6.1/share/Resources/Quantum/DMol3/BASFILE_v3.5
+
+ 
+ parallel run with   6 processors
+ 
+ no INCOOR file: try ZMAT
+ no ZMAT file: try CAR
+
+Geometry is read from file: 159__2__DOS.car                                                                                                                                                                                                                                                 
+
+INCOOR, atomic coordinates in au (for archive):
+______________________________________________________________________>8
+
+$coordinates
+Li          -14.13617784237355    3.75634393815812   -1.55237490435028
+Li          -12.86144513236094   -1.16879524359139    0.57979363195963
+Li           -7.70665111945142   -0.91641142343766    2.50932106655263
+Li           -5.79205398200417    4.15055154336590    1.52762181269655
+Mn          -10.84518524394475    3.26198637766432    2.47673506955942
+Li           -8.99183118601524    1.65520454608360   -2.32123887599583
+Li          -17.33887114701879    6.55385189350259    6.70409034931177
+Li          -12.95475602707115    9.82592189701303    7.30162371912937
+Li           -9.01659015093777    6.92968439146548    9.81799792199215
+Li          -10.94529409768755    1.88157514284249   10.76375126092259
+Li          -16.08564106933382    1.63635546718067    8.84007071832882
+Li          -13.99401551288421    7.46779421212369    2.50261551701727
+Li           -8.83703921400993    7.71039229529874    4.42420273439334
+Li           -7.58111841576682    2.79287798271905    6.56213712746679
+Li          -11.96917059868218   -0.47834303109411    5.96993383222995
+Li          -15.92475541843572    2.39910899428324    3.46438442469677
+Li          -14.32436440061451    6.25662511239798   11.36852406570037
+Mn          -12.46192276313347    4.67723881619582    6.63729501633331
+Li           -9.74305988008356    7.03702589038250   -0.96097533042139
+$end
+______________________________________________________________________>8
+
+
+N_atoms =   19     N_atom_types =  2
+
+
+INPUT_DMOL keywords (for archive):
+______________________________________________________________________>8
+
+#Warning: no global confinement specs in BASFILE
+Calculate                     energy                                                                                                <--
+Scf_iterations                0                                                                                                     <--
+use_old_density_and_keep      on                                                                                                    <--
+Max_memory                    2048                                                                                                  <--
+empty_bands                   12                                                                                                    <--
+                                                                                                                                    <--
+Symmetry                      off                                                                                                   <--
+                                                                                                                                    <--
+# Electronic parameters                                                                                                             <--
+Spin_polarization             unrestricted                                                                                          <--
+Charge                        0                                                                                                     <--
+Basis                         dnd                                                                                                   <--
+Pseudopotential               dspp                                                                                                  <--
+Functional                    gga(p91)                                                                                              <--
+Aux_density                   octupole                                                                                              <--
+Integration_grid              medium                                                                                                <--
+Occupation                    fermi                                                                                                 <--
+Cutoff_Global                 4.4000 angstrom                                                                                       <--
+                                                                                                                                    <--
+plot_dos                      on                                                                                                    <--
+______________________________________________________________________>8
+
+
+Publications of specific relevance to this calculation:
+
+Density functional:
+ P91 exchange: Perdew, Physica B 172, 1 (1991)
+
+Spin unrestricted calculation
+
+
+ Hardness conserving semilocal pseudopotentials; Delley: Phys. Rev. B 66, 155125 (2002)
+
+Warning: dspp            takes precedence over using  symmetrized basis
+Warning: any symmetry breaking by Use_old_potential/density would go unchecked
+
+Restart of SCF calculations requested
+
+Calculation is Spin_unrestricted
+ 
+ 
+Warning: no SYM file, no symmetry used in vibrational analysis
+Warning: at least C1 SYM file should be there for optgeom
+Lithium      nbas=  1, z=   3, nrfn=  5, rcut=  8.31, e_ref= -0.023261 Ha
+                                  rcore=  0.00  zval=   3.00   3.00
+   n=1  L=0  occ= 2.00 e=      -1.870620Ha       -50.9022eV
+   n=2  L=0  occ= 1.00 e=      -0.072085Ha        -1.9615eV
+   n=2  L=0  occ= 0.00 e=      -0.238445Ha        -6.4884eV
+   n=2  L=1  occ= 0.00 e=      -0.159478Ha        -4.3396eV
+   n=3  L=2  occ= 0.00 e=      -0.887673Ha       -24.1548eV
+Manganese    nbas=  2, z=  25, nrfn=  7, rcut=  8.31, e_ref= -0.211031 Ha
+  DSPP: PWC_PBE s 01d21 release   rcore=  0.67  zval=  15.00  25.00
+   n=3  L=0  occ= 2.00 e=      -3.213524Ha       -87.4445eV
+   n=3  L=1  occ= 6.00 e=      -2.062409Ha       -56.1210eV
+   n=3  L=2  occ= 5.00 e=      -0.234526Ha        -6.3818eV
+   n=4  L=0  occ= 2.00 e=      -0.172704Ha        -4.6995eV
+   n=3  L=2  occ= 0.00 e=      -1.114058Ha       -30.3151eV
+   n=4  L=0  occ= 0.00 e=      -0.793476Ha       -21.5916eV
+   n=4  L=1  occ= 0.00 e=      -0.572571Ha       -15.5805eV
+
+Note: calculation of reference xc derivative is turned on
+ for pseudopotential with core density correction
+
+Symmetry orbitals C1                            
+    n  norb    representation
+    1   225        a    
+  total number of valence orbitals:    225
+
+
+ molecule charge=      0.0   active electron number=      81.0
+ (without charge=             81.0)
+ 
+
+Integration in 3d (fixed mesh): ipa=    6  f3= F
+ npri,iomax,iomin, thres,  rmaxp,    sp
+   0    6    1   0.00010   10.00    1.00
+Integration points, checksum  0      8266     49915      81.012928
+
+ vxcg/d_diis workspace has max memory requirements        31.4 MB 
+
+ real array elements, matrices vectors etc:      13.3 MB 
+ integer arrays                           :       0.8 MB 
+ min recommended for all-incl workspace   :      31.5 MB 
+Total memory allocated for arrays         :      31.5 MB 
+Message: SCF converged
+
+Energy components:
+   Sum of atomic energies =     -370.6973747Ha
+                  Kinetic =        6.6506949Ha
+            Electrostatic =       -8.8428266Ha
+     Exchange-correlation =        0.4422661Ha
+        Spin polarization =        0.8175027Ha
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef         -371.629738Ha        -0.9323629Ha      3.67E-05     0.0m      1
+
+df  binding energy      -0.9323629Ha         -25.37090eV        -585.078kcal/mol
+
+ +++ Entering Properties Section +++ 
+
+
+Fermi energy:   -0.065991   -0.065991   -0.065991
+Message: License checkin of MS_dmol successful
+
+Message: DMol3 job finished successfully
+
+ time all done       0.01m        0.81s
+
+DMol3.pl message: DMol3 job finished in 0 hr 1 min 19 sec.

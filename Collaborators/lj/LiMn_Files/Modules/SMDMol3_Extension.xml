@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="latin1"?>
+<EXTENSION VERSION="6.1">
+<LOGICS>
+<LOGICITEM NAME="Analysis">
+	<STATE NAME="SMDMol3.AnalysisState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="ImportElectrostatics">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportOrbitals">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportFukui">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportDensity">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OrbitalFilter">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CreateEnergyEvolutionChart">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CreateThermodynamicsChart">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CreateOpticsChart">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CreateRamanChart">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CreateBandStructureChart">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="BandStructureGenerator">
+	<VALUE>SMXQMUtilities.BandStructureGenerator
+		<STATE NAME="QM Utilities band structure State" VERSION="6.1">
+		<PROPERTIES>
+		</PROPERTIES>
+		</STATE>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="PlotBSWithDOS">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ScissorsOperator">
+	<VALUE>0.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CreateDOSChart">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DOSGenerator">
+	<VALUE>SMXQMUtilities.DOSGenerator
+		<STATE NAME="QM Utilities DOS Generator State" VERSION="6.1">
+		<PROPERTIES>
+		</PROPERTIES>
+		</STATE>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportChargeDensity">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportSpinDensity">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportDeformationDensity">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportPotential">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportFukuiNucleophilic">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportFukuiElectrophilic">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportFukuiRadical">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="RequestedFukuiType">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="AssignFukuiCharge">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportHomoOrbital">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportLumoOrbital">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="AssignCharge">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="AssignSpin">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="AssignBondOrder">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OpticsBroadeningMethod">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OpticsSmearingWidth">
+	<VALUE>20.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OpticsFWHM">
+	<VALUE>20.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OpticsInverseIntensity">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OpticsInverseEnergy">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OpticsUnits">
+	<VALUE>3</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ImportFermiSurface">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="RamanInverseIntensity">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="RamanInverseEnergy">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="RamanUnits">
+	<VALUE>3</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="RamanFunction">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="RamanBroadening">
+	<VALUE>20.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="RamanBroadeningType">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="RamanTemperature">
+	<VALUE>10.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="RamanWavelength">
+	<VALUE>514.5</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SpectralEnergyUnits">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="DMol3">
+	<STATE NAME="SMDMol3.SetupState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="Task">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateBSSE">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseSymmetry">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Quality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Action">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="QualityItems">
+	<VALUE>
+	<ITEM>Electronic.Basis</ITEM>
+	<ITEM>Electronic.SCFConvergence</ITEM>
+	<ITEM>Electronic.IntegrationGrid</ITEM>
+	<ITEM>Electronic.OrbitalCutoffQuality</ITEM>
+	<ITEM>Electronic.CutoffQuality</ITEM>
+	<ITEM>Electronic.CutoffType</ITEM>
+	<ITEM>KPointSetGenerator.KPointQuality</ITEM>
+	<ITEM>KPointSetGenerator.KPointDerivation</ITEM>
+	<ITEM>GeometryOptimization.EnergyConvergence</ITEM>
+	<ITEM>GeometryOptimization.ForceConvergence</ITEM>
+	<ITEM>GeometryOptimization.DisplacementConvergence</ITEM>
+	<ITEM>TSOptimization.EnergyConvergence</ITEM>
+	<ITEM>TSOptimization.GradientConvergence</ITEM>
+	<ITEM>TSOptimization.DisplacementConvergence</ITEM>
+	<ITEM>TSConfirmation.EnergyConvergence</ITEM>
+	<ITEM>TSConfirmation.GradientConvergence</ITEM>
+	<ITEM>TSConfirmation.DisplacementConvergence</ITEM>
+	<ITEM>TSSearch.RMSConvergence</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.Basis">
+	<VALUE>
+	<ITEM>DN</ITEM>
+	<ITEM>DND</ITEM>
+	<ITEM>DNP</ITEM>
+	<ITEM>TNP</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.SCFConvergence">
+	<VALUE>
+	<ITEM>1.e-004</ITEM>
+	<ITEM>1.e-005</ITEM>
+	<ITEM>1.e-006</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.IntegrationGrid">
+	<VALUE>
+	<ITEM>Coarse</ITEM>
+	<ITEM>Medium</ITEM>
+	<ITEM>Fine</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.OrbitalCutoffQuality">
+	<VALUE>
+	<ITEM>Coarse</ITEM>
+	<ITEM>Medium</ITEM>
+	<ITEM>Fine</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.CutoffQuality">
+	<VALUE>
+	<ITEM>Coarse</ITEM>
+	<ITEM>Medium</ITEM>
+	<ITEM>Fine</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electronic.CutoffType">
+	<VALUE>
+	<ITEM>Quality</ITEM>
+	<ITEM>Quality</ITEM>
+	<ITEM>Quality</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="KPointSetGenerator.KPointQuality">
+	<VALUE>
+	<ITEM>Coarse</ITEM>
+	<ITEM>Medium</ITEM>
+	<ITEM>Fine</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="KPointSetGenerator.KPointDerivation">
+	<VALUE>
+	<ITEM>Quality</ITEM>
+	<ITEM>Quality</ITEM>
+	<ITEM>Quality</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="GeometryOptimization.EnergyConvergence">
+	<VALUE>
+	<ITEM>1.e-004</ITEM>
+	<ITEM>2.e-005</ITEM>
+	<ITEM>1.e-005</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="GeometryOptimization.ForceConvergence">
+	<VALUE>
+	<ITEM>2.e-002</ITEM>
+	<ITEM>4.e-003</ITEM>
+	<ITEM>2.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="GeometryOptimization.DisplacementConvergence">
+	<VALUE>
+	<ITEM>5.e-002</ITEM>
+	<ITEM>5.e-003</ITEM>
+	<ITEM>5.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSOptimization.EnergyConvergence">
+	<VALUE>
+	<ITEM>1.e-004</ITEM>
+	<ITEM>2.e-005</ITEM>
+	<ITEM>1.e-005</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSOptimization.GradientConvergence">
+	<VALUE>
+	<ITEM>2.e-002</ITEM>
+	<ITEM>4.e-003</ITEM>
+	<ITEM>2.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSOptimization.DisplacementConvergence">
+	<VALUE>
+	<ITEM>5.e-002</ITEM>
+	<ITEM>5.e-003</ITEM>
+	<ITEM>5.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSConfirmation.EnergyConvergence">
+	<VALUE>
+	<ITEM>1.e-004</ITEM>
+	<ITEM>2.e-005</ITEM>
+	<ITEM>1.e-005</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSConfirmation.GradientConvergence">
+	<VALUE>
+	<ITEM>2.e-002</ITEM>
+	<ITEM>4.e-003</ITEM>
+	<ITEM>2.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSConfirmation.DisplacementConvergence">
+	<VALUE>
+	<ITEM>5.e-002</ITEM>
+	<ITEM>5.e-003</ITEM>
+	<ITEM>5.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TSSearch.RMSConvergence">
+	<VALUE>
+	<ITEM>2.e-002</ITEM>
+	<ITEM>1.e-002</ITEM>
+	<ITEM>2.e-003</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateThermodynamics">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateHessian">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateBandStructure">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateDOS">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateChargeDensity">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateSpinDensity">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateDeformationDensity">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculatePotential">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateFukuiNucleophilic">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateFukuiElectrophilic">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateFukuiRadical">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateHomoOrbital">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateLumoOrbital">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateCharge">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateSpin">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateBondOrder">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateNuclearElectricFieldGradient">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateElectrostaticMoments">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateFermiSurface">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="KeepOutputFiles">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MaxMemory">
+	<VALUE>2048</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="WorkPath">
+	<VALUE>.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ExtraParameters">
+	<VALUE></VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="DMolJob">
+</LOGICITEM>
+<LOGICITEM NAME="Dynamics">
+	<STATE NAME="SMDMol3.Dynamics" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="Temperature">
+	<VALUE>300.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TimeStep">
+	<VALUE>1.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TotalSimTime">
+	<VALUE>1.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="NumSteps">
+	<VALUE>1000</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Ensemble">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Thermostat">
+	<VALUE>6</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="NoseRatio">
+	<VALUE>2.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="NoseChainLength">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="YoshidaParam">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Electronic">
+	<STATE NAME="SMDMol3.ElectronicState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="Charge">
+	<VALUE>0</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Multiplicity">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseFormalSpin">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SpinUnrestricted">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TheoryLevel">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="LocalFunctional">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="NonLocalFunctional">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Basis">
+	<VALUE>3</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="BasisFile">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CutoffScheme">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OrbitalCutoffQuality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CutoffQuality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CutoffType">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="AtomCutoff">
+	<VALUE>4.4</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="IntegrationGrid">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MultipolarExpansion">
+	<VALUE>4</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Quality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SCFConvergence">
+	<VALUE>1.e-005</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MaxSCFCycles">
+	<VALUE>500</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="IsMetal">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseSmearing">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Smearing">
+	<VALUE>5.e-003</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ChargeMixingAmplitude">
+	<VALUE>0.2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SpinMixingAmplitude">
+	<VALUE>0.5</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseDIIS">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MaxDIISCycles">
+	<VALUE>6</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CoreTreatment">
+	<VALUE>4</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Harris">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseCosmo">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CosmoSolvent">
+	<VALUE>15</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SolventDielectric">
+	<VALUE>78.54000000000001</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SmearingEnabled">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SmearingValueEnabled">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DFTDMethod">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseDFTD">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseDipoleCorrection">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Energy">
+</LOGICITEM>
+<LOGICITEM NAME="Files">
+</LOGICITEM>
+<LOGICITEM NAME="GeometryOptimization">
+	<STATE NAME="SMDMol3.GeomOptState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="EnergyConvergence">
+	<VALUE>2.e-005</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ForceConvergence">
+	<VALUE>4.e-003</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DisplacementConvergence">
+	<VALUE>5.e-003</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ConvergeAll">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Iterations">
+	<VALUE>500</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MaximumDisplacement">
+	<VALUE>0.3</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseHessian">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OptimizeCell">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Quality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="KPointSetGenerator">
+	<STATE NAME="QM Utilities k-point set State" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="KPointDerivation">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="KPointQuality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="KPointOverallQuality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="KPointSeparation">
+	<VALUE>5.e-002</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ParameterA">
+	<VALUE>4</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ParameterB">
+	<VALUE>4</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ParameterC">
+	<VALUE>4</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OriginA">
+	<VALUE>0.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OriginB">
+	<VALUE>0.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OriginC">
+	<VALUE>0.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DefaultDerivation">
+	<VALUE>
+	<ITEM>7.000000000000001e-002</ITEM>
+	<ITEM>5.e-002</ITEM>
+	<ITEM>4.e-002</ITEM>
+	<ITEM>4.e-002</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="InsulatorDerivation">
+	<VALUE>
+	<ITEM>0.1</ITEM>
+	<ITEM>8.e-002</ITEM>
+	<ITEM>7.000000000000001e-002</ITEM>
+	<ITEM>6.e-002</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseInsulatorDerivation">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Properties">
+	<STATE NAME="SMDMol3.PropertyState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="BandStructure">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="BandStructureNumExtraBands">
+	<VALUE>12</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="BandStructureKPGenerator">
+	<VALUE>SMXQMUtilities.KPointPathGenerator
+		<STATE NAME="QM Utilities k-point path State" VERSION="6.1">
+		<PROPERTIES>
+		<PROPERTY NAME="KPointQuality">
+		<VALUE>2</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="KPathType">
+		<VALUE>1</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="KPointSeparation">
+		<VALUE>2.5e-002</VALUE>
+		</PROPERTY>
+		</PROPERTIES>
+		</STATE>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DensityOfStates">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DOSNumExtraBands">
+	<VALUE>12</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculatePDOSinDOS">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DOSKPGenerator">
+	<VALUE>SMXQMUtilities.KPointSetGenerator
+		<STATE NAME="QM Utilities k-point set State" VERSION="6.1">
+		<PROPERTIES>
+		<PROPERTY NAME="KPointDerivation">
+		<VALUE>1</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="KPointQuality">
+		<VALUE>2</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="KPointOverallQuality">
+		<VALUE>2</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="KPointSeparation">
+		<VALUE>5.e-002</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="ParameterA">
+		<VALUE>4</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="ParameterB">
+		<VALUE>4</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="ParameterC">
+		<VALUE>4</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="OriginA">
+		<VALUE>0.</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="OriginB">
+		<VALUE>0.</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="OriginC">
+		<VALUE>0.</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="DefaultDerivation">
+		<VALUE>
+		<ITEM>7.000000000000001e-002</ITEM>
+		<ITEM>5.e-002</ITEM>
+		<ITEM>4.e-002</ITEM>
+		<ITEM>4.e-002</ITEM>
+		</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="InsulatorDerivation">
+		<VALUE>
+		<ITEM>0.1</ITEM>
+		<ITEM>8.e-002</ITEM>
+		<ITEM>7.000000000000001e-002</ITEM>
+		<ITEM>6.e-002</ITEM>
+		</VALUE>
+		</PROPERTY>
+		<PROPERTY NAME="UseInsulatorDerivation">
+		<VALUE>false</VALUE>
+		</PROPERTY>
+		</PROPERTIES>
+		</STATE>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ElectronDensity">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TotalDensity">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DeformationDensity">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SpinDensity">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Electrostatics">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ElectrostaticPotential">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ElectrostaticMoments">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="NuclearElectricFieldGradient">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Workfunction">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Frequency">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="PartialHessian">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseCoarseGrainedParallelism">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="RamanIntensities">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Fukui">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="FukuiFPlus">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="FukuiFMinus">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="FukuiFZero">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OpticalAbsorption">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="AbsorptionMin">
+	<VALUE>200.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="AbsorptionMax">
+	<VALUE>1200.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Orbitals">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="HOMO">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="LUMO">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="FermiLevel">
+	<VALUE>0</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="PopulationAnalysis">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Mulliken">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Hirshfeld">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="BondStrength">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ESPCharge">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="GridQuality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="GridInterval">
+	<VALUE>0.25</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Border">
+	<VALUE>3.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateOptics">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OpticalLevels">
+	<VALUE>12</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OpticalMultiplicity">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="OpticalMethod">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculatePolarizability">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CalculateHyperpolarizabilities">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="PolarUseFrequencies">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="PolarFrequency">
+	<VALUE>514.5</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="PolarFrequencies">
+	<VALUE></VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="QMJobTemplate">
+	<STATE NAME="QMJobTemplate" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="DaemonName">
+	<VALUE>My Computer</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ServerNameForDefaultDaemonName">
+	<VALUE></VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="AutomateJobPrefix">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="JobPrefix">
+	<VALUE></VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="LiveUpdateGraphs">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="LiveUpdateModel">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="LiveUpdateText">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="LiveUpdateInterval">
+	<VALUE>10.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="LeaveFilesOnServer">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ViewResults">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="NotifyJobCompletion">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="TaskOriginator">
+	<VALUE>DMol3</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MpiRequested">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MpiNumProcessors">
+	<VALUE>6</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="UseMPI">
+	<VALUE>false</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="NumProcessors">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="QueueRequested">
+	<VALUE></VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="TSConfirmation">
+	<STATE NAME="SMDMol3.TSPathwayState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="EnergyConvergence">
+	<VALUE>2.e-005</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="GradientConvergence">
+	<VALUE>4.e-003</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DisplacementConvergence">
+	<VALUE>5.e-003</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="PathPoints">
+	<VALUE>10</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Quality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="PathQuality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="TSOptimization">
+	<STATE NAME="SMDMol3.TSOptState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="EnergyConvergence">
+	<VALUE>2.e-005</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="GradientConvergence">
+	<VALUE>4.e-003</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="DisplacementConvergence">
+	<VALUE>5.e-003</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Iterations">
+	<VALUE>50</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MaximumDisplacement">
+	<VALUE>0.3</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="HessianMode">
+	<VALUE>0</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Quality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="TSSearch">
+	<STATE NAME="SMDMol3.TSSearchState" VERSION="6.1">
+	<PROPERTIES>
+	<PROPERTY NAME="RMSConvergence">
+	<VALUE>1.e-002</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="MaximumCGSteps">
+	<VALUE>20</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="NumberQSTCycles">
+	<VALUE>5</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SearchMethod">
+	<VALUE>4</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="Quality">
+	<VALUE>2</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Utility">
+</LOGICITEM>
+</LOGICS>
+</EXTENSION>
