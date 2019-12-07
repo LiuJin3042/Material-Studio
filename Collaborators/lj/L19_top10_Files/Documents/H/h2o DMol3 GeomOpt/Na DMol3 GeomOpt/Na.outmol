@@ -1,0 +1,262 @@
+ 
+     ===============================================================
+     Materials Studio DMol^3 version 2017            
+     compiled on May 19 2016 09:59:33
+     ===============================================================
+ 
+     ===============================================================
+     Density Functional Theory Electronic Structure Program
+     Copyright (c) 2016, Dassault Systemes, all rights reserved.
+     Cite work using this program as: 
+     B. Delley, J. Chem. Phys. 92,  508  (1990).
+     B. Delley, J. Chem. Phys. 113, 7756 (2000).
+     DMol^3 is available as part of Materials Studio.
+     ===============================================================
+ 
+ 
+DATE:     Dec  2 19:13:00 2019
+ 
+Job started on host YAESAKURA
+
+This run uses    4 processors
+
+Message: License checkout of MS_dmol successful
+ 
+Basis set is read from file:
+C:\Program Files (x86)\BIOVIA\Materials Studio 17.1 x64 Server\share\Resources\Quantum\DMol3\BASFILE_v3.5
+
+ 
+ parallel run with   4 processors
+ 
+ no INCOOR file: try ZMAT
+ no ZMAT file: try CAR
+
+Geometry is read from file: Na.car                                                                                                                                                                                                                                                          
+
+INCOOR, atomic coordinates in au (for archive):
+______________________________________________________________________>8
+
+$coordinates
+Na          -10.42435413017979    0.60507839805863   -0.46180415749680
+$end
+______________________________________________________________________>8
+
+
+N_atoms =    1     N_atom_types =  1
+
+
+INPUT_DMOL keywords (for archive):
+______________________________________________________________________>8
+
+#Warning: no global confinement specs in BASFILE
+                                                                                                                                    <--
+# Task parameters                                                                                                                   <--
+Calculate                     optimize                                                                                              <--
+Opt_energy_convergence        2.0000e-005                                                                                           <--
+Opt_gradient_convergence      4.0000e-003 A                                                                                         <--
+Opt_displacement_convergence  5.0000e-003 A                                                                                         <--
+Opt_iterations                500                                                                                                   <--
+Opt_max_displacement          0.3000 A                                                                                              <--
+Initial_hessian               improved                                                                                              <--
+Symmetry                      off                                                                                                   <--
+Max_memory                    1024                                                                                                  <--
+File_usage                    smart                                                                                                 <--
+Scf_density_convergence       1.000000e-005                                                                                         <--
+Scf_charge_mixing             2.000000e-001                                                                                         <--
+Scf_spin_mixing               5.000000e-001                                                                                         <--
+Scf_diis                      6 pulay                                                                                               <--
+Scf_iterations                500                                                                                                   <--
+                                                                                                                                    <--
+# Electronic parameters                                                                                                             <--
+Spin_polarization             unrestricted                                                                                          <--
+Charge                        0                                                                                                     <--
+Basis                         dnd                                                                                                   <--
+Pseudopotential               dspp                                                                                                  <--
+Functional                    gga(p91)                                                                                              <--
+Aux_density                   hexadecapole                                                                                          <--
+Integration_grid              medium                                                                                                <--
+Occupation                    fermi                                                                                                 <--
+Cutoff_Global                 4.5000 angstrom                                                                                       <--
+                                                                                                                                    <--
+# Calculated properties                                                                                                             <--
+Print_eigval_window           -1.d9                                                                                                 <--
+Plot                          homo                                                                                                  <--
+Plot                          lumo                                                                                                  <--
+Plot                          fermi 20                                                                                              <--
+Grid                          msbox  3 0.2500 0.2500 0.2500 3.0000                                                                  <--
+______________________________________________________________________>8
+
+
+Publications of specific relevance to this calculation:
+
+Density functional:
+ P91 exchange: Perdew, Physica B 172, 1 (1991)
+
+Spin unrestricted calculation
+
+
+ The Generation and Use of Delocalized Internal Coordinates in Geometry optimization; 
+ Baker Kessi Delley: J. Chem. Phys., 105, 192 (1996) 
+ Andzelm Fitzgerald King-Smith: Chem. Phys. Lett., 335, 321 (2001)
+
+ Hardness conserving semilocal pseudopotentials; Delley: Phys. Rev. B 66, 155125 (2002)
+
+Parallel eigenvalue solution:
+Parallel solution of partial symmetric eigenvalue problems from electronic structure calculations:
+Auckenthaler, Blum, Bungartz, et al.: Parallel Computing 37, 783 (2011)
+
+
+Warning: dspp            takes precedence over using symmetrized basis
+Warning: no geometry optimization for 1 atom
+ 
+Calculation is Spin_unrestricted
+ 
+ 
+Warning: no SYM file, no symmetry used in vibrational analysis
+Warning: at least C1 SYM file should be there for optgeom
+Sodium       nbas=  1, z=  11, nrfn=  7, rcut=  8.50, e_ref= -0.021583 Ha
+                                  rcore=  0.00  zval=  11.00  11.00
+   n=1  L=0  occ= 2.00 e=     -37.909484Ha     -1031.5700eV
+   n=2  L=0  occ= 2.00 e=      -2.044286Ha       -55.6279eV
+   n=2  L=1  occ= 6.00 e=      -1.023125Ha       -27.8407eV
+   n=3  L=0  occ= 1.00 e=      -0.065464Ha        -1.7814eV
+   n=3  L=0  occ= 0.00 e=      -0.265001Ha        -7.2110eV
+   n=3  L=1  occ= 0.00 e=      -0.124310Ha        -3.3827eV
+   n=3  L=2  occ= 0.00 e=      -0.887946Ha       -24.1623eV  eliminated
+
+Note: calculation of reference xc derivative is turned on
+ for pseudopotential with core density correction
+
+Symmetry orbitals C1                            
+    n  norb    representation
+    1    10        a    
+  total number of valence orbitals:     10
+
+
+ molecule charge=      0.0   active electron number=      11.0
+ (without charge=             11.0)
+ 
+
+ electrostatics has max memory requirements                    2.4 MB  ( recipr:     0.0 MB)
+
+ real array elements, matrices vectors etc:       0.6 MB 
+ integer arrays                           :       0.0 MB 
+ min recommended for all-incl workspace   :       1.0 MB 
+Total memory allocated for arrays         :       2.5 MB 
+Memory for temporary file storage on disk :       0.5 MB
+Total memory allocated                    :       2.9 MB
+Max memory requested                      :    1024.0 MB
+Default spin density on atom Na(  1), L= 0 was used on start: M_s=  1.0
+    1  1.000 start spin density on Na(   1), L= 0 M_s=  1.0
+ 
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef         -162.252605Ha         0.0061049Ha      4.39E-03     0.0m      1
+Ef         -162.251850Ha         0.0068591Ha      3.46E-03     0.0m      2
+Ef         -162.250216Ha         0.0084937Ha      6.17E-03     0.0m      3
+Ef         -162.250352Ha         0.0083580Ha      5.67E-03     0.0m      4
+Ef         -162.250029Ha         0.0086803Ha      5.36E-03     0.0m      5
+Ef         -162.252649Ha         0.0060606Ha      1.00E-02     0.0m      6
+Ef         -162.252559Ha         0.0061501Ha      8.39E-03     0.0m      7
+Ef         -162.252669Ha         0.0060408Ha      9.43E-03     0.0m      8
+Ef         -162.252361Ha         0.0063483Ha      4.31E-03     0.0m      9
+Ef         -162.252625Ha         0.0060848Ha      1.96E-03     0.0m     10
+Ef         -162.252491Ha         0.0062185Ha      4.20E-04     0.0m     11
+Ef         -162.252628Ha         0.0060816Ha      2.80E-03     0.0m     12
+Ef         -162.252629Ha         0.0060808Ha      4.08E-04     0.0m     13
+Ef         -162.252629Ha         0.0060809Ha      3.40E-04     0.0m     14
+Ef         -162.252628Ha         0.0060813Ha      1.46E-05     0.0m     15
+Ef         -162.252628Ha         0.0060812Ha      4.23E-06     0.0m     16
+Message: SCF converged
+
+
+Energy of Highest Occupied Molecular Orbital:  -0.09049Ha    -2.462eV
+Energy of Lowest Unoccupied Molecular Orbital:  -0.03503Ha    -0.953eV
+
+  HOMO is orbital number    11
+  LUMO is orbital number    12
+
+    state                         eigenvalue        occupation
+                              (au)          (ev)
+
+    1   +   1   a        -37.917277     -1031.782     1.000
+    2   -   1   a        -37.915824     -1031.743     1.000
+    3   +   2   a         -2.051640       -55.828     1.000
+    4   -   2   a         -2.048423       -55.740     1.000
+    5   +   3   a         -1.030755       -28.048     1.000
+    6   +   4   a         -1.030755       -28.048     1.000
+    7   +   5   a         -1.030755       -28.048     1.000
+    8   -   3   a         -1.026929       -27.944     1.000
+    9   -   4   a         -1.026929       -27.944     1.000
+   10   -   5   a         -1.026929       -27.944     1.000
+   11   +   6   a         -0.090491        -2.462     1.000
+   12   -   6   a         -0.035026        -0.953     0.000
+   13   +   7   a          0.033749         0.918     0.000
+   14   +   8   a          0.033749         0.918     0.000
+   15   +   9   a          0.033749         0.918     0.000
+   16   -   7   a          0.091401         2.487     0.000
+   17   -   8   a          0.091401         2.487     0.000
+   18   -   9   a          0.091401         2.487     0.000
+   19   +  10   a          0.311617         8.480     0.000
+   20   -  10   a          0.363738         9.898     0.000
+ 
+
+  Orbital occupation is:
+      6  a  ( 1) alpha and     5  a  ( 1) beta
+  Total number electrons:              11.0
+
+
+df              ATOMIC  COORDINATES (au)                  DERIVATIVES (au)
+df            x          y          z            x          y          z
+df   Na   -10.424354   0.605078  -0.461804     0.000000   0.000000   0.000000
+df  binding energy       0.0060812Ha         0.16548eV           3.816kcal/mol
+
+
+Energy components:
+   Sum of atomic energies =     -162.2587095Ha
+                  Kinetic =       -0.0849522Ha
+            Electrostatic =        0.0645246Ha
+     Exchange-correlation =        0.0049258Ha
+        Spin polarization =        0.0215830Ha
+
+            Total Energy           Binding E                   Time   Iter
+Ef         -162.252628Ha         0.0060812Ha                   0.0m     17
+
+ +++ Entering Properties Section +++ 
+
+
+
+Plotting output:
+  property:                                                file name:
+  orbital   11   6 +a     -0.0905  1.00   Na_homo.grd                   
+  orbital   12   6 -a     -0.0350  0.00   Na_lumo.grd                   
+  orbital   10   5 -a     -1.0269  1.00   Na_10_mo.grd                  
+  orbital   13   7 +a      0.0337  0.00   Na_13_mo.grd                  
+  orbital    9   4 -a     -1.0269  1.00   Na_9_mo.grd                   
+  orbital   14   8 +a      0.0337  0.00   Na_14_mo.grd                  
+  orbital    8   3 -a     -1.0269  1.00   Na_8_mo.grd                   
+  orbital   15   9 +a      0.0337  0.00   Na_15_mo.grd                  
+  orbital    7   5 +a     -1.0308  1.00   Na_7_mo.grd                   
+  orbital   16   7 -a      0.0914  0.00   Na_16_mo.grd                  
+  orbital    6   4 +a     -1.0308  1.00   Na_6_mo.grd                   
+  orbital   17   8 -a      0.0914  0.00   Na_17_mo.grd                  
+  orbital    5   3 +a     -1.0308  1.00   Na_5_mo.grd                   
+  orbital   18   9 -a      0.0914  0.00   Na_18_mo.grd                  
+  orbital    4   2 -a     -2.0484  1.00   Na_4_mo.grd                   
+  orbital   19  10 +a      0.3116  0.00   Na_19_mo.grd                  
+  orbital    3   2 +a     -2.0516  1.00   Na_3_mo.grd                   
+  orbital   20  10 -a      0.3637  0.00   Na_20_mo.grd                  
+  orbital    2   1 -a    -37.9158  1.00   Na_2_mo.grd                   
+  orbital    1   1 +a    -37.9173  1.00   Na_1_mo.grd                   
+
+ grid specifications: I_dim, Origin, n_intervals to corner:
+    3  -16.0627   -5.1967   -6.1416   24  -16.0627   -5.1967    5.1967
+   24  -16.0627    6.1416   -6.1416   24   -4.7243   -5.1967   -6.1416
+ 
+Message: License checkin of MS_dmol successful
+
+Message: DMol3 job finished successfully
+
+ time all done       0.02m        1.30s
+
+DMol3.pl message: DMol3 job finished in 0 hr 0 min 6 sec.
